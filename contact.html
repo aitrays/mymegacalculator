@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyMegaCalculator</title>
+    <meta name="keywords" content="contact us, support, customer service, calculator feedback, get in touch">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/contact.html" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/contact.html" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/contact.html" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
+                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
+                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <div class="flex items-center space-x-2 text-xs">
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
+                    <a href="ar/contact.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                </div>
+            </nav>
+        
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-4 py-12 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-10 space-y-3">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Get In Touch</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Contact Us</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-lg mx-auto">Have a question, feedback, or a suggestion for a new calculator? Fill out the form below and we'll get back to you.</p>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-xl space-y-6">
+            
+            <!-- Success Message Box (Hidden by default) -->
+            <div id="successMessage" class="hidden p-4 rounded-2xl bg-green-50 border border-green-200 text-green-800 text-center font-semibold text-sm">
+                🎉 Thank you! Your message has been sent successfully.
+            </div>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-6">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1.5">Your Name</label>
+                        <input type="text" id="contactName" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm font-medium text-gray-900 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1.5">Email Address</label>
+                        <input type="email" id="contactEmail" required placeholder="e.g. john@example.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm font-medium text-gray-900 transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1.5">Subject</label>
+                    <input type="text" id="contactSubject" required placeholder="e.g. Calculator suggestion / Bug report" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm font-medium text-gray-900 transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1.5">Message</label>
+                    <textarea id="contactMsg" rows="5" required placeholder="Write your message here..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm font-medium text-gray-900 transition"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="w-full py-4 bg-gradient-to-r from-green-600 to-emerald-500 text-white font-bold rounded-xl shadow-lg shadow-green-200 hover:opacity-95 transition text-base">
+                    Send Message
+                </button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- MODERN PREMIUM FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            
+            <div class="md:col-span-2 space-y-4">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
+                    Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday mathematical needs.
+                </p>
+                <div class="flex items-center space-x-2 text-xs text-green-400 font-semibold bg-green-950/60 border border-green-800/50 px-3 py-1.5 rounded-lg w-fit">
+                    <span>🔒 100% Free & Private — No Data Stored</span>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Tile & Flooring</span></a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Square Footage</span></a></li>
+                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Percentage Calculator</span></a></li>
+                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Weight Converter</span></a></li>
+                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Feet to CM</span></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400"><ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
+                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
+                </ul></ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+            <p>&copy; 2026 MyMegaCalculator.com. All rights reserved.</p>
+            <p>Designed for fast and accurate everyday estimations.</p>
+        </div>
+    </footer>
+
+    <!-- Form Script -->
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMsg').value;
+
+            if (!name || !email || !subject || !message) return;
+
+            const successBox = document.getElementById('successMessage');
+            successBox.classList.remove('hidden');
+
+            document.getElementById('contactForm').reset();
+
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
