@@ -3,14 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyMegaCalculator - Free Online Calculators & Conversion Tools</title>
-    <meta name="description" content="Discover a wide range of free online calculators, including tile, square footage, percentage calculators, and measurement converters. Fast, accurate, and easy to use.">
-    <meta name="keywords" content="online calculators, free calculators, tile calculator, square footage calculator, percentage calculator, conversion tools">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/index.html" />
-    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/index.html" />
-    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/index.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>MyMegaCalculator | Free Online Calculators & Conversion Tools</title>
+    <meta name="description" content="Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday math. 100% private — no data stored.">
+    <meta name="keywords" content="online calculators, free calculators, tile calculator, square footage calculator, percentage calculator, conversion tools, weight converter, feet inches calculator">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MyMegaCalculator | Free Online Calculators & Conversion Tools">
+    <meta property="og:description" content="Free, instant, and high-precision online calculators. 100% private — no data stored.">
+    <meta property="og:url" content="https://mymegacalculator.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MyMegaCalculator | Free Online Calculators & Conversion Tools">
+    <meta name="twitter:description" content="Free, instant, and high-precision online calculators. 100% private — no data stored.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
+
+    <!-- JSON-LD Structured Data: WebSite + Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "MyMegaCalculator",
+          "url": "https://mymegacalculator.com"
+        },
+        {
+          "@type": "Organization",
+          "name": "MyMegaCalculator",
+          "url": "https://mymegacalculator.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymegacalculator.com/images/logo.png",
+            "width": 512,
+            "height": 512
+          },
+          "description": "Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday mathematical needs."
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mymegacalculator.com/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are MyMegaCalculator tools free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all calculators on MyMegaCalculator are 100% free to use. No registration, no sign-up, and no hidden fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data stored when I use the calculators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All calculations run directly in your browser using client-side JavaScript. We do not store, log, or track any of your inputs or results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What calculators are available on MyMegaCalculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer a wide range of free calculators including tile calculator, square footage calculator, percentage calculator, weight converter, and feet and inches to centimeters converter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use MyMegaCalculator on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. MyMegaCalculator is fully responsive and works perfectly on mobile phones, tablets, and desktop computers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who created MyMegaCalculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MyMegaCalculator was founded by Alex Morgan, a full-stack software engineer with over 8 years of experience in web development and educational technology."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate are the calculators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every calculator is hand-coded and tested against known mathematical standards. We regularly review and update our tools to ensure maximum accuracy. For critical projects, we always recommend double-checking results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you have calculators in other languages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We offer a full Arabic version of MyMegaCalculator at https://mymegacalculator.com/ar/. More languages coming soon."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/" />
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
@@ -19,148 +149,360 @@
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
+                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
                 <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/index.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/index.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
                 </div>
             </nav>
-        
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <div class="flex items-center space-x-2 px-3 py-2">
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
+                    <a href="ar/index.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-green-50/80 to-transparent py-16 px-4 text-center">
-        <div class="max-w-3xl mx-auto space-y-4">
-            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Fast & High Precision</span>
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">Free Online Calculators & Tools</h1>
-            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Access instant, accurate calculation and conversion tools designed for everyday problem-solving, construction, and finance.</p>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <span itemprop="name" class="text-green-600 font-medium">Home</span>
+                    <meta itemprop="position" content="1" />
+                </li>
+            </ol>
         </div>
-    </section>
+    </nav>
 
-    <!-- Calculators Grid Section -->
-    <main class="max-w-6xl mx-auto px-4 py-8 w-full">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Calculator Card 1 -->
-            <a href="tile-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
-                <div class="space-y-3">
-                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📐</div>
-                    <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Tile Calculator</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">Calculate exact tile quantities needed for floors and walls, including recommended waste margins.</p>
-                </div>
-                <div class="pt-6">
-                    <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                    </span>
-                </div>
-            </a>
+    <!-- Main Content -->
+    <main class="w-full">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-b from-green-50/80 to-transparent py-16 px-4 text-center">
+            <div class="max-w-3xl mx-auto space-y-4">
+                <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Fast & High Precision</span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">Free Online Calculators & Conversion Tools — 100% Private & Instant</h1>
+                <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Access instant, accurate calculation and conversion tools designed for everyday problem-solving, construction, and finance. No sign-up. No data stored.</p>
+            </div>
+        </section>
 
-            <!-- Calculator Card 2 -->
-            <a href="square-footage-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
-                <div class="space-y-3">
-                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📏</div>
-                    <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Square Footage Calculator</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">Compute room surface areas quickly for flooring, painting, and general remodeling projects.</p>
-                </div>
-                <div class="pt-6">
-                    <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                    </span>
-                </div>
-            </a>
+        <!-- Calculators Grid Section -->
+        <section class="max-w-6xl mx-auto px-4 py-8 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Calculator Card 3 -->
-            <a href="percentage-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
-                <div class="space-y-3">
-                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📊</div>
-                    <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Percentage Calculator</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">Easily calculate percentage increases, decreases, discounts, and margins for retail or finance.</p>
-                </div>
-                <div class="pt-6">
-                    <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                    </span>
-                </div>
-            </a>
+                <!-- Calculator Card 1 -->
+                <a href="tile-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">📐</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Tile Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Calculate exact tile quantities needed for floors and walls, including recommended waste margins.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
 
-            <!-- Calculator Card 4 -->
-            <a href="weight-converter.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
-                <div class="space-y-3">
-                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">⚖️</div>
-                    <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Weight Converter</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">Convert swiftly between pounds, ounces, kilograms, grams, and metric tons with high precision.</p>
-                </div>
-                <div class="pt-6">
-                    <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                    </span>
-                </div>
-            </a>
+                <!-- Calculator Card 2 -->
+                <a href="square-footage-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">📏</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Square Footage Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Compute room surface areas quickly for flooring, painting, and general remodeling projects.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
 
-            <!-- Calculator Card 5 -->
-            <a href="feet-and-inches-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
-                <div class="space-y-3">
-                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📐</div>
-                    <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Feet and Inches to CM</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">Convert imperial height and length dimensions into metric centimeters and meters instantly.</p>
-                </div>
-                <div class="pt-6">
-                    <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                    </span>
-                </div>
-            </a>
+                <!-- Calculator Card 3: Paint Calculator -->
+                <a href="paint-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">🎨</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Paint Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Estimate exact paint gallons or liters for your walls, with door and window deductions.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
 
-        </div>
+                <!-- Calculator Card 4: BMI Calculator -->
+                <a href="bmi-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">⚖️</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">BMI Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Calculate Body Mass Index (BMI), health category, and healthy weight range for your height.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Calculator Card 5: Calorie Calculator -->
+                <a href="calorie-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">🔥</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Calorie & TDEE Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Determine your daily maintenance calories, BMR, and nutrition targets for weight loss or gain.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Calculator Card 6: Age Calculator -->
+                <a href="age-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">🎂</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Age Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Calculate your exact age in years, months, days, total hours, and countdown to your next birthday.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Calculator Card 7: Loan Calculator -->
+                <a href="loan-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">💳</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Loan & Mortgage Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Calculate monthly payments, total interest cost, and view a complete yearly amortization schedule.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Calculator Card 8: Percentage Calculator -->
+                <a href="percentage-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">📊</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Percentage Calculator</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Easily calculate percentage increases, decreases, discounts, and margins for retail or finance.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Calculator Card 9: Weight Converter -->
+                <a href="weight-converter.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">⚖️</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Weight Converter</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Convert swiftly between pounds, ounces, kilograms, grams, and metric tons with high precision.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Calculator Card 10: Feet & Inches Calculator -->
+                <a href="feet-and-inches-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition" aria-hidden="true">📐</div>
+                        <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Feet and Inches to CM</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">Convert imperial height and length dimensions into metric centimeters and meters instantly.</p>
+                    </div>
+                    <div class="pt-6">
+                        <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
+                            <span>Open Calculator</span> <span class="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- About / Content Section -->
+        <section class="bg-white border-t border-gray-100 py-16 px-4">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="text-center space-y-3">
+                    <span class="text-green-600 text-xs font-bold uppercase tracking-wider">About MyMegaCalculator</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Why Choose MyMegaCalculator?</h2>
+                </div>
+
+                <div class="prose prose-green max-w-none text-gray-600 text-sm sm:text-base leading-relaxed space-y-4">
+                    <p>MyMegaCalculator was built with one goal in mind: to provide <strong>simple, reliable, and private calculation tools</strong> that anyone can use without hassle. Whether you are planning a home renovation, checking your BMI and fitness goals, calculating loan payments, or solving everyday math, our calculators deliver accurate results in seconds.</p>
+
+                    <p>Unlike many online tools, <strong>we never ask for your email, phone number, or any personal information</strong>. All calculations happen directly inside your web browser using JavaScript. Your inputs never leave your device, ensuring complete privacy and security.</p>
+
+                    <h3 class="text-lg font-bold text-gray-900 pt-2">Hand-Coded for Accuracy</h3>
+                    <p>Every calculator on this site is hand-coded by our founder, <a href="author-alex-morgan.html" class="text-green-600 hover:underline">Alex Morgan</a>, a full-stack software engineer with over 8 years of professional experience. Each tool is thoroughly tested against known mathematical standards before going live. We regularly review and update our calculators to maintain accuracy and improve user experience.</p>
+
+                    <h3 class="text-lg font-bold text-gray-900 pt-2">Mobile-Friendly & Accessible</h3>
+                    <p>All our calculators are fully responsive and optimized for mobile phones, tablets, and desktops. You can use them on the job site, in the kitchen, or at your desk — wherever you need quick, reliable math. Our site is also built following <strong>WCAG 2.1 AA accessibility standards</strong>, making it usable for everyone.</p>
+
+                    <h3 class="text-lg font-bold text-gray-900 pt-2">Educational Blog & Guides</h3>
+                    <p>Beyond calculators, we publish practical guides to help you understand the math behind everyday tasks. Check out our <a href="blog.html" class="text-green-600 hover:underline">blog</a> for tips on home improvement math, unit conversion guides, and calculator tutorials. Popular articles include our <a href="blog-tile-buying-guide.html" class="text-green-600 hover:underline">Tile Buying Guide</a>, <a href="blog-square-footage-guide.html" class="text-green-600 hover:underline">Square Footage Guide</a>, and <a href="blog-percentage-guide.html" class="text-green-600 hover:underline">Percentage Guide</a>.</p>
+
+                    <h3 class="text-lg font-bold text-gray-900 pt-2">Available in Arabic</h3>
+                    <p>We believe math should be accessible to everyone, everywhere. That's why MyMegaCalculator is also available in <a href="ar/index.html" class="text-green-600 hover:underline">Arabic</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-green-50/50 border-t border-gray-100 py-16 px-4">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="text-center space-y-3">
+                    <span class="text-green-600 text-xs font-bold uppercase tracking-wider">FAQ</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Are MyMegaCalculator tools free to use?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Yes, all calculators on MyMegaCalculator are <strong>100% free</strong> to use. No registration, no sign-up, and no hidden fees. We believe everyone should have access to accurate math tools without barriers.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Is my data stored when I use the calculators?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>No. All calculations run directly in your browser using client-side JavaScript. <strong>We do not store, log, or track</strong> any of your inputs or results. Your privacy is our top priority.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>What calculators are available on MyMegaCalculator?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>We offer 10 free calculators: <a href="tile-calculator.html" class="text-green-600 hover:underline">Tile Calculator</a>, <a href="square-footage-calculator.html" class="text-green-600 hover:underline">Square Footage</a>, <a href="paint-calculator.html" class="text-green-600 hover:underline">Paint Calculator</a>, <a href="bmi-calculator.html" class="text-green-600 hover:underline">BMI Calculator</a>, <a href="calorie-calculator.html" class="text-green-600 hover:underline">Calorie Calculator</a>, <a href="age-calculator.html" class="text-green-600 hover:underline">Age Calculator</a>, <a href="loan-calculator.html" class="text-green-600 hover:underline">Loan Calculator</a>, <a href="percentage-calculator.html" class="text-green-600 hover:underline">Percentage Calculator</a>, <a href="weight-converter.html" class="text-green-600 hover:underline">Weight Converter</a>, and <a href="feet-and-inches-calculator.html" class="text-green-600 hover:underline">Feet to CM Converter</a>.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Can I use MyMegaCalculator on my phone?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Absolutely. MyMegaCalculator is fully responsive and works perfectly on <strong>mobile phones, tablets, and desktop computers</strong>. All calculators are touch-friendly and optimized for small screens.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Who created MyMegaCalculator?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>MyMegaCalculator was founded by <a href="author-alex-morgan.html" class="text-green-600 hover:underline">Alex Morgan</a>, a full-stack software engineer with over 8 years of experience in web development and educational technology. Alex personally codes and tests every calculator on the site.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How accurate are the calculators?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Every calculator is hand-coded and tested against known mathematical standards. We regularly review and update our tools to ensure maximum accuracy. For critical projects, we always recommend double-checking results.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Do you have calculators in other languages?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Yes! We offer a full <a href="ar/index.html" class="text-green-600 hover:underline">Arabic version</a> of MyMegaCalculator. More languages coming soon.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- MODERN PREMIUM FOOTER -->
-    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-16 pt-12 pb-8">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            
-            <div class="space-y-4">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-0 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+            <div class="md:col-span-2 space-y-4">
                 <a href="index.html" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
                     <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
                 </a>
                 <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
-                    Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday mathematical needs.
+                    Free, instant, and high-precision online calculators for home improvement, health, finance, and everyday mathematical needs.
                 </p>
                 <div class="flex items-center space-x-2 text-xs text-green-400 font-semibold bg-green-950/60 border border-green-800/50 px-3 py-1.5 rounded-lg w-fit">
-                    <span>🔒 100% Free & Private — No Data Stored</span>
+                    <span aria-hidden="true">🔒</span> <span>100% Free & Private — No Data Stored</span>
                 </div>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
-                <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Tile & Flooring</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Square Footage</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Percentage Calculator</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Weight Converter</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Feet to CM</span></a></li>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">Tile Calculator</a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">Square Footage</a></li>
+                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">Calorie Calculator</a></li>
+                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">Age Calculator</a></li>
+                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">Percentage Calculator</a></li>
+                    <li><a href="weight-converter.html" class="hover:text-green-400 transition">Weight Converter</a></li>
+                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition">Feet to CM</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
-                <ul class="space-y-2.5 text-sm text-gray-400"><ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
-                </ul></ul>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
+                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
+                </ul>
             </div>
 
         </div>
@@ -171,5 +513,10 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>حاسبة كمية الدهان والصباغة - احسب عدد اللترات والجالونات للغرف | MyMegaCalculator</title>
+    <meta name="description" content="احسب كمية الدهان والصباغة المطلوبة لطلاء الغرف والجدران باللتر والجالون بدقة. مع خصم مساحة الأبواب والنوافذ وعدد الطبقات. مجانية 100%.">
+    <meta name="keywords" content="حاسبة الدهان, حاسبة الصباغة, كم احتاج دهان للغرفة, حساب كمية البوية, حاسبة طلاء الجدران, حساب لترات الدهان, حاسبة بوية الغرفة">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/ar/paint-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/ar/paint-calculator">
+    <meta property="og:title" content="حاسبة كمية الدهان والصباغة - احسب عدد اللترات والجالونات للغرف">
+    <meta property="og:description" content="احسب كمية الدهان المطلوبة لطلاء جدران الغرف بدقة مع خصم الأبواب والنوافذ وعدد الطبقات.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="حاسبة الدهان والصباغة - MyMegaCalculator">
+    <meta name="twitter:description" content="احسب عدد لترات الدهان المطلوبة للغرفة بدقة وسرعة مجاناً.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://mymegacalculator.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "حاسبة كمية الدهان",
+          "item": "https://mymegacalculator.com/ar/paint-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "حاسبة كمية الدهان والصباغة",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "حاسبة مجانية لتقدير كمية الدهان وطلاء الجدران باللتر والجالون مع خصم فتحات الأبواب والنوافذ وحساب التكلفة التقديرية.",
+      "url": "https://mymegacalculator.com/ar/paint-calculator",
+      "author": {
+        "@type": "Person",
+        "name": "Alex Morgan",
+        "url": "https://mymegacalculator.com/ar/author-alex-morgan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMegaCalculator",
+        "url": "https://mymegacalculator.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كم متراً مربعاً يغطيه لتر واحد من الدهان؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "في المتوسط، يغطي اللتر الواحد من دهان الجدران الداخلي حوالي 10 إلى 12 متراً مربعاً لكل وجه (طبقة واحدة)، بينما يغطي الجالون الأمريكي حوالي 35 إلى 37 متراً مربعاً (350-400 قدم مربع)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يوصى بدهان وجهين (طبقتين) على الأقل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "الطبقتان تضمنان تغطية تامة للون القديم وإخفاء عيوب الجدار وتوزيع اللون بشكل متجانس وقوي يدوم لسنوات طويلة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم مساحة الباب والنافذة التي يتم خصمها؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتم خصم حوالي 2 متر مربع لكل باب عادي، و 1.4 متر مربع لكل نافذة قياسية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يتم تسجيل أي بيانات حول منزلي أو أبعاده؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا إطلاقاً. تجري الحسابات مباشرة داخل متصفحك ولا نجمع أي قياسات أو بيانات خاصة."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/paint-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/paint-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/paint-calculator" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
+                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <div class="flex items-center gap-2 text-xs">
+                    <a href="../paint-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                </div>
+            </nav>
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <div class="flex items-center gap-2 px-3 py-2">
+                    <a href="../paint-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+            <ol class="flex items-center gap-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                        <span itemprop="name">الرئيسية</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="mx-2 text-gray-300">/</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <span itemprop="name" class="text-green-600 font-medium">حاسبة كمية الدهان</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-8 space-y-2">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">تحسين المنازل والديكور</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">حاسبة كمية الدهان والصباغة للجدران والغرف</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">احسب كمية الدهان المطلوبة باللتر أو الجالون لغرفتك مع خصم مساحة الأبواب والنوافذ وعدد الأوجه.</p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
+
+            <!-- Unit Selector -->
+            <div class="flex justify-center gap-6 border-b border-gray-100 pb-4">
+                <label class="inline-flex items-center cursor-pointer gap-2">
+                    <input type="radio" name="unitType" value="meters" class="text-green-600 focus:ring-green-500 h-4 w-4" checked onchange="togglePaintUnit()">
+                    <span class="text-sm font-bold text-gray-700">الأمتار واللترات (م²)</span>
+                </label>
+                <label class="inline-flex items-center cursor-pointer gap-2">
+                    <input type="radio" name="unitType" value="feet" class="text-green-600 focus:ring-green-500 h-4 w-4" onchange="togglePaintUnit()">
+                    <span class="text-sm font-bold text-gray-700">الأقدام والجالونات (قدم²)</span>
+                </label>
+            </div>
+
+            <form id="paintForm" onsubmit="return false;" class="space-y-6">
+                <!-- Room Dimensions -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label for="roomLength" id="lengthLabel" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">طول الغرفة (متر)</label>
+                        <input type="number" id="roomLength" value="4.5" min="1" max="500" step="0.1" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                    <div>
+                        <label for="roomWidth" id="widthLabel" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">عرض الغرفة (متر)</label>
+                        <input type="number" id="roomWidth" value="3.5" min="1" max="500" step="0.1" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                    <div>
+                        <label for="roomHeight" id="heightLabel" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">ارتفاع السقف (متر)</label>
+                        <input type="number" id="roomHeight" value="2.8" min="1" max="100" step="0.1" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                </div>
+
+                <!-- Openings & Coats -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2 border-t border-gray-100">
+                    <div>
+                        <label for="doorsCount" class="block text-xs font-bold text-gray-600 mb-1">عدد الأبواب</label>
+                        <input type="number" id="doorsCount" value="1" min="0" max="20" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900 text-right">
+                    </div>
+                    <div>
+                        <label for="windowsCount" class="block text-xs font-bold text-gray-600 mb-1">عدد النوافذ</label>
+                        <input type="number" id="windowsCount" value="2" min="0" max="20" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900 text-right">
+                    </div>
+                    <div>
+                        <label for="coatsCount" class="block text-xs font-bold text-gray-600 mb-1">عدد الأوجه (الطبقات)</label>
+                        <select id="coatsCount" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900 bg-white">
+                            <option value="1">وجه واحد (طبقة واحدة)</option>
+                            <option value="2" selected>وجهان (موصى به)</option>
+                            <option value="3">3 أوجه</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="canPrice" class="block text-xs font-bold text-gray-600 mb-1">سعر العبوة (اختياري)</label>
+                        <input type="number" id="canPrice" placeholder="مثال: 50" min="0" step="1" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900 text-right">
+                    </div>
+                </div>
+
+                <!-- Primary Results Box -->
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-6 shadow-lg" aria-live="polite" aria-atomic="true">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-green-400 block mb-1">إجمالي الدهان المطلوب للشراء</span>
+                            <div class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+                                <span id="resCansCount">9</span> <span id="resCanUnitText" class="text-xl sm:text-2xl font-bold text-green-400">لتر</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-gray-400 block">الحجم الدقيق المطلوب</span>
+                            <span id="resExactVolume" class="text-base font-bold text-green-300">8.4 لتر</span>
+                        </div>
+                    </div>
+
+                    <!-- Summary Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-right">
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">إجمالي مساحة الجدران</span>
+                            <span id="resGrossArea" class="text-xl font-black text-white">44.8 م²</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">المساحة الصافية القابلة للدهان</span>
+                            <span id="resNetArea" class="text-xl font-black text-white">40.0 م²</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">التكلفة التقديرية</span>
+                            <span id="resEstimatedCost" class="text-xl font-black text-green-400">0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <button type="button" onclick="resetPaintForm()" class="text-xs font-bold text-gray-500 hover:text-red-500 transition py-1 px-3 rounded-lg hover:bg-red-50">إعادة تعيين</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Content Section (SEO & Educational) -->
+        <div class="mt-12 space-y-8">
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">كيف تحسب كمية الصباغة والدهان المطلوبة؟</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
+                    لتفادي نقص الدهان أثناء العمل أو شراء كميات زائدة عن الحاجة، اتبع هذه الخطوات البسيطة:
+                </p>
+                <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-2xl border border-gray-100">
+                    <li><strong>حساب محيط الغرفة:</strong> اجمع أطوال الجدران الأربعة: <code>2 × (الطول + العرض)</code>.</li>
+                    <li><strong>المساحة الإجمالية:</strong> اضرب محيط الغرفة في ارتفاع السقف.</li>
+                    <li><strong>خصم الفتحات:</strong> اخصم مساحة الأبواب (~2 م² لكل باب) والنوافذ (~1.4 م² لكل نافذة).</li>
+                    <li><strong>مضاعفة الأوجه:</strong> اضرب المساحة الصافية في عدد الطبقات (غالباً وجهين).</li>
+                    <li><strong>القسمة على معدل التغطية:</strong> اقسم الناتج على معدل تغطية اللتر (~10 إلى 12 م² لكل لتر) وقرب الناتج لأقرب عبوة كاملة.</li>
+                </ol>
+            </section>
+
+            <!-- Related Calculators -->
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">حاسبات ذات صلة بالتحسين المنزلي</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="tile-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">📐</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة البلاط</h3>
+                            <p class="text-xs text-gray-500">حساب كميات وتكلفة السيراميك</p>
+                        </div>
+                    </a>
+                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">📏</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة المساحة</h3>
+                            <p class="text-xs text-gray-500">حساب مساحات الغرف والأرضيات</p>
+                        </div>
+                    </a>
+                    <a href="feet-and-inches-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">📐</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة تحويل الأقدام والبوصات</h3>
+                            <p class="text-xs text-gray-500">تحويل القياسات إلى سنتيمتر</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">الأسئلة الشائعة</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>كم متراً مربعاً يغطيه لتر الدهان؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>يغطي لتر الدهان الداخلي عالي الجودة ما بين <strong>10 إلى 12 متراً مربعاً</strong> في الوجه الواحد على الأسطح المجهزة والمصنفرة جيداً.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>لماذا يفضل شراء دهان زائد بنسبة بسيطة؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>الأسطح غير المدهونة سابقاً تمتص كمية أكبر من الدهان، بالإضافة إلى الاحتفاظ بكمية صغيرة لعمليات الترميم والروتوش المستقبلية بنفس درجة اللون.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>هل يتم تخزين أبعاد منزلي؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>لا، الحساب يتم 100% داخل جهازك دون تسجيل أو إرسال أي أبعاد.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="md:col-span-2 space-y-4">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">حاسبات مجانية فورية وعالية الدقة للتحسين المنزلي والصحة والمالية والحسابات اليومية.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">حاسبة البلاط</a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">حاسبة المساحة</a></li>
+                    <li><a href="paint-calculator.html" class="text-green-400 font-bold">حاسبة الدهان</a></li>
+                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
+                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">حاسبة القروض</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition">من نحن</a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition">المدونة</a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+            <p>&copy; 2026 MyMegaCalculator.com. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const roomLength = document.getElementById('roomLength');
+        const roomWidth = document.getElementById('roomWidth');
+        const roomHeight = document.getElementById('roomHeight');
+        const doorsCount = document.getElementById('doorsCount');
+        const windowsCount = document.getElementById('windowsCount');
+        const coatsCount = document.getElementById('coatsCount');
+        const canPrice = document.getElementById('canPrice');
+
+        const resCansCount = document.getElementById('resCansCount');
+        const resCanUnitText = document.getElementById('resCanUnitText');
+        const resExactVolume = document.getElementById('resExactVolume');
+        const resGrossArea = document.getElementById('resGrossArea');
+        const resNetArea = document.getElementById('resNetArea');
+        const resEstimatedCost = document.getElementById('resEstimatedCost');
+
+        function togglePaintUnit() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const lengthLabel = document.getElementById('lengthLabel');
+            const widthLabel = document.getElementById('widthLabel');
+            const heightLabel = document.getElementById('heightLabel');
+
+            if (unit === 'meters') {
+                lengthLabel.textContent = 'طول الغرفة (متر)';
+                widthLabel.textContent = 'عرض الغرفة (متر)';
+                heightLabel.textContent = 'ارتفاع السقف (متر)';
+                resCanUnitText.textContent = 'لتر';
+                roomLength.value = '4.5';
+                roomWidth.value = '3.5';
+                roomHeight.value = '2.8';
+            } else {
+                lengthLabel.textContent = 'طول الغرفة (قدم)';
+                widthLabel.textContent = 'عرض الغرفة (قدم)';
+                heightLabel.textContent = 'ارتفاع السقف (قدم)';
+                resCanUnitText.textContent = 'جالون';
+                roomLength.value = '14';
+                roomWidth.value = '12';
+                roomHeight.value = '9';
+            }
+            calculatePaint();
+        }
+
+        function calculatePaint() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const l = parseFloat(roomLength.value) || 0;
+            const w = parseFloat(roomWidth.value) || 0;
+            const h = parseFloat(roomHeight.value) || 0;
+            const doors = parseInt(doorsCount.value) || 0;
+            const windows = parseInt(windowsCount.value) || 0;
+            const coats = parseInt(coatsCount.value) || 2;
+            const price = parseFloat(canPrice.value) || 0;
+
+            if (l <= 0 || w <= 0 || h <= 0) return;
+
+            const perimeter = 2 * (l + w);
+            const grossArea = perimeter * h;
+
+            let doorArea = 0;
+            let windowArea = 0;
+            let coveragePerUnit = 10; // 10 sq meters per liter
+
+            if (unit === 'meters') {
+                doorArea = doors * 2.0; // 2 sq meters per door
+                windowArea = windows * 1.4; // 1.4 sq meters per window
+                coveragePerUnit = 10; // 10 sq meters per liter
+            } else {
+                doorArea = doors * 21; // 21 sq ft per door
+                windowArea = windows * 15; // 15 sq ft per window
+                coveragePerUnit = 350; // 350 sq ft per gallon
+            }
+
+            const netArea = Math.max(0, grossArea - doorArea - windowArea);
+            const totalAreaToCover = netArea * coats;
+            const exactVolume = totalAreaToCover / coveragePerUnit;
+            const cansNeeded = Math.ceil(exactVolume);
+
+            const areaUnit = unit === 'meters' ? 'م²' : 'قدم²';
+            const volUnit = unit === 'meters' ? 'لتر' : 'جالون';
+
+            resGrossArea.textContent = `${grossArea.toFixed(1)} ${areaUnit}`;
+            resNetArea.textContent = `${netArea.toFixed(1)} ${areaUnit}`;
+            resExactVolume.textContent = `${exactVolume.toFixed(1)} ${volUnit}`;
+            resCansCount.textContent = cansNeeded;
+            resCanUnitText.textContent = unit === 'meters' ? 'لتر' : 'جالون';
+
+            if (price > 0) {
+                const totalCost = cansNeeded * price;
+                resEstimatedCost.textContent = totalCost.toFixed(2);
+            } else {
+                resEstimatedCost.textContent = '0.00';
+            }
+        }
+
+        [roomLength, roomWidth, roomHeight, doorsCount, windowsCount, coatsCount, canPrice].forEach(input => {
+            if (input) {
+                input.addEventListener('input', calculatePaint);
+                input.addEventListener('change', calculatePaint);
+            }
+        });
+
+        function resetPaintForm() {
+            roomLength.value = '4.5';
+            roomWidth.value = '3.5';
+            roomHeight.value = '2.8';
+            doorsCount.value = '1';
+            windowsCount.value = '2';
+            coatsCount.value = '2';
+            canPrice.value = '';
+            calculatePaint();
+        }
+
+        calculatePaint();
+    </script>
+</body>
+</html>

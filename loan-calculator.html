@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>Loan & Mortgage Calculator | Monthly Payment & Amortization — MyMegaCalculator</title>
+    <meta name="description" content="Free online loan and mortgage calculator. Calculate monthly payments, total interest, and amortization schedule. 100% free and private — no data stored.">
+    <meta name="keywords" content="loan calculator, mortgage calculator, monthly payment calculator, interest calculator, amortization schedule, personal loan calculator, auto loan calculator">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/loan-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/loan-calculator">
+    <meta property="og:title" content="Loan & Mortgage Calculator | Monthly Payment & Amortization">
+    <meta property="og:description" content="Calculate monthly loan payments, total interest, and full amortization breakdown instantly.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Loan Calculator | Monthly Payment & Interest">
+    <meta name="twitter:description" content="Calculate monthly loan payments, total interest, and full amortization breakdown instantly.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mymegacalculator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Loan Calculator",
+          "item": "https://mymegacalculator.com/loan-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Loan Calculator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Free loan and mortgage calculator to compute monthly payments, total interest costs, and yearly amortization schedule.",
+      "url": "https://mymegacalculator.com/loan-calculator",
+      "author": {
+        "@type": "Person",
+        "name": "Alex Morgan",
+        "url": "https://mymegacalculator.com/author-alex-morgan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMegaCalculator",
+        "url": "https://mymegacalculator.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is a monthly loan payment calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monthly payments for a fixed-rate loan use the standard amortization formula: M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1], where P is the loan principal, i is the monthly interest rate, and n is the total number of monthly payments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an amortization schedule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An amortization schedule is a complete table showing the breakdown of every periodic payment into principal and interest, alongside the remaining loan balance after each period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can this calculator be used for mortgages and auto loans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, this tool works accurately for home mortgages, auto loans, personal loans, student loans, and business financing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this calculator store my financial inputs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All financial calculations occur directly in your browser using JavaScript. No numbers or details are ever stored or transmitted."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/loan-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/loan-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/loan-calculator" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
+                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
+                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <div class="flex items-center space-x-2 text-xs">
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
+                    <a href="ar/loan-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                </div>
+            </nav>
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <div class="flex items-center space-x-2 px-3 py-2">
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
+                    <a href="ar/loan-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="mx-2 text-gray-300">/</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <span itemprop="name" class="text-green-600 font-medium">Loan Calculator</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-8 space-y-2">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Finance & Real Estate</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Loan & Mortgage Calculator</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Calculate your exact monthly payment, total interest charges, and view a complete amortization schedule.</p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
+
+            <form id="loanForm" onsubmit="return false;" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- Loan Amount -->
+                    <div>
+                        <label for="loanAmount" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Loan Amount ($)</label>
+                        <input type="number" id="loanAmount" value="250000" min="100" max="100000000" step="500" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+
+                    <!-- Interest Rate -->
+                    <div>
+                        <label for="interestRate" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Annual Interest (%)</label>
+                        <input type="number" id="interestRate" value="6.5" min="0" max="100" step="0.05" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+
+                    <!-- Loan Term -->
+                    <div>
+                        <label for="loanTermYears" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Term (Years)</label>
+                        <input type="number" id="loanTermYears" value="30" min="1" max="50" step="1" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                </div>
+
+                <!-- Primary Results Box -->
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-6 shadow-lg" aria-live="polite" aria-atomic="true">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-green-400 block mb-1">Estimated Monthly Payment</span>
+                            <div class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+                                $<span id="resMonthlyPayment">1,580.17</span> <span class="text-sm font-normal text-gray-400">/ month</span>
+                            </div>
+                        </div>
+                        <div class="text-left sm:text-right">
+                            <span class="text-xs text-gray-400 block">Total Payments Count</span>
+                            <span id="resTotalPaymentsCount" class="text-base font-bold text-green-400">360 monthly payments</span>
+                        </div>
+                    </div>
+
+                    <!-- Summary Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">Loan Principal</span>
+                            <span id="resPrincipal" class="text-xl font-black text-white">$250,000</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">Total Interest Paid</span>
+                            <span id="resTotalInterest" class="text-xl font-black text-yellow-400">$318,861</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">Total Amount Paid</span>
+                            <span id="resTotalCost" class="text-xl font-black text-green-400">$568,861</span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Breakdown Bar -->
+                    <div class="space-y-1.5 pt-2">
+                        <div class="flex justify-between text-xs text-gray-300 font-semibold">
+                            <span>Principal: <strong id="resPrincipalPct" class="text-green-400">44%</strong></span>
+                            <span>Interest: <strong id="resInterestPct" class="text-yellow-400">56%</strong></span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden flex">
+                            <div id="barPrincipal" class="bg-green-500 h-full transition-all duration-300" style="width: 44%;"></div>
+                            <div id="barInterest" class="bg-yellow-500 h-full transition-all duration-300" style="width: 56%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amortization Schedule Accordion/Table -->
+                <div class="border border-gray-100 rounded-2xl p-4 bg-gray-50/50 space-y-3">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleAmortization()">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-lg">📅</span>
+                            <span class="text-sm font-bold text-gray-900">Yearly Amortization Schedule</span>
+                        </div>
+                        <span id="amortToggleIcon" class="text-green-600 font-bold text-sm">Show Table ▼</span>
+                    </div>
+
+                    <div id="amortTableContainer" class="hidden overflow-x-auto pt-2">
+                        <table class="w-full text-xs text-left border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100 text-gray-700 font-bold border-b border-gray-200">
+                                    <th class="p-2.5">Year</th>
+                                    <th class="p-2.5">Starting Balance</th>
+                                    <th class="p-2.5">Principal Paid</th>
+                                    <th class="p-2.5">Interest Paid</th>
+                                    <th class="p-2.5">Ending Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody id="amortTableBody" class="divide-y divide-gray-100 text-gray-600 font-mono">
+                                <!-- Dynamic rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Content Section (SEO & Educational) -->
+        <div class="mt-12 space-y-8">
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">How Loan Payments & Amortization Work</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
+                    When you take out an amortized installment loan (like a fixed-rate mortgage or auto loan), your fixed monthly payment stays the same each month, but the proportions allocated to <strong>principal</strong> (the original borrowed amount) and <strong>interest</strong> (the cost of borrowing) shift over time:
+                </p>
+                <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-2 text-sm text-gray-600">
+                    <p><strong>In the early years:</strong> The majority of your monthly payment goes toward paying interest because your outstanding balance is high.</p>
+                    <p><strong>In the later years:</strong> As the balance shrinks, the monthly interest reduces, so the bulk of each payment goes directly toward paying down principal.</p>
+                    <p><strong>Extra payments:</strong> Any extra lump sum applied directly to the principal reduces future interest compounding and shortens the loan term significantly.</p>
+                </div>
+            </section>
+
+            <!-- Related Calculators -->
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Math & Financial Tools</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📊</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Percentage Calculator</h3>
+                            <p class="text-xs text-gray-500">Calculate rates and changes</p>
+                        </div>
+                    </a>
+                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📏</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Square Footage</h3>
+                            <p class="text-xs text-gray-500">Calculate property areas</p>
+                        </div>
+                    </a>
+                    <a href="bmi-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">⚖️</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">BMI Calculator</h3>
+                            <p class="text-xs text-gray-500">Check health metrics</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How is a monthly loan payment calculated?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Monthly payments use the standard fixed amortization formula: <code>M = P × [ i(1 + i)^n ] / [ (1 + i)^n – 1 ]</code>, where P is the principal, i is the monthly interest rate (annual rate ÷ 12), and n is total months.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Can I use this for home mortgages and car loans?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Yes, the math applies accurately to mortgages (15, 20, 30 years), auto loans (3 to 7 years), and personal loans.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Is any financial information saved?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>No. All calculations run strictly in your web browser with 100% privacy.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="md:col-span-2 space-y-4">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">Free, instant, and high-precision online calculators for home improvement, health, finance, and everyday math.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">Age Calculator</a></li>
+                    <li><a href="loan-calculator.html" class="text-green-400 font-bold">Loan Calculator</a></li>
+                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">Calorie Calculator</a></li>
+                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+            <p>&copy; 2026 MyMegaCalculator.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const loanAmount = document.getElementById('loanAmount');
+        const interestRate = document.getElementById('interestRate');
+        const loanTermYears = document.getElementById('loanTermYears');
+
+        const resMonthlyPayment = document.getElementById('resMonthlyPayment');
+        const resTotalPaymentsCount = document.getElementById('resTotalPaymentsCount');
+        const resPrincipal = document.getElementById('resPrincipal');
+        const resTotalInterest = document.getElementById('resTotalInterest');
+        const resTotalCost = document.getElementById('resTotalCost');
+        const resPrincipalPct = document.getElementById('resPrincipalPct');
+        const resInterestPct = document.getElementById('resInterestPct');
+        const barPrincipal = document.getElementById('barPrincipal');
+        const barInterest = document.getElementById('barInterest');
+        const amortTableBody = document.getElementById('amortTableBody');
+        const amortTableContainer = document.getElementById('amortTableContainer');
+        const amortToggleIcon = document.getElementById('amortToggleIcon');
+
+        function toggleAmortization() {
+            if (amortTableContainer.classList.contains('hidden')) {
+                amortTableContainer.classList.remove('hidden');
+                amortToggleIcon.textContent = 'Hide Table ▲';
+            } else {
+                amortTableContainer.classList.add('hidden');
+                amortToggleIcon.textContent = 'Show Table ▼';
+            }
+        }
+
+        function calculateLoan() {
+            const principal = parseFloat(loanAmount.value) || 0;
+            const annualRate = parseFloat(interestRate.value) || 0;
+            const years = parseFloat(loanTermYears.value) || 0;
+
+            if (principal <= 0 || years <= 0) return;
+
+            const totalMonths = Math.round(years * 12);
+            resTotalPaymentsCount.textContent = `${totalMonths} monthly payments`;
+
+            let monthlyPayment = 0;
+            let totalInterest = 0;
+            let totalCost = 0;
+
+            if (annualRate <= 0) {
+                monthlyPayment = principal / totalMonths;
+                totalCost = principal;
+                totalInterest = 0;
+            } else {
+                const monthlyRate = (annualRate / 100) / 12;
+                const factor = Math.pow(1 + monthlyRate, totalMonths);
+                monthlyPayment = principal * (monthlyRate * factor) / (factor - 1);
+                totalCost = monthlyPayment * totalMonths;
+                totalInterest = totalCost - principal;
+            }
+
+            resMonthlyPayment.textContent = monthlyPayment.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            resPrincipal.textContent = `$${principal.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+            resTotalInterest.textContent = `$${Math.round(totalInterest).toLocaleString('en-US')}`;
+            resTotalCost.textContent = `$${Math.round(totalCost).toLocaleString('en-US')}`;
+
+            const principalPct = Math.round((principal / totalCost) * 100) || 50;
+            const interestPct = 100 - principalPct;
+
+            resPrincipalPct.textContent = `${principalPct}%`;
+            resInterestPct.textContent = `${interestPct}%`;
+            barPrincipal.style.width = `${principalPct}%`;
+            barInterest.style.width = `${interestPct}%`;
+
+            // Build Yearly Amortization
+            let currentBalance = principal;
+            const monthlyRate = (annualRate / 100) / 12;
+            let tableHtml = '';
+
+            for (let y = 1; y <= years; y++) {
+                const startBalance = currentBalance;
+                let yearPrincipal = 0;
+                let yearInterest = 0;
+
+                for (let m = 1; m <= 12; m++) {
+                    if (currentBalance <= 0) break;
+                    const interestM = annualRate > 0 ? currentBalance * monthlyRate : 0;
+                    const principalM = Math.min(currentBalance, monthlyPayment - interestM);
+                    yearInterest += interestM;
+                    yearPrincipal += principalM;
+                    currentBalance -= principalM;
+                }
+
+                tableHtml += `
+                    <tr class="hover:bg-white transition">
+                        <td class="p-2.5 font-bold text-gray-900">${y}</td>
+                        <td class="p-2.5">$${Math.round(startBalance).toLocaleString()}</td>
+                        <td class="p-2.5 text-green-700 font-semibold">$${Math.round(yearPrincipal).toLocaleString()}</td>
+                        <td class="p-2.5 text-yellow-700">$${Math.round(yearInterest).toLocaleString()}</td>
+                        <td class="p-2.5 font-bold text-gray-900">$${Math.max(0, Math.round(currentBalance)).toLocaleString()}</td>
+                    </tr>
+                `;
+            }
+            amortTableBody.innerHTML = tableHtml;
+        }
+
+        loanAmount.addEventListener('input', calculateLoan);
+        interestRate.addEventListener('input', calculateLoan);
+        loanTermYears.addEventListener('input', calculateLoan);
+
+        calculateLoan();
+    </script>
+</body>
+</html>

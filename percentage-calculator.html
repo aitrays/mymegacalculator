@@ -1,15 +1,97 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
     <title>Percentage Calculator - Free Percentage Increase, Decrease & Converter</title>
     <meta name="description" content="Free online percentage calculator. Calculate percentage increase, decrease, discounts, and what percent one number is of another. Fast and accurate.">
     <meta name="keywords" content="percentage calculator, percent calculator, percentage increase, percentage decrease, discount calculator, what percent">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/percentage-calculator.html" />
-    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/percentage-calculator.html" />
-    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/percentage-calculator.html" />
+    <link rel="canonical" href="https://mymegacalculator.com/percentage-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Percentage Calculator - Free Percentage Increase, Decrease & Converter">
+    <meta property="og:description" content="Free online percentage calculator. Calculate percentage increase, decrease, discounts, and what percent one number is of another.">
+    <meta property="og:url" content="https://mymegacalculator.com/percentage-calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-percentage-calculator.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Percentage Calculator - Free Percentage Increase, Decrease & Converter">
+    <meta name="twitter:description" content="Free online percentage calculator. Calculate percentage increase, decrease, discounts, and what percent one number is of another.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-percentage-calculator.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Percentage Calculator",
+          "applicationCategory": "CalculatorApplication",
+          "operatingSystem": "Any",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "url": "https://mymegacalculator.com/percentage-calculator",
+          "description": "Free online percentage calculator. Calculate percentage increase, decrease, discounts, and what percent one number is of another.",
+          "author": {
+            "@type": "Person",
+            "name": "Alex Morgan",
+            "url": "https://mymegacalculator.com/author-alex-morgan"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MyMegaCalculator",
+            "url": "https://mymegacalculator.com"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do I calculate a percentage increase?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use the formula: ((New Value − Original Value) ÷ Original Value) × 100. For example, if a price goes from $80 to $100, the increase is ((100 − 80) ÷ 80) × 100 = 25%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I calculate a discount percentage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To find the discount amount, multiply the original price by the discount percentage divided by 100. For a 20% discount on $150: 150 × 0.20 = $30 discount. The final price is $120."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the easiest way to calculate percentages mentally?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For 10%, simply move the decimal point one place to the left. For 5%, take half of 10%. For 20%, double 10%. For 50%, divide by 2. These building blocks make mental math much faster."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/percentage-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/percentage-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/percentage-calculator" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
@@ -19,7 +101,7 @@
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
@@ -28,15 +110,23 @@
                 <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/percentage-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/percentage-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
                 </div>
             </nav>
-        
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="text-sm text-gray-500 mb-6">
+            <ol class="flex flex-wrap space-x-2">
+                <li><a href="index.html" class="hover:text-green-600 transition">Home</a></li>
+                <li><span aria-hidden="true">/</span></li>
+                <li class="text-gray-900 font-medium" aria-current="page">Percentage Calculator</li>
+            </ol>
+        </nav>
+
         <!-- Title Header -->
         <div class="text-center mb-8 space-y-2">
             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Math & Finance Tool</span>
@@ -48,89 +138,89 @@
         <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
 
             <!-- Mode Selector -->
-            <div class="flex flex-wrap justify-center gap-2 pb-4 border-b border-gray-100">
-                <button type="button" onclick="setMode(0)" id="mode0" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-green-600 text-white shadow-md transition">% of Number</button>
-                <button type="button" onclick="setMode(1)" id="mode1" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">% Increase</button>
-                <button type="button" onclick="setMode(2)" id="mode2" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">% Decrease</button>
-                <button type="button" onclick="setMode(3)" id="mode3" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">What % is X of Y</button>
-                <button type="button" onclick="setMode(4)" id="mode4" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">% Change</button>
+            <div class="flex flex-wrap justify-center gap-2 pb-4 border-b border-gray-100" role="tablist" aria-label="Calculator modes">
+                <button type="button" onclick="setMode(0)" id="mode0" role="tab" aria-selected="true" aria-controls="inputMode0" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-green-600 text-white shadow-md transition">% of Number</button>
+                <button type="button" onclick="setMode(1)" id="mode1" role="tab" aria-selected="false" aria-controls="inputMode1" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">% Increase</button>
+                <button type="button" onclick="setMode(2)" id="mode2" role="tab" aria-selected="false" aria-controls="inputMode2" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">% Decrease</button>
+                <button type="button" onclick="setMode(3)" id="mode3" role="tab" aria-selected="false" aria-controls="inputMode3" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">What % is X of Y</button>
+                <button type="button" onclick="setMode(4)" id="mode4" role="tab" aria-selected="false" aria-controls="inputMode4" class="mode-btn px-4 py-2 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-green-100 transition">% Change</button>
             </div>
 
             <form id="pctForm" onsubmit="return false;" class="space-y-6">
 
                 <!-- Mode 0: What is X% of Y? -->
-                <div id="inputMode0" class="space-y-4">
+                <div id="inputMode0" role="tabpanel" aria-labelledby="mode0" class="space-y-4">
                     <div class="flex flex-col sm:flex-row items-center gap-3 justify-center">
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Percentage</label>
+                            <label for="m0pct" class="block text-xs font-bold text-gray-500 mb-1">Percentage</label>
                             <input type="number" id="m0pct" step="any" placeholder="e.g. 20" class="w-full sm:w-32 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg">%</span>
-                        <span class="text-gray-400 font-bold text-lg hidden sm:inline">of</span>
+                        <span class="text-gray-400 font-bold text-lg" aria-hidden="true">%</span>
+                        <span class="text-gray-400 font-bold text-lg hidden sm:inline" aria-hidden="true">of</span>
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Number</label>
+                            <label for="m0num" class="block text-xs font-bold text-gray-500 mb-1">Number</label>
                             <input type="number" id="m0num" step="any" placeholder="e.g. 150" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
                     </div>
                 </div>
 
                 <!-- Mode 1: Percentage Increase -->
-                <div id="inputMode1" class="space-y-4 hidden">
+                <div id="inputMode1" role="tabpanel" aria-labelledby="mode1" class="space-y-4 hidden">
                     <div class="flex flex-col sm:flex-row items-center gap-3 justify-center">
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Original Value</label>
+                            <label for="m1orig" class="block text-xs font-bold text-gray-500 mb-1">Original Value</label>
                             <input type="number" id="m1orig" step="any" placeholder="e.g. 100" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg hidden sm:inline">+</span>
+                        <span class="text-gray-400 font-bold text-lg hidden sm:inline" aria-hidden="true">+</span>
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Increase %</label>
+                            <label for="m1pct" class="block text-xs font-bold text-gray-500 mb-1">Increase %</label>
                             <input type="number" id="m1pct" step="any" placeholder="e.g. 15" class="w-full sm:w-32 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg">%</span>
+                        <span class="text-gray-400 font-bold text-lg" aria-hidden="true">%</span>
                     </div>
                 </div>
 
                 <!-- Mode 2: Percentage Decrease -->
-                <div id="inputMode2" class="space-y-4 hidden">
+                <div id="inputMode2" role="tabpanel" aria-labelledby="mode2" class="space-y-4 hidden">
                     <div class="flex flex-col sm:flex-row items-center gap-3 justify-center">
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Original Value</label>
+                            <label for="m2orig" class="block text-xs font-bold text-gray-500 mb-1">Original Value</label>
                             <input type="number" id="m2orig" step="any" placeholder="e.g. 200" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg hidden sm:inline">−</span>
+                        <span class="text-gray-400 font-bold text-lg hidden sm:inline" aria-hidden="true">−</span>
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Decrease %</label>
+                            <label for="m2pct" class="block text-xs font-bold text-gray-500 mb-1">Decrease %</label>
                             <input type="number" id="m2pct" step="any" placeholder="e.g. 25" class="w-full sm:w-32 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg">%</span>
+                        <span class="text-gray-400 font-bold text-lg" aria-hidden="true">%</span>
                     </div>
                 </div>
 
                 <!-- Mode 3: X is what % of Y? -->
-                <div id="inputMode3" class="space-y-4 hidden">
+                <div id="inputMode3" role="tabpanel" aria-labelledby="mode3" class="space-y-4 hidden">
                     <div class="flex flex-col sm:flex-row items-center gap-3 justify-center">
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Part (X)</label>
+                            <label for="m3part" class="block text-xs font-bold text-gray-500 mb-1">Part (X)</label>
                             <input type="number" id="m3part" step="any" placeholder="e.g. 30" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg hidden sm:inline">is what % of</span>
+                        <span class="text-gray-400 font-bold text-lg hidden sm:inline" aria-hidden="true">is what % of</span>
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Whole (Y)</label>
+                            <label for="m3whole" class="block text-xs font-bold text-gray-500 mb-1">Whole (Y)</label>
                             <input type="number" id="m3whole" step="any" placeholder="e.g. 150" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
                     </div>
                 </div>
 
                 <!-- Mode 4: Percentage Change -->
-                <div id="inputMode4" class="space-y-4 hidden">
+                <div id="inputMode4" role="tabpanel" aria-labelledby="mode4" class="space-y-4 hidden">
                     <div class="flex flex-col sm:flex-row items-center gap-3 justify-center">
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">Original Value</label>
+                            <label for="m4orig" class="block text-xs font-bold text-gray-500 mb-1">Original Value</label>
                             <input type="number" id="m4orig" step="any" placeholder="e.g. 80" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
-                        <span class="text-gray-400 font-bold text-lg hidden sm:inline">→</span>
+                        <span class="text-gray-400 font-bold text-lg hidden sm:inline" aria-hidden="true">→</span>
                         <div class="w-full sm:w-auto text-center">
-                            <label class="block text-xs font-bold text-gray-500 mb-1">New Value</label>
+                            <label for="m4new" class="block text-xs font-bold text-gray-500 mb-1">New Value</label>
                             <input type="number" id="m4new" step="any" placeholder="e.g. 120" class="w-full sm:w-40 px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-lg font-semibold text-gray-900 text-center">
                         </div>
                     </div>
@@ -142,7 +232,7 @@
                 </div>
 
                 <!-- Results Display Box -->
-                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-4 shadow-lg">
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-4 shadow-lg" aria-live="polite" aria-atomic="true">
                     <h3 class="text-xs font-bold uppercase tracking-wider text-green-400">Calculation Result</h3>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
@@ -197,13 +287,14 @@
 
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-600">
+                        <caption class="sr-only">Common percentage values reference table showing decimal, fraction, and calculated values</caption>
                         <thead class="text-xs text-gray-700 uppercase bg-gray-100/80 rounded-lg">
                             <tr>
-                                <th class="px-4 py-3">Percentage</th>
-                                <th class="px-4 py-3">Decimal</th>
-                                <th class="px-4 py-3">Fraction</th>
-                                <th class="px-4 py-3">Of 100</th>
-                                <th class="px-4 py-3">Of 500</th>
+                                <th scope="col" class="px-4 py-3">Percentage</th>
+                                <th scope="col" class="px-4 py-3">Decimal</th>
+                                <th scope="col" class="px-4 py-3">Fraction</th>
+                                <th scope="col" class="px-4 py-3">Of 100</th>
+                                <th scope="col" class="px-4 py-3">Of 500</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100">
@@ -245,14 +336,14 @@
         </div>
     </main>
 
-    <!-- MODERN PREMIUM FOOTER -->
+    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
             <div class="md:col-span-2 space-y-4">
                 <a href="index.html" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
                     <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
                 </a>
@@ -260,31 +351,31 @@
                     Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday mathematical needs.
                 </p>
                 <div class="flex items-center space-x-2 text-xs text-green-400 font-semibold bg-green-950/60 border border-green-800/50 px-3 py-1.5 rounded-lg w-fit">
-                    <span>🔒 100% Free & Private — No Data Stored</span>
+                    <span aria-hidden="true">🔒</span> <span>100% Free & Private — No Data Stored</span>
                 </div>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Tile & Flooring</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Square Footage</span></a></li>
-                    <li><a href="percentage-calculator.html" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span>•</span> <span>Percentage Calculator</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Weight Converter</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Feet to CM</span></a></li>
+                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Tile & Flooring</span></a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Square Footage</span></a></li>
+                    <li><a href="percentage-calculator.html" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span aria-hidden="true">•</span> <span>Percentage Calculator</span></a></li>
+                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Weight Converter</span></a></li>
+                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Feet to CM</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
-                <ul class="space-y-2.5 text-sm text-gray-400"><ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
-                </ul></ul>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
+                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
+                </ul>
             </div>
 
         </div>
@@ -316,6 +407,7 @@
                 const btn = document.getElementById('mode' + i);
                 btn.classList.remove('bg-green-600', 'text-white', 'shadow-md');
                 btn.classList.add('bg-gray-100', 'text-gray-600');
+                btn.setAttribute('aria-selected', 'false');
             }
 
             // Show selected
@@ -323,6 +415,7 @@
             const activeBtn = document.getElementById('mode' + mode);
             activeBtn.classList.remove('bg-gray-100', 'text-gray-600');
             activeBtn.classList.add('bg-green-600', 'text-white', 'shadow-md');
+            activeBtn.setAttribute('aria-selected', 'true');
 
             calculate();
         }

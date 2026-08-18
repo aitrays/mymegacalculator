@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>Paint Calculator | Free Gallons, Liters & Coverage Estimator — MyMegaCalculator</title>
+    <meta name="description" content="Calculate exactly how many gallons or liters of paint you need for any room or walls. Subtracts doors and windows, supports multiple coats, and estimates cost. 100% private.">
+    <meta name="keywords" content="paint calculator, room paint calculator, wall paint estimator, how much paint do i need, paint gallon calculator, paint coverage calculator">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/paint-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/paint-calculator">
+    <meta property="og:title" content="Paint Calculator | Free Gallons, Liters & Coverage Estimator">
+    <meta property="og:description" content="Calculate exactly how many gallons or liters of paint you need for any room with doors and window deductions.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Paint Calculator | Free Wall Paint Estimator">
+    <meta name="twitter:description" content="Calculate how many gallons of paint you need for your room or home improvement project.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mymegacalculator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Paint Calculator",
+          "item": "https://mymegacalculator.com/paint-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Paint Calculator",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Free room paint estimator to calculate wall surface areas, deductions for doors and windows, and required paint cans.",
+      "url": "https://mymegacalculator.com/paint-calculator",
+      "author": {
+        "@type": "Person",
+        "name": "Alex Morgan",
+        "url": "https://mymegacalculator.com/author-alex-morgan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMegaCalculator",
+        "url": "https://mymegacalculator.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much wall area does 1 gallon of paint cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a general rule, one gallon of interior wall paint covers approximately 350 to 400 square feet with one coat. One liter covers roughly 10 square meters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many coats of paint do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most professional painters recommend two coats of paint for uniform color depth and durability, especially when changing wall colors or painting over fresh drywall."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much area should I subtract for doors and windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard doors average about 21 square feet (approx 2 m²), while standard windows average about 15 square feet (approx 1.4 m²). Our calculator automatically subtracts these openings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data stored when using the paint calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All computations occur client-side in your web browser. No room dimensions or prices are ever stored or uploaded."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/paint-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/paint-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/paint-calculator" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
+                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
+                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <div class="flex items-center space-x-2 text-xs">
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
+                    <a href="ar/paint-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                </div>
+            </nav>
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <div class="flex items-center space-x-2 px-3 py-2">
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
+                    <a href="ar/paint-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="mx-2 text-gray-300">/</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <span itemprop="name" class="text-green-600 font-medium">Paint Calculator</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-8 space-y-2">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Home Improvement & DIY</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Room Paint & Coverage Calculator</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Estimate the exact number of paint gallons or liters needed for your walls, factoring in doors, windows, and coats.</p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
+
+            <!-- Unit Selector -->
+            <div class="flex justify-center space-x-4 border-b border-gray-100 pb-4">
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="radio" name="unitType" value="feet" class="text-green-600 focus:ring-green-500 h-4 w-4" checked onchange="togglePaintUnit()">
+                    <span class="ml-2 text-sm font-bold text-gray-700">Feet & Gallons (sq ft)</span>
+                </label>
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="radio" name="unitType" value="meters" class="text-green-600 focus:ring-green-500 h-4 w-4" onchange="togglePaintUnit()">
+                    <span class="ml-2 text-sm font-bold text-gray-700">Meters & Liters (m²)</span>
+                </label>
+            </div>
+
+            <form id="paintForm" onsubmit="return false;" class="space-y-6">
+                <!-- Room Dimensions -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label for="roomLength" id="lengthLabel" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Room Length (ft)</label>
+                        <input type="number" id="roomLength" value="14" min="1" max="500" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                    <div>
+                        <label for="roomWidth" id="widthLabel" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Room Width (ft)</label>
+                        <input type="number" id="roomWidth" value="12" min="1" max="500" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                    <div>
+                        <label for="roomHeight" id="heightLabel" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Ceiling Height (ft)</label>
+                        <input type="number" id="roomHeight" value="9" min="1" max="100" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                </div>
+
+                <!-- Openings & Coats -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2 border-t border-gray-100">
+                    <div>
+                        <label for="doorsCount" class="block text-xs font-bold text-gray-600 mb-1">Doors (Count)</label>
+                        <input type="number" id="doorsCount" value="1" min="0" max="20" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900">
+                    </div>
+                    <div>
+                        <label for="windowsCount" class="block text-xs font-bold text-gray-600 mb-1">Windows (Count)</label>
+                        <input type="number" id="windowsCount" value="2" min="0" max="20" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900">
+                    </div>
+                    <div>
+                        <label for="coatsCount" class="block text-xs font-bold text-gray-600 mb-1">Number of Coats</label>
+                        <select id="coatsCount" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900 bg-white">
+                            <option value="1">1 Coat</option>
+                            <option value="2" selected>2 Coats (Recommended)</option>
+                            <option value="3">3 Coats</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="canPrice" class="block text-xs font-bold text-gray-600 mb-1">Price / Can (Optional)</label>
+                        <input type="number" id="canPrice" placeholder="e.g. 35" min="0" step="1" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-900">
+                    </div>
+                </div>
+
+                <!-- Primary Results Box -->
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-6 shadow-lg" aria-live="polite" aria-atomic="true">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-green-400 block mb-1">Total Paint Needed</span>
+                            <div class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+                                <span id="resCansCount">3</span> <span id="resCanUnitText" class="text-xl sm:text-2xl font-bold text-green-400">Gallons</span>
+                            </div>
+                        </div>
+                        <div class="text-left sm:text-right">
+                            <span class="text-xs text-gray-400 block">Exact Volume Needed</span>
+                            <span id="resExactVolume" class="text-base font-bold text-green-300">2.4 gallons</span>
+                        </div>
+                    </div>
+
+                    <!-- Summary Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">Gross Wall Area</span>
+                            <span id="resGrossArea" class="text-xl font-black text-white">468.0 sq ft</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">Net Paintable Area</span>
+                            <span id="resNetArea" class="text-xl font-black text-white">417.0 sq ft</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">Estimated Paint Cost</span>
+                            <span id="resEstimatedCost" class="text-xl font-black text-green-400">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <button type="button" onclick="resetPaintForm()" class="text-xs font-bold text-gray-500 hover:text-red-500 transition py-1 px-3 rounded-lg hover:bg-red-50">Reset Defaults</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Content Section (SEO & Educational) -->
+        <div class="mt-12 space-y-8">
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">How to Calculate Room Paint Quantity</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
+                    To estimate how much paint you will need for a room, follow this simple formula:
+                </p>
+                <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-2xl border border-gray-100">
+                    <li><strong>Wall Perimeter:</strong> Add up the length of all four walls: <code>2 × (Length + Width)</code>.</li>
+                    <li><strong>Gross Wall Area:</strong> Multiply the perimeter by the ceiling height.</li>
+                    <li><strong>Deduct Openings:</strong> Subtract doors (~21 sq ft / 2 m² each) and windows (~15 sq ft / 1.4 m² each).</li>
+                    <li><strong>Coats &amp; Coverage:</strong> Multiply net area by the number of coats (usually 2), then divide by paint coverage per gallon (~350 sq ft/gal) or liter (~10 m²/L).</li>
+                    <li><strong>Round Up:</strong> Always round up to the nearest whole can so you don't run out during finishing touches.</li>
+                </ol>
+            </section>
+
+            <!-- Related Calculators -->
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Home Improvement Tools</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="tile-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📐</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Tile Calculator</h3>
+                            <p class="text-xs text-gray-500">Floor & wall tile estimator</p>
+                        </div>
+                    </a>
+                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📏</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Square Footage</h3>
+                            <p class="text-xs text-gray-500">Compute room surface area</p>
+                        </div>
+                    </a>
+                    <a href="feet-and-inches-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📐</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Feet & Inches to CM</h3>
+                            <p class="text-xs text-gray-500">Convert height and length</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How much wall area does 1 gallon of paint cover?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>One standard gallon of interior paint covers about <strong>350 to 400 square feet</strong> with one coat. One liter covers roughly <strong>10 square meters</strong>.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Why are 2 coats of paint recommended?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Two coats provide true color opacity, hide underlying patches or drywall seams, and create a durable, washable paint finish that lasts for years.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Is my room data saved?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>No. All calculations run strictly in your web browser with 100% privacy.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="md:col-span-2 space-y-4">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">Free, instant, and high-precision online calculators for home improvement, health, finance, and everyday math.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">Tile Calculator</a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">Square Footage</a></li>
+                    <li><a href="paint-calculator.html" class="text-green-400 font-bold">Paint Calculator</a></li>
+                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+            <p>&copy; 2026 MyMegaCalculator.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const roomLength = document.getElementById('roomLength');
+        const roomWidth = document.getElementById('roomWidth');
+        const roomHeight = document.getElementById('roomHeight');
+        const doorsCount = document.getElementById('doorsCount');
+        const windowsCount = document.getElementById('windowsCount');
+        const coatsCount = document.getElementById('coatsCount');
+        const canPrice = document.getElementById('canPrice');
+
+        const resCansCount = document.getElementById('resCansCount');
+        const resCanUnitText = document.getElementById('resCanUnitText');
+        const resExactVolume = document.getElementById('resExactVolume');
+        const resGrossArea = document.getElementById('resGrossArea');
+        const resNetArea = document.getElementById('resNetArea');
+        const resEstimatedCost = document.getElementById('resEstimatedCost');
+
+        function togglePaintUnit() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const lengthLabel = document.getElementById('lengthLabel');
+            const widthLabel = document.getElementById('widthLabel');
+            const heightLabel = document.getElementById('heightLabel');
+
+            if (unit === 'meters') {
+                lengthLabel.textContent = 'Room Length (m)';
+                widthLabel.textContent = 'Room Width (m)';
+                heightLabel.textContent = 'Ceiling Height (m)';
+                resCanUnitText.textContent = 'Liters';
+                roomLength.value = '4.5';
+                roomWidth.value = '3.5';
+                roomHeight.value = '2.7';
+            } else {
+                lengthLabel.textContent = 'Room Length (ft)';
+                widthLabel.textContent = 'Room Width (ft)';
+                heightLabel.textContent = 'Ceiling Height (ft)';
+                resCanUnitText.textContent = 'Gallons';
+                roomLength.value = '14';
+                roomWidth.value = '12';
+                roomHeight.value = '9';
+            }
+            calculatePaint();
+        }
+
+        function calculatePaint() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const l = parseFloat(roomLength.value) || 0;
+            const w = parseFloat(roomWidth.value) || 0;
+            const h = parseFloat(roomHeight.value) || 0;
+            const doors = parseInt(doorsCount.value) || 0;
+            const windows = parseInt(windowsCount.value) || 0;
+            const coats = parseInt(coatsCount.value) || 2;
+            const price = parseFloat(canPrice.value) || 0;
+
+            if (l <= 0 || w <= 0 || h <= 0) return;
+
+            const perimeter = 2 * (l + w);
+            const grossArea = perimeter * h;
+
+            let doorArea = 0;
+            let windowArea = 0;
+            let coveragePerUnit = 350; // 350 sq ft per gallon
+
+            if (unit === 'meters') {
+                doorArea = doors * 2.0; // 2 sq meters per door
+                windowArea = windows * 1.4; // 1.4 sq meters per window
+                coveragePerUnit = 10; // 10 sq meters per liter
+            } else {
+                doorArea = doors * 21; // 21 sq ft per door
+                windowArea = windows * 15; // 15 sq ft per window
+                coveragePerUnit = 350; // 350 sq ft per gallon
+            }
+
+            const netArea = Math.max(0, grossArea - doorArea - windowArea);
+            const totalAreaToCover = netArea * coats;
+            const exactVolume = totalAreaToCover / coveragePerUnit;
+            const cansNeeded = Math.ceil(exactVolume);
+
+            const areaUnit = unit === 'meters' ? 'm²' : 'sq ft';
+            const volUnit = unit === 'meters' ? 'liters' : 'gallons';
+
+            resGrossArea.textContent = `${grossArea.toFixed(1)} ${areaUnit}`;
+            resNetArea.textContent = `${netArea.toFixed(1)} ${areaUnit}`;
+            resExactVolume.textContent = `${exactVolume.toFixed(1)} ${volUnit}`;
+            resCansCount.textContent = cansNeeded;
+            resCanUnitText.textContent = unit === 'meters' ? 'Liters' : 'Gallons';
+
+            if (price > 0) {
+                const totalCost = cansNeeded * price;
+                resEstimatedCost.textContent = `$${totalCost.toFixed(2)}`;
+            } else {
+                resEstimatedCost.textContent = '$0.00';
+            }
+        }
+
+        [roomLength, roomWidth, roomHeight, doorsCount, windowsCount, coatsCount, canPrice].forEach(input => {
+            if (input) {
+                input.addEventListener('input', calculatePaint);
+                input.addEventListener('change', calculatePaint);
+            }
+        });
+
+        function resetPaintForm() {
+            roomLength.value = '14';
+            roomWidth.value = '12';
+            roomHeight.value = '9';
+            doorsCount.value = '1';
+            windowsCount.value = '2';
+            coatsCount.value = '2';
+            canPrice.value = '';
+            calculatePaint();
+        }
+
+        calculatePaint();
+    </script>
+</body>
+</html>

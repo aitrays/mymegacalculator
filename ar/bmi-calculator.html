@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>حاسبة مؤشر كتلة الجسم (BMI) - احسب وزنك المثالي مجاناً | MyMegaCalculator</title>
+    <meta name="description" content="احسب مؤشر كتلة الجسم (BMI) فوراً بالنظام المتري والإمبراطوري. تعرف على تصنيف وزنك ونطاق الوزن الصحي المثالي لطولك. 100% خاصة ومجانية.">
+    <meta name="keywords" content="حاسبة كتلة الجسم, حساب bmi, حاسبة الوزن المثالي, مؤشر كتلة الجسم, حاسبة الوزن الصحي, جدول bmi">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/ar/bmi-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/ar/bmi-calculator">
+    <meta property="og:title" content="حاسبة مؤشر كتلة الجسم (BMI) - احسب وزنك المثالي مجاناً">
+    <meta property="og:description" content="احسب مؤشر كتلة الجسم (BMI) فوراً بالنظام المتري والإمبراطوري. تعرف على تصنيف وزنك ونطاق الوزن الصحي المثالي لطولك.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="حاسبة مؤشر كتلة الجسم (BMI) - احسب وزنك المثالي">
+    <meta name="twitter:description" content="احسب مؤشر كتلة الجسم (BMI) فوراً بالنظام المتري والإمبراطوري مجاناً.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://mymegacalculator.com/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "حاسبة مؤشر كتلة الجسم",
+          "item": "https://mymegacalculator.com/ar/bmi-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "حاسبة مؤشر كتلة الجسم (BMI)",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "حاسبة مؤشر كتلة الجسم المجانية عبر الإنترنت بالنظام المتري والإمبراطوري مع معرفة نطاق الوزن الصحي المثالي وتصنيفات منظمة الصحة العالمية.",
+      "url": "https://mymegacalculator.com/ar/bmi-calculator",
+      "author": {
+        "@type": "Person",
+        "name": "Alex Morgan",
+        "url": "https://mymegacalculator.com/ar/author-alex-morgan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMegaCalculator",
+        "url": "https://mymegacalculator.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو المعدل الطبيعي لمؤشر كتلة الجسم (BMI)؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "وفقاً لمنظمة الصحة العالمية (WHO)، يعتبر مؤشر كتلة الجسم الطبيعي للبالغين بين 18.5 و 24.9. أقل من 18.5 يعتبر نقص في الوزن، ومن 25 إلى 29.9 زيادة في الوزن، و 30 فما فوق سمنة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يتم حساب مؤشر كتلة الجسم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "بالنظام المتري: مؤشر كتلة الجسم = الوزن (كجم) ÷ (الطول بالمتر × الطول بالمتر). بالنظام الإمبراطوري: BMI = (الوزن بالباوند × 703) ÷ (الطول بالبوصة) ²."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف أعرف وزني المثالي لطولي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "الوزن المثالي هو الذي يمنحك مؤشر كتلة جسم بين 18.5 و 24.9. تحسب أداتنا الحد الأدنى والأعلى لوزنك الصحي تلقائياً بناءً على طولك المدخل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل مؤشر كتلة الجسم دقيق للرياضيين؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا يفرق مؤشر BMI بين الكتلة العضلية والدهون. لأن العضلات أثقل وزناً وأكثر كثافة من الدهون، قد يظهر الرياضيون كأصحاب وزن زائد رغم انخفاض نسبة الدهون لديهم."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يتم حفظ بياناتي الصحية في الموقع؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا، جميع الحسابات تتم مباشرة داخل متصفحك. لا يتم تخزين أو نقل أي بيانات شخصية أو صحية إطلاقاً."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/bmi-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/bmi-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/bmi-calculator" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
+                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <div class="flex items-center gap-2 text-xs">
+                    <a href="../bmi-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                </div>
+            </nav>
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <div class="flex items-center gap-2 px-3 py-2">
+                    <a href="../bmi-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+            <ol class="flex items-center gap-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                        <span itemprop="name">الرئيسية</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="mx-2 text-gray-300">/</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <span itemprop="name" class="text-green-600 font-medium">حاسبة مؤشر كتلة الجسم (BMI)</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-8 space-y-2">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">الصحة واللياقة البدنية</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">حاسبة مؤشر كتلة الجسم (BMI) والوزن المثالي</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">احسب مؤشر كتلة جسمك بدقة، وتعرف على تصنيف وزنك ونطاق الوزن الصحي الموصى به لطولك.</p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
+
+            <!-- Unit Selector -->
+            <div class="flex justify-center gap-6 border-b border-gray-100 pb-4">
+                <label class="inline-flex items-center cursor-pointer gap-2">
+                    <input type="radio" name="unitType" value="metric" class="text-green-600 focus:ring-green-500 h-4 w-4" checked onchange="toggleUnit()">
+                    <span class="text-sm font-bold text-gray-700">النظام المتري (كجم، سم)</span>
+                </label>
+                <label class="inline-flex items-center cursor-pointer gap-2">
+                    <input type="radio" name="unitType" value="imperial" class="text-green-600 focus:ring-green-500 h-4 w-4" onchange="toggleUnit()">
+                    <span class="text-sm font-bold text-gray-700">النظام الإمبراطوري (باوند، قدم/بوصة)</span>
+                </label>
+            </div>
+
+            <form id="bmiForm" onsubmit="return false;" class="space-y-6">
+
+                <!-- Metric Inputs -->
+                <div id="metricInputs" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="heightCm" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">الطول (سنتيمتر - cm)</label>
+                        <input type="number" id="heightCm" placeholder="مثال: 175" min="50" max="260" step="0.5" value="175" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                    <div>
+                        <label for="weightKg" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">الوزن (كيلوجرام - kg)</label>
+                        <input type="number" id="weightKg" placeholder="مثال: 70" min="20" max="300" step="0.1" value="70" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                </div>
+
+                <!-- Imperial Inputs -->
+                <div id="imperialInputs" class="hidden space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="heightFeet" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">الطول (قدم - ft)</label>
+                            <input type="number" id="heightFeet" placeholder="مثال: 5" min="2" max="8" value="5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                        </div>
+                        <div>
+                            <label for="heightInches" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">الطول (بوصة - in)</label>
+                            <input type="number" id="heightInches" placeholder="مثال: 9" min="0" max="11" value="9" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="weightLbs" class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">الوزن (رطل / باوند - lbs)</label>
+                        <input type="number" id="weightLbs" placeholder="مثال: 154" min="40" max="700" step="0.5" value="154" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                </div>
+
+                <!-- Demographics -->
+                <div class="grid grid-cols-2 gap-4 pt-2 border-t border-gray-100">
+                    <div>
+                        <label for="userAge" class="block text-xs font-bold text-gray-500 mb-1">العمر (اختياري)</label>
+                        <input type="number" id="userAge" placeholder="مثال: 28" min="2" max="120" value="28" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-800 text-right">
+                    </div>
+                    <div>
+                        <label for="userGender" class="block text-xs font-bold text-gray-500 mb-1">الجنس</label>
+                        <select id="userGender" class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm text-gray-800 bg-white">
+                            <option value="unspecified">عام / غير محدد</option>
+                            <option value="male">ذكر</option>
+                            <option value="female">أنثى</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Results Display Box -->
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-5 shadow-lg" aria-live="polite" aria-atomic="true">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-green-400">نتائج مؤشر كتلة الجسم</h3>
+                        <span id="bmiCategoryBadge" class="text-xs font-extrabold px-3 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30">وزن طبيعي</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-right">
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">مؤشر كتلة جسمك (BMI)</span>
+                            <span id="bmiScoreResult" class="text-3xl font-black text-white">22.9</span> <span class="text-xs text-green-400">كجم/م²</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">التصنيف الصحي</span>
+                            <span id="bmiCategoryText" class="text-xl font-bold text-green-400">وزن طبيعي</span>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+                            <span class="text-xs text-gray-400 block mb-1">نطاق الوزن الصحي المثالي</span>
+                            <span id="healthyWeightResult" class="text-lg font-black text-white">56.7 - 76.3 كجم</span>
+                        </div>
+                    </div>
+
+                    <!-- BMI Gauge Bar -->
+                    <div class="space-y-1.5 pt-2">
+                        <div class="flex justify-between text-[11px] text-gray-400 font-semibold">
+                            <span class="text-blue-400">نقص وزن (&lt;18.5)</span>
+                            <span class="text-green-400">طبيعي (18.5-24.9)</span>
+                            <span class="text-yellow-400">زيادة وزن (25-29.9)</span>
+                            <span class="text-red-400">سمنة (30+)</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden flex relative">
+                            <div class="w-[20%] bg-blue-500 h-full"></div>
+                            <div class="w-[30%] bg-green-500 h-full"></div>
+                            <div class="w-[25%] bg-yellow-500 h-full"></div>
+                            <div class="w-[25%] bg-red-500 h-full"></div>
+                            <!-- Marker Indicator -->
+                            <div id="bmiGaugeMarker" class="absolute top-0 bottom-0 w-2 bg-white rounded-full shadow-md transform -translate-x-1/2 transition-all duration-300" style="right: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <button type="button" onclick="resetBmiForm()" class="text-xs font-bold text-gray-500 hover:text-red-500 transition py-1 px-3 rounded-lg hover:bg-red-50">إعادة تعيين</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Content Section (SEO & Educational) -->
+        <div class="mt-12 space-y-8">
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">ما هو مؤشر كتلة الجسم (BMI) وكيف يعمل؟</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
+                    مؤشر كتلة الجسم (Body Mass Index) هو مقياس إحصائي معتمد دولياً من قبل <strong>منظمة الصحة العالمية (WHO)</strong> والمراكز الطبية لتقييم ما إذا كان وزن الشخص مناسباً وصحياً بالنسبة لطوله.
+                </p>
+
+                <!-- BMI Categories Table -->
+                <div class="overflow-x-auto pt-2">
+                    <table class="w-full text-sm text-right border-collapse">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-200 text-gray-700 font-bold">
+                                <th class="p-3">التصنيف</th>
+                                <th class="p-3">نطاق BMI (كجم/م²)</th>
+                                <th class="p-3">المؤشر الصحي</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-gray-600">
+                            <tr>
+                                <td class="p-3 font-semibold text-blue-600">نقص في الوزن (نحافة)</td>
+                                <td class="p-3">&lt; 18.5</td>
+                                <td class="p-3">احتمال نقص التغذية أو مشاكل صحية</td>
+                            </tr>
+                            <tr class="bg-green-50/50">
+                                <td class="p-3 font-semibold text-green-700">وزن صحي وطبيعي</td>
+                                <td class="p-3">18.5 – 24.9</td>
+                                <td class="p-3">أقل خطر للإصابة بالأمراض المرتبطة بالوزن</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-yellow-600">زيادة في الوزن</td>
+                                <td class="p-3">25.0 – 29.9</td>
+                                <td class="p-3">خطر معتدل لأمراض القلب وارتفاع الضغط</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-red-600">سمنة (الدرجة الأولى)</td>
+                                <td class="p-3">30.0 – 34.9</td>
+                                <td class="p-3">ارتفاع خطر متلازمة الأيض والسكري</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold text-red-700">سمنة مفرطة (الدرجة الثانية والثالثة)</td>
+                                <td class="p-3">35.0+</td>
+                                <td class="p-3">خطر مرتفع جداً لمضاعفات صحية مزمنة</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-lg font-bold text-gray-900 pt-3">معادلات حساب مؤشر كتلة الجسم</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
+                        <strong class="text-gray-900 block">المعادلة المترية:</strong>
+                        <p class="font-mono text-green-700">BMI = الوزن (كجم) ÷ [الطول (متر)]²</p>
+                        <p class="text-xs text-gray-500">مثال: 70 كجم ÷ (1.75 × 1.75) = 22.86 كجم/م²</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
+                        <strong class="text-gray-900 block">المعادلة الإمبراطورية:</strong>
+                        <p class="font-mono text-green-700">BMI = 703 × الوزن (باوند) ÷ [الطول (بوصة)]²</p>
+                        <p class="text-xs text-gray-500">مثال: 703 × 154 ÷ (69 × 69) = 22.74</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Calculators -->
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">حاسبات ذات صلة</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="calorie-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">🔥</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة السعرات الحرارية</h3>
+                            <p class="text-xs text-gray-500">حساب الاحتياج اليومي و TDEE</p>
+                        </div>
+                    </a>
+                    <a href="weight-converter.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">⚖️</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">محول الأوزان</h3>
+                            <p class="text-xs text-gray-500">تحويل بين كجم، باوند، وجرام</p>
+                        </div>
+                    </a>
+                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">📊</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة النسبة المئوية</h3>
+                            <p class="text-xs text-gray-500">حساب الزيادة والنقصان والخصم</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">الأسئلة الشائعة</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>ما هو المعدل الطبيعي لمؤشر كتلة الجسم؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>وفقاً لمنظمة الصحة العالمية، يتراوح المعدل الطبيعي للبالغين بين <strong>18.5 و 24.9</strong>. وتعتبر هذه النسبة الأقل خطورة من الناحية الصحية.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>كيف يتم حساب الوزن المثالي؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>الوزن المثالي هو المدى الوزني الذي يمنحك مؤشر BMI بين 18.5 و 24.9. تقوم حاسبتنا بحساب الحدين الأدنى والأعلى تلقائياً بناءً على طولك.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>هل مؤشر كتلة الجسم دقيق للاعبي كمال الأجسام؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>مؤشر BMI لا يفرق بين وزن العضلات والدهون. لأن العضلات كثيفة وذات وزن عالي، قد يظهر الرياضيون ضمن فئة الوزن الزائد دون أن يعانوا من أي دهون زائدة.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>هل يتم تخزين أي بيانات عند الحساب؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>لا، الحساب يتم بالكامل داخل متصفحك ولا نطلب أو نخزن أي معلومات شخصية على الإطلاق.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="md:col-span-2 space-y-4">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">حاسبات مجانية فورية وعالية الدقة للتحسين المنزلي والصحة والمالية والحسابات اليومية.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="bmi-calculator.html" class="text-green-400 font-bold">حاسبة مؤشر كتلة الجسم</a></li>
+                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">حاسبة العمر</a></li>
+                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">حاسبة القروض</a></li>
+                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">حاسبة السعرات الحرارية</a></li>
+                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition">من نحن</a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition">المدونة</a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+            <p>&copy; 2026 MyMegaCalculator.com. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const heightCm = document.getElementById('heightCm');
+        const weightKg = document.getElementById('weightKg');
+        const heightFeet = document.getElementById('heightFeet');
+        const heightInches = document.getElementById('heightInches');
+        const weightLbs = document.getElementById('weightLbs');
+
+        const bmiScoreResult = document.getElementById('bmiScoreResult');
+        const bmiCategoryText = document.getElementById('bmiCategoryText');
+        const bmiCategoryBadge = document.getElementById('bmiCategoryBadge');
+        const healthyWeightResult = document.getElementById('healthyWeightResult');
+        const bmiGaugeMarker = document.getElementById('bmiGaugeMarker');
+
+        function toggleUnit() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const metricInputs = document.getElementById('metricInputs');
+            const imperialInputs = document.getElementById('imperialInputs');
+
+            if (unit === 'imperial') {
+                metricInputs.classList.add('hidden');
+                imperialInputs.classList.remove('hidden');
+            } else {
+                metricInputs.classList.remove('hidden');
+                imperialInputs.classList.add('hidden');
+            }
+            calculateBmi();
+        }
+
+        function calculateBmi() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            let weightInKg = 0;
+            let heightInM = 0;
+
+            if (unit === 'metric') {
+                const cm = parseFloat(heightCm.value) || 0;
+                const kg = parseFloat(weightKg.value) || 0;
+                if (cm <= 0 || kg <= 0) return;
+                heightInM = cm / 100;
+                weightInKg = kg;
+            } else {
+                const ft = parseFloat(heightFeet.value) || 0;
+                const inches = parseFloat(heightInches.value) || 0;
+                const lbs = parseFloat(weightLbs.value) || 0;
+                const totalInches = (ft * 12) + inches;
+                if (totalInches <= 0 || lbs <= 0) return;
+                heightInM = totalInches * 0.0254;
+                weightInKg = lbs * 0.45359237;
+            }
+
+            if (heightInM <= 0 || weightInKg <= 0) return;
+
+            const bmi = weightInKg / (heightInM * heightInM);
+            bmiScoreResult.textContent = bmi.toFixed(1);
+
+            // Healthy Weight Range (BMI 18.5 to 24.9)
+            const minHealthyKg = 18.5 * (heightInM * heightInM);
+            const maxHealthyKg = 24.9 * (heightInM * heightInM);
+
+            if (unit === 'metric') {
+                healthyWeightResult.textContent = `${minHealthyKg.toFixed(1)} - ${maxHealthyKg.toFixed(1)} كجم`;
+            } else {
+                const minHealthyLbs = minHealthyKg * 2.20462;
+                const maxHealthyLbs = maxHealthyKg * 2.20462;
+                healthyWeightResult.textContent = `${minHealthyLbs.toFixed(1)} - ${maxHealthyLbs.toFixed(1)} باوند`;
+            }
+
+            // Categories & Gauge Marker position (for RTL, position from right or left)
+            let category = 'وزن طبيعي';
+            let badgeClass = 'bg-green-500/20 text-green-400 border border-green-500/30';
+            let markerPos = 40; // in %
+
+            if (bmi < 18.5) {
+                category = 'نقص في الوزن (نحافة)';
+                badgeClass = 'bg-blue-500/20 text-blue-400 border border-blue-500/30';
+                markerPos = Math.max(5, (bmi / 18.5) * 20);
+            } else if (bmi < 25) {
+                category = 'وزن طبيعي وصحي';
+                badgeClass = 'bg-green-500/20 text-green-400 border border-green-500/30';
+                markerPos = 20 + ((bmi - 18.5) / (25 - 18.5)) * 30;
+            } else if (bmi < 30) {
+                category = 'زيادة في الوزن';
+                badgeClass = 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30';
+                markerPos = 50 + ((bmi - 25) / (30 - 25)) * 25;
+            } else {
+                category = 'سمنة';
+                badgeClass = 'bg-red-500/20 text-red-400 border border-red-500/30';
+                markerPos = Math.min(95, 75 + ((bmi - 30) / 15) * 20);
+            }
+
+            bmiCategoryText.textContent = category;
+            bmiCategoryBadge.textContent = category;
+            bmiCategoryBadge.className = `text-xs font-extrabold px-3 py-1 rounded-full ${badgeClass}`;
+            bmiGaugeMarker.style.right = `${markerPos}%`;
+        }
+
+        [heightCm, weightKg, heightFeet, heightInches, weightLbs].forEach(input => {
+            if (input) input.addEventListener('input', calculateBmi);
+        });
+
+        function resetBmiForm() {
+            heightCm.value = '175';
+            weightKg.value = '70';
+            heightFeet.value = '5';
+            heightInches.value = '9';
+            weightLbs.value = '154';
+            calculateBmi();
+        }
+
+        calculateBmi();
+    </script>
+</body>
+</html>

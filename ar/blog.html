@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,23 @@
     <title>المدونة - MyMegaCalculator | أدلة ونصائح وإرشادات</title>
     <meta name="description" content="اقرأ الأدلة الخبيرة حول رياضيات التحسين المنزلي وحسابات النسب المئوية وتحويل الوحدات ونصائح الحاسبة من فريق MyMegaCalculator.">
     <meta name="keywords" content="مدونة حاسبة, نصائح تحسين منزلي, أدلة رياضية, نصائح تحويل وحدات, رياضيات DIY">
-    <script src="https://cdn.tailwindcss.com"></script>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
-    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/blog.html" />
-    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/blog.html" />
-    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/blog.html" />
+    <link rel="canonical" href="https://mymegacalculator.com/ar/blog" />
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/blog" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/blog" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/blog" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/ar/blog">
+    <meta property="og:title" content="المدونة - MyMegaCalculator | أدلة ونصائح وإرشادات">
+    <meta property="og:description" content="اقرأ الأدلة الخبيرة حول رياضيات التحسين المنزلي وحسابات النسب المئوية وتحويل الوحدات ونصائح الحاسبة.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="المدونة - MyMegaCalculator">
+    <meta name="twitter:description" content="أدلة خبيرة ونصائح عملية وتحليلات عميقة للرياضيات وراء الحسابات اليومية.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"مدونة MyMegaCalculator","url":"https://mymegacalculator.com/ar/blog","description":"أدلة خبيرة ونصائح عملية وتحليلات عميقة للرياضيات وراء الحسابات اليومية."}</script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
-
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 group">
@@ -30,10 +39,21 @@
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
                 </div>
             </nav>
-        
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg bg-green-50 text-green-700 font-semibold text-sm">المدونة</a>
+                <div class="flex items-center gap-2 px-3 py-2">
+                    <a href="../blog.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                </div>
+            </div>
         </div>
     </header>
-
     <section class="bg-gradient-to-b from-green-50/80 to-transparent py-16 px-4 text-center">
         <div class="max-w-3xl mx-auto space-y-4">
             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">أدلة ونصائح</span>
@@ -41,10 +61,8 @@
             <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">أدلة خبيرة ونصائح عملية وتحليلات عميقة للرياضيات وراء الحسابات اليومية.</p>
         </div>
     </section>
-
     <main class="max-w-6xl mx-auto px-4 py-8 w-full">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             <a href="blog-square-footage-guide.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <span class="text-xs font-bold text-green-600 uppercase tracking-wider">التحسين المنزلي</span>
@@ -54,11 +72,10 @@
                 <div class="pt-6 flex items-center justify-between">
                     <span class="text-xs text-gray-400">8 دقيقة قراءة</span>
                     <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>اقرأ المزيد</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                        <span>اقرأ المزيد</span> <span class="mr-1 group-hover:-translate-x-1 transition-transform">←</span>
                     </span>
                 </div>
             </a>
-
             <a href="blog-tile-buying-guide.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <span class="text-xs font-bold text-green-600 uppercase tracking-wider">الأرضيات والتجديد</span>
@@ -68,11 +85,10 @@
                 <div class="pt-6 flex items-center justify-between">
                     <span class="text-xs text-gray-400">9 دقيقة قراءة</span>
                     <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>اقرأ المزيد</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                        <span>اقرأ المزيد</span> <span class="mr-1 group-hover:-translate-x-1 transition-transform">←</span>
                     </span>
                 </div>
             </a>
-
             <a href="blog-percentage-guide.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <span class="text-xs font-bold text-green-600 uppercase tracking-wider">المالية والرياضيات</span>
@@ -82,11 +98,10 @@
                 <div class="pt-6 flex items-center justify-between">
                     <span class="text-xs text-gray-400">10 دقيقة قراءة</span>
                     <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>اقرأ المزيد</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                        <span>اقرأ المزيد</span> <span class="mr-1 group-hover:-translate-x-1 transition-transform">←</span>
                     </span>
                 </div>
             </a>
-
             <a href="blog-weight-conversion-guide.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <span class="text-xs font-bold text-green-600 uppercase tracking-wider">تحويل الوحدات</span>
@@ -96,11 +111,10 @@
                 <div class="pt-6 flex items-center justify-between">
                     <span class="text-xs text-gray-400">8 دقيقة قراءة</span>
                     <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>اقرأ المزيد</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                        <span>اقرأ المزيد</span> <span class="mr-1 group-hover:-translate-x-1 transition-transform">←</span>
                     </span>
                 </div>
             </a>
-
             <a href="blog-feet-inches-guide.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <span class="text-xs font-bold text-green-600 uppercase tracking-wider">دليل القياس</span>
@@ -110,14 +124,12 @@
                 <div class="pt-6 flex items-center justify-between">
                     <span class="text-xs text-gray-400">7 دقيقة قراءة</span>
                     <span class="inline-flex items-center text-sm font-bold text-green-600 group-hover:text-green-700">
-                        <span>اقرأ المزيد</span> <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                        <span>اقرأ المزيد</span> <span class="mr-1 group-hover:-translate-x-1 transition-transform">←</span>
                     </span>
                 </div>
             </a>
-
         </div>
     </main>
-
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-16 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
@@ -132,26 +144,31 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">• Square Footage</a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition">• Weight Converter</a></li>
+                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
+                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
+                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة</h4>
-                <ul class="space-y-2.5 text-sm text-gray-400"><ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
-                </ul></ul>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                </ul>
             </div>
         </div>
         <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
             <p>&copy; 2026 MyMegaCalculator.com. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

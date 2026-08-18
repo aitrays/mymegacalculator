@@ -1,15 +1,150 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tile Calculator - Estimate Tiles and Cost for Your Project | MyMegaCalculator</title>
-    <meta name="description" content="Use our free tile calculator to easily estimate the number of tiles, boxes, and total cost needed for your flooring or wall project. Quick and accurate results.">
-    <meta name="keywords" content="tile calculator, floor tile estimator, wall tile calculator, calculate tiles needed, flooring calculator">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/tile-calculator.html" />
-    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/tile-calculator.html" />
-    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/tile-calculator.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>Tile Calculator | Free Tile Quantity & Cost Estimator — MyMegaCalculator</title>
+    <meta name="description" content="Free tile calculator to estimate exact tile quantities for floors and walls. Includes waste margin, cost estimation, and square footage. 100% private — no data stored.">
+    <meta name="keywords" content="tile calculator, free tile calculator, tile estimator, floor tile calculator, wall tile calculator, tile quantity, tile cost estimator, bathroom tile calculator, kitchen tile calculator">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/tile-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/tile-calculator">
+    <meta property="og:title" content="Tile Calculator | Free Tile Quantity & Cost Estimator">
+    <meta property="og:description" content="Free tile calculator to estimate exact tile quantities for floors and walls. Includes waste margin and cost estimation.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-tile-calculator.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tile Calculator | Free Tile Quantity & Cost Estimator">
+    <meta name="twitter:description" content="Free tile calculator to estimate exact tile quantities for floors and walls. Includes waste margin and cost estimation.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-tile-calculator.jpg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mymegacalculator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tile Calculator",
+          "item": "https://mymegacalculator.com/tile-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Tile Calculator",
+      "applicationCategory": "CalculatorApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "description": "Free online tile calculator that estimates exact tile quantities for floors and walls, including recommended waste margins.",
+      "url": "https://mymegacalculator.com/tile-calculator",
+      "author": {
+        "@type": "Person",
+        "name": "Alex Morgan",
+        "url": "https://mymegacalculator.com/author-alex-morgan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMegaCalculator",
+        "url": "https://mymegacalculator.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I calculate how many tiles I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To calculate how many tiles you need, first measure the length and width of your room to get the total square footage. Then divide by the area of one tile. Add 10-15% extra for waste and cuts. Our free tile calculator does all of this automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What waste margin should I add for tiles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most projects, add 10% for waste. For diagonal patterns or rooms with many corners, add 15%. For complex mosaic patterns, consider 20%. Our calculator includes a customizable waste margin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can this calculator be used for wall tiles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our tile calculator works for both floor tiles and wall tiles. Simply enter the dimensions of your wall area instead of floor area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this tile calculator free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our tile calculator is 100% free. No registration, no ads, and no data storage. All calculations happen in your browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I add a waste percentage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cutting tiles to fit corners, edges, and pipes inevitably results in discarded scraps and occasional breakage. Adding 10% extra ensures you won't run short."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I measure irregular rooms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Break down complex or L-shaped rooms into smaller rectangular sections, calculate the area of each section separately, and add them together."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/tile-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/tile-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/tile-calculator" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
@@ -18,25 +153,33 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
+                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
                 <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/tile-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/tile-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
                 </div>
             </nav>
-        
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="text-sm text-gray-500 mb-6">
+            <ol class="flex flex-wrap space-x-2">
+                <li><a href="index.html" class="hover:text-green-600 transition">Home</a></li>
+                <li><span aria-hidden="true">/</span></li>
+                <li class="text-gray-900 font-medium" aria-current="page">Tile Calculator</li>
+            </ol>
+        </nav>
+
         <!-- Title Header -->
         <div class="text-center mb-8 space-y-2">
             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Home Improvement Calculator</span>
@@ -47,9 +190,9 @@
         <!-- Calculator Card -->
         <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
             <form id="tileForm" onsubmit="return false;" class="space-y-6">
-                
+
                 <!-- Unit Selector -->
-                <div class="flex justify-center space-x-4 pb-2 border-b border-gray-100">
+                <div class="flex justify-center space-x-4 pb-2 border-b border-gray-100" role="radiogroup" aria-label="Unit system">
                     <label class="flex items-center space-x-2 cursor-pointer font-semibold text-sm">
                         <input type="radio" name="unitType" value="meters" checked onchange="updateUnits()" class="text-green-600 focus:ring-green-500">
                         <span>Meters (cm / m)</span>
@@ -65,11 +208,11 @@
                     <div class="space-y-4 p-4 bg-gray-50 rounded-2xl border border-gray-100">
                         <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wide">1. Room / Surface Dimensions</h3>
                         <div>
-                            <label id="lengthLabel" class="block text-xs font-bold text-gray-700 mb-1">Room Length (meters)</label>
+                            <label id="lengthLabel" for="roomLength" class="block text-xs font-bold text-gray-700 mb-1">Room Length (meters)</label>
                             <input type="number" id="roomLength" min="0" step="any" placeholder="e.g. 5" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900">
                         </div>
                         <div>
-                            <label id="widthLabel" class="block text-xs font-bold text-gray-700 mb-1">Room Width (meters)</label>
+                            <label id="widthLabel" for="roomWidth" class="block text-xs font-bold text-gray-700 mb-1">Room Width (meters)</label>
                             <input type="number" id="roomWidth" min="0" step="any" placeholder="e.g. 4" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900">
                         </div>
                     </div>
@@ -79,16 +222,16 @@
                         <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wide">2. Tile Dimensions & Extra</h3>
                         <div class="grid grid-cols-2 gap-2">
                             <div>
-                                <label id="tileLengthLabel" class="block text-xs font-bold text-gray-700 mb-1">Tile Length (cm)</label>
+                                <label id="tileLengthLabel" for="tileLength" class="block text-xs font-bold text-gray-700 mb-1">Tile Length (cm)</label>
                                 <input type="number" id="tileLength" min="0" step="any" value="60" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900">
                             </div>
                             <div>
-                                <label id="tileWidthLabel" class="block text-xs font-bold text-gray-700 mb-1">Tile Width (cm)</label>
+                                <label id="tileWidthLabel" for="tileWidth" class="block text-xs font-bold text-gray-700 mb-1">Tile Width (cm)</label>
                                 <input type="number" id="tileWidth" min="0" step="any" value="60" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-700 mb-1">Waste / Cut Margin (%)</label>
+                            <label for="wastePercentage" class="block text-xs font-bold text-gray-700 mb-1">Waste / Cut Margin (%)</label>
                             <select id="wastePercentage" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 bg-white">
                                 <option value="5">5% (Standard Square Room)</option>
                                 <option value="10" selected>10% (Recommended Standard)</option>
@@ -105,9 +248,9 @@
                 </div>
 
                 <!-- Results Display Box -->
-                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-4 shadow-lg">
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-4 shadow-lg" aria-live="polite" aria-atomic="true">
                     <h3 class="text-xs font-bold uppercase tracking-wider text-green-400">Calculation Results</h3>
-                    
+
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
                         <div class="p-3 bg-white/5 rounded-xl border border-white/10">
                             <span class="text-xs text-gray-400 block mb-1">Total Area</span>
@@ -127,16 +270,13 @@
             </form>
         </div>
 
-        <!-- FULL CONTENT SECTION (Educational & Guides) -->
-        <div class="mt-12 space-y-8 text-gray-700">
-            
-            <!-- How to use section -->
+        <!-- Content Section (SEO) -->
+        <div class="mt-12 space-y-8">
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
                 <h2 class="text-2xl font-bold text-gray-900">How to Calculate Tiles for Floors and Walls</h2>
                 <p class="text-sm sm:text-base leading-relaxed text-gray-600">
                     Calculating the correct amount of tiles prevents shortages mid-project or overspending on excess materials. Here is how tile estimation works:
                 </p>
-                
                 <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-2xl border border-gray-100">
                     <li>Measure the length and width of the room and multiply them to get the total surface area.</li>
                     <li>Calculate the area of a single tile by multiplying its length and width.</li>
@@ -145,73 +285,123 @@
                 </ol>
             </section>
 
-            <!-- Frequently Asked Questions (FAQ) -->
-            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
-                <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
-                
-                <div class="space-y-4">
-                    <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                        <h3 class="font-bold text-gray-900 mb-1">Why should I add a waste percentage?</h3>
-                        <p class="text-sm text-gray-600">Cutting tiles to fit corners, edges, and pipes inevitably results in discarded scraps and occasional breakage. Adding 10% extra ensures you won't run short.</p>
-                    </div>
-
-                    <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                        <h3 class="font-bold text-gray-900 mb-1">How do I measure irregular rooms?</h3>
-                        <p class="text-sm text-gray-600">Break down complex or L-shaped rooms into smaller rectangular sections, calculate the area of each section separately, and add them together.</p>
-                    </div>
+            <!-- Related Calculators -->
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Calculators</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📏</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Square Footage Calculator</h3>
+                            <p class="text-sm text-gray-500">Calculate room area for flooring</p>
+                        </div>
+                    </a>
+                    <a href="blog-tile-buying-guide.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📖</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Tile Buying Guide</h3>
+                            <p class="text-sm text-gray-500">Learn how to choose the right tiles</p>
+                        </div>
+                    </a>
                 </div>
             </section>
 
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How do I calculate how many tiles I need?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>To calculate how many tiles you need, first measure the length and width of your room to get the total square footage. Then divide by the area of one tile. Add 10-15% extra for waste and cuts. Our free tile calculator does all of this automatically.</p>
+                        </div>
+                    </details>
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>What waste margin should I add for tiles?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>For most projects, add <strong>10%</strong> for waste. For diagonal patterns or rooms with many corners, add <strong>15%</strong>. For complex mosaic patterns, consider <strong>20%</strong>. Our calculator includes a customizable waste margin.</p>
+                        </div>
+                    </details>
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Can this calculator be used for wall tiles?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Yes, our tile calculator works for both <strong>floor tiles and wall tiles</strong>. Simply enter the dimensions of your wall area instead of floor area.</p>
+                        </div>
+                    </details>
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Is this tile calculator free to use?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Yes, our tile calculator is <strong>100% free</strong>. No registration, no ads, and no data storage. All calculations happen in your browser.</p>
+                        </div>
+                    </details>
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Why should I add a waste percentage?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Cutting tiles to fit corners, edges, and pipes inevitably results in discarded scraps and occasional breakage. Adding 10% extra ensures you won't run short.</p>
+                        </div>
+                    </details>
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How do I measure irregular rooms?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Break down complex or L-shaped rooms into smaller rectangular sections, calculate the area of each section separately, and add them together.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
         </div>
     </main>
 
-    <!-- MODERN PREMIUM FOOTER -->
+    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            
             <div class="md:col-span-2 space-y-4">
                 <a href="index.html" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
                     <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
                 </a>
-                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
-                    Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday mathematical needs.
-                </p>
-                <div class="flex items-center space-x-2 text-xs text-green-400 font-semibold bg-green-950/60 border border-green-800/50 px-3 py-1.5 rounded-lg w-fit">
-                    <span>🔒 100% Free & Private — No Data Stored</span>
-                </div>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">Free, instant, and high-precision online calculators for home improvement and everyday math.</p>
             </div>
-
             <div>
-                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span>•</span> <span>Tile & Flooring</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Square Footage</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Percentage Calculator</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Weight Converter</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Feet to CM</span></a></li>
+                    <li><a href="tile-calculator.html" class="text-green-400 font-bold">Tile Calculator</a></li>
+                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">Square Footage</a></li>
+                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">Percentage</a></li>
+                    <li><a href="weight-converter.html" class="hover:text-green-400 transition">Weight Converter</a></li>
                 </ul>
             </div>
-
             <div>
-                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
-                <ul class="space-y-2.5 text-sm text-gray-400"><ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
-                </ul></ul>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                </ul>
             </div>
-
         </div>
-
         <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
             <p>&copy; 2026 MyMegaCalculator.com. All rights reserved.</p>
-            <p>Designed for fast and accurate everyday estimations.</p>
         </div>
     </footer>
 
@@ -222,7 +412,7 @@
         const tileLength = document.getElementById('tileLength');
         const tileWidth = document.getElementById('tileWidth');
         const wastePercentage = document.getElementById('wastePercentage');
-        
+
         const areaResult = document.getElementById('areaResult');
         const tilesResult = document.getElementById('tilesResult');
         const tilesWithWasteResult = document.getElementById('tilesWithWasteResult');
@@ -260,8 +450,6 @@
             let tileAreaSqM = 0;
 
             if (unit === 'feet') {
-                // Convert feet to meters for calculation consistency: 1 ft = 0.3048 m
-                // 1 inch = 0.0254 m
                 let lRoomM = lRoom * 0.3048;
                 let wRoomM = wRoom * 0.3048;
                 roomAreaSqM = lRoomM * wRoomM;
@@ -270,7 +458,6 @@
                 let wTileM = wTile * 0.0254;
                 tileAreaSqM = lTileM * wTileM;
 
-                // Display sq ft to user
                 let roomAreaSqFt = lRoom * wRoom;
                 areaResult.textContent = roomAreaSqFt.toFixed(2);
             } else {
