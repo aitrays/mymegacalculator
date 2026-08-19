@@ -1,0 +1,54 @@
+/* Shared mobile layout refinements */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+img, table, pre, iframe { max-width: 100%; }
+article, section, main, .content-section { min-width: 0; overflow-wrap: anywhere; }
+article p, article li, .content-section p, .content-section li { max-width: 70ch; }
+.content-section { margin-top: 1.5rem; padding: 1.5rem; border: 1px solid #f3f4f6; border-radius: 1.25rem; background: #ffffff; box-shadow: 0 10px 24px rgba(15, 23, 42, .06); }
+.max-w-4xl > section:not([class]) { margin-top: 2.5rem; padding: 1.5rem 2rem; border: 1px solid #f3f4f6; border-radius: 1.5rem; background: #ffffff; box-shadow: 0 10px 24px rgba(15, 23, 42, .06); }
+.max-w-4xl > section:not([class]) h2 { margin-top: 0; margin-bottom: .75rem; color: #17221c; font-size: 1.5rem; line-height: 1.35; font-weight: 800; }
+.max-w-4xl > section:not([class]) h3 { margin-top: 1.25rem; margin-bottom: .5rem; color: #166534; font-size: 1.15rem; line-height: 1.45; font-weight: 800; }
+.article .content-section, article .content-section { margin-top: 1.75rem; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.content-section h2, .content-section h3 { margin-top: 0; margin-bottom: .75rem; }
+article h2:not([class]), article .content-section h2 { margin-top: 1.75rem; margin-bottom: .75rem; color: #17221c; font-size: 1.5rem; line-height: 1.35; font-weight: 800; }
+article h3:not([class]), article .content-section h3 { margin-top: 1.25rem; margin-bottom: .5rem; color: #166534; font-size: 1.15rem; line-height: 1.45; font-weight: 800; }
+article > :first-child { margin-top: 0; }
+article p + h2, article ul + h2, article table + h2 { border-top: 1px solid #e5e7eb; padding-top: 1.25rem; }
+main > .text-center > p:has(a[href*="author-alex-morgan"]), article > p:has(a[href*="author-alex-morgan"]) { font-size: 0; }
+main > .text-center > p:has(a[href*="author-alex-morgan"])::after { content: "August 19, 2026 · Reading guide"; font-size: .875rem; }
+article > p:has(a[href*="author-alex-morgan"])::after { content: "Last updated August 19, 2026."; font-size: .875rem; }
+html[lang="ar"] main > .text-center > p:has(a[href*="author-alex-morgan"])::after { content: "19 أغسطس 2026 · دليل للقراءة"; }
+html[lang="ar"] article > p:has(a[href*="author-alex-morgan"])::after { content: "آخر تحديث: 19 أغسطس 2026."; }
+[aria-live] .grid { align-items: stretch; }
+[aria-live] .grid > div { min-width: 0; display: flex; flex-direction: column; justify-content: center; overflow-wrap: anywhere; }
+[aria-live] .grid > div > span, [aria-live] .grid > div > div { min-width: 0; overflow-wrap: anywhere; }
+.max-w-6xl.mx-auto.px-4.py-4 nav { display: flex; align-items: center; gap: .75rem; white-space: nowrap; }
+.max-w-6xl.mx-auto.px-4.py-4 nav a, .max-w-6xl.mx-auto.px-4.py-4 nav span { display: inline-flex; align-items: center; min-height: 2rem; }
+main > article + .content-section { margin-top: 0; border-top: 0; border-radius: 0 0 1.5rem 1.5rem; }
+main > article:has(+ .content-section) { margin-bottom: 0; border-radius: 1.5rem 1.5rem 0 0; box-shadow: none; }
+
+@media (max-width: 767px) {
+  header > div:first-child { min-height: 64px; padding-top: .65rem; padding-bottom: .65rem; }
+  header a span.text-2xl { font-size: 1.05rem; line-height: 1.1; }
+  header a .w-10 { width: 2.35rem; height: 2.35rem; }
+  header a .w-10 svg { width: 1.35rem; height: 1.35rem; }
+  header nav { gap: .5rem; }
+  .max-w-6xl.mx-auto.px-4.py-4 nav { gap: .45rem; font-size: .82rem; }
+  #mobileMenu { box-shadow: 0 12px 24px rgba(15, 23, 42, .08); }
+  #mobileMenu > div { padding-top: .5rem; padding-bottom: .65rem; }
+  #mobileMenu a { min-height: 2.5rem; display: flex; align-items: center; }
+  main { max-width: 100%; }
+  main > .text-center h1, main h1 { font-size: clamp(1.65rem, 8vw, 2.25rem); line-height: 1.2; overflow-wrap: anywhere; }
+  main > .text-center { margin-bottom: 1.5rem; }
+  article, main > .bg-white, main section.bg-white { padding: 1.15rem; border-radius: 1.25rem; }
+  article h2, main section h2 { font-size: 1.35rem; line-height: 1.35; }
+  article h3, main section h3 { font-size: 1.1rem; line-height: 1.4; }
+  article h2:not([class]), article .content-section h2 { margin-top: 1.5rem; font-size: 1.3rem; line-height: 1.4; }
+  article h3:not([class]), article .content-section h3 { margin-top: 1rem; font-size: 1.05rem; line-height: 1.45; }
+  article p, article li, .content-section p, .content-section li { font-size: .96rem; line-height: 1.8; }
+  .content-section { padding: 1rem; margin-top: 1.25rem; }
+  .max-w-4xl > section:not([class]) { margin-top: 1.25rem; padding: 1.15rem; border-radius: 1.25rem; }
+  .article .content-section, article .content-section { padding: 0; margin-top: 1.5rem; }
+  table { display: block; overflow-x: auto; white-space: normal; }
+  .grid { min-width: 0; }
+}

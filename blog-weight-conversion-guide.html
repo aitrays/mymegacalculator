@@ -7,7 +7,8 @@
     <meta name="description" content="Master weight conversions between kilograms, pounds, grams, ounces, and stones. Complete guide with charts, formulas, and practical tips for cooking, gym, and travel.">
     <meta name="keywords" content="weight conversion guide, kg to lbs chart, grams to ounces cooking, weight units explained, fitness weight converter">
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="stylesheet" href="responsive-fixes.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/blog-weight-conversion-guide" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/blog-weight-conversion-guide" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/blog-weight-conversion-guide" />
@@ -16,18 +17,18 @@
 
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
-                <a href="blog.html" class="text-green-600 font-bold">Blog</a>
+                <a href="/" class="hover:text-green-600 transition">Calculators</a>
+                <a href="/blog" class="text-green-600 font-bold">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/blog-weight-conversion-guide.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/blog-weight-conversion-guide.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
         
@@ -38,7 +39,7 @@
         <div class="text-center mb-8 space-y-2">
             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Unit Conversions</span>
             <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Weight Conversion Chart and Guide for Cooking, Fitness, and Travel</h1>
-            <p class="text-gray-500 text-sm">By <a href="author-alex-morgan.html" class="text-green-600 hover:underline font-semibold">Alex Morgan</a> &middot; August 2026 &middot; 8 min read</p>
+            <p class="text-gray-500 text-sm">By <a href="/author-alex-morgan" class="text-green-600 hover:underline font-semibold">Alex Morgan</a> &middot; August 2026 &middot; 8 min read</p>
         </div>
 
         <article class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-xl space-y-6 text-gray-700 leading-relaxed">
@@ -119,19 +120,40 @@
 
             <h2 class="text-2xl font-bold text-gray-900 pt-4">Use Our Free Weight Converter</h2>
             <p>
-                For instant, accurate conversions between any weight unit, use our <a href="weight-converter.html" class="text-green-600 font-semibold hover:underline">free Weight Converter</a>. Enter any value in kilograms, grams, pounds, ounces, milligrams, or stones, and see all other units update in real-time.
+                For instant, accurate conversions between any weight unit, use our <a href="/weight-converter" class="text-green-600 font-semibold hover:underline">free Weight Converter</a>. Enter any value in kilograms, grams, pounds, ounces, milligrams, or stones, and see all other units update in real-time.
             </p>
 
             <div class="pt-6 border-t border-gray-100">
-                <p class="text-sm text-gray-500">Written by <a href="author-alex-morgan.html" class="text-green-600 font-semibold hover:underline">Alex Morgan</a>. Last updated August 2026.</p>
+                <p class="text-sm text-gray-500">Written by <a href="/author-alex-morgan" class="text-green-600 font-semibold hover:underline">Alex Morgan</a>. Last updated August 2026.</p>
             </div>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Choose the Correct Reference</h2>
+            <p>A conversion is only meaningful when the starting unit is known. Pounds, kilograms, ounces, and grams measure mass in ordinary use, while a force such as newtons describes weight in physics. For cooking and shipping, use the unit printed on the recipe or carrier form. The relationships include 1 kilogram = 1,000 grams, 1 pound = 16 ounces, and 1 kilogram is approximately 2.20462 pounds. Keep extra decimals because the pound relationship is not a short whole number.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Worked Kitchen and Shipping Examples</h2>
+            <p>To convert 2.5 kg of flour to grams, calculate 2.5 × 1,000 = 2,500 g. To convert 5 lb to kilograms, calculate 5 ÷ 2.20462 = 2.26796 kg, commonly written as 2.27 kg. A shipping label may need the package weight rounded up according to carrier rules, while a recipe may need a practical kitchen measurement. Do not confuse a fluid ounce, which measures volume, with an ounce of mass.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Accuracy and Safe Rounding</h2>
+            <ul class="list-disc list-inside space-y-2 ml-2"><li>Use a scale suited to the object and place it on a stable surface.</li><li>Zero or tare the container before measuring ingredients.</li><li>Keep the unrounded value until the final step, especially when combining shipments.</li><li>For medication, laboratory work, or regulated trade, follow the official specification.</li></ul>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Common Questions</h2>
+            <p><strong>How many ounces are in a pound?</strong> Sixteen avoirdupois ounces. <strong>Is a kilogram exactly 2.2 pounds?</strong> It is close, but 2.20462 is more precise. <strong>Why can two scales disagree?</strong> Calibration, surface level, battery condition, and resolution can matter. Use the <a href="/weight-converter" class="text-green-600 font-semibold hover:underline">weight converter</a> to check arithmetic, then round only to the precision supported by your scale. For body measurements, pair verified weight with the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> and treat the result as a screening estimate.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Build a Conversion Record</h2>
+            <p>For repeated work, write the date, original value, source unit, converted value, destination unit, and rounding rule. A record such as “12.4 lb ÷ 2.20462 = 5.625 kg, reported as 5.63 kg” is easier to audit than “about 5.6.” When several packages are combined, convert each item consistently before adding them. Do not mix a rounded package label with a high-precision scale reading without noting the difference.</p>
+            <p>Weight can change with moisture, packaging, and temperature, so a mathematical conversion cannot correct a poor measurement. Tare containers, keep liquids in a suitable vessel, and repeat a surprising reading. For regulated, medical, or safety-critical work, use calibrated equipment and the unit required by the responsible professional. The online converter is excellent for arithmetic, but it is not a substitute for that measurement procedure.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Reading a Weight Conversion Clearly</h2>
+            <p>Always write the source and destination units beside a result. A value of 2.5 kilograms is 2,500 grams, about 5.51156 pounds, and about 88.185 ounces. The number is incomplete without its unit. For shipping, compare the carrier’s billed-weight rule with the scale reading; dimensional weight may be calculated from package length, width, and height instead of mass.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked kitchen and shipping examples</h3>
+            <p>To convert 750 grams to kilograms, divide by 1,000: 750 ÷ 1,000 = 0.75 kg. To convert 12 pounds to kilograms, multiply by 0.45359237: 12 × 0.45359237 = 5.443 kg. If a recipe calls for 1.2 kg and your scale displays pounds, multiply 1.2 by 2.20462262 to get about 2.646 lb. Keep extra decimals until the final measurement.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Precision, Rounding, and Tare</h2>
+            <p>Kitchen ingredients can often be rounded to the nearest gram, while laboratory or medication measurements require the precision specified by a professional. Tare the container before weighing, keep the scale on a stable surface, and repeat a reading that changes unexpectedly. Do not round each ingredient before adding a recipe total. A small error repeated across many packages can affect a shipping threshold.</p>
+            <h3 class="text-xl font-bold text-gray-900">Practical mistakes to avoid</h3>
+            <ul class="list-disc list-inside space-y-2 ml-2"><li>Do not treat pounds and ounces as decimal pounds: 6 lb 8 oz is 6.5 lb, not 6.08 lb.</li><li>Check whether “ton” means a short ton, metric tonne, or long ton.</li><li>Separate mass from volume; a cup of flour and a cup of water do not weigh the same.</li><li>Record whether a package includes its box or wrapping.</li></ul>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">FAQs and Links</h2>
+            <p><strong>How many grams are in a pound?</strong> One avoirdupois pound is exactly 453.59237 grams. <strong>How many ounces are in a pound?</strong> There are 16 ounces. <strong>Can I convert milliliters to grams?</strong> Only when the substance density is known. Use the <a href="/weight-converter" class="text-green-600 font-semibold hover:underline">weight converter</a> for unit changes and the <a href="/calorie-calculator" class="text-green-600 font-semibold hover:underline">calorie calculator</a> when weight is one input in an energy estimate.</p>
         </article>
     </main>
 
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -142,20 +164,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">• Square Footage</a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition">• Square Footage</a></li>
+                    <li><a href="/percentage-calculator" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400"><ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
                 </ul></ul>
             </div>
         </div>

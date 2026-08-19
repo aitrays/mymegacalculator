@@ -50,24 +50,25 @@
     </script>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="stylesheet" href="responsive-fixes.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
-                <a href="blog.html" class="text-green-600 font-bold">Blog</a>
+                <a href="/" class="hover:text-green-600 transition">Calculators</a>
+                <a href="/blog" class="text-green-600 font-bold">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/blog-feet-inches-guide.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/blog-feet-inches-guide.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
         </div>
@@ -77,7 +78,7 @@
         <div class="text-center mb-8 space-y-2">
             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Measurement Guide</span>
             <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">How to Convert Feet and Inches to Centimeters: Complete Guide</h1>
-            <p class="text-gray-500 text-sm">By <a href="author-alex-morgan.html" class="text-green-600 hover:underline font-semibold">Alex Morgan</a> &middot; August 2026 &middot; 7 min read</p>
+            <p class="text-gray-500 text-sm">By <a href="/author-alex-morgan" class="text-green-600 hover:underline font-semibold">Alex Morgan</a> &middot; August 2026 &middot; 7 min read</p>
         </div>
 
         <article class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-xl space-y-6 text-gray-700 leading-relaxed">
@@ -170,19 +171,38 @@
 
             <h2 class="text-2xl font-bold text-gray-900 pt-4">Use Our Free Height Converter</h2>
             <p>
-                For instant, accurate conversions without manual calculation, use our <a href="feet-and-inches-calculator.html" class="text-green-600 font-semibold hover:underline">free Feet and Inches to CM Calculator</a>. Simply enter feet and inches, and see the results in centimeters, meters, and total inches — updated in real-time as you type.
+                For instant, accurate conversions without manual calculation, use our <a href="/feet-and-inches-calculator" class="text-green-600 font-semibold hover:underline">free Feet and Inches to CM Calculator</a>. Simply enter feet and inches, and see the results in centimeters, meters, and total inches — updated in real-time as you type.
             </p>
 
             <div class="pt-6 border-t border-gray-100">
-                <p class="text-sm text-gray-500">Written by <a href="author-alex-morgan.html" class="text-green-600 font-semibold hover:underline">Alex Morgan</a>. Last updated August 2026.</p>
+                <p class="text-sm text-gray-500">Written by <a href="/author-alex-morgan" class="text-green-600 font-semibold hover:underline">Alex Morgan</a>. Last updated August 2026.</p>
             </div>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Reading Measurements Correctly</h2>
+            <p>Notation can cause as many errors as arithmetic. The mark before a number, such as 5' 9", means five feet and nine inches; it does not mean 5.9 feet. A decimal measurement is different: 5.5 feet equals 5 feet 6 inches because 0.5 × 12 = 6. If a form asks for centimeters, convert the complete measurement rather than treating the inches as a decimal. For a measuring tape, keep it level, remove shoes when measuring height, and record the result before rounding.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Choosing a Useful Rounding Level</h2>
+            <p>Keep two decimal places while checking the calculation, then round according to the job. A medical or equipment form may request the nearest centimeter, while a doorway, countertop, or garment pattern may need millimeters. For 175.26 cm, the nearest centimeter is 175 cm and the nearest millimeter is 1,752.6 mm. Do not round each component before adding. State the unit beside every final number.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Three Practical Checks</h2>
+            <ul class="list-disc list-inside space-y-2 ml-2"><li>Estimate first: one foot is a little over 30 cm, so 6 feet should be near 183 cm.</li><li>Check total inches: 5 feet 9 inches is (5 × 12) + 9 = 69 inches, and 69 × 2.54 = 175.26 cm.</li><li>Reverse the result: divide 175.26 by 2.54 to return to 69 inches.</li></ul>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Frequently Asked Questions</h2>
+            <p><strong>Should I use height with shoes?</strong> Usually no; official height is measured barefoot. <strong>Can I convert only inches?</strong> Yes. Multiply total inches by 2.54. <strong>Is 1.8 meters the same as 6 feet?</strong> It is close, but 6 feet is 182.88 cm. <strong>What about 3/8 inch?</strong> Convert the fraction to decimal inches, then multiply by 2.54. Compare manual work with the <a href="/feet-and-inches-calculator" class="text-green-600 font-semibold hover:underline">feet and inches calculator</a>, and use the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> only when you also have a current body weight.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Using Conversions for Real Decisions</h2>
+            <p>When buying clothing, compare the garment chart with your body measurement rather than assuming a labeled size is universal. For furniture, measure the narrowest doorway, lift, and hallway turn, then compare those dimensions in centimeters with the product dimensions. For travel forms, copy the converted number carefully and keep the original feet-and-inches value in your notes. In a clinic, use the measuring method requested by the clinician because posture, time of day, and equipment can affect a height reading.</p>
+            <p>A useful habit is to write a conversion as an equation before entering it into a tool: (feet × 12 + inches) × 2.54 = centimeters. This single equation gives the same answer as the two-part method and makes the order of operations visible. If the inch field contains a fraction, convert it first; 7 1/2 inches is 7.5 inches. If the result is being used for a safety clearance, leave a margin rather than designing to the exact converted value.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Measurement Context Matters</h2>
+            <p>Feet and inches are used for more than height. In a renovation, record the length, width, and clearance separately so a conversion does not hide a fit problem. A 6-foot board may fit through a 72-inch opening on paper, but diagonal movement, trim, and hand space can reduce the usable clearance. For clothing, compare the measurement method used by the size chart with your own tape measure.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked fraction example</h3>
+            <p>Suppose a shelf is 4 feet 7 1/2 inches long. Convert the feet first: 4 × 12 = 48 inches. Add 7.5 inches to get 55.5 inches. Multiplying by 2.54 gives 140.97 centimeters. Keeping the half inch as 0.5 rather than writing “7.5 feet” prevents a common unit error. Reverse the calculation by dividing 140.97 by 2.54 and check that it returns 55.5 inches.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Rounding for Forms and Construction</h2>
+            <p>Choose the final precision from the decision being made. A passport form may ask for whole centimeters, while a cut list may need the nearest 1/16 inch. Never round the feet and inches separately before converting the total. Write the original measurement beside the converted one, and label whether it is an inside dimension, outside dimension, or clearance.</p>
+            <h3 class="text-xl font-bold text-gray-900">FAQ and next steps</h3>
+            <p><strong>Is 5.9 feet five feet nine inches?</strong> No. 5.9 decimal feet equals 5 feet 10.8 inches. <strong>What is the fastest check?</strong> Convert to total inches, then multiply by 2.54. <strong>How should I handle a fraction?</strong> Turn the fraction into decimal inches before using the formula. Try the <a href="/feet-and-inches-calculator" class="text-green-600 font-semibold hover:underline">height converter</a>, compare area with the <a href="/square-footage-calculator" class="text-green-600 font-semibold hover:underline">square footage calculator</a>, and use the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> only for its intended health screening context.</p>
         </article>
     </main>
 
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -193,20 +213,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">• Square Footage</a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition">• Square Footage</a></li>
+                    <li><a href="/percentage-calculator" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
                 </ul>
             </div>
         </div>

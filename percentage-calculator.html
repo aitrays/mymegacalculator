@@ -89,28 +89,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/percentage-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/percentage-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/percentage-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/percentage-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/percentage-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
         </div>
@@ -121,7 +122,7 @@
         <!-- Breadcrumb -->
         <nav aria-label="Breadcrumb" class="text-sm text-gray-500 mb-6">
             <ol class="flex flex-wrap space-x-2">
-                <li><a href="index.html" class="hover:text-green-600 transition">Home</a></li>
+                <li><a href="/" class="hover:text-green-600 transition">Home</a></li>
                 <li><span aria-hidden="true">/</span></li>
                 <li class="text-gray-900 font-medium" aria-current="page">Percentage Calculator</li>
             </ol>
@@ -334,6 +335,49 @@
             </section>
 
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">How to Use Percentage Results</h2>
+            <p>Choose the question that matches your numbers: a percentage of a value, what percent one value is of another, a percentage increase or decrease, or the difference between two values. Identify the base first. The base is the denominator in a change calculation, so changing it changes the answer.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formulas and examples</h3>
+            <p>To find a percentage of a number, use value × rate ÷ 100. Eighteen percent of 240 is 240 × 18 ÷ 100 = 43.2. To find what percent 30 is of 250, use 30 ÷ 250 × 100 = 12%. A change from 80 to 92 is (92 − 80) ÷ 80 × 100 = 15%. A discount is subtracted, while tax is added.</p>
+            <h3 class="text-xl font-bold text-gray-900">Mistakes and practical checks</h3>
+            <p>Do not add successive discounts as though they share the original base: 20% then 10% leaves 72% of the original, a 28% total reduction. Keep full precision until the last step and state whether the answer is a percent or percentage points. Use the same units for both values, and check whether a report needs a raw count as well as a rate.</p>
+            <h3 class="text-xl font-bold text-gray-900">FAQ and guide</h3>
+            <p>A result can exceed 100% when it is compared with a smaller base. To recover an original amount, divide the known amount by the decimal rate. For more examples about discounts, tax, growth, and percentage points, read the <a href="/blog-percentage-guide" class="text-green-600 font-semibold hover:underline">percentage guide</a>. The calculator handles arithmetic, but it cannot decide which comparison is fair.</p>
+            <h3 class="text-xl font-bold text-gray-900">A clear reporting checklist</h3>
+            <p>Write the original value, new value, formula, rounding rule, and comparison period beside a reported percentage. This makes a result reproducible and exposes whether the denominator changed. For a price, show the discount and final price; for a survey, show the sample count as well as the percentage. A calculator can verify arithmetic, but context determines whether the comparison is meaningful.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Choosing the Right Percentage Operation</h2>
+            <p>“What is X% of Y?” means Y × X ÷ 100. “X is what percent of Y?” means X ÷ Y × 100. “Increase Y by X%” means Y × (1 + X ÷ 100), while “decrease Y by X%” means Y × (1 − X ÷ 100). Identify the reference value before entering numbers so the direction is unambiguous.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked examples</h3>
+            <p>18% of 250 is 250 × 0.18 = 45. If a $90 bill rises to $108, the change is $18 and the percentage increase is 18 ÷ 90 × 100 = 20%. A 20% increase followed by a 20% decrease does not return to the starting value: 100 × 1.20 × 0.80 = 96. The second percentage uses a different base.</p>
+            <h2 class="text-2xl font-bold text-gray-900">Checks, Rounding, and FAQs</h2>
+            <p>Convert 7.5% to 0.075 before multiplying. Keep full precision while calculating and round currency to cents only at the end. If a part is smaller than its whole, the result should usually be between 0% and 100%. A change from 20% to 30% is ten percentage points but a 50% relative increase. For compound rates, multiply the factors rather than adding percentages.</p>
+            <p><strong>Can the answer exceed 100%?</strong> Yes, when the part is larger than the reference. <strong>Why is my tax result different?</strong> Tax may apply after discounts or to only part of a bill. Use the <a href="/blog-percentage-guide" class="text-green-600 font-semibold hover:underline">percentage guide</a> for context, and compare loan rates with the <a href="/loan-calculator" class="text-green-600 font-semibold hover:underline">loan calculator</a>.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Percentages in Everyday Decisions</h2>
+            <p>For tips, taxes, discounts, grades, and survey results, write the base beside the percent. A 15% tip on a $40 meal is $6 before any tax policy. A score of 42 out of 50 is 84%, while 42 percentage points is a different unit. When several rates apply, write the order because each step may use a new base.</p>
+            <h3 class="text-xl font-bold text-gray-900">Reverse check</h3>
+            <p>After finding 18% of 250 as 45, divide 45 by 250 and multiply by 100 to recover 18%. This reverse operation is a fast way to catch a swapped numerator or denominator.</p>
+        </section>
+        <section><h2 class="text-2xl font-bold text-gray-900">Report Percentages Clearly</h2><p>State the numerator, denominator, period, and rounding rule in a report. “12 of 40 responses, or 30%” is easier to audit than “30%.” For a target, distinguish a percentage of the target from percentage-point progress toward it.</p><h3 class="text-xl font-bold text-gray-900">Small result check</h3><p>Use a calculator for precision, then multiply the displayed percent by the original base to see whether the recovered amount is reasonable.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>Using percentages without common errors</h2>
+            <p>A percentage means a part per hundred. To find a percentage of a number, convert the rate to a decimal and multiply: 18% of 250 is 0.18 times 250, or 45. To find what percentage one value is of another, divide the part by the whole and multiply by 100. If 45 of 250 items are returned, the return rate is 18%.</p>
+            <h3>Increase, decrease, and percentage points</h3>
+            <p>An increase of 20% multiplies a starting value by 1.20, while a decrease of 20% multiplies it by 0.80. A price of $80 increased by 20% becomes $96; reducing $96 by 20% gives $76.80, not $80, because the second percentage uses a different base. A change from 12% to 15% is 3 percentage points, but the relative increase is 25%.</p>
+            <h3>Reliable workflow</h3>
+            <ol>
+                <li>Label the part and the whole before choosing a formula.</li>
+                <li>Keep the original base visible when calculating a change.</li>
+                <li>Delay rounding until the final displayed result.</li>
+                <li>State whether the answer is a rate, an amount, or a percentage-point difference.</li>
+            </ol>
+            <h3>Checks and useful examples</h3>
+            <p>For a discount, subtract the discount amount from the original price. For tax, multiply by 1 plus the tax rate; $50 with 8% tax is $54. For a test score, 42 correct answers out of 50 is 84%. The most frequent mistakes are dividing by the new value when the question asks for change from the old value and adding rates that compound. <strong>Can a percentage exceed 100?</strong> Yes, when the part is larger than the reference whole. <strong>How should I round money?</strong> Keep extra decimals during calculation and round the final currency amount to two decimals. For area planning, see the <a href="/square-footage-calculator">square footage calculator</a>.</p>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -341,7 +385,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -358,23 +402,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Tile & Flooring</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Square Footage</span></a></li>
-                    <li><a href="percentage-calculator.html" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span aria-hidden="true">•</span> <span>Percentage Calculator</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Weight Converter</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Feet to CM</span></a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Tile & Flooring</span></a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Square Footage</span></a></li>
+                    <li><a href="/percentage-calculator" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span aria-hidden="true">•</span> <span>Percentage Calculator</span></a></li>
+                    <li><a href="/weight-converter" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Weight Converter</span></a></li>
+                    <li><a href="/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Feet to CM</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
                 </ul>
             </div>
 

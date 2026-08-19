@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -121,28 +121,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/loan-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/loan-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/loan-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/loan-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/loan-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
@@ -151,11 +152,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
                 <div class="flex items-center space-x-2 px-3 py-2">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
-                    <a href="ar/loan-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                    <a href="ar/loan-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a>
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">Home</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -302,24 +303,25 @@
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">Read our complete loan calculator guide</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Math & Financial Tools</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📊</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Percentage Calculator</h3>
                             <p class="text-xs text-gray-500">Calculate rates and changes</p>
                         </div>
                     </a>
-                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/square-footage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📏</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Square Footage</h3>
                             <p class="text-xs text-gray-500">Calculate property areas</p>
                         </div>
                     </a>
-                    <a href="bmi-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">⚖️</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">BMI Calculator</h3>
@@ -365,13 +367,57 @@
                 </div>
             </section>
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Understanding the Loan Estimate</h2>
+            <p>Enter the principal, annual interest rate, loan term, and payment frequency shown by your lender. The calculator estimates a fixed-rate, fully amortizing payment. It is not a quote: fees, taxes, insurance, variable rates, skipped payments, and lender rounding can change the real schedule.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formula</h3>
+            <p>For monthly payments, the standard formula is M = P × [r(1+r)^n] ÷ [(1+r)^n − 1], where P is principal, r is the periodic interest rate, and n is the number of payments. Convert an annual percentage rate to a monthly decimal before using it. If the rate is zero, the payment is simply principal divided by the number of payments.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked example</h3>
+            <p>A $20,000 balance at 6% annual interest for 5 years has a monthly rate of 0.06 ÷ 12 and 60 payments. The monthly payment is about $386.66 before fees, and the total of payments is about $23,199. Interest is the difference between those totals. Lenders may calculate daily interest or round each installment, so compare the result with the official disclosure.</p>
+            <h3 class="text-xl font-bold text-gray-900">Mistakes, assumptions, and questions</h3>
+            <p>Do not confuse interest rate with APR, enter 6 instead of 0.06 when a decimal is required, or compare loans using payment alone. A longer term can reduce the monthly payment while increasing total interest. Ask about early repayment, late fees, balloon payments, and whether the rate can change. Read the <a href="/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">loan calculator guide</a> before making a borrowing decision, and use the result as an estimate rather than financial advice.</p>
+            <h3 class="text-xl font-bold text-gray-900">Compare offers responsibly</h3>
+            <p>Compare the same principal, term, payment frequency, and fees across offers. Request an amortization schedule to see how much of each payment reduces principal. A lower payment is not automatically cheaper, and a small rate difference can matter over many payments. Confirm the official APR and total cost before signing any agreement.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Understanding the Loan Estimate</h2>
+            <p>For a fixed-rate installment loan, the periodic payment formula is M = P × [r(1+r)^n] ÷ [(1+r)^n − 1]. P is the principal, r is the periodic interest rate, and n is the number of payments. Convert an annual percentage rate to a monthly rate by dividing by 12 only when the lender’s terms use monthly compounding. A quoted APR can include fees, so compare the full disclosure rather than payment alone.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked example</h3>
+            <p>For $10,000 at 6% annual interest over 36 monthly payments, use r = 0.06 ÷ 12 = 0.005 and n = 36. The payment is approximately $304.22 before taxes, insurance, or lender fees. Total scheduled payments are about $10,951.92, so estimated interest is about $951.92. A small rounding difference is normal because lenders round each payment to cents.</p>
+            <h2 class="text-2xl font-bold text-gray-900">What the Calculator Does Not Include</h2>
+            <p>Origination charges, late fees, insurance, property taxes, balloon payments, variable rates, and early repayment rules can change the real cost. Check whether extra payments reduce principal immediately and whether the lender charges a prepayment penalty. Never use an estimated payment as proof that a loan is affordable; leave room for emergencies and changing income.</p>
+            <h3 class="text-xl font-bold text-gray-900">FAQs and links</h3>
+            <p><strong>Why does a longer term cost more?</strong> It usually lowers each payment but gives interest more time to accrue. <strong>Can I compare two rates?</strong> Keep principal, term, and compounding consistent. <strong>What if I have an irregular payment?</strong> Ask the lender for an amortization schedule. For a percentage check, use the <a href="/percentage-calculator" class="text-green-600 font-semibold hover:underline">percentage calculator</a>, and read the <a href="/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">loan guide</a> before making a decision.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Comparing Loan Scenarios</h2>
+            <p>Change one input at a time to see its effect. A higher down payment lowers principal, while a shorter term usually raises the monthly payment and lowers total interest. Compare the total of scheduled payments, fees, and required insurance. A variable-rate result is only a snapshot because the rate can change later.</p>
+            <h3 class="text-xl font-bold text-gray-900">Amortization check</h3>
+            <p>Early payments often contain more interest because the outstanding principal is largest. Each payment reduces interest slightly as principal falls. Request a lender amortization schedule and compare its first, middle, and final rows with your estimate. Do not assume an extra payment changes the term unless the lender applies it to principal.</p>
+        </section>
+        <section><h2 class="text-2xl font-bold text-gray-900">Affordability Check</h2><p>Compare the estimated payment with reliable monthly income and leave room for utilities, maintenance, insurance, savings, and emergencies. A lender’s approval is not the same as a comfortable budget. Ask whether the rate is fixed, when the first payment is due, and what happens after a missed payment.</p><h3 class="text-xl font-bold text-gray-900">Document the assumptions</h3><p>Write down principal, rate, term, payment frequency, fees, and the date of the estimate. This makes two offers comparable and explains why a later quote may differ.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>Understanding your loan estimate</h2>
+            <p>A loan payment depends on principal, interest rate, number of payments, and payment timing. This calculator assumes a fixed rate with regular monthly payments unless the page says otherwise. It is an estimate for planning, not a lending offer; origination fees, insurance, taxes, late fees, and variable-rate changes may alter the real cost.</p>
+            <h3>Payment formula</h3>
+            <p>For a standard amortizing loan, the monthly payment is <strong>P times r times (1 + r) to the power n, divided by ((1 + r) to the power n minus 1)</strong>. Here P is the amount borrowed, r is the annual percentage rate divided by 12, and n is the number of monthly payments. For example, borrowing $20,000 for 5 years at 6% gives r = 0.005 and a payment of about $386.66, before any additional fees. Total interest is the payment multiplied by n, minus P.</p>
+            <h3>Steps for comparing options</h3>
+            <ol>
+                <li>Enter only the amount you actually plan to borrow, excluding a down payment.</li>
+                <li>Use the annual rate, then check whether the lender quotes APR or only nominal interest.</li>
+                <li>Compare both the monthly payment and the total interest over the full term.</li>
+                <li>Test a shorter term or an extra-payment scenario only if the budget can support it.</li>
+            </ol>
+            <h3>What can make the result misleading?</h3>
+            <p>Rounding the rate, confusing months with years, or entering a loan balance instead of the original principal can produce a wrong comparison. A lower payment may simply reflect a longer term and more total interest. Promotional rates can expire, and an early payoff may have a penalty. <strong>Does paying extra always help?</strong> It usually reduces interest on a simple amortizing loan, but verify the lender's principal-allocation rules. <strong>Why is a lender quote different?</strong> Fees, daily interest, payment dates, and insurance can explain the difference. For a related household estimate, use the <a href="/percentage-calculator">percentage calculator</a>.</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -382,20 +428,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
-                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">Age Calculator</a></li>
-                    <li><a href="loan-calculator.html" class="text-green-400 font-bold">Loan Calculator</a></li>
-                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">Calorie Calculator</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                    <li><a href="/bmi-calculator" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="/age-calculator" class="hover:text-green-400 transition">Age Calculator</a></li>
+                    <li><a href="/loan-calculator" class="text-green-400 font-bold">Loan Calculator</a></li>
+                    <li><a href="/calorie-calculator" class="hover:text-green-400 transition">Calorie Calculator</a></li>
+                    <li><a href="/paint-calculator" class="hover:text-green-400 transition">Paint Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition">Contact</a></li>
                 </ul>
             </div>
         </div>

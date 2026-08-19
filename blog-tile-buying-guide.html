@@ -43,24 +43,25 @@
     </script>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="stylesheet" href="responsive-fixes.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
-                <a href="blog.html" class="text-green-600 font-bold">Blog</a>
+                <a href="/" class="hover:text-green-600 transition">Calculators</a>
+                <a href="/blog" class="text-green-600 font-bold">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/blog-tile-buying-guide.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/blog-tile-buying-guide.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
         </div>
@@ -70,7 +71,7 @@
         <div class="text-center mb-8 space-y-2">
             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Flooring & Renovation</span>
             <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Tile Calculator Guide: How to Measure and Buy the Right Amount</h1>
-            <p class="text-gray-500 text-sm">By <a href="author-alex-morgan.html" class="text-green-600 hover:underline font-semibold">Alex Morgan</a> &middot; August 2026 &middot; 9 min read</p>
+            <p class="text-gray-500 text-sm">By <a href="/author-alex-morgan" class="text-green-600 hover:underline font-semibold">Alex Morgan</a> &middot; August 2026 &middot; 9 min read</p>
         </div>
 
         <article class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-xl space-y-6 text-gray-700 leading-relaxed">
@@ -168,19 +169,40 @@
 
             <h2 class="text-2xl font-bold text-gray-900 pt-4">Use Our Free Tile Calculator</h2>
             <p>
-                Skip the manual math and use our <a href="tile-calculator.html" class="text-green-600 font-semibold hover:underline">free Tile & Flooring Calculator</a>. Enter your room dimensions, tile size, and waste percentage, and get instant results for total area, exact tile count, and tiles with waste margin included.
+                Skip the manual math and use our <a href="/tile-calculator" class="text-green-600 font-semibold hover:underline">free Tile & Flooring Calculator</a>. Enter your room dimensions, tile size, and waste percentage, and get instant results for total area, exact tile count, and tiles with waste margin included.
             </p>
 
             <div class="pt-6 border-t border-gray-100">
-                <p class="text-sm text-gray-500">Written by <a href="author-alex-morgan.html" class="text-green-600 font-semibold hover:underline">Alex Morgan</a>. Last updated August 2026.</p>
+                <p class="text-sm text-gray-500">Written by <a href="/author-alex-morgan" class="text-green-600 font-semibold hover:underline">Alex Morgan</a>. Last updated August 2026.</p>
             </div>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Plan the Layout Before Ordering</h2>
+            <p>Measure the room, mark the center lines, and decide where full tiles should be visible. A layout that begins with a narrow sliver at a doorway can look unbalanced, so shift the starting line when possible. Record tile length, width, grout joint, and pattern direction. For a 12 ft by 10 ft room using 12 inch square tile, the base area is 120 sq ft; with 10% cutting waste, order for 132 sq ft. The final package count must be rounded up to complete boxes.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Waste Is Not One Fixed Number</h2>
+            <p>Straight layouts usually create less waste than diagonal, herringbone, or staggered patterns. Extra material is also valuable for future repairs because dye lots and product lines can change. A room with many corners, cabinets, or angled walls needs a careful cut plan. Do not hide unusable pieces inside the waste percentage: tiles with cracks, shade variation, or unacceptable warping should be rejected before installation.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Installation Checks</h2>
+            <ul class="list-disc list-inside space-y-2 ml-2"><li>Confirm that the substrate is clean, dry, flat, and strong enough.</li><li>Buy all boxes from the same lot when color consistency matters.</li><li>Dry-lay rows to inspect the pattern and verify grout spacing.</li><li>Keep a labeled spare box for matching repairs.</li></ul>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Tile Buying FAQs</h2>
+            <p><strong>Do I calculate wall tile differently?</strong> No; calculate length × height for each wall, then subtract untiled openings. <strong>Should a box be rounded up?</strong> Always purchase whole boxes. <strong>Does grout change the area?</strong> It changes spacing, but tile still needs to cover the surface. Use the <a href="/tile-calculator" class="text-green-600 font-semibold hover:underline">tile calculator</a>, compare its result with package coverage, and see the <a href="/square-footage-calculator" class="text-green-600 font-semibold hover:underline">square footage guide</a> for room measurement.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Compare Samples and Specifications</h2>
+            <p>View samples in the room’s actual light because screens and showroom lighting can alter color. Check the tile’s recommended location, water absorption, slip rating, thickness, and maintenance instructions. A wall product may not be suitable for a floor, and a polished surface may be inappropriate where water is regularly present. Ask how many pieces are in a box and whether the printed coverage already assumes a grout joint.</p>
+            <p>Keep a small diagram showing the room outline, start point, and difficult cuts. It helps an installer explain where full tiles and visible edges will land. Before ordering, compare the calculator’s area with the box coverage and round up to complete cartons. Keep the receipt, lot number, and one unopened box until the installation is accepted. That record is more useful than a larger arbitrary waste percentage.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Planning Tile Layout and Waste</h2>
+            <p>Measure each room separately and sketch the direction of the longest wall. A centered layout often looks balanced, but it can create narrow cuts at both edges. Shift the starting line so the smallest border piece is not a thin sliver. Keep the finished tile size, grout joint, trim, and door thresholds in the plan because the visible floor area is not the only dimension that matters.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked example with a pattern</h3>
+            <p>A 12 ft by 10 ft room has 120 square feet. If a 12 in by 24 in tile covers 2 square feet, the theoretical quantity is 120 ÷ 2 = 60 tiles. Add 10% for a straight layout: 60 × 1.10 = 66 tiles. A diagonal, herringbone, or room with many corners may need 15% or more. Buy from the same lot and keep a few spare tiles for future repairs.</p>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">Installation Checks</h2>
+            <p>Confirm that the subfloor is clean, dry, flat, and strong enough for the selected tile. Mark reference lines with a chalk line, dry-lay a few rows, and check the manufacturer’s adhesive and grout guidance. Let the layout cross a doorway intentionally rather than ending with an accidental thin strip. Photograph the lot number and store extra material in a dry place.</p>
+            <h3 class="text-xl font-bold text-gray-900">Common buying mistakes</h3>
+            <ul class="list-disc list-inside space-y-2 ml-2"><li>Ordering only the exact calculated area leaves no allowance for cuts or breakage.</li><li>Mixing boxes can create visible shade differences between production lots.</li><li>Tile coverage printed on a box may assume a particular grout width.</li><li>For walls, calculate each elevation and subtract openings only when the measurement is reliable.</li></ul>
+            <h2 class="text-2xl font-bold text-gray-900 pt-4">FAQs and Useful Links</h2>
+            <p><strong>Should waste be added before or after division?</strong> Find the theoretical quantity first, then multiply by the waste factor and round up to whole boxes. <strong>How many spare tiles should remain?</strong> Keep enough to replace the most exposed area, usually at least one unopened box when storage allows. Use the <a href="/tile-calculator" class="text-green-600 font-semibold hover:underline">tile calculator</a> for quantities, verify room area with the <a href="/square-footage-calculator" class="text-green-600 font-semibold hover:underline">square footage calculator</a>, and read the <a href="/blog-square-footage-guide" class="text-green-600 font-semibold hover:underline">area guide</a> before ordering.</p>
         </article>
     </main>
 
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -191,20 +213,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">• Square Footage</a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition">• Tile & Flooring</a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition">• Square Footage</a></li>
+                    <li><a href="/percentage-calculator" class="hover:text-green-400 transition">• Percentage Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
                 </ul>
             </div>
         </div>

@@ -81,28 +81,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/square-footage-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/square-footage-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/square-footage-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/square-footage-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/square-footage-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
         </div>
@@ -113,7 +114,7 @@
         <!-- Breadcrumb -->
         <nav aria-label="Breadcrumb" class="text-sm text-gray-500 mb-6">
             <ol class="flex flex-wrap space-x-2">
-                <li><a href="index.html" class="hover:text-green-600 transition">Home</a></li>
+                <li><a href="/" class="hover:text-green-600 transition">Home</a></li>
                 <li><span aria-hidden="true">/</span></li>
                 <li class="text-gray-900 font-medium" aria-current="page">Square Footage Calculator</li>
             </ol>
@@ -227,6 +228,49 @@
             </section>
 
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Measure Area Step by Step</h2>
+            <p>Enter length and width in matching units. For a rectangle, area equals length × width. If a room is irregular, split it into rectangles, calculate each one, and add them. Convert inches to feet first: 30 inches is 2.5 feet. The calculator can help compare square feet, square meters, and square yards, but the quality of the answer depends on the measurements.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked example and allowance</h3>
+            <p>A room 12 feet by 10 feet contains 120 square feet. If the material plan includes 10% waste, multiply by 1.10 to get 132 square feet for ordering. Waste covers cuts and breakage; it is not extra floor. Diagonal patterns, many corners, and fragile materials may need a different allowance recommended by the installer or manufacturer.</p>
+            <h3 class="text-xl font-bold text-gray-900">Openings and common mistakes</h3>
+            <p>Subtract an opening only when it will not receive the material. For wall paint, calculate each wall’s length × height and subtract doors or windows when appropriate. Do not mix feet and inches, round each small section before adding, or assume product coverage is identical to measured area. Record every section in a worksheet and measure older walls twice.</p>
+            <h3 class="text-xl font-bold text-gray-900">Limitations and related tools</h3>
+            <p>Area does not tell you the number of cans, cartons, or rolls without the manufacturer’s coverage. Read the coverage, number of coats, and package size before purchasing. For tile counts, use the <a href="/tile-calculator" class="text-green-600 font-semibold hover:underline">tile calculator</a>. The <a href="/blog-square-footage-guide" class="text-green-600 font-semibold hover:underline">square footage guide</a> includes irregular-room examples and measurement checks.</p>
+            <h3 class="text-xl font-bold text-gray-900">Create a purchasing worksheet</h3>
+            <p>List every rectangle with its location, dimensions, unit, area, and material. Measure at the longest and shortest points when a wall is uneven, and use the larger realistic value for ordering. Keep openings documented instead of silently removing them. After calculating total area, multiply by the chosen allowance, check manufacturer coverage, and round up cartons or containers. This record helps resolve differences between a measured estimate and a supplier’s package count.</p>
+            <p>For paint, coverage depends on coats, porosity, texture, and color change. For flooring, transitions and cuts affect the order. For landscaping, slope and drainage may affect the usable surface. Ask the installer or manufacturer to review unusual shapes before purchase.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Area Formula and Worked Example</h2>
+            <p>For a rectangle, area = length × width. A room measuring 14 feet by 11 feet has 154 square feet. For an L-shaped room, divide the outline into two non-overlapping rectangles, calculate each area, and add them. Measure in the same unit throughout; feet multiplied by inches do not produce square feet until the inches are converted.</p>
+            <h3 class="text-xl font-bold text-gray-900">Irregular rooms and waste</h3>
+            <p>Sketch each section and label inside dimensions. Subtract a closet or permanent opening only when its dimensions are measured accurately, but do not subtract movable furniture. For flooring, multiply the net area by 1.10 for a modest cutting allowance, then round up to the supplier’s package size. Diagonal patterns, many corners, and future repairs can justify 15% or more.</p>
+            <h2 class="text-2xl font-bold text-gray-900">Practical Mistakes and FAQs</h2>
+            <p>Do not confuse perimeter with area, and do not add all sides when the task asks for coverage. Recheck whether a plan uses feet, inches, meters, or centimeters. <strong>What if a room is 12 feet 6 inches long?</strong> Convert to 12.5 feet before multiplying. <strong>How can I verify a result?</strong> Estimate the size, calculate a second way, and compare with the <a href="/blog-square-footage-guide" class="text-green-600 font-semibold hover:underline">square footage guide</a>. For tile quantity, continue to the <a href="/tile-calculator" class="text-green-600 font-semibold hover:underline">tile calculator</a>.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">A Reliable Measuring Workflow</h2>
+            <p>Measure length and width at two points and use the smaller clearance when a wall is uneven. Label each dimension with its unit before entering it. For a ceiling, wall, or paint project, distinguish square coverage from linear trim and perimeter. Keep a sketch with doors, windows, cabinets, and columns so the supplier can review the estimate.</p>
+            <h3 class="text-xl font-bold text-gray-900">Ordering check</h3>
+            <p>After adding waste, divide by the coverage per box and round up. Compare the total with the room’s rough dimensions; a dramatic difference usually indicates mixed units or a duplicated section.</p>
+        </section>
+        <section><h2 class="text-2xl font-bold text-gray-900">Area for Materials</h2><p>For paint, flooring, turf, or roofing, confirm whether the product is sold by square foot, square yard, square meter, roll, or box. Convert all sections to the selling unit before ordering. Note ceilings, alcoves, stairs, and transitions separately because their installation waste can differ.</p><h3 class="text-xl font-bold text-gray-900">Worked check</h3><p>A 10 by 12 rectangle is 120 square feet. Two such rectangles total 240 square feet, not 22 square feet. Write a unit after every intermediate result to prevent this common mistake.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>Measure area before buying materials</h2>
+            <p>Square footage describes two-dimensional area, not perimeter or volume. For a rectangle, multiply length by width in feet. A room that is 12 ft by 15 ft has 180 square feet. If measurements are in inches, convert each side to feet first by dividing by 12; 144 in by 120 in is 12 ft by 10 ft, or 120 square feet.</p>
+            <h3>Irregular rooms and worked planning</h3>
+            <p>Split an L-shaped floor into two rectangles, calculate each area, then add them. For example, sections measuring 10 by 12 and 6 by 5 total 120 + 30 = 150 square feet, provided the sections do not overlap. For a triangular section, use one-half times base times height. A circle uses pi times radius squared. Measure the radius from the center, and keep all dimensions in the same unit.</p>
+            <h3>How to use the result</h3>
+            <ol>
+                <li>Sketch the space and record each wall measurement at least twice.</li>
+                <li>Convert inches, centimeters, or meters before multiplying.</li>
+                <li>Calculate separate spaces instead of forcing an irregular outline into one rectangle.</li>
+                <li>Add a practical waste allowance after calculating net area.</li>
+            </ol>
+            <h3>Waste, assumptions, and mistakes</h3>
+            <p>Tile, laminate, paint, and carpet rarely cover a space with zero waste. A common planning allowance is 10%, with more for diagonal layouts, many corners, patterned tile, or inexperienced cutting. Multiplying the net area by 1.10 gives a 10% allowance: 150 square feet becomes 165 square feet to order. Do not add waste separately to overlapping sections, and do not confuse square feet with linear feet. <strong>Should closets count?</strong> Include areas that receive the same material, then subtract permanent openings when appropriate. <strong>Can I mix metric and imperial values?</strong> Convert first. For material planning, compare this answer with the manufacturer's coverage and the <a href="/tile-calculator">tile calculator</a>.</p>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -234,7 +278,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -251,23 +295,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Tile & Flooring</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span aria-hidden="true">•</span> <span>Square Footage</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Percentage Calculator</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Weight Converter</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Feet to CM</span></a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Tile & Flooring</span></a></li>
+                    <li><a href="/square-footage-calculator" class="text-green-400 transition flex items-center space-x-1.5 font-semibold"><span aria-hidden="true">•</span> <span>Square Footage</span></a></li>
+                    <li><a href="/percentage-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Percentage Calculator</span></a></li>
+                    <li><a href="/weight-converter" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Weight Converter</span></a></li>
+                    <li><a href="/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Feet to CM</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
                 </ul>
             </div>
 

@@ -102,6 +102,11 @@
   </url>
 
   <!-- English Blog -->
+  <url><loc>https://mymegacalculator.com/blog-paint-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/blog-bmi-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/blog-calorie-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/blog-age-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/blog-loan-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url>
     <loc>https://mymegacalculator.com/blog</loc>
     <lastmod>2026-08-18</lastmod>
@@ -140,6 +145,11 @@
   </url>
 
   <!-- Arabic Homepage & Core Pages -->
+  <url><loc>https://mymegacalculator.com/ar/blog-paint-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/ar/blog-bmi-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/ar/blog-calorie-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/ar/blog-age-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mymegacalculator.com/ar/blog-loan-calculator-guide</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url>
     <loc>https://mymegacalculator.com/ar/</loc>
     <lastmod>2026-08-18</lastmod>
@@ -180,6 +190,36 @@
     <loc>https://mymegacalculator.com/ar/blog</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mymegacalculator.com/ar/blog-feet-inches-guide</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mymegacalculator.com/ar/blog-percentage-guide</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mymegacalculator.com/ar/blog-square-footage-guide</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mymegacalculator.com/ar/blog-tile-buying-guide</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mymegacalculator.com/ar/blog-weight-conversion-guide</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 

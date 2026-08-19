@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -86,34 +86,50 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much wall area does 1 gallon of paint cover?",
+          "name": "How much wall surface area does 1 gallon of paint cover?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As a general rule, one gallon of interior wall paint covers approximately 350 to 400 square feet with one coat. One liter covers roughly 10 square meters."
+            "text": "Under standard conditions on primed drywall, one US gallon (3.785 liters) of interior acrylic latex paint covers 350 to 400 square feet with one coat. On raw, unprimed drywall or porous masonry brick, coverage drops to 250 to 300 square feet per gallon."
           }
         },
         {
           "@type": "Question",
-          "name": "How many coats of paint do I need?",
+          "name": "Why are two coats of paint recommended even with one-coat paints?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most professional painters recommend two coats of paint for uniform color depth and durability, especially when changing wall colors or painting over fresh drywall."
+            "text": "Two uniform coats build the manufacturer-recommended dry film thickness (DFT), ensure uniform light refraction without micro-pinholes, and dramatically increase resistance against washing, scuffing, and moisture."
           }
         },
         {
           "@type": "Question",
-          "name": "How much area should I subtract for doors and windows?",
+          "name": "How much surface area should I subtract for doors and windows?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Standard doors average about 21 square feet (approx 2 m²), while standard windows average about 15 square feet (approx 1.4 m²). Our calculator automatically subtracts these openings."
+            "text": "Standard interior doors average 21 square feet (approx. 2 m²), large double closet doors account for 30 to 40 square feet, and standard residential windows average 15 square feet (approx. 1.4 m²)."
           }
         },
         {
           "@type": "Question",
-          "name": "Is my data stored when using the paint calculator?",
+          "name": "How do I calculate paint needed for the ceiling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. All computations occur client-side in your web browser. No room dimensions or prices are ever stored or uploaded."
+            "text": "To calculate ceiling paint, multiply Room Length by Room Width to get the ceiling area in square feet. For example, a 12 ft by 14 ft room has a 168 sq ft ceiling, easily covered by 1 gallon of flat ceiling paint with two coats."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a separate primer coat before painting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need dedicated primer over brand new bare drywall, glossy oil-based paints, when transitioning from dark colors to light whites, or over water and smoke stains."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should leftover paint be stored for future touch-ups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clean the paint can rim, place plastic wrap over the opening, seal the lid tightly, and store in a temperature-controlled indoor room away from freezing temperatures or direct sunlight."
           }
         }
       ]
@@ -121,28 +137,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/paint-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/paint-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/paint-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/paint-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/paint-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
@@ -151,11 +168,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
                 <div class="flex items-center space-x-2 px-3 py-2">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
-                    <a href="ar/paint-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                    <a href="ar/paint-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a>
                 </div>
             </div>
         </div>
@@ -166,7 +183,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">Home</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -287,37 +304,241 @@
         <div class="mt-12 space-y-8">
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
                 <h2 class="text-2xl font-bold text-gray-900">How to Calculate Room Paint Quantity</h2>
-                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
-                    To estimate how much paint you will need for a room, follow this simple formula:
+        <!-- Content Section (SEO & 1200+ Word Educational Master Guide) -->
+        <div class="mt-12 space-y-10">
+
+            <!-- Introduction & Master Guide -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <div class="space-y-2">
+                    <span class="text-green-600 text-xs font-bold uppercase tracking-wider">Comprehensive DIY & Professional Guide</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">The Complete Guide to Estimating Room & Wall Paint</h2>
+                </div>
+                
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Calculating paint quantity with precision is the single most effective way to eliminate costly mid-project trips to the home improvement store, prevent mismatched custom color batches, and keep remodeling budgets strictly under control. While estimating paint may initially seem like a trivial measurement problem, professional painters know that true paint consumption is governed by an interplay of geometric surface area, substrate porosity, binder solids percentage, application tool loss factors, and pigment opacity.
                 </p>
-                <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-2xl border border-gray-100">
-                    <li><strong>Wall Perimeter:</strong> Add up the length of all four walls: <code>2 × (Length + Width)</code>.</li>
-                    <li><strong>Gross Wall Area:</strong> Multiply the perimeter by the ceiling height.</li>
-                    <li><strong>Deduct Openings:</strong> Subtract doors (~21 sq ft / 2 m² each) and windows (~15 sq ft / 1.4 m² each).</li>
-                    <li><strong>Coats &amp; Coverage:</strong> Multiply net area by the number of coats (usually 2), then divide by paint coverage per gallon (~350 sq ft/gal) or liter (~10 m²/L).</li>
-                    <li><strong>Round Up:</strong> Always round up to the nearest whole can so you don't run out during finishing touches.</li>
-                </ol>
+
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Whether you are refreshing a single accent wall in a powder room, executing a whole-house interior repaint, or transforming dark builder-grade paint into a bright modern aesthetic, our online paint calculator applies the exact architectural estimation equations utilized by commercial painting contractors. Below is the complete mathematical, chemical, and practical breakdown to help you master interior and exterior paint planning.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                    <div class="p-5 rounded-2xl bg-green-50/70 border border-green-100 space-y-2">
+                        <span class="text-2xl">📐</span>
+                        <h3 class="font-bold text-gray-900 text-base">Standard Spread Rate</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">1 Gallon covers <strong>350 – 400 sq ft</strong> (approx. 10 – 12 m² per liter) on smooth, pre-primed drywall at recommended wet film thickness (WFT).</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-100 space-y-2">
+                        <span class="text-2xl">🚪</span>
+                        <h3 class="font-bold text-gray-900 text-base">Openings Deduction</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Standard interior doors deduct <strong>21 sq ft (2 m²)</strong> and average windows deduct <strong>15 sq ft (1.4 m²)</strong> from total gross perimeter area.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-100 space-y-2">
+                        <span class="text-2xl">🔄</span>
+                        <h3 class="font-bold text-gray-900 text-base">The Two-Coat Rule</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Applying <strong>2 full coats</strong> delivers true color saturation, shields against scrubbing wear, and hides subtle drywall patch imperfections.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mathematical Formulas & Step-by-Step Breakdown -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">The Mathematical Formulas Behind Wall Paint Calculation</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Estimating paint requirements manually follows a five-tier sequential formula. Here is how professional estimators calculate paint volume down to the exact fluid ounce or milliliter:
+                </p>
+
+                <div class="space-y-4 bg-gray-50 p-6 rounded-2xl border border-gray-100 text-sm font-mono text-gray-800">
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">Step 1: Total Room Perimeter ($P$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$\text{Perimeter } (P) = 2 \times (\text{Length} + \text{Width})$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">Step 2: Gross Wall Area ($A_{\text{gross}}$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$A_{\text{gross}} = P \times \text{Ceiling Height}$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">Step 3: Deductions for Unpainted Openings ($A_{\text{deduct}}$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$A_{\text{deduct}} = (\text{Doors} \times 21\text{ sq ft}) + (\text{Windows} \times 15\text{ sq ft})$$</p>
+                        <p class="text-xs text-gray-500 font-sans mt-1"><em>*For metric units: use 2.0 m² per door and 1.4 m² per window.</em></p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">Step 4: Net Paintable Area ($A_{\text{net}}$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$A_{\text{net}} = A_{\text{gross}} - A_{\text{deduct}}$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">Step 5: Total Paint Volume Needed ($V$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$\text{Gallons Required} = \left( \frac{A_{\text{net}} \times \text{Number of Coats}}{\text{Spread Rate (typically 350 sq ft/gal)}} \right) \times (1 + \text{Waste Factor})$$</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Real-World Case Studies -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Real-World Case Studies: How Much Paint Do You Actually Need?</h2>
+                
+                <div class="space-y-6">
+                    <!-- Case 1 -->
+                    <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-8 h-8 rounded-xl bg-green-600 text-white flex items-center justify-center font-bold text-sm">1</span>
+                            <h3 class="text-lg font-bold text-gray-900">Standard Master Bedroom (14 ft × 12 ft with 9 ft Ceilings)</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <strong>Room Specs:</strong> Perimeter = $2 \times (14 + 12) = 52\text{ ft}$. Gross wall area = $52 \times 9 = 468\text{ sq ft}$. Deductions: 1 entry door ($21\text{ sq ft}$), 1 closet double-door ($30\text{ sq ft}$), 2 windows ($30\text{ sq ft}$) = $81\text{ sq ft}$ total deductions.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside bg-white p-4 rounded-xl border border-gray-100">
+                            <li><strong>Net Paintable Wall Area:</strong> $468 - 81 = 387\text{ sq ft}$.</li>
+                            <li><strong>Two Coats Total Area:</strong> $387 \times 2 = 774\text{ sq ft}$.</li>
+                            <li><strong>Paint Volume Needed:</strong> $774 \div 350 = 2.21\text{ gallons}$.</li>
+                            <li><strong>Purchase Recommendation:</strong> Buy <strong>3 one-gallon cans</strong> (or 1 two-gallon contractor pack). The remaining 0.79 gallons is kept securely sealed for future baseboard touch-ups and wall scuff repairs.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-8 h-8 rounded-xl bg-green-600 text-white flex items-center justify-center font-bold text-sm">2</span>
+                            <h3 class="text-lg font-bold text-gray-900">Large Living Room with High Ceilings (20 ft × 16 ft with 12 ft Ceilings)</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <strong>Room Specs:</strong> Perimeter = $2 \times (20 + 16) = 72\text{ ft}$. Gross wall area = $72 \times 12 = 864\text{ sq ft}$. Deductions: 2 large sliding glass patio doors ($80\text{ sq ft}$), 3 windows ($45\text{ sq ft}$) = $125\text{ sq ft}$ deductions.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside bg-white p-4 rounded-xl border border-gray-100">
+                            <li><strong>Net Paintable Wall Area:</strong> $864 - 125 = 739\text{ sq ft}$.</li>
+                            <li><strong>Two Coats Total Area:</strong> $739 \times 2 = 1,478\text{ sq ft}$.</li>
+                            <li><strong>Paint Volume Needed:</strong> $1,478 \div 350 = 4.22\text{ gallons}$.</li>
+                            <li><strong>Purchase Recommendation:</strong> Buy <strong>1 five-gallon bucket</strong> (saving ~15-20% compared to buying five individual 1-gallon cans).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paint Sheen & Finish Comparison Matrix -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Paint Sheen Selection Guide & Spread Rates</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    The sheen (reflectivity) of your paint dictates not only room aesthetics and mood, but also cleanability, moisture resistance, and how forgiving the surface is to underlying drywall imperfections:
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm text-gray-700 min-w-[550px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 bg-gray-50/80 text-xs font-bold uppercase tracking-wider text-gray-900">
+                                <th class="p-3.5">Sheen Level</th>
+                                <th class="p-3.5">Reflectivity</th>
+                                <th class="p-3.5">Best Application Areas</th>
+                                <th class="p-3.5">Scrubbability</th>
+                                <th class="p-3.5">Imperfection Hiding</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">Flat / Matte</td>
+                                <td class="p-3.5 text-gray-600">0% – 5%</td>
+                                <td class="p-3.5 text-gray-600">Ceilings, master bedrooms, low-traffic formal living rooms</td>
+                                <td class="p-3.5 text-red-600 font-semibold">Low (touch-up required)</td>
+                                <td class="p-3.5 text-green-600 font-bold">Excellent (10/10)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">Eggshell</td>
+                                <td class="p-3.5 text-gray-600">10% – 25%</td>
+                                <td class="p-3.5 text-gray-600">Living rooms, dining rooms, home offices, guest bedrooms</td>
+                                <td class="p-3.5 text-amber-600 font-semibold">Moderate (wipes clean)</td>
+                                <td class="p-3.5 text-green-600 font-bold">Very Good (8/10)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">Satin</td>
+                                <td class="p-3.5 text-gray-600">25% – 35%</td>
+                                <td class="p-3.5 text-gray-600">High-traffic hallways, kids' playrooms, laundry rooms, foyers</td>
+                                <td class="p-3.5 text-green-600 font-bold">High (washable)</td>
+                                <td class="p-3.5 text-amber-600 font-semibold">Moderate (6/10)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">Semi-Gloss</td>
+                                <td class="p-3.5 text-gray-600">35% – 70%</td>
+                                <td class="p-3.5 text-gray-600">Kitchens, bathrooms, baseboards, window trim, interior doors</td>
+                                <td class="p-3.5 text-green-600 font-bold">Very High (moisture proof)</td>
+                                <td class="p-3.5 text-red-600 font-semibold">Poor (highlights bumps)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">High-Gloss</td>
+                                <td class="p-3.5 text-gray-600">70% – 85%+</td>
+                                <td class="p-3.5 text-gray-600">Cabinetry, architectural millwork, front entrance doors</td>
+                                <td class="p-3.5 text-green-600 font-bold">Maximum (ultra-durable)</td>
+                                <td class="p-3.5 text-red-600 font-semibold">Very Poor (mirror finish)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Contractor Insider Tips -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Professional Contractor Tips for Flawless Painting</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> Always "Box" Your Paint Cans
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Even cans of identical paint mixed with computer dispensing can have minuscule color variances. Professional painters combine all 1-gallon cans into one large 5-gallon bucket ("boxing") before painting to ensure 100% uniform color across all four walls.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> Match Roller Nap to Surface Texture
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Use a <strong>3/8-inch nap</strong> for smooth modern drywall, a <strong>1/2-inch nap</strong> for light orange peel or knockdown textures, and a <strong>3/4-inch nap</strong> for rough masonry or brick. Using too thin a nap on textured walls wastes paint and leaves patchy holidays.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> Account for Tool Absorption Loss (5-10%)
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Dry roller covers, paint tray liners, cutting-in brushes, and bucket edges absorb approximately 1 to 2 pints of paint before your first stroke hits the wall. Always add a 10% safety margin to your final volume.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> Respect Re-Coat Drying Windows
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Applying a second coat before the first coat has fully cured (typically 2 to 4 hours depending on room temperature and humidity) pulls the underlying binder polymers, causing surface blistering, roller stipple drag, and premature peeling.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/blog-paint-calculator-guide" class="text-green-600 font-semibold hover:underline">Read our complete paint calculator guide</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Home Improvement Tools</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="tile-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/tile-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📐</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Tile Calculator</h3>
                             <p class="text-xs text-gray-500">Floor & wall tile estimator</p>
                         </div>
                     </a>
-                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/square-footage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📏</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Square Footage</h3>
                             <p class="text-xs text-gray-500">Compute room surface area</p>
                         </div>
                     </a>
-                    <a href="feet-and-inches-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/feet-and-inches-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📐</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Feet & Inches to CM</h3>
@@ -327,37 +548,67 @@
                 </div>
             </section>
 
-            <!-- FAQ Section -->
+            <!-- Expanded FAQ Section -->
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
                 <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
                 <div class="space-y-4">
-                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group" open>
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>How much wall area does 1 gallon of paint cover?</span>
+                            <span>How much wall surface area does 1 gallon of paint cover?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>One standard gallon of interior paint covers about <strong>350 to 400 square feet</strong> with one coat. One liter covers roughly <strong>10 square meters</strong>.</p>
+                            <p>Under standard conditions on primed drywall, one US gallon (3.785 liters) of interior acrylic latex paint covers <strong>350 to 400 square feet</strong> with one coat. On raw, unprimed drywall or porous masonry brick, coverage drops significantly to approximately 250 to 300 square feet per gallon due to rapid vehicle absorption.</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>Why are 2 coats of paint recommended?</span>
+                            <span>Why are two coats of paint recommended even with "one-coat" paints?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>Two coats provide true color opacity, hide underlying patches or drywall seams, and create a durable, washable paint finish that lasts for years.</p>
+                            <p>While premium "paint-and-primer-in-one" paints can achieve basic color coverage in one heavy pass over similar light colors, two uniform coats are essential for real-world performance. Two coats build the manufacturer-recommended dry film thickness (DFT), ensure uniform light refraction without micro-pinholes, and dramatically increase resistance against washing, scuffing, and moisture.</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>Is my room data saved?</span>
+                            <span>How much surface area should I subtract for doors and windows?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>No. All calculations run strictly in your web browser with 100% privacy.</p>
+                            <p>Standard interior doors average <strong>21 square feet</strong> (approx. 2 m²), large double closet doors account for <strong>30 to 40 square feet</strong>, and standard residential windows average <strong>15 square feet</strong> (approx. 1.4 m²). Our calculator automatically deducts these openings so you never overpay for unused paint.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How do I calculate paint needed for the ceiling?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>To calculate ceiling paint, multiply <code>Room Length × Room Width</code> to get the ceiling area in square feet. For example, a 12 ft × 14 ft room has a 168 sq ft ceiling. At 350 sq ft/gallon coverage, one gallon of flat ceiling white easily covers two coats (168 × 2 = 336 sq ft).</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Do I need a separate primer coat before painting?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>You need dedicated primer in four specific situations: (1) over brand new bare drywall or joint compound patches, (2) over glossy oil-based paints, (3) when transitioning from a dark or saturated color to a light pastel/white, and (4) over smoke, water, or grease stains using stain-blocking primer.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How should leftover paint be stored for future touch-ups?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Clean the paint can rim thoroughly, place plastic wrap over the opening, hammer the lid tight with a rubber mallet, and store the can in a temperature-controlled indoor closet away from freezing temperatures or direct sunlight. Label the can with the room name, paint brand, sheen, and formula code.</p>
                         </div>
                     </details>
                 </div>
@@ -369,7 +620,7 @@
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -380,20 +631,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">Tile Calculator</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">Square Footage</a></li>
-                    <li><a href="paint-calculator.html" class="text-green-400 font-bold">Paint Calculator</a></li>
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition">Tile Calculator</a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition">Square Footage</a></li>
+                    <li><a href="/paint-calculator" class="text-green-400 font-bold">Paint Calculator</a></li>
+                    <li><a href="/bmi-calculator" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="/loan-calculator" class="hover:text-green-400 transition">Loan Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition">Contact</a></li>
                 </ul>
             </div>
         </div>

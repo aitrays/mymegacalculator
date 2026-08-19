@@ -39,25 +39,26 @@
     </script>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="stylesheet" href="responsive-fixes.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="hover:text-green-600 transition">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="hover:text-green-600 transition">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/contact.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/contact.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
         </div>
@@ -77,7 +78,7 @@
             
             <!-- Success Message Box (Hidden by default) -->
             <div id="successMessage" class="hidden p-4 rounded-2xl bg-green-50 border border-green-200 text-green-800 text-center font-semibold text-sm">
-                🎉 Thank you! Your message has been sent successfully.
+                Your email app is ready with your message. Please send it to complete the submission.
             </div>
 
             <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-6">
@@ -116,7 +117,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -133,23 +134,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Top Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Tile & Flooring</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Square Footage</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Percentage Calculator</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Weight Converter</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Feet to CM</span></a></li>
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Tile & Flooring</span></a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Square Footage</span></a></li>
+                    <li><a href="/percentage-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Percentage Calculator</span></a></li>
+                    <li><a href="/weight-converter" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Weight Converter</span></a></li>
+                    <li><a href="/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Feet to CM</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company & Legal</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span>•</span> <span>Contact Us</span></a></li>
                 </ul>
             </div>
 
@@ -171,16 +172,13 @@
             const subject = document.getElementById('contactSubject').value;
             const message = document.getElementById('contactMsg').value;
 
-            if (!name || !email || !subject || !message) return;
+            if (!name || !email || !subject || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
 
             const successBox = document.getElementById('successMessage');
             successBox.classList.remove('hidden');
 
-            document.getElementById('contactForm').reset();
-
-            setTimeout(() => {
-                successBox.classList.add('hidden');
-            }, 5000);
+            const mailBody = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+            window.location.href = `mailto:contact@mymegacalculator.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
         }
     </script>
 </body>

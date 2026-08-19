@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -121,28 +121,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/age-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/age-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/age-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/age-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/age-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
@@ -151,11 +152,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
                 <div class="flex items-center space-x-2 px-3 py-2">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
-                    <a href="ar/age-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                    <a href="ar/age-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a>
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">Home</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -281,24 +282,25 @@
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/blog-age-calculator-guide" class="text-green-600 font-semibold hover:underline">Read our complete age calculator guide</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Math & Health Calculators</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="bmi-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">⚖️</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">BMI Calculator</h3>
                             <p class="text-xs text-gray-500">Calculate Body Mass Index</p>
                         </div>
                     </a>
-                    <a href="calorie-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/calorie-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">🔥</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Calorie Calculator</h3>
                             <p class="text-xs text-gray-500">Daily calorie intake & TDEE</p>
                         </div>
                     </a>
-                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📊</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Percentage Calculator</h3>
@@ -344,13 +346,44 @@
                 </div>
             </section>
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">How to Use the Age Calculator Well</h2>
+            <p>Enter the date of birth, then leave the target date on today or choose any past or future date. The result separates completed years, months, and days instead of dividing a total number of days by 365. That distinction matters because calendar months have different lengths. The total days, weeks, hours, and minutes are elapsed-day estimates based on whole calendar days.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formula and assumptions</h3>
+            <p>The calendar calculation starts with target year minus birth year, then borrows one month when the target day is earlier than the birth day and borrows one year when the target month is earlier. Leap years follow the Gregorian rule: divisible by four, except century years unless divisible by 400. A date without a time is treated as midnight in the browser.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked example</h3>
+            <p>Someone born on June 15, 1995 and checked on August 20, 2026 is 31 years, 2 months, and 5 days old. If the target date were June 10, 2026, the calculation would borrow from the previous month rather than report a negative day. Always verify that the birth date is not later than the target date.</p>
+            <h3 class="text-xl font-bold text-gray-900">Common mistakes and limits</h3>
+            <p>Do not enter a localized date in the wrong order, estimate a birthday by counting twelve identical months, or interpret the zodiac label as medical or scientific information. The tool does not know the time of birth, time zone, adoption records, or historical calendar systems. For legal eligibility, benefits, immigration, or medical decisions, confirm the date rule with the responsible authority.</p>
+            <h3 class="text-xl font-bold text-gray-900">Questions people ask</h3>
+            <p><strong>Can I plan a milestone?</strong> Yes, set the target date to the milestone. <strong>Does February 29 work?</strong> The calendar logic accounts for leap years; policies for birthdays on non-leap years vary. <strong>Is my date uploaded?</strong> Date arithmetic runs in the browser. For related health measurements, visit the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a>; for the method behind date differences, read the <a href="/blog-age-calculator-guide" class="text-green-600 font-semibold hover:underline">age calculation guide</a>.</p>
+            <h3 class="text-xl font-bold text-gray-900">Planning with the result</h3>
+            <p>For an anniversary, school cutoff, retirement date, or travel form, use the exact target date stated by the organization. A person can be the same number of completed years but have a different month and day remainder. Compare dates in the same calendar, save the assumptions, and check the displayed birthday weekday. The calculator is intentionally date-based rather than time-of-day based, so it should not be used to calculate an exact age in hours when a birth time is required.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">How to Interpret an Age Result</h2>
+            <p>An age result has a reference date, a birth date, and a calendar convention. The calculator counts complete years first, then months and days remaining. That is different from dividing a day count by 365, because leap years and different month lengths affect the remainder. For an official form, use the date format requested and verify the result against the person’s identification document.</p>
+            <h3 class="text-xl font-bold text-gray-900">Worked example and formula</h3>
+            <p>For a birth date of March 15, 1990 and a reference date of August 19, 2026, the completed age is 36 years. The anniversary passed on March 15, and the remaining period is 5 months and 4 days. For an approximate age in days, subtract the two calendar dates directly; do not assume every year has 365 days. A birthday on February 29 needs a stated policy in non-leap years.</p>
+            <h2 class="text-2xl font-bold text-gray-900">Practical Checks and Common Mistakes</h2>
+            <ul class="list-disc list-inside space-y-2 ml-2"><li>Check whether the reference date is today or a future date chosen for a form.</li><li>Enter month, day, and year in the correct order; 04/05 can mean two different dates.</li><li>Do not subtract the year numbers alone when the birthday has not occurred yet.</li><li>For a baby or infant, months and days are often more informative than completed years.</li></ul>
+            <h3 class="text-xl font-bold text-gray-900">FAQs and related calculations</h3>
+            <p><strong>Does the calculator store dates?</strong> The page performs the calculation in your browser. <strong>Can I calculate an anniversary?</strong> Yes, enter the event date and the date you want to compare. <strong>Why can a manual answer differ by one day?</strong> Time zones, inclusive counting, and leap-day rules can change a day count. For health context, pair age with the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a>; for energy estimates, see the <a href="/calorie-calculator" class="text-green-600 font-semibold hover:underline">calorie calculator</a>.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Date Difference Reference</h2>
+            <p>When comparing two dates, decide whether the end date is included. An elapsed-age result normally counts from the birth date up to, but not including, the next instant after the reference date. For contracts, school eligibility, insurance, or legal deadlines, follow the organization’s written convention. Keep a copy of both dates and the format used so the result can be reproduced.</p>
+            <h3 class="text-xl font-bold text-gray-900">Useful checks</h3>
+            <p>Test the calculator with a birthday exactly today, one day before today, and one day after today. The completed-year value should change only when the anniversary arrives. A future birth date or an invalid date should be corrected rather than interpreted as a negative age. Use a calendar for exact day counts across February and leap years.</p>
+        </section>
+        <section><h2 class="text-2xl font-bold text-gray-900">Eligibility and Records</h2><p>Age can be used for invitations, school cutoffs, insurance, travel documents, and milestone planning, but each organization may define its cutoff differently. Check whether the rule uses the date of the event, the first day of a month, or the date a form is submitted. Keep the original birth certificate or identity record available when precision matters.</p></section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -361,20 +394,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
-                    <li><a href="age-calculator.html" class="text-green-400 font-bold">Age Calculator</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">Loan Calculator</a></li>
-                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">Calorie Calculator</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                    <li><a href="/bmi-calculator" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="/age-calculator" class="text-green-400 font-bold">Age Calculator</a></li>
+                    <li><a href="/loan-calculator" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                    <li><a href="/calorie-calculator" class="hover:text-green-400 transition">Calorie Calculator</a></li>
+                    <li><a href="/paint-calculator" class="hover:text-green-400 transition">Paint Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition">Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -86,42 +86,50 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is a normal BMI range?",
+          "name": "What is considered a healthy or normal BMI range?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "According to the World Health Organization (WHO), a normal BMI for adults is between 18.5 and 24.9. A BMI below 18.5 is considered underweight, 25.0 to 29.9 is overweight, and 30.0 or higher indicates obesity."
+            "text": "According to the World Health Organization (WHO), a standard healthy BMI for adults is between 18.5 and 24.9 kg/m². A score below 18.5 indicates underweight, 25.0 to 29.9 is categorized as overweight, and 30.0 or higher is classified as obesity. For individuals of Asian descent, clinical guidelines recommend a normal ceiling of 22.9 kg/m²."
           }
         },
         {
           "@type": "Question",
-          "name": "How is BMI calculated?",
+          "name": "How is my healthy target weight range determined?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For metric units, BMI is calculated as weight in kilograms divided by height in meters squared: BMI = kg / (m²). For imperial units, the formula is BMI = (weight in lbs × 703) / (height in inches²)."
+            "text": "Your healthy weight range is calculated by multiplying your height in meters squared by the lower (18.5) and upper (24.9) normal BMI limits: Min Weight = 18.5 × (Height in m)² and Max Weight = 24.9 × (Height in m)²."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the healthy weight range for my height?",
+          "name": "Why do athletes and weightlifters often get high BMI scores?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A healthy weight range corresponds to a BMI between 18.5 and 24.9. Our calculator automatically computes your minimum and maximum healthy weight in both kilograms and pounds based on your entered height."
+            "text": "BMI relies solely on gross scale weight and vertical height without distinguishing between dense skeletal muscle and adipose fat tissue. Strength athletes with high muscle mass frequently register an overweight or obese BMI despite excellent metabolic health."
           }
         },
         {
           "@type": "Question",
-          "name": "Is BMI accurate for athletes and bodybuilders?",
+          "name": "What is the difference between standard BMI and the New BMI formula?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "BMI does not distinguish between muscle mass and fat mass. Because muscle is denser than fat, muscular individuals and athletes may have a high BMI without having excess body fat. It remains a reliable screening tool for the general population."
+            "text": "The standard formula uses height squared (h²), which can distort results for very tall or short individuals. The New BMI formula by Oxford University uses a height exponent of 2.5 (1.3 × weight / height^2.5) to better reflect human volume."
           }
         },
         {
           "@type": "Question",
-          "name": "Is my health data saved when using this calculator?",
+          "name": "Does BMI apply equally to children, teenagers, and older adults?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Like all tools on MyMegaCalculator, all computations run 100% client-side in your web browser. No personal data or health metrics are ever stored or transmitted."
+            "text": "For children and adolescents aged 2 to 19, CDC BMI-for-age percentiles are used. For adults aged 65 and older, slightly higher BMI scores (23 to 27 kg/m²) are protective against bone density loss and frailty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my personal health data saved on your servers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never. All calculations run strictly in your local browser using client-side JavaScript. We do not store, track, or transmit any personal health metrics."
           }
         }
       ]
@@ -129,28 +137,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/bmi-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/bmi-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/bmi-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/bmi-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/bmi-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
@@ -159,11 +168,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
                 <div class="flex items-center space-x-2 px-3 py-2">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
-                    <a href="ar/bmi-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                    <a href="ar/bmi-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a>
                 </div>
             </div>
         </div>
@@ -174,7 +183,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">Home</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -299,96 +308,221 @@
                             <div id="bmiGaugeMarker" class="absolute top-0 bottom-0 w-2 bg-white rounded-full shadow-md transform -translate-x-1/2 transition-all duration-300" style="left: 45%;"></div>
                         </div>
                     </div>
-                </div>
-
                 <div class="flex justify-end">
                     <button type="button" onclick="resetBmiForm()" class="text-xs font-bold text-gray-500 hover:text-red-500 transition py-1 px-3 rounded-lg hover:bg-red-50">Reset Inputs</button>
                 </div>
             </form>
         </div>
 
-        <!-- Content Section (SEO & Educational) -->
-        <div class="mt-12 space-y-8">
-            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
-                <h2 class="text-2xl font-bold text-gray-900">Understanding Body Mass Index (BMI)</h2>
-                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
-                    Body Mass Index (BMI) is an internationally recognized screening metric used by the World Health Organization (WHO) and healthcare providers to evaluate whether an adult has a healthy body weight for their height.
+        <!-- Content Section (SEO & 1200+ Word Educational Master Guide) -->
+        <div class="mt-12 space-y-10">
+
+            <!-- Introduction & Master Guide -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <div class="space-y-2">
+                    <span class="text-green-600 text-xs font-bold uppercase tracking-wider">Clinical & Epidemiological Health Guide</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">The Complete Guide to Body Mass Index (BMI) & Weight Health</h2>
+                </div>
+                
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Body Mass Index (BMI) is the most widely adopted international clinical screening tool used by the World Health Organization (WHO), the Centers for Disease Control and Prevention (CDC), and healthcare practitioners worldwide to classify weight status and assess cardiometabolic health risks across adult populations. Originally conceptualized in 1832 by the Belgian polymath and statistician <strong>Lambert Adolphe Jacques Quetelet</strong> as the "Quetelet Index of Social Physics," BMI provides an objective, standardized mathematical ratio between an individual's total body mass and vertical stature.
                 </p>
 
-                <!-- BMI Categories Table -->
-                <div class="overflow-x-auto pt-2">
-                    <table class="w-full text-sm text-left border-collapse">
+                <p class="text-base text-gray-600 leading-relaxed">
+                    While BMI serves as an indispensable first-line epidemiological risk assessment tool, modern clinical physiology emphasizes interpreting BMI in conjunction with body fat percentage, visceral adiposity, waist circumference, and metabolic biomarkers. Below is an exhaustive medical, scientific, and practical breakdown of BMI calculations, ethnic thresholds, modern adaptations, and comprehensive body composition analysis.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                    <div class="p-5 rounded-2xl bg-blue-50/70 border border-blue-100 space-y-2">
+                        <span class="text-2xl">⚖️</span>
+                        <h3 class="font-bold text-gray-900 text-base">Standard WHO Range</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">A BMI score between <strong>18.5 and 24.9 kg/m²</strong> represents the statistically lowest risk threshold for weight-related cardiovascular and metabolic mortality.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-green-50/70 border border-green-100 space-y-2">
+                        <span class="text-2xl">🎯</span>
+                        <h3 class="font-bold text-gray-900 text-base">Target Ideal Weight</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Our calculator dynamically computes your personal <strong>healthy weight window</strong> by back-calculating your height against normal BMI boundary limits.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-100 space-y-2">
+                        <span class="text-2xl">🧬</span>
+                        <h3 class="font-bold text-gray-900 text-base">Ethnic Specificity</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">For Asian and South Asian populations, WHO and ADA guidelines recommend lower overweight ($\ge 23.0$) and obesity ($\ge 27.5$) risk thresholds.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mathematical Formulas & Step-by-Step Breakdown -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">The Exact Mathematical Equations for BMI Calculation</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    BMI is calculated using standard metric and imperial unit conversions, as well as the modern Oxford University modification designed to account for non-linear allometric scaling in very tall and very short individuals:
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-sm font-mono text-gray-800">
+                    <!-- Standard Metric Formula -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">1. Standard Metric Formula (WHO Standard)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$\text{BMI} = \frac{\text{Weight (kg)}}{[\text{Height (m)}]^2}$$</p>
+                        <p class="text-xs text-gray-600 font-sans leading-relaxed">
+                            <strong>Step-by-step Example:</strong> For an individual weighing $72\text{ kg}$ with a height of $178\text{ cm}$ ($1.78\text{ m}$):<br>
+                            $1.78 \times 1.78 = 3.1684\text{ m}^2$<br>
+                            $72 \div 3.1684 = \mathbf{22.72\text{ kg/m}^2}$ <em>(Normal Weight)</em>
+                        </p>
+                    </div>
+
+                    <!-- Standard Imperial Formula -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">2. Standard Imperial Formula</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200">$$\text{BMI} = \frac{\text{Weight (lbs)} \times 703}{[\text{Height (inches)}]^2}$$</p>
+                        <p class="text-xs text-gray-600 font-sans leading-relaxed">
+                            <strong>Step-by-step Example:</strong> For an individual weighing $165\text{ lbs}$ standing $5\text{ ft } 10\text{ in}$ ($70\text{ inches}$):<br>
+                            $70 \times 70 = 4,900\text{ in}^2$<br>
+                            $(165 \times 703) \div 4,900 = 115,995 \div 4,900 = \mathbf{23.67}$ <em>(Normal Weight)</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- New Oxford BMI Formula -->
+                <div class="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100 space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 font-sans block">3. Modern Oxford University "New BMI" (Trefethen Formula)</span>
+                    <p class="bg-white p-3 rounded-xl border border-emerald-200 font-mono text-sm">$$\text{BMI}_{\text{new}} = 1.3 \times \frac{\text{Weight (kg)}}{\text{Height (m)}^{2.5}} = 5734 \times \frac{\text{Weight (lbs)}}{\text{Height (inches)}^{2.5}}$$</p>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Developed by Professor Nick Trefethen of Oxford University, this formula corrects the traditional square exponent bias ($h^2$) that disproportionately categorizes short people as artificially "too thin" and tall people as artificially "overweight."
+                    </p>
+                </div>
+            </section>
+
+            <!-- WHO vs Asian Population Reference Matrix -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">WHO vs Asian Population BMI Classification Matrix</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Extensive clinical trials by the World Health Organization (WHO) and the International Association for the Study of Obesity established that individuals of Asian, South Asian, and Middle Eastern descent develop elevated rates of Type 2 diabetes and hypertension at significantly lower BMI thresholds due to higher visceral body fat percentages:
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm text-gray-700 min-w-[600px]">
                         <thead>
-                            <tr class="bg-gray-50 border-b border-gray-200 text-gray-700 font-bold">
-                                <th class="p-3">Category</th>
-                                <th class="p-3">BMI Range (kg/m²)</th>
-                                <th class="p-3">Health Implication</th>
+                            <tr class="border-b border-gray-200 bg-gray-50/80 text-xs font-bold uppercase tracking-wider text-gray-900">
+                                <th class="p-3.5">Weight Category</th>
+                                <th class="p-3.5">Standard WHO BMI</th>
+                                <th class="p-3.5">Asian / South Asian BMI</th>
+                                <th class="p-3.5">Cardiometabolic Health Risk</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-gray-100 text-gray-600">
-                            <tr>
-                                <td class="p-3 font-semibold text-blue-600">Underweight</td>
-                                <td class="p-3">&lt; 18.5</td>
-                                <td class="p-3">Possible nutritional deficiency or underlying health issue</td>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-blue-600">Severe Underweight</td>
+                                <td class="p-3.5">&lt; 16.0 kg/m²</td>
+                                <td class="p-3.5">&lt; 16.0 kg/m²</td>
+                                <td class="p-3.5 text-amber-700 font-semibold">High risk for immune & hormonal failure</td>
                             </tr>
-                            <tr class="bg-green-50/50">
-                                <td class="p-3 font-semibold text-green-700">Normal Weight</td>
-                                <td class="p-3">18.5 – 24.9</td>
-                                <td class="p-3">Lowest risk of weight-related health conditions</td>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-blue-500">Underweight</td>
+                                <td class="p-3.5">16.0 – 18.4 kg/m²</td>
+                                <td class="p-3.5">16.0 – 18.4 kg/m²</td>
+                                <td class="p-3.5 text-amber-600">Moderate risk (osteoporosis, nutrient deficiency)</td>
                             </tr>
-                            <tr>
-                                <td class="p-3 font-semibold text-yellow-600">Overweight</td>
-                                <td class="p-3">25.0 – 29.9</td>
-                                <td class="p-3">Moderate risk of cardiovascular disease and hypertension</td>
+                            <tr class="bg-green-50/60 hover:bg-green-50 transition">
+                                <td class="p-3.5 font-bold text-green-700">Normal / Healthy Weight</td>
+                                <td class="p-3.5 font-bold text-green-800">18.5 – 24.9 kg/m²</td>
+                                <td class="p-3.5 font-bold text-green-800">18.5 – 22.9 kg/m²</td>
+                                <td class="p-3.5 text-green-700 font-bold">Lowest statistical disease mortality</td>
                             </tr>
-                            <tr>
-                                <td class="p-3 font-semibold text-red-600">Obesity (Class 1)</td>
-                                <td class="p-3">30.0 – 34.9</td>
-                                <td class="p-3">Increased risk for metabolic syndrome and diabetes</td>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-yellow-600">Overweight / Pre-Obese</td>
+                                <td class="p-3.5">25.0 – 29.9 kg/m²</td>
+                                <td class="p-3.5">23.0 – 27.4 kg/m²</td>
+                                <td class="p-3.5 text-yellow-700 font-semibold">Moderate risk for insulin resistance</td>
                             </tr>
-                            <tr>
-                                <td class="p-3 font-semibold text-red-700">Obesity (Class 2 &amp; 3)</td>
-                                <td class="p-3">35.0+</td>
-                                <td class="p-3">High risk of chronic diseases and cardiovascular complications</td>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-red-600">Obesity Class I</td>
+                                <td class="p-3.5">30.0 – 34.9 kg/m²</td>
+                                <td class="p-3.5">27.5 – 32.4 kg/m²</td>
+                                <td class="p-3.5 text-red-600 font-semibold">High risk for T2 diabetes & coronary disease</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-red-700">Obesity Class II (Moderate)</td>
+                                <td class="p-3.5">35.0 – 39.9 kg/m²</td>
+                                <td class="p-3.5">32.5 – 37.4 kg/m²</td>
+                                <td class="p-3.5 text-red-700 font-bold">Very high cardiovascular & joint strain</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-purple-700">Obesity Class III (Severe / Morbid)</td>
+                                <td class="p-3.5">&ge; 40.0 kg/m²</td>
+                                <td class="p-3.5">&ge; 37.5 kg/m²</td>
+                                <td class="p-3.5 text-purple-700 font-bold">Extremely high risk for serious health events</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </section>
 
-                <h3 class="text-lg font-bold text-gray-900 pt-3">BMI Calculation Formulas</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
-                        <strong class="text-gray-900 block">Metric Formula:</strong>
-                        <p class="font-mono text-green-700">BMI = Weight (kg) / [Height (m)]²</p>
-                        <p class="text-xs text-gray-500">Example: 70 kg / (1.75 × 1.75) = 22.86 kg/m²</p>
+            <!-- Beyond BMI: Advanced Body Composition Markers -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Beyond BMI: Essential Body Composition Biomarkers</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Because BMI calculates weight-for-height without differentiating between skeletal muscle, bone density, and visceral fat, health scientists recommend pairing your BMI score with these secondary health assessments:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">📏</span> Waist-to-Height Ratio (WHtR)
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            A simple, powerful rule of thumb supported by the UK National Institute for Health and Care Excellence (NICE): <strong>"Keep your waist circumference to less than half your height."</strong> A WHtR under 0.5 indicates healthy visceral fat levels regardless of total body weight.
+                        </p>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
-                        <strong class="text-gray-900 block">Imperial Formula:</strong>
-                        <p class="font-mono text-green-700">BMI = 703 × Weight (lbs) / [Height (in)]²</p>
-                        <p class="text-xs text-gray-500">Example: 703 × 154 / (69 × 69) = 22.74</p>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">🧬</span> Dual-Energy X-Ray Absorptiometry (DEXA)
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            The clinical gold standard for body composition. A DEXA scan maps subcutaneous fat, deep visceral adipose tissue (VAT) surrounding internal organs, and skeletal muscle mass with millimeter precision.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">🏋️</span> The Athlete & Bodybuilder Anomaly
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Dense skeletal muscle weighs roughly 18% more by volume than adipose fat tissue. Elite athletes and strength trainers often register a BMI of 28 to 33 kg/m² (classified as overweight/obese) while carrying single-digit body fat and exceptional metabolic health.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">👵</span> Sarcopenic Obesity ("Skinny-Fat")
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            In aging adults or sedentary individuals, progressive loss of lean muscle mass (sarcopenia) accompanied by high visceral fat accumulation can produce a completely "Normal" BMI score (e.g. 22 kg/m²) despite elevated insulin resistance and metabolic dysfunction.
+                        </p>
                     </div>
                 </div>
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/blog-bmi-calculator-guide" class="text-green-600 font-semibold hover:underline">Read our complete BMI calculator guide</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Health & Math Tools</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="calorie-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/calorie-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">🔥</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Calorie & TDEE</h3>
                             <p class="text-xs text-gray-500">Daily calorie burn and targets</p>
                         </div>
                     </a>
-                    <a href="weight-converter.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/weight-converter" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">⚖️</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Weight Converter</h3>
                             <p class="text-xs text-gray-500">Convert kg, lbs, stones, and grams</p>
                         </div>
                     </a>
-                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📊</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Percentage Calculator</h3>
@@ -398,57 +532,67 @@
                 </div>
             </section>
 
-            <!-- FAQ Section -->
+            <!-- Expanded FAQ Section -->
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
                 <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
                 <div class="space-y-4">
-                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group" open>
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>What is a normal BMI range?</span>
+                            <span>What is considered a healthy or normal BMI range?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>According to the World Health Organization (WHO), a normal BMI for adults is between <strong>18.5 and 24.9</strong>. A BMI below 18.5 is considered underweight, 25.0 to 29.9 is overweight, and 30.0 or higher indicates obesity.</p>
+                            <p>According to the World Health Organization (WHO), a standard healthy BMI for adults is between <strong>18.5 and 24.9 kg/m²</strong>. A score below 18.5 indicates underweight, 25.0 to 29.9 is categorized as overweight, and 30.0 or higher is classified as obesity. For individuals of Asian descent, clinical guidelines recommend a normal ceiling of 22.9 kg/m².</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>How is BMI calculated?</span>
+                            <span>How is my healthy target weight range determined?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>For metric units, BMI is calculated as weight in kilograms divided by height in meters squared: <code>BMI = kg / (m²)</code>. For imperial units, the formula is <code>BMI = (weight in lbs × 703) / (height in inches²)</code>.</p>
+                            <p>Your healthy weight range is calculated by multiplying your height in meters squared by the lower (18.5) and upper (24.9) normal BMI limits: <code>Min Weight = 18.5 × (Height in m)²</code> and <code>Max Weight = 24.9 × (Height in m)²</code>. For example, for someone standing 5 ft 10 in (1.78 m), the healthy weight window is 58.6 kg to 78.9 kg (129 lbs to 174 lbs).</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>What is the healthy weight range for my height?</span>
+                            <span>Why do athletes and weightlifters often get high BMI scores?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>A healthy weight range corresponds to a BMI between 18.5 and 24.9. Our calculator automatically computes your minimum and maximum healthy weight in both kilograms and pounds based on your entered height.</p>
+                            <p>BMI relies solely on gross scale weight and vertical height without distinguishing between dense, vascular skeletal muscle and adipose fat tissue. Strength athletes and bodybuilders with substantial muscle mass and low body fat frequently register an "overweight" or "obese" BMI despite having pristine metabolic health.</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>Is BMI accurate for athletes and bodybuilders?</span>
+                            <span>What is the difference between standard BMI and the "New BMI" formula?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>BMI does not distinguish between muscle mass and fat mass. Because muscle is denser than fat, muscular individuals and athletes may have a high BMI without having excess body fat. It remains a reliable screening tool for the general population.</p>
+                            <p>The standard Quetelet formula uses a height exponent of 2 ($h^2$), which can slightly distort results for very tall or very short people. The "New BMI" formula, engineered by Oxford University mathematician Nick Trefethen, uses a height exponent of 2.5 ($1.3 \times \text{weight} / \text{height}^{2.5}$) to more accurately reflect three-dimensional volumetric human growth.</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>Is my health data saved when using this calculator?</span>
+                            <span>Does BMI apply equally to children, teenagers, and older adults?</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>No. Like all tools on MyMegaCalculator, all computations run 100% client-side in your web browser. No personal data or health metrics are ever stored or transmitted.</p>
+                            <p>No. For children and adolescents aged 2 to 19, healthcare providers use <strong>BMI-for-age percentiles</strong> referenced against CDC growth curves. For adults aged 65 and older, slightly higher BMI scores (e.g. 23 to 27 kg/m²) are often protective against osteoporosis, nutritional decline, and frailty.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Is my personal health data saved on your servers?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Never. All calculations run strictly in your local browser using client-side JavaScript. We do not store, track, log, or transmit any height, weight, or personal health metrics to any external server.</p>
                         </div>
                     </details>
                 </div>
@@ -460,7 +604,7 @@
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -471,20 +615,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="bmi-calculator.html" class="text-green-400 font-bold">BMI Calculator</a></li>
-                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">Age Calculator</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">Loan Calculator</a></li>
-                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">Calorie Calculator</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                    <li><a href="/bmi-calculator" class="text-green-400 font-bold">BMI Calculator</a></li>
+                    <li><a href="/age-calculator" class="hover:text-green-400 transition">Age Calculator</a></li>
+                    <li><a href="/loan-calculator" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                    <li><a href="/calorie-calculator" class="hover:text-green-400 transition">Calorie Calculator</a></li>
+                    <li><a href="/paint-calculator" class="hover:text-green-400 transition">Paint Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition">Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -121,28 +121,29 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/calorie-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/calorie-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/calorie-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">Calculators</a>
-                <a href="blog.html" class="hover:text-green-600 transition">Blog</a>
+                <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
-                    <a href="ar/calorie-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">العربية</a>
+                    <a href="ar/calorie-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu">
@@ -151,11 +152,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
+                <a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
                 <div class="flex items-center space-x-2 px-3 py-2">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
-                    <a href="ar/calorie-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">العربية</a>
+                    <a href="ar/calorie-calculator.html" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a>
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">Home</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -343,24 +344,25 @@
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">Read our complete calorie calculator guide</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Health Tools</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="bmi-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">⚖️</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">BMI Calculator</h3>
                             <p class="text-xs text-gray-500">Body Mass Index & Ideal Weight</p>
                         </div>
                     </a>
-                    <a href="weight-converter.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/weight-converter" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">🔄</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Weight Converter</h3>
                             <p class="text-xs text-gray-500">Pounds, kg, and grams</p>
                         </div>
                     </a>
-                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                    <a href="/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
                         <span class="text-2xl">📊</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">Percentage Calculator</h3>
@@ -406,13 +408,61 @@
                 </div>
             </section>
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">How to Interpret a Calorie Estimate</h2>
+            <p>Enter age, sex, height, weight, and activity level using consistent units. The calculator estimates resting energy needs and then applies an activity factor to estimate daily maintenance calories. This is a planning starting point, not a measurement of metabolism. Body composition, sleep, illness, medication, training load, and the accuracy of the inputs can all change actual needs.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formula and example</h3>
+            <p>The common Mifflin-St Jeor equations estimate resting needs from weight, height, and age, with a sex-specific constant, then multiply by an activity factor. A 30-year-old person weighing 70 kg and measuring 175 cm will receive a different estimate at sedentary and very active settings. Change one input at a time and record the units so the comparison is meaningful.</p>
+            <h3 class="text-xl font-bold text-gray-900">Practical use</h3>
+            <p>Use the maintenance estimate as a range and watch the trend over two to four weeks rather than reacting to one day. Food labels, restaurant portions, cooking oils, drinks, and weekend meals are frequent sources of undercounting. If adjusting body weight, make gradual changes and include protein, fiber, hydration, and enjoyable foods. Athletes, teenagers, pregnant people, and anyone with a medical condition should seek individualized advice.</p>
+            <h3 class="text-xl font-bold text-gray-900">Mistakes and limitations</h3>
+            <p>Do not enter pounds where kilograms are requested, select an activity level that describes your aspiration rather than your routine, or treat the result as a diagnosis. Calories are not the only measure of nutrition quality, and the estimate cannot assess allergies or nutrient deficiencies. Recheck your inputs and consult a qualified professional when a large change is needed.</p>
+            <h3 class="text-xl font-bold text-gray-900">Related reading</h3>
+            <p>For the mathematics and activity assumptions, read the <a href="/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">calorie calculator guide</a>. Pair calorie planning with the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> only as a broad screening comparison, not as a complete health assessment.</p>
+            <h3 class="text-xl font-bold text-gray-900">Making the estimate useful</h3>
+            <p>Use a consistent weighing routine and compare weekly trends, because water, sodium, digestion, and exercise can move scale weight from one day to the next. Recalculate after a meaningful change in body weight or routine, but do not chase every fluctuation. The safest interpretation is a starting range that you test against real observations and adjust gradually with qualified guidance.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Using a Calorie Estimate Responsibly</h2>
+            <p>A calorie estimate is a starting point, not a diagnosis or a prescription. The calculator uses age, sex setting, height, weight, and activity to estimate basal energy needs and daily maintenance. Your actual needs can change with training, sleep, medication, pregnancy, illness, and changes in body composition. Use a consistent method for several weeks and discuss major changes with a qualified professional.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formula and worked example</h3>
+            <p>A common resting-energy equation is Mifflin–St Jeor. For men, BMR = 10 × weight in kg + 6.25 × height in cm − 5 × age + 5. For women, replace the final constant with −161. Convert pounds to kilograms by multiplying by 0.453592 and inches to centimeters by multiplying by 2.54. If a 30-year-old man weighs 80 kg and is 180 cm tall, the estimate is 800 + 1125 − 150 + 5 = 1,780 kcal per day before activity.</p>
+            <h2 class="text-2xl font-bold text-gray-900">Activity Factors and Mistakes</h2>
+            <p>Multiplying BMR by an activity factor estimates maintenance, but a desk job with occasional exercise should not be treated like daily hard training. Log meals honestly, use the same weighing routine, and avoid changing several variables at once. Calories are not interchangeable with nutrition quality: protein, fiber, hydration, and micronutrients still matter.</p>
+            <h3 class="text-xl font-bold text-gray-900">FAQs and links</h3>
+            <p><strong>Why do two calculators differ?</strong> They may use different formulas, units, or activity definitions. <strong>Should I eat exactly the displayed number?</strong> No; treat it as an estimate and observe your trend. <strong>Does age affect the result?</strong> Yes, it is part of the equation. Use the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> for a separate screening measure, and the <a href="/weight-converter" class="text-green-600 font-semibold hover:underline">weight converter</a> when your scale uses another unit.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Turning an Estimate into a Plan</h2>
+            <p>Use the displayed maintenance estimate as a comparison point. Record portions, drinks, cooking oils, and weekend meals because small omissions can explain a difference between a log and a scale trend. A gradual change is easier to interpret than a dramatic target. Recalculate after a meaningful change in body weight or routine, not after every single day.</p>
+            <h3 class="text-xl font-bold text-gray-900">Safety reminder</h3>
+            <p>Children, pregnant or breastfeeding people, athletes, and anyone managing a medical condition may need a different assessment. Seek professional advice before setting a restrictive target. The calculator estimates energy, while a balanced plan also considers protein, fiber, fluids, vitamins, and personal preferences.</p>
+        </section>
+        <section><h2 class="text-2xl font-bold text-gray-900">Tracking the Trend</h2><p>Daily calorie needs naturally vary. Compare a consistent seven-day pattern, sleep, activity, and body-weight trend rather than reacting to one reading. A food scale can improve portion estimates, but labels and restaurant servings also contain uncertainty.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>How to use the calorie calculator well</h2>
+            <p>Use your age, height, weight, and activity level as an honest starting point rather than trying to choose the most flattering option. The result estimates maintenance calories, often called total daily energy expenditure (TDEE). It is not a medical diagnosis and it cannot account perfectly for sleep, medication, muscle mass, pregnancy, or changing training loads.</p>
+            <h3>The formula behind the estimate</h3>
+            <p>Many calculators first estimate basal metabolic rate (BMR) with the Mifflin-St Jeor equation. For men, BMR is 10 times weight in kilograms plus 6.25 times height in centimeters, minus 5 times age, plus 5. For women, the final constant is minus 161. TDEE is then approximately BMR multiplied by an activity factor. For example, a 30-year-old woman at 65 kg and 165 cm has a BMR near 1,370 calories; a moderately active factor of 1.55 produces roughly 2,120 maintenance calories.</p>
+            <h3>Practical steps</h3>
+            <ol>
+                <li>Measure body weight under similar conditions, preferably in the morning.</li>
+                <li>Choose the activity level that describes your normal week, not an occasional hard workout.</li>
+                <li>Compare the estimate with a seven-day average of your food intake and weight trend.</li>
+                <li>Adjust gradually after two or three weeks if your goal and trend do not match.</li>
+            </ol>
+            <h3>Common mistakes and safety notes</h3>
+            <p>Do not double-count exercise by selecting a high activity factor and then automatically eating back every watch calorie. Packaged-food labels and restaurant portions also introduce error. A small calorie deficit is usually easier to sustain than an aggressive restriction, while athletes may need more carbohydrate around training. Children, pregnant or breastfeeding people, and anyone managing diabetes or an eating disorder should use individualized advice from a qualified clinician.</p>
+            <h3>Questions people ask</h3>
+            <p><strong>Should I eat the exact number?</strong> No. Treat it as a range and use your trend over time. <strong>Why did my estimate change?</strong> A change in weight, age, activity, or unit selection changes the equation. <strong>What should I track?</strong> Calories, protein, sleep, training, and a weekly weight average give more context than a single scale reading. For related planning, see our <a href="/bmi-calculator">BMI calculator</a> and <a href="/weight-converter">weight converter</a>.</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center space-x-3">
+                <a href="/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -423,20 +473,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">BMI Calculator</a></li>
-                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">Age Calculator</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">Loan Calculator</a></li>
-                    <li><a href="calorie-calculator.html" class="text-green-400 font-bold">Calorie Calculator</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                    <li><a href="/bmi-calculator" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="/age-calculator" class="hover:text-green-400 transition">Age Calculator</a></li>
+                    <li><a href="/loan-calculator" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                    <li><a href="/calorie-calculator" class="text-green-400 font-bold">Calorie Calculator</a></li>
+                    <li><a href="/paint-calculator" class="hover:text-green-400 transition">Paint Calculator</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">About Us</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">Blog</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+                    <li><a href="/about-us" class="hover:text-green-400 transition">About Us</a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition">Blog</a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition">Privacy Policy</a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition">Contact</a></li>
                 </ul>
             </div>
         </div>
