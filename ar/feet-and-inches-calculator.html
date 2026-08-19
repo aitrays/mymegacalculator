@@ -6,10 +6,11 @@
     <title>حاسبة القدم والبوصة إلى سم - محول الطول والمسافة المجاني</title>
     <meta name="description" content="حوّل القدم والبوصة إلى سنتيمتر (سم) ومتر فوراً. تعلم صيغ التحويل الدقيقة والجداول المرجعية السريعة وحسابات الطول الشائعة.">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/feet-and-inches-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/feet-and-inches-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/feet-and-inches-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="canonical" href="https://mymegacalculator.com/ar/feet-and-inches-calculator" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymegacalculator.com/ar/feet-and-inches-calculator">
@@ -26,18 +27,18 @@
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../feet-and-inches-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/feet-and-inches-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
         
@@ -47,11 +48,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../feet-and-inches-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/feet-and-inches-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -199,6 +200,45 @@
             </section>
 
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">طريقة استخدام محول الطول</h2>
+            <p>أدخل عدد الأقدام والبوصات المتبقية. تعتمد النتيجة على العلاقات الدقيقة: القدم 30.48 سم والبوصة 2.54 سم. تفيد الأداة في النماذج والملابس والسفر والأثاث واللياقة، وتعرض السنتيمتر والمتر وإجمالي البوصات لتسهيل المراجعة.</p>
+            <h3 class="text-xl font-bold text-gray-900">المعادلة ومثال</h3>
+            <p>احسب البوصات الكلية أولاً: (الأقدام × 12) + البوصات. ثم اضرب في 2.54. فـ5 أقدام و9 بوصات تساوي 69 بوصة، و69 × 2.54 = 175.26 سم، أي 1.7526 متر. قرّب النتيجة النهائية فقط حسب ما يطلبه النموذج.</p>
+            <h3 class="text-xl font-bold text-gray-900">أخطاء شائعة</h3>
+            <p>خمسة أقدام وتسع بوصات ليست 5.9 قدم، و5.5 قدم تعني خمسة أقدام وست بوصات. حوّل كسور البوصة أولاً؛ 3/8 تساوي 0.375. قِس حافياً للطول الرسمي، وكرر القياس إذا كانت النتيجة قريبة من حد فتحة أو قطعة أثاث.</p>
+            <h3 class="text-xl font-bold text-gray-900">التحويل العكسي والحدود</h3>
+            <p>للعودة من السنتيمتر، اقسم على 2.54 للحصول على البوصات، ثم اقسم على 12 لاستخراج الأقدام والباقي. قد يسبب التقريب فرقاً صغيراً عند العودة. الأداة تحول الوحدات ولا تحكم على الصحة أو مقاس الملابس. راجع <a href="/blog-feet-inches-guide" class="text-green-600 font-semibold hover:underline">دليل القدم والبوصة</a>، وللسياق الصحي راجع <a href="/ar/bmi-calculator" class="text-green-600 font-semibold hover:underline">حاسبة BMI</a>.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">تفاصيل تحويل الطول</h2>
+            <p>تحسب الأداة البوصات الكلية أولاً: (الأقدام × 12) + البوصات، ثم تستخدم 1 بوصة = 2.54 سم و100 سم = متر واحد. خمسة أقدام وتسع بوصات تساوي 69 بوصة، و69 × 2.54 = 175.26 سم. أما 7.5 بوصات فتعني سبع بوصات ونصف، وليست 7.2.</p>
+            <h3 class="text-xl font-bold text-gray-900">القياس والتقريب</h3>
+            <p>سجّل هل القياس حافي القدمين أم بالحذاء، وهل هو داخل إطار أم خلوص لقطعة أثاث. قرّب في النهاية فقط: النموذج قد يطلب سنتيمترات كاملة، بينما قد يحتاج القص إلى ملليمترات. للعودة من السنتيمتر اقسم على 2.54 ثم اقسم إجمالي البوصات على 12 لاستخراج الأقدام والباقي.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أخطاء وأسئلة</h2>
+            <p>خمسة أقدام وتسع بوصات ليست 5.9 قدم. لا تخلط بين النظام العشري والقدم/البوصة، ولا تقرّب كل جزء قبل التحويل. الأداة لتحويل الوحدات وليست تقييماً طبياً. راجع <a href="/blog-feet-inches-guide" class="text-green-600 font-semibold hover:underline">دليل القدم والبوصة</a>، واستخدم <a href="/ar/bmi-calculator" class="text-green-600 font-semibold hover:underline">حاسبة BMI</a> فقط مع قياس وزن مناسب.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">مرجع سريع</h2><p>القدم 12 بوصة، والياردة 3 أقدام، والمتر 100 سم. ستة أقدام قريبة من 183 سم؛ فإذا ظهر رقم 18 أو 1830 فراجع الفاصلة العشرية. في قياس الأثاث افصل بين أبعاد المنتج ومسار إدخاله، واحسب مساحة الدوران.</p><h3 class="text-xl font-bold text-gray-900">قياس ثابت</h3><p>ضع بداية الشريط عند الصفر، واجعله مستقيماً واقرأه على مستوى العين. كرر القياس إذا كان قريباً من حد فتحة أو قطعة.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>تحويل القدم والبوصة بدقة</h2>
+            <p>تستخدم هذه الحاسبة عندما يكون القياس بالقدم والبوصة بينما يحتاج النموذج أو المخطط إلى السنتيمتر أو القدم العشرية. القدم تحتوي على 12 بوصة، لذلك 5 أقدام و8 بوصات تساوي 68 بوصة، أو 5.6667 قدما، أو 172.72 سنتيمترا. الرقم 5.8 قدم لا يعني 5 أقدام و8 بوصات؛ فالجزء العشري هنا جزء من قدم.</p>
+            <h3>الصيغ والمثال</h3>
+            <p>لإيجاد البوصات الكلية استخدم: عدد الأقدام في 12 زائد عدد البوصات. ثم اضرب البوصات في 2.54 للحصول على السنتيمتر. للتحويل العكسي اقسم السنتيمتر على 2.54، ثم اقسم البوصات الناتجة على 12، وخذ العدد الصحيح أقداما والباقي بوصات. 180 سنتيمترا تساوي نحو 5 أقدام و10.87 بوصة، وقد تقرب في الاستخدام اليومي إلى 5 أقدام و11 بوصة.</p>
+            <h3>خطوات القياس</h3>
+            <ol><li>اكتب الأقدام في حقل الأقدام والبوصات في حقل البوصات.</li><li>اجعل البوصات بين صفر و11 لتجنب نتيجة غير منسقة.</li><li>احتفظ بالدقة عند قياس الأبواب والأثاث ومواد البناء.</li><li>اكتب الوحدة بجانب الناتج النهائي.</li></ol>
+            <h3>افتراضات وأسئلة شائعة</h3>
+            <p>يعتمد التحويل على البوصة الدولية التي تساوي 2.54 سنتيمترا تماما، ولا يصحح الحذاء أو الوقفة أو ميل الأرضية. أكثر الأخطاء شيوعا اعتبار البوصات أجزاء من مئة، أو تقريب كل خطوة قبل النهاية. هل يمكن إدخال 12 بوصة؟ نعم حسابيا، لكن إضافة قدم تجعل النتيجة أوضح. في الاستمارة الطبية اتبع الوحدة والتقريب المطلوبين. ولحساب الأرضيات انتقل إلى <a href="/ar/square-footage-calculator">حاسبة المساحة</a>، ولتحويل الكتلة استخدم <a href="/ar/weight-converter">حاسبة الوزن</a>.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>اختيار درجة التقريب</h2>
+            <p>يحتاج قص الخشب أو تركيب باب إلى دقة أكبر من وصف طول تقريبي في ملف شخصي. لا تقرب 172.72 سنتيمترا إلى 173 قبل معرفة السماحية، ولا تحول الناتج العشري إلى بوصات بالتخمين. احتفظ بالقيمة الكاملة في الحساب، ثم قرّب الرقم الظاهر فقط إلى أقرب بوصة أو نصف بوصة حسب الاستخدام.</p>
+            <p>إذا اختلف قياسان، افحص نقطة البداية وطريقة حمل الشريط، ثم سجلهما بالوحدة نفسها. القياس الداخلي للخزانة يختلف عن القياس الخارجي، كما أن فتحة الباب تحتاج فراغا إضافيا. لذلك فالتحويل الحسابي صحيح، لكنه لا يغني عن القياس الفعلي في الموقع.</p>
+            <p>عند شراء إطار أو ستارة، ميّز بين مقاس المنتج ومقاس الفتحة. قس العرض في الأعلى والوسط والأسفل، ثم قس الارتفاع في أكثر من جانب. سجل أصغر أو أكبر قياس بحسب تعليمات التركيب، وأضف الخلوص المطلوب بعد التحويل. التحويل لا يصلح قياسا بدأ من نقطة خاطئة.</p>
+            <p>عند تحويل قياس لمخطط، اكتب الوحدة في كل سطر، واحفظ الرقم غير المقرب. افحص أن مجموع البوصات يساوي الأقدام مضروبة في 12 مضافا إليها الباقي، ثم استخدم الناتج في الشراء أو القص. هذه المراجعة البسيطة تكشف إدخال القدم في خانة البوصة أو العكس.</p>
+            <p>في القياسات الصغيرة، قد يكون نصف البوصة أو ربعها مهما. أدخل الكسر كرقم عشري، ثم قرّب حسب سماحية المنتج، لا حسب العادة فقط. قارن الناتج بالمسطرة قبل تثبيت القطعة.</p>
+            <p>عند كتابة القياس لشخص آخر، استخدم صيغة واضحة مثل 6 أقدام و2 بوصة أو 188 سنتيمترا، ولا تترك الرقم بلا وحدة. إذا كان العمل يحتاج قصا دقيقا، افصل بين قياس الفتحة وقياس القطعة، واطلب من المورد السماحية المطلوبة. أعد القياس بعد تركيب الإطار إذا تغيرت الأرضية أو الغطاء، لأن المسافة المتاحة قد تنقص. التحويل الرياضي ثابت، لكن القياس العملي يتأثر بالسطح والأداة والفراغ، ولذلك يجب توثيق نقطة البداية واتجاه القياس.</p>
+            <p>للمقارنة بين قياسين، حوّلهما إلى السنتيمتر أو البوصة قبل الطرح. وإذا كان القياس كسرا مثل نصف بوصة، أدخله كقيمة عشرية صحيحة، ثم تحقق من أن النتيجة ما زالت ضمن دقة الأداة المستخدمة. هذه الخطوة تمنع أخطاء صغيرة تتراكم عند قص عدة قطع.</p>
+        </section>
     </main>
 
     <!-- MODERN PREMIUM FOOTER -->
@@ -207,7 +247,7 @@
             
             <!-- Col 1: About & Brand -->
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -225,11 +265,11 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">أفضل الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
+                    <li><a href="/ar/tile-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
+                    <li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
+                    <li><a href="/ar/percentage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
+                    <li><a href="/ar/weight-converter" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
+                    <li><a href="/ar/feet-and-inches-calculator" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
                 </ul>
             </div>
 
@@ -237,12 +277,12 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة والقانون</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="/ar/author-alex-morgan" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="/ar/terms-of-service" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
                 </ul>
             </div>
 

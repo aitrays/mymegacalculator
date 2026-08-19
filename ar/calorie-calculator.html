@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -121,28 +121,29 @@
     </script>
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/calorie-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/calorie-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/calorie-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../calorie-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/calorie-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
@@ -151,11 +152,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../calorie-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/calorie-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center gap-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/ar/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">الرئيسية</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -343,24 +344,25 @@
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/ar/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">اقرأ دليل حاسبة السعرات</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">حاسبات ذات صلة</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="bmi-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">⚖️</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة مؤشر كتلة الجسم</h3>
                             <p class="text-xs text-gray-500">حساب مؤشر BMI والوزن المثالي</p>
                         </div>
                     </a>
-                    <a href="weight-converter.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/weight-converter" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">🔄</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">محول الأوزان</h3>
                             <p class="text-xs text-gray-500">تحويل بين كجم، باوند، وجرام</p>
                         </div>
                     </a>
-                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">📊</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة النسبة المئوية</h3>
@@ -406,13 +408,50 @@
                 </div>
             </section>
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">فهم تقدير السعرات</h2>
+            <p>أدخل العمر والجنس والطول والوزن ومستوى النشاط بوحدات صحيحة. تقدّر الأداة احتياج الراحة ثم تطبق معامل النشاط للوصول إلى احتياج يومي تقريبي. هذه نقطة بداية وليست قياساً مباشراً للأيض، إذ تؤثر كتلة العضلات والنوم والمرض والأدوية ودقة البيانات في الاحتياج الحقيقي.</p>
+            <h3 class="text-xl font-bold text-gray-900">المعادلة والمثال</h3>
+            <p>تستخدم المعادلات الشائعة الوزن والطول والعمر وثابتاً يختلف حسب الجنس، ثم تضرب الناتج في معامل النشاط. الشخص الذي يزن 70 كغ وطوله 175 سم وعمره 30 سنة سيحصل على تقدير مختلف عند اختيار نشاط قليل أو نشاط مرتفع. غيّر مدخلاً واحداً في كل مرة وسجل الوحدة المستخدمة.</p>
+            <h3 class="text-xl font-bold text-gray-900">الاستخدام العملي</h3>
+            <p>اعتبر النتيجة نطاقاً تجريبياً وراقب الاتجاه خلال أسبوعين إلى أربعة أسابيع، لأن الملصقات وأحجام الحصص والزيوت والمشروبات مصادر شائعة للخطأ. اجعل التغيير تدريجياً واهتم بالبروتين والألياف والماء. يحتاج الأطفال والرياضيون والحوامل ومن لديهم مرض مزمن إلى نصيحة فردية من مختص.</p>
+            <h3 class="text-xl font-bold text-gray-900">الأخطاء والحدود</h3>
+            <p>لا تدخل الرطل مكان الكيلوغرام، ولا تختر نشاطاً يمثل هدفك بدلاً من روتينك الفعلي. السعرات لا تصف جودة الغذاء ولا تكشف الحساسية أو نقص العناصر. أعد التحقق من المدخلات واستشر مختصاً عند الحاجة إلى تغيير كبير. اقرأ <a href="/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">دليل السعرات</a> لمزيد من الأمثلة.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">قراءة تقدير السعرات</h2>
+            <p>الرقم تقدير مبدئي وليس وصفة علاجية. يعتمد على العمر والجنس والطول والوزن ومستوى النشاط، بينما تتأثر الحاجة الفعلية بالنوم والتدريب والمرض والأدوية وتكوين الجسم. استخدم طريقة ثابتة لعدة أسابيع وراقب الاتجاه بدلاً من اعتبار نتيجة واحدة حقيقة دقيقة.</p>
+            <h3 class="text-xl font-bold text-gray-900">المعادلة ومثال</h3>
+            <p>من المعادلات الشائعة: للرجال BMR = 10 × الوزن بالكيلوغرام + 6.25 × الطول بالسنتيمتر − 5 × العمر + 5، وللنساء يستبدل الثابت الأخير بـ −161. لتحويل الرطل إلى كيلوغرام اضرب في 0.453592، ولتحويل البوصة إلى سم اضرب في 2.54. شخص عمره 30 ووزنه 80 كغ وطوله 180 سم يعطي تقريباً 1780 سعرة قبل عامل النشاط.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أخطاء وأسئلة</h2>
+            <p>لا تخلط بين العمل المكتبي والتمرين القاسي يومياً، ولا تغيّر الطعام والنشاط والنوم معاً إذا كنت تريد فهم النتيجة. السعرات لا تعني جودة الغذاء؛ الألياف والبروتين والماء والعناصر الغذائية مهمة أيضاً. قد تختلف الحاسبات لاختلاف المعادلات وعوامل النشاط. استخدم <a href="/ar/bmi-calculator" class="text-green-600 font-semibold hover:underline">حاسبة BMI</a> كمؤشر منفصل، و<a href="/ar/weight-converter" class="text-green-600 font-semibold hover:underline">محول الوزن</a> عند اختلاف وحدة الميزان.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">تحويل التقدير إلى عادة</h2><p>سجّل المشروبات والزيوت والوجبات في نهاية الأسبوع أيضاً، لأن النسيان يفسر فرقاً كبيراً بين السجل وتغير الوزن. غيّر متغيراً واحداً كل مرة وأعد الحساب بعد تغير واضح في الوزن أو النشاط، لا بعد كل يوم.</p><h3 class="text-xl font-bold text-gray-900">سلامة الاستخدام</h3><p>للأطفال والحوامل والرياضيين ومن لديهم حالة صحية احتياجات خاصة. استشر مختصاً قبل وضع هدف مقيد؛ فالألياف والبروتين والماء والفيتامينات لا تظهر في رقم السعرات وحده.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>فهم تقدير السعرات اليومية</h2>
+            <p>تستخدم الحاسبة العمر والطول والوزن والجنس ومستوى النشاط لتقدير السعرات اللازمة للمحافظة على الوزن. النتيجة ليست تشخيصا طبيا ولا رقما إلزاميا، لأنها لا تعرف النوم والكتلة العضلية والأدوية والمرض وتغير التدريب. اختر نشاطك المعتاد خلال الأسبوع، لا تمرينا واحدا قاسيا.</p>
+            <h3>المعادلة والمثال</h3>
+            <p>تبدأ معظم الحاسبات بمعدل الأيض الأساسي وفق معادلة ميفلين سانت جيور. للرجال: 10 في الوزن بالكيلوغرام زائد 6.25 في الطول بالسنتيمتر ناقص 5 في العمر زائد 5. للنساء يكون الثابت الأخير ناقص 161. ثم يضرب معدل الأيض الأساسي في معامل النشاط للحصول على الإنفاق اليومي الكلي. امرأة عمرها 30 سنة، وزنها 65 كيلوغراما وطولها 165 سنتيمترا، لها معدل أساسي يقارب 1370 سعرة؛ ومع نشاط متوسط يكون الاحتياج نحو 2120 سعرة.</p>
+            <h3>خطوات الاستخدام</h3>
+            <ol><li>زن نفسك في ظروف متشابهة، ويفضل صباحا.</li><li>قِس الطول دون حذاء وبوضعية مستقيمة.</li><li>اختر مستوى النشاط الذي يصف أسبوعك العادي.</li><li>قارن النتيجة بمتوسط الطعام والوزن لمدة أسبوعين أو ثلاثة.</li><li>عدّل الكمية تدريجيا إذا لم يوافق الاتجاه هدفك.</li></ol>
+            <h3>أخطاء وسلامة</h3>
+            <p>لا تجمع معامل نشاط مرتفعا مع إضافة كل السعرات التي تعرضها الساعة الذكية، فقد يؤدي ذلك إلى عد مزدوج. تختلف ملصقات الطعام وحجم حصص المطاعم، لذلك راقب المتوسط لا يوما واحدا. العجز الصغير أسهل للاستمرار من الحرمان الشديد. الأطفال والحوامل والمرضعات ومن يتعامل مع السكري أو اضطراب الأكل يحتاجون نصيحة مختص. هل يجب أكل الرقم كله؟ لا، اعتبره نطاقا واستخدم اتجاه الوزن. لماذا تتغير النتيجة؟ تغير الوزن أو العمر أو النشاط يغير المعادلة. للمقارنة الصحية راجع <a href="/ar/bmi-calculator">حاسبة مؤشر كتلة الجسم</a> و<a href="/ar/weight-converter">حاسبة الوزن</a>.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>تحويل التقدير إلى خطة قابلة للمتابعة</h2>
+            <p>بعد الحصول على الرقم، خطط لوجبات تحتوي على بروتين ومصادر ألياف ودهون مناسبة، ثم وزع الطعام على أوقات تناسب يومك. لا تقارن وزنك في أيام مختلفة من الدورة أو بعد وجبة مالحة وكبيرة؛ الماء قد يخفي التغير الحقيقي. استخدم متوسط سبعة أيام، وسجل التدريب والنوم لأنهما يؤثران في الشهية والأداء.</p>
+            <p>قسّم هدفك إلى وجبات واقعية، وراقب البروتين والألياف والشبع، لا مجموع السعرات وحده. قد تختلف حاجة الشخص في يوم راحة عن يوم تدريب طويل. إذا ظهرت أعراض غير معتادة أو كنت تتناول علاجا يؤثر في الشهية أو الوزن، ناقش النتيجة مع اختصاصي ولا تطبق تغييرا كبيرا اعتمادا على تقدير آلي.</p>
+            <p>استخدم نفس طريقة القياس كل مرة، لأن الطعام المطهو قد يختلف وزنه عن الطعام الجاف.</p>
+            <p>لا تجعل الرقم سببا لإهمال جودة الغذاء أو السوائل. اقرأ ملصق الحصة، وانتبه إلى أن بعض التطبيقات تسجل الطعام المطهو والجاف بوحدتين مختلفتين. عند ثبات الوزن رغم الالتزام، راجع حجم الحصص والنشاط والنوم قبل تغيير الهدف بصورة كبيرة.</p>
+            <p>إذا كان هدفك زيادة الوزن، أضف كمية صغيرة وراقب الاتجاه. وإذا كان هدفك خفضه، ابدأ بتعديل قابل للاستمرار بدلا من حذف مجموعات غذائية كاملة. أوقف الخطة واطلب نصيحة متخصصة عند الدوخة أو التعب المستمر أو القلق الشديد حول الطعام. السعرات تقدير، أما الإشارة الأهم فهي صحتك واتجاهك عبر أسابيع.</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -423,20 +462,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
-                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">حاسبة العمر</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">حاسبة القروض</a></li>
-                    <li><a href="calorie-calculator.html" class="text-green-400 font-bold">حاسبة السعرات الحرارية</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
+                    <li><a href="/ar/bmi-calculator" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
+                    <li><a href="/ar/age-calculator" class="hover:text-green-400 transition">حاسبة العمر</a></li>
+                    <li><a href="/ar/loan-calculator" class="hover:text-green-400 transition">حاسبة القروض</a></li>
+                    <li><a href="/ar/calorie-calculator" class="text-green-400 font-bold">حاسبة السعرات الحرارية</a></li>
+                    <li><a href="/ar/paint-calculator" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">من نحن</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">المدونة</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">اتصل بنا</a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition">من نحن</a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition">المدونة</a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition">اتصل بنا</a></li>
                 </ul>
             </div>
         </div>
@@ -522,20 +561,20 @@
             const lossCalories = Math.max(1200, tdee - 500);
             const gainCalories = tdee + 300;
 
-            resBmr.textContent = `${Math.round(bmr).toLocaleString('ar-EG')} سعرة في الراحة`;
-            resTdee.textContent = tdee.toLocaleString('ar-EG');
-            resMaintain.textContent = tdee.toLocaleString('ar-EG');
-            resLoss.textContent = lossCalories.toLocaleString('ar-EG');
-            resGain.textContent = gainCalories.toLocaleString('ar-EG');
+            resBmr.textContent = `${Math.round(bmr).toLocaleString('en-US')} سعرة في الراحة`;
+            resTdee.textContent = tdee.toLocaleString('en-US');
+            resMaintain.textContent = tdee.toLocaleString('en-US');
+            resLoss.textContent = lossCalories.toLocaleString('en-US');
+            resGain.textContent = gainCalories.toLocaleString('en-US');
 
             // Macros for maintenance (30% Protein, 40% Carbs, 30% Fat)
             const proteinGrams = Math.round((tdee * 0.30) / 4);
             const carbsGrams = Math.round((tdee * 0.40) / 4);
             const fatGrams = Math.round((tdee * 0.30) / 9);
 
-            resProtein.textContent = `${proteinGrams.toLocaleString('ar-EG')} غرام`;
-            resCarbs.textContent = `${carbsGrams.toLocaleString('ar-EG')} غرام`;
-            resFats.textContent = `${fatGrams.toLocaleString('ar-EG')} غرام`;
+            resProtein.textContent = `${proteinGrams.toLocaleString('en-US')} غرام`;
+            resCarbs.textContent = `${carbsGrams.toLocaleString('en-US')} غرام`;
+            resFats.textContent = `${fatGrams.toLocaleString('en-US')} غرام`;
         }
 
         [gender, age, heightCm, weightKg, heightFeet, heightInches, weightLbs, activity].forEach(input => {

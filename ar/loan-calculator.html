@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -121,28 +121,29 @@
     </script>
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/loan-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/loan-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/loan-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../loan-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/loan-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
@@ -151,11 +152,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../loan-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/loan-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center gap-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/ar/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">الرئيسية</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -302,24 +303,25 @@
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/ar/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">اقرأ دليل حاسبة القروض</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">حاسبات ذات صلة</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="percentage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">📊</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة النسبة المئوية</h3>
                             <p class="text-xs text-gray-500">حساب الفوائد والنسب والخصومات</p>
                         </div>
                     </a>
-                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/square-footage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">📏</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة المساحة</h3>
                             <p class="text-xs text-gray-500">حساب مساحات العقارات والغرف</p>
                         </div>
                     </a>
-                    <a href="bmi-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">⚖️</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة مؤشر كتلة الجسم</h3>
@@ -365,13 +367,52 @@
                 </div>
             </section>
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">فهم نتيجة القرض</h2>
+            <p>أدخل أصل القرض ومعدل الفائدة السنوي والمدة وتكرار الدفع كما تظهر في عرض الجهة المقرضة. تفترض الأداة فائدة ثابتة وقرضاً يسدد بالكامل، لذلك لا تشمل بالضرورة الرسوم والتأمين والضرائب وتغير المعدل وطريقة احتساب الفائدة اليومية.</p>
+            <h3 class="text-xl font-bold text-gray-900">المعادلة</h3>
+            <p>للدفعات الشهرية تستخدم المعادلة M = P × [r(1+r)^n] ÷ [(1+r)^n − 1]، حيث P الأصل وr معدل الفترة وn عدد الدفعات. حوّل النسبة السنوية إلى رقم عشري شهري قبل الحساب. وعند فائدة صفرية تقسم الأصل على عدد الدفعات.</p>
+            <h3 class="text-xl font-bold text-gray-900">مثال عملي</h3>
+            <p>رصيد 20000 دولار بفائدة سنوية 6% لمدة خمس سنوات يعني معدل 0.06 ÷ 12 وستين دفعة. الدفعة التقريبية 386.66 دولاراً قبل الرسوم، ومجموع الدفعات نحو 23199 دولاراً. الفرق بين الإجمالي والأصل هو الفائدة، وقد يغير المقرض الرقم بسبب التقريب أو طريقة الحساب.</p>
+            <h3 class="text-xl font-bold text-gray-900">أخطاء وأسئلة مهمة</h3>
+            <p>لا تخلط بين الفائدة السنوية ومعدل النسبة السنوي، ولا تكتب 6 بدلاً من 0.06 عند طلب رقم عشري. القسط الأقل ليس دائماً القرض الأرخص لأن المدة الأطول قد تزيد الفائدة. اسأل عن السداد المبكر والغرامات والدفعة الأخيرة وتغير المعدل، واقرأ <a href="/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">دليل القروض</a> قبل اتخاذ قرار.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">معادلة القسط وفهم النتيجة</h2>
+            <p>في القرض ذي الفائدة الثابتة تكون المعادلة M = P × [r(1+r)^n] ÷ [(1+r)^n − 1]؛ حيث P أصل القرض، وr معدل الفترة، وn عدد الدفعات. إذا كانت الفائدة سنوية والدفع شهرياً، اقسم المعدل على 12 فقط عندما تنص الشروط على تركيب شهري. قد يشمل APR رسوماً إضافية، لذلك لا تقارن القسط وحده.</p>
+            <h3 class="text-xl font-bold text-gray-900">مثال عملي</h3>
+            <p>لقرض 10000 دولار بفائدة سنوية 6٪ لمدة 36 دفعة، r = 0.06 ÷ 12 = 0.005. القسط يقارب 304.22 دولاراً، وإجمالي الدفعات نحو 10951.92، أي فائدة تقارب 951.92 قبل الرسوم. الفروق الصغيرة بسبب تقريب السنتات طبيعية، لكن الجدول الرسمي هو المرجع.</p>
+            <h2 class="text-2xl font-bold text-gray-900">ما لا يظهر في التقدير</h2>
+            <p>قد تغيّر رسوم الإنشاء والتأمين والضرائب وغرامات التأخر والسداد المبكر التكلفة الحقيقية. اسأل هل الدفعة الإضافية تخفض أصل القرض فوراً، واترك هامشاً للطوارئ. القسط الأقل غالباً يعني مدة أطول وفائدة إجمالية أكبر. قارن النسب عبر <a href="/ar/percentage-calculator" class="text-green-600 font-semibold hover:underline">حاسبة النسبة</a> واقرأ <a href="/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">دليل القروض</a>.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">مقارنة القروض</h2><p>غيّر مدخلاً واحداً في كل مرة. الدفعة المقدمة الأكبر تخفض أصل الدين، والمدة الأقصر ترفع القسط غالباً لكنها تقلل الفائدة الإجمالية. قارن الرسوم والتأمين والضرائب مع مجموع الدفعات، ولا تعتبر نتيجة الفائدة المتغيرة إلا لقطة مؤقتة.</p><h3 class="text-xl font-bold text-gray-900">جدول السداد</h3><p>تحتوي الدفعات الأولى غالباً على فائدة أكثر لأن الأصل يكون كبيراً. اطلب جدول السداد الرسمي وتحقق من تطبيق أي دفعة إضافية على أصل الدين ومن أثرها على مدة القرض.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>قراءة تقدير القرض</h2>
+            <p>يعتمد القسط على أصل القرض ومعدل الفائدة وعدد الدفعات وتوقيت السداد. تفترض هذه الحاسبة عادة قرضا ثابتا بدفعات شهرية منتظمة، ولذلك فهي أداة تخطيط وليست عرضا من بنك. قد تزيد الرسوم والتأمين والضرائب وغرامات التأخير أو تغير الفائدة المتغيرة التكلفة الحقيقية.</p>
+            <h3>معادلة القسط</h3>
+            <p>للقرض المتناقص يكون القسط الشهري: أصل القرض مضروبا في r مضروبا في (1+r) مرفوعا إلى n، مقسوما على ((1+r) مرفوعا إلى n ناقص 1). يمثل r الفائدة السنوية مقسومة على 12، ويمثل n عدد الدفعات الشهرية. اقتراض 20000 لمدة 5 سنوات بفائدة 6% يعطي قسطا يقارب 386.66 قبل الرسوم. إجمالي الفائدة يساوي القسط في عدد الدفعات ناقص أصل القرض.</p>
+            <h3>خطوات المقارنة</h3>
+            <ol><li>أدخل المبلغ الذي ستقترضه فعلا بعد الدفعة المقدمة.</li><li>تأكد هل الرقم فائدة اسمية أم معدل سنوي فعلي APR.</li><li>قارن القسط الشهري بإجمالي الفائدة.</li><li>اختبر مدة أقصر فقط إذا كان القسط يناسب ميزانيتك.</li></ol>
+            <h3>أخطاء شائعة وأسئلة</h3>
+            <p>لا تخلط السنوات بعدد الأشهر، ولا تدخل الرصيد الحالي مكان أصل القرض عند مقارنة عرضين. القسط الأقل قد يعني مدة أطول وفائدة إجمالية أكبر. وقد تنتهي الفائدة الترويجية أو توجد غرامة سداد مبكر. هل الدفع الإضافي مفيد؟ غالبا يقلل الفائدة في القرض المتناقص، لكن تحقق من توجيه الدفعة إلى الأصل. لماذا يختلف عرض المقرض؟ الرسوم وتاريخ أول دفعة والفائدة اليومية والتأمين تفسر ذلك. للمقارنة مع النسب راجع <a href="/ar/percentage-calculator">حاسبة النسبة المئوية</a>.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>اختبار قدرة السداد</h2>
+            <p>لا تنظر إلى القسط منفردا. أضف إليه التأمين والرسوم وأي التزامات شهرية أخرى، واترك احتياطيا للطوارئ وتغير الدخل. عند مقارنة قرضين، استخدم المبلغ والمدة نفسيهما ثم غيّر معدل الفائدة فقط؛ بهذه الطريقة تعرف أثر المعدل بدلا من خلط عدة عوامل.</p>
+            <p>اطلب من المقرض جدول الإطفاء لتعرف كم يذهب من كل قسط إلى الأصل وكم يذهب إلى الفائدة. إذا كان القرض بفائدة متغيرة، اختبر سيناريو ارتفاع المعدل. المثال المحسوب هنا تعليمي، ولا يثبت الأهلية ولا يضمن قبول الطلب أو السعر النهائي.</p>
+            <p>اكتب في ورقة المقارنة أصل القرض والمدة والمعدل والقسط والإجمالي. إذا تغيرت الدفعة الأولى أو أضيفت رسوم إلى أصل القرض، أعد الحساب من البداية. لا تقارن عرضا بفائدة شهرية بعرض آخر بمعدل سنوي من دون توحيد الوحدات، واسأل عن طريقة احتساب الفائدة وتاريخ أول استحقاق.</p>
+            <p>ضع حدا شهريا واضحا قبل اختيار المدة، واترك مبلغا للطوارئ. قارن إجمالي السداد لا القسط فقط، واحتفظ بعرض المقرض وجدول الرسوم حتى تراجع سبب أي اختلاف بين التقدير والعقد.</p>
+            <p>اسأل أيضا هل توجد رسوم إنشاء أو تأمين أو عمولة وسيط، وهل يطبق الدفع الإضافي على أصل القرض مباشرة. هذه التفاصيل لا تظهر دائما في القسط المعروض، لكنها تغير التكلفة النهائية. استخدم أكثر من سيناريو للمعدل والمدة قبل الالتزام.</p>
+            <p>من المفيد إعداد جدول شهري بسيط يوضح الرصيد المتبقي والفائدة والأصل بعد كل دفعة. إذا وجدت أن معظم القسط يذهب إلى الفائدة في السنوات الأولى، فهذا طبيعي في كثير من القروض المتناقصة، لكنه يوضح فائدة المقارنة مع مدة أقصر. تحقق من تاريخ الخصم ومن رسوم الدفع المتأخر، ولا تفترض أن السداد المبكر مجاني. عند قرض المنزل، قد تدخل الضرائب والتأمين في الدفعة، بينما قد تظهر منفصلة في قرض آخر. اجمع كل التكاليف المتكررة والمرة الواحدة، ثم قارن القدرة على السداد مع دخل مستقر لا مع أفضل شهر.</p>
+            <p>افصل بين تكلفة القرض وتكلفة الشيء الممول. قد يبدو قسط السيارة مناسبا، لكن إضافة التسجيل والصيانة والتأمين تغير الميزانية الشهرية. اقرأ شروط السداد والتأجيل قبل اتخاذ القرار، واستخدم الناتج لمناقشة العرض مع المقرض لا لاستبدال العقد.</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -382,20 +423,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
-                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">حاسبة العمر</a></li>
-                    <li><a href="loan-calculator.html" class="text-green-400 font-bold">حاسبة القروض</a></li>
-                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">حاسبة السعرات الحرارية</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
+                    <li><a href="/ar/bmi-calculator" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
+                    <li><a href="/ar/age-calculator" class="hover:text-green-400 transition">حاسبة العمر</a></li>
+                    <li><a href="/ar/loan-calculator" class="text-green-400 font-bold">حاسبة القروض</a></li>
+                    <li><a href="/ar/calorie-calculator" class="hover:text-green-400 transition">حاسبة السعرات الحرارية</a></li>
+                    <li><a href="/ar/paint-calculator" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">من نحن</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">المدونة</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">اتصل بنا</a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition">من نحن</a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition">المدونة</a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition">اتصل بنا</a></li>
                 </ul>
             </div>
         </div>
@@ -502,10 +543,10 @@
                 tableHtml += `
                     <tr class="hover:bg-white transition">
                         <td class="p-2.5 font-bold text-gray-900">${y}</td>
-                        <td class="p-2.5">${Math.round(startBalance).toLocaleString()}</td>
-                        <td class="p-2.5 text-green-700 font-semibold">${Math.round(yearPrincipal).toLocaleString()}</td>
-                        <td class="p-2.5 text-yellow-700">${Math.round(yearInterest).toLocaleString()}</td>
-                        <td class="p-2.5 font-bold text-gray-900">${Math.max(0, Math.round(currentBalance)).toLocaleString()}</td>
+                        <td class="p-2.5">${Math.round(startBalance).toLocaleString('en-US')}</td>
+                        <td class="p-2.5 text-green-700 font-semibold">${Math.round(yearPrincipal).toLocaleString('en-US')}</td>
+                        <td class="p-2.5 text-yellow-700">${Math.round(yearInterest).toLocaleString('en-US')}</td>
+                        <td class="p-2.5 font-bold text-gray-900">${Math.max(0, Math.round(currentBalance)).toLocaleString('en-US')}</td>
                     </tr>
                 `;
             }

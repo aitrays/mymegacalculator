@@ -7,10 +7,11 @@
     <meta name="description" content="استخدم محول الوزن المجاني للتحويل الفوري بين الكيلوغرامات والأرطال والغرامات والأونصات والحجارة بدقة وسهولة.">
     <meta name="keywords" content="weight converter, kg to lbs, pounds to kg, grams to ounces, mass converter">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/weight-converter" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/weight-converter" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/weight-converter" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="canonical" href="https://mymegacalculator.com/ar/weight-converter" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymegacalculator.com/ar/weight-converter">
@@ -27,18 +28,18 @@
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../weight-converter.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/weight-converter" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
         
@@ -48,11 +49,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../weight-converter.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/weight-converter" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -140,12 +141,67 @@
                     تحويل الوزن يتضمن ترجمة القيم بين النظام المتري (غرام، كيلوغرام) والنظام الإمبراطوري (رطل، أونصة، حجر). إليك عوامل التحويل الأساسية:
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
-                    <li><strong>1 Kilogram (kg)</strong> = 2.20462 رطل (رطل)</li>
-                    <li><strong>1 Pound (lbs)</strong> = 453.592 غرام (غ)</li>
-                    <li><strong>1 Stone (st)</strong> = 14 رطل (رطل)</li>
-                    <li><strong>1 Ounce (oz)</strong> = 28.3495 غرام (غ)</li>
+                    <li><strong>1 كيلوغرام (كغ)</strong> = 2.20462 رطل</li>
+                    <li><strong>1 رطل (lb)</strong> = 453.592 غرام</li>
+                    <li><strong>1 حجر (st)</strong> = 14 رطلاً</li>
+                    <li><strong>1 أونصة (oz)</strong> = 28.3495 غرام</li>
                 </ul>
             </section>
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+                <h2 class="text-2xl font-bold text-gray-900">متى تحتاج إلى محول الوزن؟</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">يساعدك محول الوزن عندما تكون وصفة أو خطة غذائية أو ملصق منتج أو عرض شحن بوحدة مختلفة عن الميزان الذي تستخدمه. أدخل القيمة مرة واحدة لمقارنة الكيلوغرامات والأرطال والغرامات والأونصات والحجارة والمليغرامات فوراً.</p>
+                <h3 class="text-lg font-bold text-gray-900">أسئلة شائعة حول تحويل الوزن</h3>
+                <div class="space-y-4 text-sm text-gray-600">
+                    <div>
+                        <h4 class="font-bold text-gray-900">كم يساوي الكيلوغرام بالرطل؟</h4>
+                        <p>الكيلوغرام الواحد يساوي تقريباً 2.20462 رطل، ويمكن تقريبها إلى 2.2 رطل في الحسابات اليومية.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">كم غراماً في الأونصة؟</h4>
+                        <p>الأونصة القياسية للمواد الغذائية والشحن تساوي تقريباً 28.3495 غراماً.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">كيفية تحويل وحدات الوزن</h2>
+            <p>اختر الوحدة الأصلية، أدخل القيمة، ثم حدد الوحدة المطلوبة. العلاقات الشائعة هي 1 كغ = 1000 غرام، و1 رطل = 16 أونصة، و1 كغ ≈ 2.20462 رطل. تحتفظ الحاسبة بدقة إضافية قبل عرض نتيجة مقربة. استخدم الوحدة المطلوبة في الوصفة أو بطاقة الشحن أو النموذج.</p>
+            <h3 class="text-xl font-bold text-gray-900">أمثلة عملية</h3>
+            <p>لتحويل 2.5 كغ نضرب في 1000 لنحصل على 2500 غرام. ولتحويل 5 أرطال نقسم على 2.20462 فنحصل على نحو 2.27 كغ. الأونصة السائلة وحدة حجم وليست كتلة، ولا يمكن تحويلها إلى كتلة دون معرفة كثافة المادة. احتفظ بالرقم الأصلي بجوار النتيجة في سجل الشحن أو المختبر.</p>
+            <h3 class="text-xl font-bold text-gray-900">الدقة والأخطاء والحدود</h3>
+            <p>صفّر الوعاء، استخدم سطحاً ثابتاً، وأعد القراءة غير المتوقعة. لا تكتب الرطل في خانة الكيلوغرام ولا تقرّب كل عنصر قبل جمع الشحنة. في الدواء والمختبر والتجارة المنظمة، اتبع المواصفة واستخدم ميزاناً معايراً. الأداة تنفذ الحساب ولا تتحقق من جودة القياس الفيزيائي.</p>
+            <h3 class="text-xl font-bold text-gray-900">اختيار التقريب</h3>
+            <p>اعرض منازل عشرية تناسب دقة الميزان أو المواصفة؛ كثرة الأرقام لا تجعل القياس غير الدقيق أكثر دقة. اقرأ <a href="/blog-weight-conversion-guide" class="text-green-600 font-semibold hover:underline">دليل تحويل الوزن</a>، وإذا استخدمت الوزن مع الطول لفحص صحي عام فراجع <a href="/ar/bmi-calculator" class="text-green-600 font-semibold hover:underline">حاسبة BMI</a> مع مختص.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">معادلات تحويل الوزن</h2>
+            <p>الكيلوغرام = 1000 غرام، والرطل = 453.59237 غرام، والأونصة = 28.349523125 غرام. لتحويل 2.5 كغ إلى رطل اضرب في 2.20462262، فتكون النتيجة 5.5116 رطلاً تقريباً. اكتب وحدة المصدر والهدف، واحتفظ بالأرقام العشرية حتى النهاية ثم قرّب حسب المهمة.</p>
+            <h3 class="text-xl font-bold text-gray-900">فحوص عملية</h3>
+            <p>صفّر الميزان مع الوعاء وضعه على سطح ثابت. ستة أرطال وثماني أونصات تساوي 6.5 رطل وليست 6.08. لا تحول الملليلتر إلى غرام من دون معرفة الكثافة، ولا تفترض أن كلمة طن لها تعريف واحد؛ فقد تعني طناً مترياً أو قصيراً أو طويلاً. قد تعتمد الشحنة الوزن الحجمي لا وزن الميزان.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أسئلة وروابط</h2>
+            <p>استخدم <a href="/blog-weight-conversion-guide" class="text-green-600 font-semibold hover:underline">دليل تحويل الوزن</a> للأمثلة، و<a href="/weight-converter" class="text-green-600 font-semibold hover:underline">محول الوزن</a> للتحويل السريع. إذا كان الوزن جزءاً من تقدير الطاقة، افتح <a href="/ar/calorie-calculator" class="text-green-600 font-semibold hover:underline">حاسبة السعرات</a> ولا تعتبر الناتج تشخيصاً.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">اختبار معقولية النتيجة</h2><p>الكيلوغرام يزيد قليلاً على 2.2 رطل، والرطل نحو 454 غراماً، والأونصة نحو 28 غراماً. إذا ابتعد التحويل عشرة أو مئة أضعاف عن هذا التقدير، افحص الوحدة والفاصلة العشرية. احتفظ بالقيمة الأصلية للمراجعة.</p><h3 class="text-xl font-bold text-gray-900">متى تلزم الدقة؟</h3><p>استخدم وحدة الوصفة أو شركة الشحن أو المختص كما هي، ولا تستخدم تحويل المنزل لتحديد جرعة دواء. اسأل عن الوزن الحجمي والحد الأدنى القابل للفوترة للشحن.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>تحويل الوزن والكتلة بثبات</h2>
+            <p>العلاقات الشائعة هي أن الكيلوغرام يساوي 1000 غرام، والرطل يساوي 16 أونصة، والكيلوغرام يساوي تقريبا 2.20462 رطل. للتحويل من رطل إلى كيلوغرام اقسم على 2.20462؛ 150 رطلا تساوي نحو 68.04 كيلوغرام. وللتحويل من 2.5 كيلوغرام إلى غرام اضرب في 1000، فيكون الناتج 2500 غرام.</p>
+            <h3>خطوات واختبار معقولية</h3>
+            <ol><li>حدد وحدة المصدر ووحدة الهدف قبل إدخال الرقم.</li><li>تأكد هل المقصود كتلة أم حجم سائل.</li><li>اضرب عند الانتقال إلى وحدة أصغر واقسم عند الانتقال إلى أكبر.</li><li>قرب في النهاية حسب الحاجة: غرامات للوصفة أو أرطال تقريبية للحقيبة.</li></ol>
+            <p>يمكن استخدام عامل التحويل بدقة أكبر عند الشحن أو المواصفات، أما الاستخدام اليومي فيكفي التقريب المناسب. اترك منازل عشرية أثناء التحويلات المتتابعة، ثم قرب الناتج الأخير فقط. إذا كان الرقم الناتج بعيد تماما عن توقعك، راجع اتجاه التحويل؛ فالانتقال من كيلوغرام إلى غرام يزيد الرقم، بينما الانتقال إلى طن يقلله.</p>
+            <h3>افتراضات وأسئلة</h3>
+            <p>تستخدم الحاسبة الرطل والأونصة الدوليين، لا وحدات المعادن الثمينة التي تسمى أحيانا أونصة تروي. الأونصة السائلة تقيس الحجم وليست وزن الطعام. هل 1 كيلوغرام يساوي 2.2 رطل تماما؟ لا، إنها قيمة تقريبية، والقيمة الأدق 2.20462. قد تعرض المواقع نتائج مختلفة بسبب التقريب المبكر. للمقارنة الصحية استخدم <a href="/ar/bmi-calculator">حاسبة مؤشر كتلة الجسم</a>، وللأبعاد استخدم <a href="/ar/feet-and-inches-calculator">حاسبة القدم والبوصة</a>.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>التحقق من التحويلات المتتابعة</h2>
+            <p>إذا حولت 5 كيلوغرامات إلى غرام ثم إلى كيلوغرام، يجب أن تعود إلى 5 تقريبا؛ الفرق الصغير سببه التقريب. أما إذا استخدمت الأونصة السائلة في وصفة، فلابد من معرفة كثافة المادة قبل تحويل الحجم إلى كتلة. لا يكفي عامل تحويل الوزن في هذه الحالة.</p>
+            <p>في الشحن تحقق من الوزن الفعلي والأبعاد، فقد يحسب الناقل الوزن الحجمي. وفي المواصفات الصناعية استخدم عدد المنازل الذي يطلبه المعيار. اكتب الوحدة في الفاتورة أو الوصفة بجانب الرقم، فهذا يمنع خطأ شائعا بين الغرام والرطل وبين أونصة الكتلة والأونصة السائلة.</p>
+            <p>عند تحويل وصفة، لا تستبدل الوزن بالحجم إلا إذا عرفت كثافة المكون؛ كوب الدقيق لا يزن مثل كوب الماء. وعند إعداد ملصق شحن، احتفظ بالرقم قبل التقريب لأن الناقل قد يطبق شرائح مختلفة. راجع اتجاه النتيجة دائما: يجب أن يكون عدد الغرامات أكبر من عدد الكيلوغرامات لنفس الكتلة.</p>
+            <p>في الميزان المنزلي، ضع الوعاء على الصفر قبل إضافة المكونات، واستعمل نفس الوحدة لكل المكونات. في سجل صحي، لا تبدل بين الرطل والكيلوغرام من يوم إلى آخر عند متابعة الاتجاه. وعند إرسال منتج، اكتب الوزن مع الوحدة والدرجة المطلوبة من الدقة، لأن الرقم المجرد قابل لسوء الفهم.</p>
+            <p>إذا كانت النتيجة 0.5 كيلوغرام، فهي 500 غرام وقرابة 1.102 رطل. استخدم هذا النوع من التحقق السريع لاكتشاف إدخال وحدة خاطئة. أما المعادن الثمينة أو المواد الكيميائية، فارجع إلى معيار المجال قبل اعتماد التحويل العام.</p>
+            <p>اكتب الوحدة في كل نتيجة، واحتفظ بالدقة حتى آخر خطوة. إذا زاد الرقم عند التحويل إلى وحدة أصغر فهذا متوقع، أما تغير الاتجاه فيشير غالبا إلى اختيار وحدة المصدر أو الهدف بصورة خاطئة.</p>
+            <p>في الشحن، افصل بين وزن المنتج ووزن العبوة، ثم تحقق من الحد الأعلى الذي يغير سعر الخدمة. وفي الوصفات، استخدم الميزان عندما تكون النسب مهمة، ولا تعتمد على كوب غير موحد. اذكر دائما هل الوحدة غرام أو كيلوغرام أو رطل أو أونصة.</p>
+            <p>عند مقارنة سجلات قديمة، وحّد الوحدة والتقريب قبل رسم الاتجاه. لا تخلط رطل القوة بوحدة الكتلة في مواصفة علمية، ولا تستخدم تحويل الطعام السائل من دون معرفة الكثافة. عند الشك، راجع معيار المورد أو تعليمات المنتج.</p>
+            <p>للتأكد من نتيجة التحويل، استخدم علاقة عكسية. فإذا حولت 4 كيلوغرامات إلى 4000 غرام، فاقسم 4000 على 1000 لتعود إلى 4. وإذا حولت 10 أرطال إلى نحو 4.536 كيلوغرام، اضرب 4.536 في 2.20462 لتحصل على قيمة قريبة من 10. اترك الأرقام غير المقربة أثناء العمليات المتتابعة، ثم قرب حسب الهدف. في المختبر والشحن، قد تكون خانة عشرية إضافية مهمة، أما في الاستخدام المنزلي فالتقريب العملي يكفي. اكتب الوحدة بجانب كل قيمة، لأن 500 غرام ليست 500 كيلوغرام، ولأن الأونصة السائلة لا تعادل أونصة الكتلة. عند وجود معيار خاص، اتبع تعريف المجال.</p>
         </section>
     </main>
 
@@ -153,7 +209,7 @@
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -170,23 +226,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">أفضل الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
-                    <li><a href="weight-converter.html" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>محول الوزن</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
+                    <li><a href="/ar/tile-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
+                    <li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
+                    <li><a href="/ar/percentage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
+                    <li><a href="/ar/weight-converter" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>محول الوزن</span></a></li>
+                    <li><a href="/ar/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة والقانون</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="/ar/author-alex-morgan" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="/ar/terms-of-service" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
                 </ul>
             </div>
         </div>

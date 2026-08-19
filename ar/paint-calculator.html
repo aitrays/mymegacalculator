@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -86,34 +86,50 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "كم متراً مربعاً يغطيه لتر واحد من الدهان؟",
+          "name": "كم متراً مربعاً يغطيه لتر الدهان الواحد؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "في المتوسط، يغطي اللتر الواحد من دهان الجدران الداخلي حوالي 10 إلى 12 متراً مربعاً لكل وجه (طبقة واحدة)، بينما يغطي الجالون الأمريكي حوالي 35 إلى 37 متراً مربعاً (350-400 قدم مربع)."
+            "text": "يغطي اللتر الواحد من دهان الأكريليك الداخلي عالي الجودة ما بين 10 إلى 12 متراً مربعاً في الوجه الواحد على الأسطح المجهزة والناعمة."
           }
         },
         {
           "@type": "Question",
-          "name": "لماذا يوصى بدهان وجهين (طبقتين) على الأقل؟",
+          "name": "لماذا ينصح بدهان وجهين دائماً؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "الطبقتان تضمنان تغطية تامة للون القديم وإخفاء عيوب الجدار وتوزيع اللون بشكل متجانس وقوي يدوم لسنوات طويلة."
+            "text": "يوفر الوجهان سماكة فيلم الطلاء الموصى بها، ويضمنان توزيعاً لونياً متجانساً ويضاعفان متانة الدهان ومقاومته للغسيل والرطوبة."
           }
         },
         {
           "@type": "Question",
-          "name": "كم مساحة الباب والنافذة التي يتم خصمها؟",
+          "name": "كم مساحة الباب والنافذة التي يجب خصمها؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "يتم خصم حوالي 2 متر مربع لكل باب عادي، و 1.4 متر مربع لكل نافذة قياسية."
+            "text": "يبلغ متوسط مساحة الباب الداخلي حوالي 2 متر مربع، بينما يبلغ متوسط مساحة النافذة السكنية حوالي 1.4 متر مربع."
           }
         },
         {
           "@type": "Question",
-          "name": "هل يتم تسجيل أي بيانات حول منزلي أو أبعاده؟",
+          "name": "كيف أحسب كمية الدهان المطلوبة للسقف؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "لا إطلاقاً. تجري الحسابات مباشرة داخل متصفحك ولا نجمع أي قياسات أو بيانات خاصة."
+            "text": "لحساب دهان السقف، اضرب طول الغرفة في عرض الغرفة للحصول على المساحة بالمتر المربع ثم اقسم على معدل التغطية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "متى يجب استخدام دهان الأساس (البرايمر / Primer)؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يعد البرايمر ضرورياً على الجدران الجبسية الجديدة، فوق الدهانات الزيتية اللامعة القديمة، أو عند التحول من لون غامق إلى لون فاتح."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يتم تخزين بقايا الدهان بشكل سليم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نظف حواف العلبة، ضع غلافاً بلاستيكياً فوق الفوهة، وأغلق الغطاء بإحكام بواسطة مطرقة مطاطية واحفظها في مكان جاف ومعتدل الحرارة."
           }
         }
       ]
@@ -121,28 +137,29 @@
     </script>
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/paint-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/paint-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/paint-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../paint-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/paint-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
@@ -151,11 +168,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../paint-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/paint-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -166,7 +183,7 @@
         <div class="max-w-6xl mx-auto px-4 py-2">
             <ol class="flex items-center gap-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <a href="index.html" itemprop="item" class="hover:text-green-600 transition">
+                    <a href="/ar/" itemprop="item" class="hover:text-green-600 transition">
                         <span itemprop="name">الرئيسية</span>
                     </a>
                     <meta itemprop="position" content="1" />
@@ -283,41 +300,240 @@
             </form>
         </div>
 
-        <!-- Content Section (SEO & Educational) -->
-        <div class="mt-12 space-y-8">
-            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
-                <h2 class="text-2xl font-bold text-gray-900">كيف تحسب كمية الصباغة والدهان المطلوبة؟</h2>
-                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
-                    لتفادي نقص الدهان أثناء العمل أو شراء كميات زائدة عن الحاجة، اتبع هذه الخطوات البسيطة:
+        <!-- Content Section (SEO & 1200+ Word Educational Master Guide) -->
+        <div class="mt-12 space-y-10">
+
+            <!-- Introduction & Master Guide -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <div class="space-y-2">
+                    <span class="text-green-600 text-xs font-bold uppercase tracking-wider">دليل شامل واحترافي لدهان المنازل</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">الدليل الكامل والشامل لحساب كميات الدهان والصباغة للغرف والجدران</h2>
+                </div>
+                
+                <p class="text-base text-gray-600 leading-relaxed">
+                    يعتبر الحساب الدقيق لكمية الدهان والصباغة من أهم الخطوات الأساسية في أي مشروع لتشطيب أو تجديد المنازل. فالتقدير العشوائي يؤدي إما إلى نفاد الدهان في منتصف العمل والاضطرار لشراء عبوات إضافية قد تختلف درجات ألوانها بين الدفعات (Batches)، أو شراء كميات زائدة تكلفك ميزانية باهظة دون فائدة. في عالم الدهانات الاحترافية، لا تعتمد الكمية المطلوبة على مساحة الجدران المجردة فحسب، بل تتحكم فيها عوامل حاسمة مثل درجة مسامية السطح (Porosity)، نوع الأساس المستخدم، أداة التطبيق (رول أو رشاش)، ونسبة لمعان الدهان ومستوى التغطية.
                 </p>
-                <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-2xl border border-gray-100">
-                    <li><strong>حساب محيط الغرفة:</strong> اجمع أطوال الجدران الأربعة: <code>2 × (الطول + العرض)</code>.</li>
-                    <li><strong>المساحة الإجمالية:</strong> اضرب محيط الغرفة في ارتفاع السقف.</li>
-                    <li><strong>خصم الفتحات:</strong> اخصم مساحة الأبواب (~2 م² لكل باب) والنوافذ (~1.4 م² لكل نافذة).</li>
-                    <li><strong>مضاعفة الأوجه:</strong> اضرب المساحة الصافية في عدد الطبقات (غالباً وجهين).</li>
-                    <li><strong>القسمة على معدل التغطية:</strong> اقسم الناتج على معدل تغطية اللتر (~10 إلى 12 م² لكل لتر) وقرب الناتج لأقرب عبوة كاملة.</li>
-                </ol>
+
+                <p class="text-base text-gray-600 leading-relaxed">
+                    سواء كنت تخطط لدهان غرفة نوم عادية، أو تجديد شقة كاملة، أو تحويل جدار داكن إلى لون فاتح عصري، فإن حاسبة الدهان المتقدمة لدينا تطبق نفس المعادلات الهندسية التي يعتمد عليها المقاولون المحترفون ومهندسو الديكور. فيما يلي الدليل الهندسي والتطبيقي الكامل الذي يشرح لك أدق التفاصيل من الألف إلى الياء.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                    <div class="p-5 rounded-2xl bg-green-50/70 border border-green-100 space-y-2 text-right">
+                        <span class="text-2xl">📐</span>
+                        <h3 class="font-bold text-gray-900 text-base">معدل التغطية القياسي</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">يغطي اللتر الواحد ما بين <strong>10 إلى 12 متراً مربعاً</strong> (والجالون يغطي 350-400 قدم مربع) في الوجه الواحد على الجدران الملساء والمجهزة.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-100 space-y-2 text-right">
+                        <span class="text-2xl">🚪</span>
+                        <h3 class="font-bold text-gray-900 text-base">خصم الفتحات والنوافذ</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">يتم خصم <strong>2 متر مربع</strong> لكل باب قياسي، و <strong>1.4 متر مربع</strong> لكل نافذة متوسطة لضمان عدم احتساب فراغات غير مدهونة.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-100 space-y-2 text-right">
+                        <span class="text-2xl">🔄</span>
+                        <h3 class="font-bold text-gray-900 text-base">قاعدة الوجهين (طبقتين)</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">تطبيق <strong>طبقتين (وجهين)</strong> يمنح اللون عمقاً متجانساً، ويحمي الجدار من التقشير، ويوفر طبقة متينة قابلة للغسيل والمسح لسنوات.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mathematical Formulas & Step-by-Step Breakdown -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">المعادلات الرياضية لحساب كمية البوية والصباغة</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    تعتمد الحسابات الدقيقة على تسلسل هندسي من 5 خطوات لحساب المساحة وحجم اللترات المطلوبة بدقة متناهية:
+                </p>
+
+                <div class="space-y-4 bg-gray-50 p-6 rounded-2xl border border-gray-100 text-sm font-mono text-gray-800 text-right">
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">الخطوة 1: حساب محيط الغرفة الإجمالي ($P$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200" dir="ltr">$$\text{Perimeter } (P) = 2 \times (\text{Length} + \text{Width})$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">الخطوة 2: حساب مساحة الجدران الإجمالية ($A_{\text{gross}}$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200" dir="ltr">$$A_{\text{gross}} = P \times \text{Height}$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">الخطوة 3: خصم مساحات الأبواب والنوافذ ($A_{\text{deduct}}$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200" dir="ltr">$$A_{\text{deduct}} = (\text{Doors} \times 2.0\text{ m}^2) + (\text{Windows} \times 1.4\text{ m}^2)$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">الخطوة 4: المساحة الصافية القابلة للدهان ($A_{\text{net}}$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200" dir="ltr">$$A_{\text{net}} = A_{\text{gross}} - A_{\text{deduct}}$$</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-green-700 font-sans block">الخطوة 5: حجم الدهان المطلوب باللتر ($V$)</span>
+                        <p class="bg-white p-3 rounded-xl border border-gray-200" dir="ltr">$$\text{Liters Required} = \left( \frac{A_{\text{net}} \times \text{Coats}}{\text{Coverage Rate (10 m}^2\text{/L)}} \right) \times (1 + \text{Waste Factor})$$</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Real-World Case Studies -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">أمثلة تطبيقية وحالات واقعية</h2>
+                
+                <div class="space-y-6">
+                    <!-- Case 1 -->
+                    <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl bg-green-600 text-white flex items-center justify-center font-bold text-sm">1</span>
+                            <h3 class="text-lg font-bold text-gray-900">غرفة نوم رئيسية قياسية (أبعاد 4.5 م × 3.5 م مع سقف بارتفاع 2.8 م)</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <strong>الأبعاد:</strong> محيط الغرفة = $2 \times (4.5 + 3.5) = 16\text{ متر}$. إجمالي مساحة الجدران = $16 \times 2.8 = 44.8\text{ م²}$. الخصومات: باب واحد ($2\text{ م²}$) + نافذتان ($2.8\text{ م²}$) = إجمالي الخصومات $4.8\text{ م²}$.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside bg-white p-4 rounded-xl border border-gray-100">
+                            <li><strong>المساحة الصافية للجدران:</strong> $44.8 - 4.8 = 40.0\text{ متر مربع}$.</li>
+                            <li><strong>إجمالي المساحة لوجهين (طبقتين):</strong> $40.0 \times 2 = 80.0\text{ متر مربع}$.</li>
+                            <li><strong>كمية الدهان الدقيقة:</strong> $80.0 \div 10 = 8.0\text{ لتر}$.</li>
+                            <li><strong>توصية الشراء:</strong> شراء عبوة سعة 10 لتر (أو سطل صغير)، والاحتفاظ بما تبقى (حوالي 2 لتر) لعمليات الصيانة والترميم المستقبلية.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl bg-green-600 text-white flex items-center justify-center font-bold text-sm">2</span>
+                            <h3 class="text-lg font-bold text-gray-900">صالون أو غرفة معيشة كبيرة (أبعاد 6 م × 5 م مع سقف بارتفاع 3 م)</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            <strong>الأبعاد:</strong> محيط الصالون = $2 \times (6 + 5) = 22\text{ متر}$. إجمالي مساحة الجدران = $22 \times 3 = 66.0\text{ م²}$. الخصومات: بابان ($4\text{ م²}$) + نافذة كبيرة ($3\text{ م²}$) = إجمالي الخصومات $7.0\text{ م²}$.
+                        </p>
+                        <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside bg-white p-4 rounded-xl border border-gray-100">
+                            <li><strong>المساحة الصافية للجدران:</strong> $66.0 - 7.0 = 59.0\text{ متر مربع}$.</li>
+                            <li><strong>إجمالي المساحة لوجهين:</strong> $59.0 \times 2 = 118.0\text{ متر مربع}$.</li>
+                            <li><strong>كمية الدهان المطلوبة:</strong> $118.0 \div 10 = 11.8\text{ لتر}$.</li>
+                            <li><strong>توصية الشراء:</strong> شراء سطل كبير سعة 15 لتر أو سطلين سعة 8 لتر، مما يوفر في التكلفة مقارنة بالعبوات الفردية الصغيرة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paint Sheen & Finish Comparison Matrix -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">دليل اختيار درجة لمعان الدهان (Sheen Level)</h2>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    تحدد درجة لمعان الدهان المظهر الجمالي للغرفة، مدى قدرتها على إخفاء عيوب الجبس واللياسة، ومقاومتها للرطوبة والغسيل المتكرر:
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-right border-collapse text-sm text-gray-700 min-w-[550px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 bg-gray-50/80 text-xs font-bold uppercase tracking-wider text-gray-900">
+                                <th class="p-3.5">نوع اللمعان</th>
+                                <th class="p-3.5">نسبة اللمعان</th>
+                                <th class="p-3.5">أفضل الاستخدامات</th>
+                                <th class="p-3.5">مقاومة الغسيل</th>
+                                <th class="p-3.5">إخفاء عيوب الجدار</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">مطفي (Matte / Flat)</td>
+                                <td class="p-3.5 text-gray-600">0% – 5%</td>
+                                <td class="p-3.5 text-gray-600">الأسقف، غرف النوم الرئيسية، مجالس الضيوف الرسمية</td>
+                                <td class="p-3.5 text-red-600 font-semibold">منخفضة (حساس للاحتكاك)</td>
+                                <td class="p-3.5 text-green-600 font-bold">ممتاز جداً (10/10)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">قشر البيض (Eggshell)</td>
+                                <td class="p-3.5 text-gray-600">10% – 25%</td>
+                                <td class="p-3.5 text-gray-600">غرف المعيشة، المكاتب المنزلية، غرف النوم العادية</td>
+                                <td class="p-3.5 text-amber-600 font-semibold">متوسطة (سهل المسح)</td>
+                                <td class="p-3.5 text-green-600 font-bold">جيد جداً (8/10)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">حريري / ساتان (Satin)</td>
+                                <td class="p-3.5 text-gray-600">25% – 35%</td>
+                                <td class="p-3.5 text-gray-600">الممرات كثيرة الحركة، غرف الأطفال، غرف الغسيل</td>
+                                <td class="p-3.5 text-green-600 font-bold">عالية (قابل للغسيل)</td>
+                                <td class="p-3.5 text-amber-600 font-semibold">متوسط (6/10)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">نصف لمعة (Semi-Gloss)</td>
+                                <td class="p-3.5 text-gray-600">35% – 70%</td>
+                                <td class="p-3.5 text-gray-600">المطابخ، الحمامات، النعلات الخشبية، إطارات الأبواب</td>
+                                <td class="p-3.5 text-green-600 font-bold">عالية جداً (مقاوم للرطوبة)</td>
+                                <td class="p-3.5 text-red-600 font-semibold">ضعيف (يبرز النتوءات)</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50/50 transition">
+                                <td class="p-3.5 font-bold text-gray-900">لامع كامل (High-Gloss)</td>
+                                <td class="p-3.5 text-gray-600">70% – 85%+</td>
+                                <td class="p-3.5 text-gray-600">خزائن المطابخ، الأبواب الخارجية، الأعمال الخشبية</td>
+                                <td class="p-3.5 text-green-600 font-bold">أقصى متانة وسهولة تنظيف</td>
+                                <td class="p-3.5 text-red-600 font-semibold">ضعيف جداً (يعكس كالمرآة)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Contractor Insider Tips -->
+            <section class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">نصائح احترافية لدهان يدوم طويلاً</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> خلط العبوات معاً (Boxing)
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            حتى مع خلط الألوان بالكمبيوتر، قد تظهر فروق دقيقة جداً بين العبوات المختلفة. يحرص الدهانون المحترفون على دمج جميع العبوات في سطل واحد كبير قبل البدء لضمان تطابق لوني 100% على كافة الجدران.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> اختيار سُمك شعر الرول المناسب
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            استخدم رول بشعر ناعم (9 ملم) للجدران الجبسية الملساء، وشعر متوسط (12 ملم) للجدران ذات الملمس الخفيف، وشعر سميك (18 ملم) لجدران الطوب والأسمنت الخشن لتوزيع الدهان داخل المسام.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> احتساب هدر الأدوات والفرش (10%)
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            تمتص فرشاة التحديد ورول الدهان وصواني الطلاء ما يقارب نصف لتر إلى لتر كامل من الدهان قبل أن تلامس الجدار. احرص دائماً على إضافة 10% كهامش أمان للكمية الإجمالية.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100 space-y-2">
+                        <h3 class="font-bold text-gray-900 text-sm flex items-center gap-2">
+                            <span class="text-green-600 font-black">✓</span> احترام وقت الجفاف بين الأوجه
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            إن وضع الوجه الثاني قبل جفاف الوجه الأول تماماً (من 2 إلى 4 ساعات) يؤدي إلى سحب طبقة الدهان السفلية وتكتلها على الرول وظهور فقاعات وتشوهات دائمة على السطح.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/ar/blog-paint-calculator-guide" class="text-green-600 font-semibold hover:underline">اقرأ دليل حاسبة الطلاء</a></p>
             <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
                 <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">حاسبات ذات صلة بالتحسين المنزلي</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <a href="tile-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/tile-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">📐</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة البلاط</h3>
                             <p class="text-xs text-gray-500">حساب كميات وتكلفة السيراميك</p>
                         </div>
                     </a>
-                    <a href="square-footage-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/square-footage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">📏</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة المساحة</h3>
                             <p class="text-xs text-gray-500">حساب مساحات الغرف والأرضيات</p>
                         </div>
                     </a>
-                    <a href="feet-and-inches-calculator.html" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                    <a href="/ar/feet-and-inches-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
                         <span class="text-2xl">📐</span>
                         <div>
                             <h3 class="font-bold text-gray-900 text-sm">حاسبة تحويل الأقدام والبوصات</h3>
@@ -327,37 +543,67 @@
                 </div>
             </section>
 
-            <!-- FAQ Section -->
+            <!-- Expanded FAQ Section -->
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
                 <h2 class="text-2xl font-bold text-gray-900">الأسئلة الشائعة</h2>
                 <div class="space-y-4">
-                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group" open>
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>كم متراً مربعاً يغطيه لتر الدهان؟</span>
+                            <span>كم متراً مربعاً يغطيه لتر الدهان الواحد؟</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>يغطي لتر الدهان الداخلي عالي الجودة ما بين <strong>10 إلى 12 متراً مربعاً</strong> في الوجه الواحد على الأسطح المجهزة والمصنفرة جيداً.</p>
+                            <p>يغطي اللتر الواحد من دهان الأكريليك الداخلي عالي الجودة ما بين <strong>10 إلى 12 متراً مربعاً</strong> في الوجه الواحد على الأسطح المجهزة والناعمة. أما على الجدران الخشنة أو غير المجهزة بأساس، فتنخفض التغطية إلى نحو 7 إلى 8 أمتار مربعة لكل لتر نتيجة لامتصاص المسام.</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>لماذا يفضل شراء دهان زائد بنسبة بسيطة؟</span>
+                            <span>لماذا ينصح بدهان وجهين دائماً؟</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>الأسطح غير المدهونة سابقاً تمتص كمية أكبر من الدهان، بالإضافة إلى الاحتفاظ بكمية صغيرة لعمليات الترميم والروتوش المستقبلية بنفس درجة اللون.</p>
+                            <p>يوفر الوجهان سماكة فيلم الطلاء الموصى بها من المصنع، ويضمنان توزيعاً لونياً متجانساً دون مسامات ميكروسكوبية، كما يضاعفان متانة الدهان ومقاومته للغسيل والفرك والرطوبة لسنوات طويلة.</p>
                         </div>
                     </details>
 
                     <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
                         <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
-                            <span>هل يتم تخزين أبعاد منزلي؟</span>
+                            <span>كم مساحة الباب والنافذة التي يجب خصمها؟</span>
                             <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                            <p>لا، الحساب يتم 100% داخل جهازك دون تسجيل أو إرسال أي أبعاد.</p>
+                            <p>يبلغ متوسط مساحة الباب الداخلي حوالي <strong>2 متر مربع</strong>، بينما يبلغ متوسط مساحة النافذة السكنية حوالي <strong>1.4 متر مربع</strong>. تقوم حاسبتنا بخصم هذه المساحات تلقائياً لتفادي شراء دهان إضافي غير مستخدم.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>كيف أحسب كمية الدهان المطلوبة للسقف؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>لحساب دهان السقف، اضرب <code>طول الغرفة × عرض الغرفة</code> للحصول على المساحة بالمتر المربع. على سبيل المثال، غرفة بأبعاد 4 م × 3.5 م مساحة سقفها 14 م²، وتحتاج إلى حوالي 2.8 إلى 3 لترات لدهان وجهين كاملين.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>متى يجب استخدام دهان الأساس (البرايمر / Primer)؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>يعد البرايمر ضرورياً في أربع حالات: (1) على الجدران الجبسية أو اللياسة الجديدة، (2) فوق الدهانات الزيتية اللامعة القديمة، (3) عند التحول من لون غامق جداً إلى لون فاتح أو أبيض، و (4) لعزل بقع الماء أو الدخان القديمة.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>كيف يتم تخزين بقايا الدهان بشكل سليم؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>نظف حواف العلبة جيداً، ضع غلافاً بلاستيكياً فوق الفوهة، وأغلق الغطاء بإحكام بواسطة مطرقة مطاطية. احفظ العلبة في مكان داخلي جاف بعيداً عن درجات الحرارة المرتفعة أو التجمد، وسجل عليها اسم الغرفة ورمز اللون.</p>
                         </div>
                     </details>
                 </div>
@@ -369,7 +615,7 @@
     <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -380,20 +626,20 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">حاسبة البلاط</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">حاسبة المساحة</a></li>
-                    <li><a href="paint-calculator.html" class="text-green-400 font-bold">حاسبة الدهان</a></li>
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">حاسبة القروض</a></li>
+                    <li><a href="/ar/tile-calculator" class="hover:text-green-400 transition">حاسبة البلاط</a></li>
+                    <li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition">حاسبة المساحة</a></li>
+                    <li><a href="/ar/paint-calculator" class="text-green-400 font-bold">حاسبة الدهان</a></li>
+                    <li><a href="/ar/bmi-calculator" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
+                    <li><a href="/ar/loan-calculator" class="hover:text-green-400 transition">حاسبة القروض</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition">من نحن</a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition">المدونة</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition">اتصل بنا</a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition">من نحن</a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition">المدونة</a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition">اتصل بنا</a></li>
                 </ul>
             </div>
         </div>

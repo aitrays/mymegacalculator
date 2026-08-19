@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -137,7 +137,8 @@
     </script>
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="stylesheet" href="../responsive-fixes.css">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/" />
@@ -147,18 +148,18 @@
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../index.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
             <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="فتح القائمة">
@@ -167,27 +168,15 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../index.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- Breadcrumb Navigation -->
-    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-4 py-2">
-            <ol class="flex items-center gap-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <span itemprop="name" class="text-green-600 font-medium">الرئيسية</span>
-                    <meta itemprop="position" content="1" />
-                </li>
-            </ol>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-b from-green-50/80 to-transparent py-16 px-4 text-center">
@@ -203,7 +192,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- Calculator Card 1 -->
-            <a href="tile-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/tile-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📐</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة البلاط</h2>
@@ -217,7 +206,7 @@
             </a>
 
             <!-- Calculator Card 2 -->
-            <a href="square-footage-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/square-footage-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📏</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة المساحة بالقدم المربع</h2>
@@ -231,7 +220,7 @@
             </a>
 
             <!-- Calculator Card 3: Paint Calculator -->
-            <a href="paint-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/paint-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">🎨</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة كمية الدهان والصباغة</h2>
@@ -245,7 +234,7 @@
             </a>
 
             <!-- Calculator Card 4: BMI Calculator -->
-            <a href="bmi-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/bmi-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">⚖️</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة مؤشر كتلة الجسم (BMI)</h2>
@@ -259,7 +248,7 @@
             </a>
 
             <!-- Calculator Card 5: Calorie Calculator -->
-            <a href="calorie-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/calorie-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">🔥</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة السعرات الحرارية و TDEE</h2>
@@ -273,7 +262,7 @@
             </a>
 
             <!-- Calculator Card 6: Age Calculator -->
-            <a href="age-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/age-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">🎂</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة العمر الدقيقة</h2>
@@ -287,7 +276,7 @@
             </a>
 
             <!-- Calculator Card 7: Loan Calculator -->
-            <a href="loan-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/loan-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">💳</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة القروض والتمويل العقاري</h2>
@@ -301,7 +290,7 @@
             </a>
 
             <!-- Calculator Card 8: Percentage Calculator -->
-            <a href="percentage-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/percentage-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📊</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">حاسبة النسبة المئوية</h2>
@@ -315,7 +304,7 @@
             </a>
 
             <!-- Calculator Card 9: Weight Converter -->
-            <a href="weight-converter.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/weight-converter" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">⚖️</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">محول الوزن</h2>
@@ -329,7 +318,7 @@
             </a>
 
             <!-- Calculator Card 10: Feet & Inches Calculator -->
-            <a href="feet-and-inches-calculator.html" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
+            <a href="/ar/feet-and-inches-calculator" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-green-200 transition p-6 flex flex-col justify-between group block">
                 <div class="space-y-3">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center font-bold text-xl group-hover:bg-green-600 group-hover:text-white transition">📐</div>
                     <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">القدم والبوصة إلى السنتيمتر</h2>
@@ -359,13 +348,13 @@
                 <p>على عكس العديد من الأدوات عبر الإنترنت، <strong>نحن لا نطلب بريدك الإلكتروني أو رقم هاتفك أو أي معلومات شخصية</strong>. جميع الحسابات تتم مباشرة داخل متصفح الويب الخاص بك باستخدام JavaScript. مدخلاتك لا تغادر جهازك أبداً، مما يضمن الخصوصية والأمان الكاملين.</p>
 
                 <h3 class="text-lg font-bold text-gray-900 pt-2">مبرمجة يدوياً لضمان الدقة</h3>
-                <p>كل حاسبة على هذا الموقع مبرمجة يدوياً بواسطة مؤسسنا، <a href="author-alex-morgan.html" class="text-green-600 hover:underline">Alex Morgan</a>، وهو مهندس برمجيات بخبرة تزيد عن 8 سنوات. يتم اختبار كل أداة بدقة قبل إطلاقها، ونراجع حاسباتنا بانتظام للحفاظ على أعلى مستويات الدقة.</p>
+                <p>كل حاسبة على هذا الموقع مبرمجة يدوياً بواسطة مؤسسنا، <a href="/ar/author-alex-morgan" class="text-green-600 hover:underline">Alex Morgan</a>، وهو مهندس برمجيات بخبرة تزيد عن 8 سنوات. يتم اختبار كل أداة بدقة قبل إطلاقها، ونراجع حاسباتنا بانتظام للحفاظ على أعلى مستويات الدقة.</p>
 
                 <h3 class="text-lg font-bold text-gray-900 pt-2">متوافقة مع الجوال وسهلة الوصول</h3>
                 <p>جميع حاسباتنا متجاوبة بالكامل ومحسّنة للهواتف الذكية والأجهزة اللوحية وأجهزة الكمبيوتر. يمكنك استخدامها في موقع العمل، أو في المطبخ، أو على مكتبك بسهولة. الموقع مبني وفق معايير <strong>إمكانية الوصول WCAG 2.1 AA</strong> ليكون ملائماً للجميع.</p>
 
                 <h3 class="text-lg font-bold text-gray-900 pt-2">مدونة وأدلة تعليمية</h3>
-                <p>بالإضافة إلى الحاسبات، ننشر أدلة عملية لمساعدتك على فهم الحسابات اليومية. تفضل بزيارة <a href="blog.html" class="text-green-600 hover:underline">المدونة</a> لقراءة نصائح تحسين المنازل ودليل شراء البلاط ودليل حساب المساحة والنسب المئوية.</p>
+                <p>بالإضافة إلى الحاسبات، ننشر أدلة عملية لمساعدتك على فهم الحسابات اليومية. تفضل بزيارة <a href="/ar/blog" class="text-green-600 hover:underline">المدونة</a> لقراءة نصائح تحسين المنازل ودليل شراء البلاط ودليل حساب المساحة والنسب المئوية.</p>
             </div>
         </div>
     </section>
@@ -405,7 +394,7 @@
                         <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                        <p>نقدم 10 حاسبات مجانية: <a href="tile-calculator.html" class="text-green-600 hover:underline">حاسبة البلاط</a>، <a href="square-footage-calculator.html" class="text-green-600 hover:underline">حاسبة المساحة</a>، <a href="paint-calculator.html" class="text-green-600 hover:underline">حاسبة الدهان</a>، <a href="bmi-calculator.html" class="text-green-600 hover:underline">حاسبة كتلة الجسم BMI</a>، <a href="calorie-calculator.html" class="text-green-600 hover:underline">حاسبة السعرات الحرارية</a>، <a href="age-calculator.html" class="text-green-600 hover:underline">حاسبة العمر</a>، <a href="loan-calculator.html" class="text-green-600 hover:underline">حاسبة القروض</a>، <a href="percentage-calculator.html" class="text-green-600 hover:underline">حاسبة النسبة المئوية</a>، <a href="weight-converter.html" class="text-green-600 hover:underline">محول الوزن</a>، و<a href="feet-and-inches-calculator.html" class="text-green-600 hover:underline">محول القدم والبوصة إلى سم</a>.</p>
+                        <p>نقدم 10 حاسبات مجانية: <a href="/ar/tile-calculator" class="text-green-600 hover:underline">حاسبة البلاط</a>، <a href="/ar/square-footage-calculator" class="text-green-600 hover:underline">حاسبة المساحة</a>، <a href="/ar/paint-calculator" class="text-green-600 hover:underline">حاسبة الدهان</a>، <a href="/ar/bmi-calculator" class="text-green-600 hover:underline">حاسبة كتلة الجسم BMI</a>، <a href="/ar/calorie-calculator" class="text-green-600 hover:underline">حاسبة السعرات الحرارية</a>، <a href="/ar/age-calculator" class="text-green-600 hover:underline">حاسبة العمر</a>، <a href="/ar/loan-calculator" class="text-green-600 hover:underline">حاسبة القروض</a>، <a href="/ar/percentage-calculator" class="text-green-600 hover:underline">حاسبة النسبة المئوية</a>، <a href="/ar/weight-converter" class="text-green-600 hover:underline">محول الوزن</a>، و<a href="/ar/feet-and-inches-calculator" class="text-green-600 hover:underline">محول القدم والبوصة إلى سم</a>.</p>
                     </div>
                 </details>
 
@@ -425,7 +414,7 @@
                         <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                        <p>MyMegaCalculator أنشأها <a href="author-alex-morgan.html" class="text-green-600 hover:underline">Alex Morgan</a>، مهندس برمجيات بخبرة تزيد عن 8 سنوات في تطوير الويب وتكنولوجيا التعليم.</p>
+                        <p>MyMegaCalculator أنشأها <a href="/ar/author-alex-morgan" class="text-green-600 hover:underline">Alex Morgan</a>، مهندس برمجيات بخبرة تزيد عن 8 سنوات في تطوير الويب وتكنولوجيا التعليم.</p>
                     </div>
                 </details>
 
@@ -445,7 +434,7 @@
                         <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
-                        <p>نعم! يتوفر MyMegaCalculator بالكامل باللغة <a href="../index.html" class="text-green-600 hover:underline">الإنجليزية</a>. المزيد من اللغات قريباً.</p>
+                        <p>نعم! يتوفر MyMegaCalculator بالكامل باللغة <a href="/" class="text-green-600 hover:underline">الإنجليزية</a>. المزيد من اللغات قريباً.</p>
                     </div>
                 </details>
             </div>
@@ -457,7 +446,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -474,28 +463,28 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
                 <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition">حاسبة البلاط</a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition">حاسبة المساحة</a></li>
-                    <li><a href="paint-calculator.html" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
-                    <li><a href="bmi-calculator.html" class="hover:text-green-400 transition">حاسبة كتلة الجسم BMI</a></li>
-                    <li><a href="calorie-calculator.html" class="hover:text-green-400 transition">حاسبة السعرات الحرارية</a></li>
-                    <li><a href="age-calculator.html" class="hover:text-green-400 transition">حاسبة العمر</a></li>
-                    <li><a href="loan-calculator.html" class="hover:text-green-400 transition">حاسبة القروض</a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition">حاسبة النسبة المئوية</a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition">محول الوزن</a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition">القدم إلى السنتيمتر</a></li>
+                    <li><a href="/ar/tile-calculator" class="hover:text-green-400 transition">حاسبة البلاط</a></li>
+                    <li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition">حاسبة المساحة</a></li>
+                    <li><a href="/ar/paint-calculator" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
+                    <li><a href="/ar/bmi-calculator" class="hover:text-green-400 transition">حاسبة كتلة الجسم BMI</a></li>
+                    <li><a href="/ar/calorie-calculator" class="hover:text-green-400 transition">حاسبة السعرات الحرارية</a></li>
+                    <li><a href="/ar/age-calculator" class="hover:text-green-400 transition">حاسبة العمر</a></li>
+                    <li><a href="/ar/loan-calculator" class="hover:text-green-400 transition">حاسبة القروض</a></li>
+                    <li><a href="/ar/percentage-calculator" class="hover:text-green-400 transition">حاسبة النسبة المئوية</a></li>
+                    <li><a href="/ar/weight-converter" class="hover:text-green-400 transition">محول الوزن</a></li>
+                    <li><a href="/ar/feet-and-inches-calculator" class="hover:text-green-400 transition">القدم إلى السنتيمتر</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="/ar/author-alex-morgan" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="/ar/terms-of-service" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
                 </ul>
             </div>
 

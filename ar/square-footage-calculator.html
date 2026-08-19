@@ -7,10 +7,11 @@
     <meta name="description" content="احسب المساحة بالقدم المربع بسرعة ودقة للغرف والأرضيات ومشاريع البناء. حاسبة مساحة مجانية مع تحويلات متعددة.">
     <meta name="keywords" content="square footage calculator, area calculator, قدم² calculator, room area calculator, calculate square feet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/square-footage-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/square-footage-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/square-footage-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="canonical" href="https://mymegacalculator.com/ar/square-footage-calculator" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymegacalculator.com/ar/square-footage-calculator">
@@ -27,18 +28,18 @@
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../square-footage-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/square-footage-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
         
@@ -48,11 +49,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../square-footage-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/square-footage-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -152,7 +153,7 @@
 
             <!-- Frequently Asked Questions (FAQ) -->
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
-                <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+                <h2 class="text-2xl font-bold text-gray-900">الأسئلة الشائعة</h2>
                 
                 <div class="space-y-4">
                     <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
@@ -164,10 +165,59 @@
                         <h3 class="font-bold text-gray-900 mb-1">ماذا لو كانت غرفتي ليست مستطيلة مثالية؟</h3>
                         <p class="text-sm text-gray-600">قسّم المساحة غير المنتظمة إلى مناطق مستطيلة منفصلة، واحسب مساحة كل منطقة، ثم اجمعها معاً.</p>
                     </div>
+                    <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                        <h3 class="font-bold text-gray-900 mb-1">كيف أحوّل المتر المربع إلى قدم مربع؟</h3>
+                        <p class="text-sm text-gray-600">اضرب المساحة بالمتر المربع في 10.7639 لتحصل على المساحة بالقدم المربع. مثال: 10 م² تساوي تقريباً 107.64 قدم².</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                        <h3 class="font-bold text-gray-900 mb-1">هل أضيف نسبة احتياط لمواد الأرضيات؟</h3>
+                        <p class="text-sm text-gray-600">نعم. أضف عادةً 10% إلى المساحة المطلوبة للقص والهدر، وارفعها إلى 15% في الغرف غير المنتظمة أو عند تركيب البلاط بشكل قطري.</p>
+                    </div>
                 </div>
             </section>
 
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">قياس المساحة خطوة بخطوة</h2>
+            <p>أدخل الطول والعرض بالوحدة نفسها. مساحة المستطيل تساوي الطول × العرض. إذا كانت الغرفة غير منتظمة فقسمها إلى مستطيلات واحسب كل جزء ثم اجمعه. حوّل البوصات إلى أقدام قبل الضرب؛ 30 بوصة تساوي 2.5 قدم. تعتمد دقة النتيجة على القياسات المسجلة.</p>
+            <h3 class="text-xl font-bold text-gray-900">مثال وهامش الهدر</h3>
+            <p>غرفة 12 × 10 قدماً مساحتها 120 قدماً مربعاً. مع هدر 10% يصبح المطلوب للشراء 132 قدماً مربعاً. يغطي الهدر القص والكسر ولا يمثل أرضية إضافية. قد تحتاج الأنماط القطرية والزوايا الكثيرة إلى نسبة مختلفة يحددها المختص أو المصنع.</p>
+            <h3 class="text-xl font-bold text-gray-900">الفتحات والأخطاء</h3>
+            <p>اطرح الفتحة فقط إذا لن تغطى بالمادة. للدهان احسب طول الجدار × ارتفاعه واطرح الأبواب والنوافذ عند الحاجة. لا تخلط القدم بالبوصة ولا تقرّب كل جزء قبل الجمع. سجل كل قسم في ورقة، وقس الجدران القديمة مرتين لأن عدم الاستقامة شائع.</p>
+            <h3 class="text-xl font-bold text-gray-900">الحدود والروابط</h3>
+            <p>لا تكفي المساحة لمعرفة عدد العلب أو الكراتين دون معرفة تغطية المنتج وعدد الطبقات وحجم العبوة. لعدد البلاط استخدم <a href="/ar/tile-calculator" class="text-green-600 font-semibold hover:underline">حاسبة البلاط</a>، واقرأ <a href="/blog-square-footage-guide" class="text-green-600 font-semibold hover:underline">دليل المساحة</a> لأمثلة الغرف غير المنتظمة.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">معادلة المساحة ومثال</h2>
+            <p>مساحة المستطيل = الطول × العرض. غرفة طولها 14 قدماً وعرضها 11 قدماً مساحتها 154 قدماً مربعاً. إذا كان الشكل غير منتظم، قسّمه إلى مستطيلات لا تتداخل، احسب كل جزء ثم اجمع النتائج. حوّل 12 قدماً و6 بوصات إلى 12.5 قدماً قبل الضرب.</p>
+            <h3 class="text-xl font-bold text-gray-900">الهدر والقياس</h3>
+            <p>للأرضيات أضف عادة 10٪ للقص، وقد تحتاج الأنماط القطرية والزوايا الكثيرة إلى 15٪. لا تخصم الأثاث المتحرك، واكتب الأبعاد داخل رسم الغرفة. لا تخلط المحيط بالمساحة ولا تجمع أطوال الجدران عندما يكون المطلوب تغطية. قارن التقدير الذهني بالنتيجة، وأعد القياس إذا كانت الكمية قريبة من عدد عبوات.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أسئلة وروابط</h2>
+            <p><strong>هل أطرح الباب؟</strong> فقط عند حساب مساحة صافية وبأبعاد مؤكدة. <strong>كيف أحسب البلاط؟</strong> احسب المساحة أولاً ثم انتقل إلى <a href="/ar/tile-calculator" class="text-green-600 font-semibold hover:underline">حاسبة البلاط</a>. راجع <a href="/blog-square-footage-guide" class="text-green-600 font-semibold hover:underline">دليل القدم المربع</a> للمخططات والأمثلة.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">خطوات قياس موثوقة</h2><p>قِس الطول والعرض في نقطتين واستخدم الخلوص الأصغر عند عدم استواء الجدار. اكتب الوحدة على كل بعد، وميّز بين مساحة التغطية وطول الحواف. احتفظ برسم يوضح الأبواب والنوافذ والأعمدة حتى يراجع المورد التقدير.</p><h3 class="text-xl font-bold text-gray-900">فحص الطلب</h3><p>بعد إضافة الهدر اقسم على تغطية الصندوق وقرّب للأعلى. فرق كبير عن تقدير حجم الغرفة يعني غالباً خلطاً بين القدم والبوصة أو تكرار جزء.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>حساب المساحة للمشاريع المنزلية</h2>
+            <p>المساحة ثنائية الأبعاد وتساوي الطول مضروبا في العرض، وليست المحيط أو الحجم. غرفة طولها 12 قدما وعرضها 15 قدما مساحتها 180 قدما مربعا. إذا كانت الأبعاد بالبوصة، اقسم كل بعد على 12 أولا؛ 144 بوصة في 120 بوصة تساوي 12 في 10 أقدام، أي 120 قدما مربعا. لا تخلط السنتيمتر بالقدم في عملية واحدة.</p>
+            <h3>الأشكال المركبة والمثال</h3>
+            <p>ارسم الغرفة وقسم الشكل غير المنتظم إلى مستطيلات لا تتداخل. إذا كان جزء مساحته 10 في12 وجزء آخر 6 في5، يكون المجموع 120 زائد30، أي 150 قدما مربعا. للمثلث استخدم نصف القاعدة في الارتفاع، وللدائرة استخدم ط في مربع نصف القطر. قس الجدار أو الأرضية في أكثر من نقطة وسجل أكبر قياس عملي عند الحاجة للمواد.</p>
+            <h3>خطوات الاستخدام</h3>
+            <ol><li>ارسم مخططا واكتب كل طول وعرض بوضوح.</li><li>وحّد الوحدات قبل الضرب.</li><li>احسب الأجزاء المنفصلة ثم اجمعها.</li><li>أضف الهدر بعد الوصول إلى المساحة الصافية.</li></ol>
+            <h3>الهدر والأسئلة</h3>
+            <p>للبلاط واللامينيت والدهان أضف غالبا 10%، وزدها للقص القطري والزوايا الكثيرة والنمط المتكرر. مساحة 150 تصبح 165 قدما مربعا مع هدر 10%. لا تخصم الفتحات الدائمة إلا إذا لن تحصل على المادة، ولا تحسب الجزء نفسه مرتين. هل تدخل الخزائن؟ أدخل المساحة التي ستغطى بالمادة. هل يكفي الرقم للشراء؟ قارن تغطية العبوة وسياسة القص. استخدم <a href="/ar/tile-calculator">حاسبة البلاط</a> بعد هذه الخطوة، وراجع القياسات قبل الطلب.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>مراجعة مخطط المساحة</h2>
+            <p>بعد الحساب، قارن الناتج بأبعاد الغرفة بصريا: مساحة 100 قدم مربع قد تكون 10 في10 أو 5 في20، لكن كمية القص تختلف. ارسم الأبواب والأعمدة ومناطق الأجهزة، ثم حدد أين ستبدأ الصفوف. هذا مهم للبلاط واللامينيت لأن المساحة نفسها قد تحتاج كمية مختلفة من القطع.</p>
+            <p>استخدم مساحة العبوة الفعلية لا المساحة النظرية، واحتفظ بالقياسات الأصلية مع الوحدات. إذا كان المشروع خارجيا، افحص هل المورد يحاسب بالقدم المربع أو بالمتر المربع، وحوّل قبل إصدار الطلب. القياس المتكرر أرخص من نقص مادة في منتصف العمل.</p>
+            <p>سجّل مخططا لكل جزء باسم واضح، مثل غرفة النوم أو الممر، ثم اجمع المساحات في جدول. لا تستخدم قياسا تقريبيا لجدار منحني؛ قسمه إلى مقاطع أصغر أو اطلب طريقة قياس مناسبة. إذا كانت المادة تباع بالمتر المربع، حوّل الناتج قبل الشراء، وتحقق من أن نسبة الهدر أضيفت مرة واحدة فقط.</p>
+            <p>المساحة الصافية تجيب عن حجم المكان، أما كمية المنتج فتتأثر بشكل القطع والعروض التجارية. لذلك احتفظ بالرقم الأصلي والرقم بعد الهدر وتغطية العبوة. هذه الملاحظات تساعدك على تفسير أي فرق بين الحاسبة وفاتورة المورد، وتمنع طلب كمية ناقصة.</p>
+            <p>قبل اعتماد الرقم، راجع اتجاه القياس ومكان الفتحات، ثم اكتب المساحة بوحدتها بجانب كل جزء. اجمع الأجزاء بعد التقريب في النهاية فقط، لأن تقريب كل مستطيل قد يضيف فرقا غير ضروري. إذا كان المورد يستخدم وحدة أخرى، اطلب منه تأكيد عامل التحويل وتغطية العبوة قبل الدفع.</p>
+            <p>في الممرات الضيقة، احسب كل مستطيل كما هو ولا تستبدله بطول متوسط وعرض متوسط، لأن ذلك قد يغير المساحة. للأرضيات ذات العتبات، سجل مساحة كل مادة منفصلة. وللدهان، تذكر أن عدد الطبقات ومساحة الأبواب والنوافذ يؤثران في كمية الطلاء، وليس الرقم وحده.</p>
+            <p>راجع القياس مع شخص آخر قبل الطلب، خصوصا إذا كان المكان يحتوي على أعمدة أو تجاويف. اكتب تاريخ القياس واسم الوحدة، ثم احتفظ بالحساب الصافي والهدر والكمية التجارية في ملف واحد. بهذه الطريقة يمكن تعديل جزء واحد من المشروع دون إعادة كل القياسات.</p>
+            <p>عند حساب مساحة الجدران، اضرب عرض كل جدار في الارتفاع، ثم اجمع الجدران واطرح الأبواب والنوافذ التي لن تغطى. لا تستخدم مساحة الأرضية لحساب الدهان العمودي. في السقف المائل، قد تحتاج إلى قياس طول الميل نفسه لا الإسقاط الأفقي، لأن سطح المادة أطول. إذا كان الرسم بمقياس، تحقق من المقياس قبل قراءة الأبعاد. استعمل وحدة واحدة مثل القدم أو المتر، ثم اكتب التحويل منفصلا. أضف الهدر بعد جمع المساحة، وقرب العبوات إلى الأعلى بعد معرفة تغطية المنتج. بهذه الطريقة تظل المساحة الصافية واضحة، ويمكن تفسير فرق بسيط بين الحساب والفاتورة.</p>
+            <p>إذا كانت الأرضية مائلة أو فيها جدار غير مستقيم، قس عدة نقاط ولا تعتمد على أصغر قياس. افصل مساحة الدرج والعتبات عن مساحة الغرفة إذا كانت لها مادة مختلفة. اكتب الناتج الصافي ونسبة الهدر والكمية المطلوبة في ثلاث خانات، حتى لا تختلط مساحة المكان مع كمية الشراء.</p>
+        </section>
     </main>
 
     <!-- MODERN PREMIUM FOOTER -->
@@ -175,7 +225,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -192,23 +242,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">أفضل الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
+                    <li><a href="/ar/tile-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
+                    <li><a href="/ar/square-footage-calculator" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
+                    <li><a href="/ar/percentage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
+                    <li><a href="/ar/weight-converter" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
+                    <li><a href="/ar/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة والقانون</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="/ar/author-alex-morgan" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="/ar/terms-of-service" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
                 </ul>
             </div>
 

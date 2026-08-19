@@ -7,10 +7,11 @@
     <meta name="description" content="استخدم حاسبة البلاط المجانية لتقدير عدد البلاطات والصناديق والتكلفة الإجمالية لمشروع الأرضية أو الجدار. نتائج سريعة ودقيقة.">
     <meta name="keywords" content="tile calculator, floor tile estimator, wall tile calculator, calculate بلاطة needed, flooring calculator">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/tile-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/tile-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/tile-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="canonical" href="https://mymegacalculator.com/ar/tile-calculator" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymegacalculator.com/ar/tile-calculator">
@@ -27,18 +28,18 @@
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../tile-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/tile-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
         
@@ -48,11 +49,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../tile-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/tile-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -157,13 +158,13 @@
             <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
                 <h2 class="text-2xl font-bold text-gray-900">كيفية حساب البلاط للأرضيات والجدران</h2>
                 <p class="text-sm sm:text-base leading-relaxed text-gray-600">
-                    Calculating the correct amount of بلاطة prevents shortages mid-project or overspending on excess materials. Here is how tile estimation works:
+                    يساعد حساب كمية البلاط المطلوبة على تجنب نقص المواد أثناء المشروع أو شراء كمية زائدة. إليك طريقة تقدير البلاط:
                 </p>
                 
                 <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-2xl border border-gray-100">
                     <li>قم بقياس طول وعرض الغرفة واضربهما للحصول على المساحة السطحية الإجمالية.</li>
                     <li>احسب مساحة بلاطة واحدة بضرب طولها وعرضها.</li>
-                    <li>Divide the room area by the individual tile area to find the base number of بلاطة.</li>
+                    <li>اقسم مساحة الغرفة على مساحة البلاطة الواحدة لمعرفة العدد الأساسي للبلاطات.</li>
                     <li>أضف <strong>نسبة هدر</strong> (عادة 10% للتخطيطات المستقيمة، 15% إلى 20% للقصوات القطرية أو الغرف ذات الأعمدة) لتعويض القصوات والكسر.</li>
                 </ol>
             </section>
@@ -175,7 +176,7 @@
                 <div class="space-y-4">
                     <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
                         <h3 class="font-bold text-gray-900 mb-1">لماذا يجب إضافة نسبة هدر؟</h3>
-                        <p class="text-sm text-gray-600">Cutting بلاطة to fit corners, edges, and pipes inevitably results in discarded scraps and occasional breakage. Adding 10% extra ensures you won't run short.</p>
+                        <p class="text-sm text-gray-600">يؤدي قص البلاط حول الزوايا والحواف والأنابيب إلى بقايا وتلف بعض القطع. تساعد إضافة 10% على تجنب نقص الكمية أثناء التركيب.</p>
                     </div>
 
                     <div class="p-4 rounded-2xl bg-gray-50 border border-gray-100">
@@ -186,6 +187,45 @@
             </section>
 
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">تخطيط كمية البلاط</h2>
+            <p>أدخل أبعاد الغرفة والبلاطة بالوحدة نفسها ثم اختر نسبة الهدر. تحسب الأداة المساحة وعدد البلاطات والكمية الإضافية للقص، لكن يجب تقريب عدد الكراتين إلى الأعلى بعد مراجعة تغطية العبوة. غرفة 12 × 10 قدماً مساحتها 120 قدماً مربعاً، ومع هدر 10% نخطط لـ132 قدماً مربعاً قبل التحويل إلى كراتين.</p>
+            <h3 class="text-xl font-bold text-gray-900">الافتراضات والصيغة</h3>
+            <p>مساحة الغرفة = الطول × العرض، ومساحة البلاطة = طولها × عرضها. عدد البلاطات الأساسي هو مساحة الغرفة مقسومة على مساحة البلاطة ثم يقرب إلى الأعلى، لكن القصات لا يمكن دائماً إعادة استخدامها. النمط القطري أو المتعرج أو متعدد المقاسات قد ينتج هدراً أكبر من الشبكة المستقيمة.</p>
+            <h3 class="text-xl font-bold text-gray-900">فحوص الشراء والتركيب</h3>
+            <p>تحقق من ملاءمة البلاط للجدار أو الأرضية ومقاومة الماء والانزلاق والسماكة، واشتر من الدفعة نفسها عند أهمية اللون. جرّب صفوفاً جافة، وافحص القصات عند الحواف، واحتفظ بعلبة احتياطية مع رقم الدفعة. راجع حالة السطح والفواصل وتعليمات المادة اللاصقة قبل التركيب.</p>
+            <h3 class="text-xl font-bold text-gray-900">الأخطاء والحدود</h3>
+            <p>لا تخلط البوصات بالأقدام ولا تعتبر الهدر مساحة قابلة للاستخدام. احسب التجاويف والخزائن والعتبات منفصلة عند الحاجة، ولا تتوقع من الحاسبة تقييم استواء السطح أو جودة التنفيذ. اقرأ <a href="/blog-tile-buying-guide" class="text-green-600 font-semibold hover:underline">دليل شراء البلاط</a> وقارن المساحة مع <a href="/ar/square-footage-calculator" class="text-green-600 font-semibold hover:underline">حاسبة المساحة</a>.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">حساب كمية البلاط</h2>
+            <p>احسب مساحة الغرفة ثم اقسمها على تغطية البلاطة. بلاطة 12 × 24 بوصة تغطي قدمين مربعين. لغرفة مساحتها 120 قدماً مربعاً تحتاج نظرياً إلى 60 بلاطة، ومع هدر 10٪ تصبح 66 بلاطة. قرّب إلى أعلى ثم إلى عدد الصناديق الكاملة، لأن الصندوق المفتوح لا يعوض دائماً القطع المكسورة.</p>
+            <h3 class="text-xl font-bold text-gray-900">التخطيط والشراء</h3>
+            <p>راجع أبعاد المنتج الفعلية وعرض الفاصل وتعليمات اللاصق. جرّب صفاً جافاً حول الأبواب والزوايا والمصارف، واشتر من نفس رقم التشغيلة واللون. التخطيط القطري أو المتعرج يحتاج هدراً أكبر من الصف المستقيم. احتفظ ببعض البلاط للإصلاح، وسجّل اسم المنتج ورقمه قبل التخلص من الصناديق.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أخطاء وأسئلة</h2>
+            <p>لا تضرب محيط الغرفة ولا تخلط البوصة بالقدم. أضف الهدر بعد حساب الكمية النظرية، واطرح الفتحات الثابتة فقط إذا كانت مقاساتها دقيقة. استخدم <a href="/ar/square-footage-calculator" class="text-green-600 font-semibold hover:underline">حاسبة المساحة</a> للغرف غير المنتظمة، واقرأ <a href="/blog-tile-buying-guide" class="text-green-600 font-semibold hover:underline">دليل شراء البلاط</a> قبل الطلب.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">قائمة فحص الصندوق</h2><p>راجع التغطية وعدد القطع واللون والمعايرة وعرض الفاصل. قِس أطول مسار وأصغر قطعة حافة قبل اعتماد توزيع مركزي، فقد يقلل تحريك خط البداية القطع الضيقة. أضف فواصل الحركة والانتقالات حسب تعليمات التركيب.</p><h3 class="text-xl font-bold text-gray-900">بعد التركيب</h3><p>خزن القطع الاحتياطية مع اسم المنتج ورقم التشغيلة، واحتفظ بالحساب والفاتورة ضمن سجل الصيانة لإيجاد تطابق عند الإصلاح.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>تقدير كمية البلاط مع الهدر</h2>
+            <p>احسب المساحة الصافية أولا، ثم أضف البلاط اللازم للقص والكسر والفواصل. أرضية طولها 10 أقدام وعرضها 12 قدما مساحتها 120 قدما مربعا. بلاطة 12 في12 بوصة تغطي قدما مربعة تقريبا، فتحتاج 120 بلاطة قبل الهدر، أو 132 بلاطة مع 10% هدر. إذا كان الصندوق يحتوي على 10 بلاطات، قرب العدد إلى 14 صندوقا، لأن شراء جزء من صندوق قد لا يكون ممكنا.</p>
+            <h3>طريقة عملية للطلب</h3>
+            <ol><li>قس الطول والعرض أكثر من مرة، خاصة عند الجدران القديمة.</li><li>حوّل جميع القياسات إلى وحدة واحدة.</li><li>احسب كل جدار أو جزء منفصل ثم اجمعه.</li><li>استخدم 10% لمخطط مستقيم بسيط، ونسبة أكبر للنمط القطري أو الزوايا.</li><li>تحقق من تغطية الصندوق ورقم التشغيلة وسياسة الإرجاع.</li></ol>
+            <h3>افتراضات وأخطاء</h3>
+            <p>تقدّر الحاسبة الكمية ولا تصمم صفوف القص أو تفحص استواء السطح. الفواصل تغير التغطية قليلا، والبلاط الكبير يحتاج أرضية أكثر استواء. لا تطرح الباب إلا إذا كان الجزء لن يبلط، ولا تعتمد على المساحة النظرية وحدها عند وجود قطع كثيرة. هل أشتري بلاطا احتياطيا؟ نعم، احتفظ ببعضه للإصلاح لأن التشغيلة الجديدة قد تختلف في اللون. لماذا تختلف نتيجة المتجر؟ لأن العبوة لها تغطية محددة ولأن المتجر يقرب الصناديق. ابدأ من <a href="/ar/square-footage-calculator">حاسبة المساحة</a> ثم قارن النتيجة بتعليمات الشركة.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>اختيار الهدر المناسب</h2>
+            <p>تزيد نسبة الهدر عندما يكون البلاط كبيرا بالنسبة للغرفة، أو عندما توجد أعمدة وزوايا كثيرة، أو عندما يجب مطابقة نمط واضح. افحص توزيع القص على الرسم قبل الشراء، واجعل القطع الضيقة في أماكن أقل ظهورا. لا تنس بلاط الحواف والوزرات إذا كانت ضمن التصميم.</p>
+            <p>اخلط البلاط من أكثر من صندوق أثناء التركيب لتوزيع اختلاف اللون الطبيعي، لكن لا تخلط أرقام التشغيلات بلا مراجعة. اترك الصناديق في مكان جاف، واقرأ تعليمات السطح واللاصق. الكمية المحسوبة لا تحدد سماكة الجص أو طريقة التثبيت، فهذه قرارات تعتمد على المنتج والموقع.</p>
+            <p>اختبر ترتيب البلاط جافا قبل وضع اللاصق، وحدد خط المنتصف حتى لا تنتهي بصف ضيق في طرف واحد. ضع القطع الكاملة في المناطق الظاهرة، وخطط القطع حول المصرف والأنبوب. قارن عدد البلاطات الناتج بتغطية الصندوق، ثم قرّب الصناديق إلى الأعلى دائما.</p>
+            <p>إذا كان البلاط يحتاج اتجاها معينا، فاحسب القطع الإضافية التي قد تنتج من عكس الاتجاه. ضع في الحسبان سماكة الفاصل عند قراءة أبعاد المنتج، واتبع تعليمات الشركة للغراء والجص ووقت الجفاف. الكمية الصحيحة لا تعوض سطحا غير جاهز أو قياسا ناقصا.</p>
+            <p>اكتب عدد الصناديق والقطع الاحتياطية في قائمة الطلب، وراجع المقاس واللون قبل فتح العبوات. أضف الهدر إلى المساحة مرة واحدة، ثم قرب عدد الصناديق إلى الأعلى، ولا تستبدل التغطية المكتوبة على الصندوق بمساحة البلاطة النظرية.</p>
+            <p>حدد كذلك اتجاه التركيب ومكان أول صف، لأن اختلاف نقطة البداية يغير حجم القطع الطرفية. في الحمام، اعزل مناطق الدش والحواف إذا كان لها بلاط مختلف. افحص تعليمات مقاومة الماء والسطح قبل شراء اللاصق، فكمية البلاط وحدها لا تضمن نتيجة صحيحة.</p>
+            <p>عند شراء كمية إضافية بعد مدة، خذ عينة من البلاط القديم وقارن اللون والمقاس ورقم التشغيل. احتفظ بصندوق احتياطي جافا ومغلقا، وسجل مكان استخدام كل لون. هذه الملاحظات مفيدة عند إصلاح كسر صغير وتمنع إعادة شراء كمية كبيرة.</p>
+            <p>احسب البلاط الاحتياطي على أساس طريقة التركيب، فالنمط المتكرر يحتاج قصا ومطابقة أكثر من الصف المستقيم. ضع خطة للصفوف قبل الخلط، وحدد مركز الغرفة وخطوط المرجع. في الجدران، ابدأ من خط أفقي مستو لا من أرضية قد تكون مائلة. اترك فاصل الحركة عند الحواف حسب تعليمات المنتج، ولا تغطه باللاصق. راجع مساحة كل صندوق بعد معرفة الفواصل، ثم أضف الصناديق إلى أعلى عدد صحيح. إذا ظهرت بلاطات تالفة عند الفتح، افصلها ولا تخلطها في الحساب. اشتر كمية من نفس اللون، وصوّر الملصق، واحتفظ بمعلومات الشركة لتسهيل الإصلاح لاحقا.</p>
+            <p>قبل الطلب، احسب مساحة القص حول المصارف والزوايا، وحدد اتجاه السهم في البلاط المزخرف. اشتر من نفس الدفعة إن أمكن، وافتح صندوقا واحدا لفحص اللون والمقاس. عند تركيب جدار، احسب الارتفاع والعرض لكل جدار بدلا من استخدام مساحة الأرضية، ثم اطرح الفتحات التي لن تغطى.</p>
+        </section>
     </main>
 
     <!-- MODERN PREMIUM FOOTER -->
@@ -193,7 +233,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -210,23 +250,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">أفضل الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>البلاط والأرضيات</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
-                    <li><a href="percentage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
+                    <li><a href="/ar/tile-calculator" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>البلاط والأرضيات</span></a></li>
+                    <li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
+                    <li><a href="/ar/percentage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
+                    <li><a href="/ar/weight-converter" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
+                    <li><a href="/ar/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة والقانون</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="/ar/author-alex-morgan" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="/ar/terms-of-service" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
                 </ul>
             </div>
 

@@ -7,10 +7,11 @@
     <meta name="description" content="حاسبة النسبة المئوية المجانية. احسب الزيادة والنقصان والخصومات وما هي النسبة المئوية لرقم من رقم آخر. سريعة ودقيقة.">
     <meta name="keywords" content="percentage calculator, percent calculator, percentage increase, percentage decrease, discount calculator, what percent">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive-fixes.css">
     <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/percentage-calculator" />
     <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/percentage-calculator" />
     <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/percentage-calculator" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="canonical" href="https://mymegacalculator.com/ar/percentage-calculator" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymegacalculator.com/ar/percentage-calculator">
@@ -27,18 +28,18 @@
     <!-- Header Navigation -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="/ar/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                 </div>
                 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="index.html" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="../percentage-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">العربية</span>
+                    <a href="/percentage-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
         
@@ -48,11 +49,11 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
-                <a href="blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">الحاسبات</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="../percentage-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
-                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">العربية</span>
+                    <a href="/percentage-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
         </div>
@@ -266,6 +267,45 @@
             </section>
 
         </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">استخدام نتائج النسبة المئوية</h2>
+            <p>اختر نوع السؤال الذي يناسب أرقامك: نسبة من قيمة، أو نسبة قيمة إلى أخرى، أو زيادة ونقصان، أو فرق بين قيمتين. حدد الأساس أولاً، لأن تغيير المقام يغيّر النتيجة حتى لو بقي الفرق العددي نفسه.</p>
+            <h3 class="text-xl font-bold text-gray-900">الصيغ والأمثلة</h3>
+            <p>لحساب نسبة من عدد استخدم القيمة × النسبة ÷ 100. فـ18% من 240 تساوي 43.2. ولحساب نسبة 30 من 250 استخدم 30 ÷ 250 × 100 = 12%. والتغير من 80 إلى 92 يساوي (92 − 80) ÷ 80 × 100 = 15%. يطرح الخصم ويضاف الضريبة.</p>
+            <h3 class="text-xl font-bold text-gray-900">الأخطاء والتطبيق العملي</h3>
+            <p>لا تجمع خصمين متتاليين كأنهما من السعر الأصلي؛ خصم 20% ثم 10% يترك 72% من السعر، أي انخفاضاً إجمالياً 28%. احتفظ بالدقة حتى النهاية، واكتب هل النتيجة نسبة مئوية أم نقاط مئوية. استخدم الوحدة نفسها في القيمتين، واذكر العدد الخام عند عرض نتائج الاستبيانات.</p>
+            <h3 class="text-xl font-bold text-gray-900">أسئلة ودليل</h3>
+            <p>يمكن أن تتجاوز النتيجة 100% إذا كانت أكبر من الأساس. ولإيجاد القيمة الأصلية اقسم المبلغ على المعدل العشري. لمزيد من أمثلة الخصم والضريبة والنمو راجع <a href="/blog-percentage-guide" class="text-green-600 font-semibold hover:underline">دليل النسب المئوية</a>. الأداة تتحقق من الحساب، لكنها لا تقرر إن كانت المقارنة عادلة.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">اختيار عملية النسبة</h2>
+            <p>السؤال “ما قيمة X٪ من Y؟” يعني Y × X ÷ 100. أما “X يساوي كم بالمئة من Y؟” فيعني X ÷ Y × 100. لزيادة Y بنسبة X استخدم Y × (1 + X ÷ 100)، وللنقصان استخدم Y × (1 − X ÷ 100). تحديد القيمة المرجعية يمنع عكس العملية.</p>
+            <h3 class="text-xl font-bold text-gray-900">أمثلة ومراجعة</h3>
+            <p>18٪ من 250 تساوي 45. وإذا ارتفعت فاتورة من 90 إلى 108 فالزيادة 18، أي 20٪ من 90. زيادة 20٪ ثم نقصان 20٪ لا يعيدان الرقم الأصلي: 100 × 1.20 × 0.80 = 96. احتفظ بالدقة أثناء الحساب وقرّب العملة إلى هللات أو سنتات في النهاية.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أسئلة وأخطاء</h2>
+            <p>لا تخلط بين 7.5٪ و0.075، ولا تعتبر الانتقال من 20٪ إلى 30٪ زيادة 10٪ فقط؛ هو عشر نقاط مئوية وزيادة نسبية 50٪. قد تتجاوز النسبة 100٪ إذا كان الجزء أكبر من المرجع. راجع <a href="/blog-percentage-guide" class="text-green-600 font-semibold hover:underline">دليل النسبة</a>، واستخدم <a href="/ar/loan-calculator" class="text-green-600 font-semibold hover:underline">حاسبة القرض</a> عند تكرار الفائدة.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">النسب في القرارات اليومية</h2><p>اكتب الأساس بجوار النسبة في الخصومات والضرائب والدرجات. درجة 42 من 50 تساوي 84٪، بينما 42 نقطة مئوية شيء مختلف. عند تطبيق معدلات متتابعة اكتب ترتيبها لأن كل خطوة قد تستخدم أساساً جديداً.</p><h3 class="text-xl font-bold text-gray-900">فحص عكسي</h3><p>بعد حساب 18٪ من 250 = 45، اقسم 45 على 250 واضرب في 100 لاستعادة 18٪؛ هذه طريقة سريعة لاكتشاف عكس البسط والمقام.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>استخدام النسب المئوية من دون التباس</h2>
+            <p>النسبة المئوية جزء من مئة. لإيجاد نسبة من رقم، حوّل المعدل إلى كسر عشري واضربه في الرقم. فـ18% من 250 تساوي 0.18 في 250، أي 45. ولحساب نسبة جزء من كل، اقسم الجزء على الكل واضرب في 100. إذا أعيدت 45 قطعة من أصل 250، فإن معدل الإرجاع 18%.</p>
+            <h3>الزيادة والخصم</h3>
+            <p>الزيادة بنسبة 20% تضرب القيمة الأصلية في 1.20، والنقصان بنسبة 20% يضربها في 0.80. سعر 80 بعد زيادة 20% يصبح 96، لكن تخفيض 96 بنسبة 20% يعطي 76.80 لأن الأساس الجديد مختلف. الانتقال من 12% إلى 15% يساوي 3 نقاط مئوية، أما الزيادة النسبية فهي 25%.</p>
+            <h3>خطوات التحقق</h3>
+            <ol><li>سم الجزء والكل قبل اختيار الصيغة.</li><li>استخدم الأساس الأصلي عند حساب التغير.</li><li>أجل التقريب إلى الناتج الأخير، خصوصا في المال.</li><li>وضح هل الناتج مبلغ أو معدل أو فرق نقاط مئوية.</li></ol>
+            <h3>أمثلة وأخطاء</h3>
+            <p>السعر 50 مع ضريبة 8% يصبح 54، والخصم يطرح من السعر الأصلي. ومن الأخطاء القسمة على القيمة الجديدة عندما يكون السؤال عن التغير من القديمة، أو جمع نسب تتراكم في أكثر من خطوة. هل يمكن أن تتجاوز النسبة 100%؟ نعم إذا كان الجزء أكبر من الكل. قرّب العملة إلى منزلتين في النهاية، ولا تقرب كل مرحلة. راجع <a href="/ar/percentage-calculator">حاسبة النسبة</a>، ولحساب المساحة استخدم <a href="/ar/square-footage-calculator">حاسبة المساحة</a>.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>فحص الناتج في الحياة اليومية</h2>
+            <p>عند مقارنة مبيعات متجرين، اسأل هل الخصم محسوب من السعر المعلن أم من سعر سابق. وعند مقارنة نمو شهرين، احتفظ بالقيمة الأصلية كمرجع. مثال: ارتفع عدد المشتركين من 800 إلى 920، فالزيادة 120، والنسبة 120 مقسومة على 800، أي 15%.</p>
+            <p>في الإحصاءات قد يكون المتوسط المئوي مختلفا عن نسبة النجاح، فلا تخلط بين المصطلحين. اكتب المعادلة بجانب النتيجة، واذكر فترة القياس والكل المستخدم. هذا يمنع قراءة رقم صحيح في سياق خاطئ، خصوصا في الضرائب والدرجات والتقارير.</p>
+            <p>عند حساب هامش الربح، فرّق بين الربح مقسوما على التكلفة والربح مقسوما على سعر البيع؛ لكل سؤال أساس مختلف. وعند تحويل كسر إلى نسبة، اقسم البسط على المقام ثم اضرب في 100. افحص أن النتيجة منطقية، وأن المعدل مكتوب بجانب الفترة والكمية التي يعتمد عليها.</p>
+            <p>اكتب القيمة الأصلية والجديدة بجانب كل نتيجة، وحدد إن كانت النسبة خصما أو ضريبة أو تغيرا. بذلك يستطيع شخص آخر إعادة الحساب واكتشاف أي أساس مختلف.</p>
+            <p>إذا كانت النتيجة كسرا عشريا، اضربها في 100 قبل إضافة علامة النسبة. أما إذا أدخلت 25 بدلا من 0.25 في عملية الضرب، فستحصل على قيمة أكبر مئة مرة. راجع ترتيب العملية قبل اعتماد التقرير.</p>
+            <p>في المقارنة بين عرضين، ابدأ بتحديد السعر المرجعي ثم احسب الفرق العددي، وبعد ذلك اقسم الفرق على المرجع. مثال: الفرق بين 120 و150 هو 30، و30 مقسومة على 120 تساوي 25%. أما إذا كان السؤال عن حصة 120 من 150 فالنتيجة 80%، وهي إجابة مختلفة لأن الأساس تغير. في التقارير المالية، اذكر الفترة والعملة وما إذا كانت النسبة قبل الضريبة أو بعدها. وعند جمع نسب من فئات مختلفة، تحقق من أن المقامات متساوية قبل الجمع، وإلا استخدم الأعداد الأصلية أولا ثم احسب النسبة العامة.</p>
+            <p>مثال على التغير المركب: زيادة 10% مرتين تعني الضرب في 1.10 ثم 1.10، أي زيادة إجمالية 21%، لا 20% فقط. لذلك اذكر عدد الفترات عندما تعرض النتيجة. وفي التقارير، اكتب القيمتين الأصلية والجديدة حتى يستطيع القارئ إعادة فحص النسبة.</p>
+        </section>
     </main>
 
     <!-- MODERN PREMIUM FOOTER -->
@@ -273,7 +313,7 @@
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
             <div class="md:col-span-2 space-y-4">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/ar/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     </div>
@@ -290,23 +330,23 @@
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">أفضل الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="tile-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
-                    <li><a href="square-footage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
-                    <li><a href="percentage-calculator.html" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
-                    <li><a href="weight-converter.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
-                    <li><a href="feet-and-inches-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
+                    <li><a href="/ar/tile-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>البلاط والأرضيات</span></a></li>
+                    <li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المساحة بالقدم المربع</span></a></li>
+                    <li><a href="/ar/percentage-calculator" class="text-green-400 transition flex items-center gap-1.5 font-semibold"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
+                    <li><a href="/ar/weight-converter" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>محول الوزن</span></a></li>
+                    <li><a href="/ar/feet-and-inches-calculator" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>القدم إلى السنتيمتر</span></a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة والقانون</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="terms-of-service.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
-                    <li><a href="contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
+                    <li><a href="/ar/author-alex-morgan" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
+                    <li><a href="/ar/terms-of-service" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>شروط الخدمة</span></a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
                 </ul>
             </div>
 
