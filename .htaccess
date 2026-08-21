@@ -75,8 +75,3 @@ RewriteRule ^(.+)$ $1.html [L]
 # Custom 404
 ErrorDocument 404 /404.html
 
-# Saudi Arabia calculator clean URLs
-RewriteRule ^ar/saudi-end-of-service-calculator\.html$ /ar/saudi-end-of-service-calculator [R=301,L,NE]
-RewriteRule ^ar/saudi-vat-calculator\.html$ /ar/saudi-vat-calculator [R=301,L,NE]
-RewriteRule ^ar/saudi-zakat-calculator\.html$ /ar/saudi-zakat-calculator [R=301,L,NE]
-RewriteRule ^ar/countries/saudi-arabia\.html$ /ar/countries/saudi-arabia [R=301,L,NE]
