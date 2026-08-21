@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    <details class="mmc-country-picker"><summary>🌐 Countries</summary><div class="mmc-country-menu"><div class="mmc-country-label">Country-specific calculators</div><a class="active" href="/countries/">🌍 Choose country</a><a href="/countries/united-states.html">🇺🇸 United States</a><a href="/countries/united-kingdom.html">🇬🇧 United Kingdom</a><a href="/countries/canada.html">🇨🇦 Canada</a><a href="/countries/australia.html">🇦🇺 Australia</a><a href="/countries/germany.html">🇩🇪 Germany</a><a href="/countries/france.html">🇫🇷 France</a></div></details></header>
 
     <!-- Breadcrumb Navigation -->
     <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
@@ -763,16 +763,22 @@
         });
 
         function resetPaintForm() {
-            roomLength.value = '14';
-            roomWidth.value = '12';
-            roomHeight.value = '9';
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            if (unit === 'meters') {
+                roomLength.value = '4.5';
+                roomWidth.value = '3.5';
+                roomHeight.value = '2.7';
+            } else {
+                roomLength.value = '14';
+                roomWidth.value = '12';
+                roomHeight.value = '9';
+            }
             doorsCount.value = '1';
             windowsCount.value = '2';
             coatsCount.value = '2';
             canPrice.value = '';
             calculatePaint();
         }
-
         calculatePaint();
     </script>
 </body>

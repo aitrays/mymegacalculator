@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#16a34a">
     <title>Tile Calculator | Free Tile Quantity & Cost Estimator — MyMegaCalculator</title>
-    <meta name="description" content="Free tile calculator to estimate exact tile quantities for floors and walls. Includes waste margin, cost estimation, and square footage. 100% private — no data stored.">
+    <meta name="description" content="Free tile calculator to estimate exact tile quantities for floors and walls. Includes waste margin, cost estimation, and square footage. Calculations run in your browser; calculator inputs are not stored.">
     <meta name="keywords" content="tile calculator, free tile calculator, tile estimator, floor tile calculator, wall tile calculator, tile quantity, tile cost estimator, bathroom tile calculator, kitchen tile calculator">
     <meta name="author" content="Alex Morgan - MyMegaCalculator">
     <link rel="canonical" href="https://mymegacalculator.com/tile-calculator" />
@@ -168,7 +168,7 @@
                 </div>
             </nav>
         </div>
-    </header>
+    <details class="mmc-country-picker"><summary>🌐 Countries</summary><div class="mmc-country-menu"><div class="mmc-country-label">Country-specific calculators</div><a class="active" href="/countries/">🌍 Choose country</a><a href="/countries/united-states.html">🇺🇸 United States</a><a href="/countries/united-kingdom.html">🇬🇧 United Kingdom</a><a href="/countries/canada.html">🇨🇦 Canada</a><a href="/countries/australia.html">🇦🇺 Australia</a><a href="/countries/germany.html">🇩🇪 Germany</a><a href="/countries/france.html">🇫🇷 France</a></div></details></header>
 
     <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-4 py-10 w-full">
@@ -530,6 +530,9 @@
         function resetForm() {
             roomLength.value = '';
             roomWidth.value = '';
+            tileLength.value = '60';
+            tileWidth.value = '60';
+            wastePercentage.value = '10';
             calculate();
         }
     </script>

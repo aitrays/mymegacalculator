@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -15,7 +15,7 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#16a34a">
     <title>MyMegaCalculator | Free Online Calculators & Conversion Tools</title>
-    <meta name="description" content="Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday math. 100% private — no data stored.">
+    <meta name="description" content="Free, instant, and high-precision online calculators for home improvement, percentages, unit conversions, and everyday math. Calculations run in your browser; no calculator inputs are stored.">
     <meta name="keywords" content="online calculators, free calculators, tile calculator, square footage calculator, percentage calculator, conversion tools, weight converter, feet inches calculator">
     <meta name="author" content="Alex Morgan - MyMegaCalculator">
     <link rel="canonical" href="https://mymegacalculator.com/" />
@@ -24,7 +24,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="MyMegaCalculator | Free Online Calculators & Conversion Tools">
-    <meta property="og:description" content="Free, instant, and high-precision online calculators. 100% private — no data stored.">
+    <meta property="og:description" content="Free, instant, and high-precision online calculators. Calculations run in your browser; no calculator inputs are stored.">
     <meta property="og:url" content="https://mymegacalculator.com/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
@@ -34,7 +34,7 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MyMegaCalculator | Free Online Calculators & Conversion Tools">
-    <meta name="twitter:description" content="Free, instant, and high-precision online calculators. 100% private — no data stored.">
+    <meta name="twitter:description" content="Free, instant, and high-precision online calculators. Calculations run in your browser; no calculator inputs are stored.">
     <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
 
     <!-- JSON-LD Structured Data: WebSite + Organization -->
@@ -165,6 +165,7 @@
             </a>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 items-center">
                 <a href="/" class="text-green-600 font-bold">Calculators</a>
+                <a href="/categories" class="hover:text-green-600 transition">Categories</a>
                 <a href="/blog" class="hover:text-green-600 transition">Blog</a>
                 <div class="flex items-center space-x-2 text-xs">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span>
@@ -178,6 +179,7 @@
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
                 <a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a>
+                <a href="/categories" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Categories</a>
                 <a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a>
                 <div class="flex items-center space-x-2 px-3 py-2">
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span>
@@ -185,7 +187,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    <details class="mmc-country-picker"><summary>🌐 Countries</summary><div class="mmc-country-menu"><div class="mmc-country-label">Country-specific calculators</div><a class="active" href="/countries/">🌍 Choose country</a><a href="/countries/united-states.html">🇺🇸 United States</a><a href="/countries/united-kingdom.html">🇬🇧 United Kingdom</a><a href="/countries/canada.html">🇨🇦 Canada</a><a href="/countries/australia.html">🇦🇺 Australia</a><a href="/countries/germany.html">🇩🇪 Germany</a><a href="/countries/france.html">🇫🇷 France</a></div></details></header>
 
     <!-- Breadcrumb Navigation -->
     <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
@@ -209,6 +211,23 @@
                 <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Access instant, accurate calculation and conversion tools designed for everyday problem-solving, construction, and finance. No sign-up. No data stored.</p>
             </div>
         </section>
+
+
+        <!-- Category navigation -->
+        <section class="max-w-6xl mx-auto px-4 pt-2 pb-8" aria-labelledby="category-heading">
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5">
+                <div><h2 id="category-heading" class="text-2xl sm:text-3xl font-extrabold text-gray-900">Browse by category</h2><p class="text-gray-600 text-sm mt-1">Choose a category to find the calculators you need faster.</p></div>
+                <a href="/categories" class="text-green-600 font-bold text-sm hover:text-green-700">View all categories →</a>
+            </div>
+            <div class="mmc-category-grid">
+                <a href="/categories/finance" class="mmc-category-card"><div class="mmc-category-icon">💰</div><div><h2>Finance &amp; Money</h2><p>Manage loans, percentages and financial calculations.</p></div><span class="mmc-category-arrow">→</span></a>
+                <a href="/categories/health" class="mmc-category-card"><div class="mmc-category-icon">❤️</div><div><h2>Health &amp; Fitness</h2><p>BMI and calorie tools for everyday health planning.</p></div><span class="mmc-category-arrow">→</span></a>
+                <a href="/categories/date-age" class="mmc-category-card"><div class="mmc-category-icon">📅</div><div><h2>Date &amp; Age</h2><p>Exact age and date calculation tools.</p></div><span class="mmc-category-arrow">→</span></a>
+                <a href="/categories/math" class="mmc-category-card"><div class="mmc-category-icon">➗</div><div><h2>Math</h2><p>Quick tools for percentages and everyday math.</p></div><span class="mmc-category-arrow">→</span></a>
+                <a href="/categories/home-construction" class="mmc-category-card"><div class="mmc-category-icon">🏠</div><div><h2>Home &amp; Construction</h2><p>Area, paint, tile and measurement calculators.</p></div><span class="mmc-category-arrow">→</span></a>
+                <a href="/categories/conversions" class="mmc-category-card"><div class="mmc-category-icon">🔄</div><div><h2>Unit Conversions</h2><p>Weight and measurement conversion tools.</p></div><span class="mmc-category-arrow">→</span></a>
+            </div>
+        <a href="/countries/" class="mmc-category-card"><div class="mmc-category-icon">🇲🇦</div><div><h2>Morocco Calculators</h2><p>Salary, tax and social contribution calculators for Morocco.</p></div><span class="mmc-category-arrow">→</span></a></section>
 
         <!-- Calculators Grid Section -->
         <section class="max-w-6xl mx-auto px-4 py-8 w-full">

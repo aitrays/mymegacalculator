@@ -1,3 +1,10 @@
+# Country language separation
+Redirect 301 /categories/morocco /ar/countries/morocco.html
+Redirect 301 /morocco-salary-calculator /ar/morocco-salary-calculator.html
+Redirect 301 /morocco-ir-calculator /ar/morocco-ir-calculator.html
+Redirect 301 /morocco-cnss-calculator /ar/morocco-cnss-calculator.html
+Redirect 301 /morocco-amo-calculator /ar/morocco-amo-calculator.html
+Redirect 301 /countries/morocco.html /ar/countries/morocco.html
 # =============================================
 # MyMegaCalculator - Apache .htaccess
 # =============================================
@@ -10,6 +17,18 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Remove trailing slash (except root)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Redirect /index.html and language-root index files to their canonical roots.
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+ar/index\.html(?:[?\s]) [NC]
+RewriteRule ^ar/index\.html$ /ar/ [R=301,L]
+
+# Redirect explicit .html URLs to the canonical clean URL.
+# Only redirect when the browser requested the .html form directly, so
+# Apache's internal clean-URL rewrite does not loop.
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[?\s]) [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
 
 # -----------------------------------------------
 # Clean URLs - serve .html without extension
@@ -55,3 +74,9 @@ RewriteRule ^(.+)$ $1.html [L]
 
 # Custom 404
 ErrorDocument 404 /404.html
+
+# Saudi Arabia calculator clean URLs
+RewriteRule ^ar/saudi-end-of-service-calculator\.html$ /ar/saudi-end-of-service-calculator [R=301,L,NE]
+RewriteRule ^ar/saudi-vat-calculator\.html$ /ar/saudi-vat-calculator [R=301,L,NE]
+RewriteRule ^ar/saudi-zakat-calculator\.html$ /ar/saudi-zakat-calculator [R=301,L,NE]
+RewriteRule ^ar/countries/saudi-arabia\.html$ /ar/countries/saudi-arabia [R=301,L,NE]

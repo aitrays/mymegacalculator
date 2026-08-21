@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#16a34a">
     <title>Loan & Mortgage Calculator | Monthly Payment & Amortization — MyMegaCalculator</title>
-    <meta name="description" content="Free online loan and mortgage calculator. Calculate monthly payments, total interest, and amortization schedule. 100% free and private — no data stored.">
+    <meta name="description" content="Free online loan and mortgage calculator. Calculate monthly payments, total interest, and amortization schedule. Calculations run in your browser; calculator inputs are not stored.">
     <meta name="keywords" content="loan calculator, mortgage calculator, monthly payment calculator, interest calculator, amortization schedule, personal loan calculator, auto loan calculator">
     <meta name="author" content="Alex Morgan - MyMegaCalculator">
     <link rel="canonical" href="https://mymegacalculator.com/loan-calculator" />
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    <details class="mmc-country-picker"><summary>🌐 Countries</summary><div class="mmc-country-menu"><div class="mmc-country-label">Country-specific calculators</div><a class="active" href="/countries/">🌍 Choose country</a><a href="/countries/united-states.html">🇺🇸 United States</a><a href="/countries/united-kingdom.html">🇬🇧 United Kingdom</a><a href="/countries/canada.html">🇨🇦 Canada</a><a href="/countries/australia.html">🇦🇺 Australia</a><a href="/countries/germany.html">🇩🇪 Germany</a><a href="/countries/france.html">🇫🇷 France</a></div></details></header>
 
     <!-- Breadcrumb Navigation -->
     <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
@@ -531,18 +531,20 @@
             const monthlyRate = (annualRate / 100) / 12;
             let tableHtml = '';
 
-            for (let y = 1; y <= years; y++) {
+            const totalYears = Math.ceil(totalMonths / 12);
+            for (let y = 1; y <= totalYears; y++) {
                 const startBalance = currentBalance;
                 let yearPrincipal = 0;
                 let yearInterest = 0;
+                const monthsThisYear = Math.min(12, totalMonths - ((y - 1) * 12));
 
-                for (let m = 1; m <= 12; m++) {
+                for (let m = 1; m <= monthsThisYear; m++) {
                     if (currentBalance <= 0) break;
                     const interestM = annualRate > 0 ? currentBalance * monthlyRate : 0;
-                    const principalM = Math.min(currentBalance, monthlyPayment - interestM);
+                    const principalM = Math.min(currentBalance, Math.max(0, monthlyPayment - interestM));
                     yearInterest += interestM;
                     yearPrincipal += principalM;
-                    currentBalance -= principalM;
+                    currentBalance = Math.max(0, currentBalance - principalM);
                 }
 
                 tableHtml += `
