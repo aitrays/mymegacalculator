@@ -1,21 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9361C89S6C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9361C89S6C');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#16a34a">
-    <title>حاسبة السعرات الحرارية اليومية TDEE - حساب احتياج الجسم لإنقاص أو زيادة الوزن | MyMegaCalculator</title>
-    <meta name="description" content="احسب احتياجك اليومي من السعرات الحرارية (TDEE) ومعدل الأيض الأساسي (BMR) بدقة علمية. أهداف مخصصة لإنقاص الوزن، التنشيف، أو بناء العضلات مجاناً 100%.">
-    <meta name="keywords" content="حاسبة السعرات الحرارية, حساب TDEE, حساب BMR, كم سعرة أحتاج في اليوم, حاسبة السعرات للتنحيف, احتياج السعرات اليومي">
+    <title>حاسبة السعرات الحرارية و TDEE - احسب احتياجك اليومي مجاناً | MyMegaCalculator</title>
+    <meta name="description" content="احسب احتياجك اليومي من السعرات الحرارية (TDEE و BMR) بناءً على العمر والوزن والطول ومستوى النشاط. خطط مخصصة للتنشيف أو التضخيم مع توزيع الماكروز. 100% مجانية.">
+    <meta name="keywords" content="حاسبة السعرات الحرارية, حساب السعرات اليومية, حاسبة tdee, حاسبة bmr, حاسبة السعرات للتنحيف, حاسبة الماكروز, حساب السعرات لخسارة الوزن">
     <meta name="author" content="Alex Morgan - MyMegaCalculator">
     <link rel="canonical" href="https://mymegacalculator.com/ar/calorie-calculator" />
     <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
@@ -24,17 +16,17 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymegacalculator.com/ar/calorie-calculator">
-    <meta property="og:title" content="حاسبة السعرات الحرارية اليومية TDEE">
-    <meta property="og:description" content="احسب احتياجك اليومي من السعرات الحرارية بدقة علمية لإنقاص الوزن أو ثباته أو بناء العضلات.">
-    <meta property="og:image" content="https://mymegacalculator.com/images/og-calorie-calculator.jpg">
+    <meta property="og:title" content="حاسبة السعرات الحرارية و TDEE - احسب احتياجك اليومي">
+    <meta property="og:description" content="احسب احتياجك اليومي من السعرات الحرارية ومعدل الأيض الأساسي مع خطط خسارة الوزن وزيادة الكتلة العضلية.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
     <meta property="og:site_name" content="MyMegaCalculator">
     <meta property="og:locale" content="ar_AR">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="حاسبة السعرات الحرارية اليومية TDEE">
-    <meta name="twitter:description" content="حاسبة دقيقة لحساب السعرات ومعدل الأيض الأساسي حسب النشاط البدني.">
-    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-calorie-calculator.jpg">
+    <meta name="twitter:title" content="حاسبة السعرات الحرارية و TDEE - MyMegaCalculator">
+    <meta name="twitter:description" content="احسب احتياجك اليومي من السعرات الحرارية للتنحيف أو بناء العضلات مجاناً.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
 
     <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">
@@ -63,7 +55,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "حاسبة السعرات الحرارية اليومية TDEE",
+      "name": "حاسبة السعرات الحرارية و TDEE",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "Any",
       "offers": {
@@ -71,7 +63,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "description": "حاسبة إلكترونية لحساب السعرات الحرارية ومعدل الأيض الأساسي لمعادلة Mifflin-St Jeor.",
+      "description": "حاسبة مجانية لاحتياج السعرات الحرارية اليومية ومعدل الأيض BMR و TDEE وفق معادلة ميفلين سانت جيور المعتمدة.",
       "url": "https://mymegacalculator.com/ar/calorie-calculator",
       "author": {
         "@type": "Person",
@@ -83,6 +75,48 @@
         "name": "MyMegaCalculator",
         "url": "https://mymegacalculator.com"
       }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو الفرق بين BMR و TDEE؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "معدل الأيض الأساسي (BMR) هو عدد السعرات التي يحرقها جسمك في وضع الراحة التامة للبقاء على قيد الحياة. أما إجمالي الطاقة اليومية (TDEE) فيشمل BMR مضافاً إليه نشاطك البدني وحركتك اليومية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم سعرة حرارية أحتاج لإنقاص نصف كيلوغرام أسبوعياً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يعادل نصف كيلوغرام من الدهون حوالي 3500 سعرة حرارية. إنقاص 500 سعرة حرارية يومياً من احتياجك TDEE يحقق عجزاً أسبوعياً آمناً ومثالياً لخسارة نصف كيلوغرام."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي المعادلة المستخدمة في الحساب؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نستخدم معادلة Mifflin-St Jeor، وهي المعادلة الأكثر دقة واعتماداً في التغذية الإكلينيكية لتقدير معدل الأيض الأساسي."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يتم تسجيل بياناتي الصحية في الموقع؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا إطلاقاً. الحسابات تتم بالكامل في متصفحك ولا نخزن أي بيانات شخصية."
+          }
+        }
+      ]
     }
     </script>
 
@@ -106,9 +140,9 @@
             </a>
             <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
                 <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
-                <a href="/ar/blog.html" class="hover:text-green-600 transition">المدونة</a>
+                <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="/calorie-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <a href="/calorie-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
@@ -119,9 +153,9 @@
         <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-3 space-y-2">
                 <a href="/ar/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">الحاسبات</a>
-                <a href="/ar/blog.html" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
+                <a href="/ar/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">المدونة</a>
                 <div class="flex items-center gap-2 px-3 py-2">
-                    <a href="/calorie-calculator.html" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
+                    <a href="/calorie-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">EN</a>
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span>
                 </div>
             </div>
@@ -140,134 +174,281 @@
                     <span class="mx-2 text-gray-300">/</span>
                 </li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
-                    <span itemprop="name" class="text-gray-800 font-medium">حاسبة السعرات الحرارية</span>
+                    <span itemprop="name" class="text-green-600 font-medium">حاسبة السعرات الحرارية</span>
                     <meta itemprop="position" content="2" />
                 </li>
             </ol>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-green-50/80 to-transparent py-10 px-4 text-center">
-        <div class="max-w-3xl mx-auto space-y-3">
-            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">التغذية والرشاقة</span>
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">حاسبة السعرات الحرارية اليومية (TDEE & BMR)</h1>
-            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">احسب إجمالي استهلاكك اليومي من الطاقة واعرف عدد السعرات المطلوبة لإنقاص الوزن، الحفاظ على الوزن، أو زيادة الكتلة العضلية.</p>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-8 space-y-2">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">التغذية واللياقة البدنية</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">حاسبة السعرات الحرارية اليومية و TDEE</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">احسب احتياجك اليومي من السعرات ومعدل الحرق الأساسي (BMR) وأهداف التغذية للتنحيف أو زيادة الوزن.</p>
         </div>
-    </section>
 
-    <!-- Main Tool Container -->
-    <main class="max-w-5xl mx-auto px-4 py-6 w-full flex-grow">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
-            <!-- Left Column: Input Form -->
-            <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
-                
-                <!-- Unit Selector -->
-                <div>
-                    <label class="block text-sm font-bold text-gray-700 mb-2">نظام القياس</label>
-                    <div class="grid grid-cols-2 gap-3">
-                        <label class="flex items-center justify-center gap-2 p-3 rounded-xl border border-gray-200 cursor-pointer hover:bg-green-50/50 has-[:checked]:border-green-600 has-[:checked]:bg-green-50 transition">
-                            <input type="radio" name="calUnit" value="metric" class="text-green-600 focus:ring-green-500" checked onchange="switchCalUnit()">
-                            <span class="text-sm font-semibold text-gray-800">النظام المتري (كجم / سم)</span>
-                        </label>
-                        <label class="flex items-center justify-center gap-2 p-3 rounded-xl border border-gray-200 cursor-pointer hover:bg-green-50/50 has-[:checked]:border-green-600 has-[:checked]:bg-green-50 transition">
-                            <input type="radio" name="calUnit" value="imperial" class="text-green-600 focus:ring-green-500" onchange="switchCalUnit()">
-                            <span class="text-sm font-semibold text-gray-800">النظام الإمبراطوري (رطل / قدم)</span>
-                        </label>
-                    </div>
-                </div>
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
 
-                <!-- Gender & Age -->
-                <div class="grid grid-cols-2 gap-4">
+            <!-- Unit Selector -->
+            <div class="flex justify-center gap-6 border-b border-gray-100 pb-4">
+                <label class="inline-flex items-center cursor-pointer gap-2">
+                    <input type="radio" name="unitType" value="metric" class="text-green-600 focus:ring-green-500 h-4 w-4" checked onchange="toggleCalorieUnit()">
+                    <span class="text-sm font-bold text-gray-700">النظام المتري (كجم، سم)</span>
+                </label>
+                <label class="inline-flex items-center cursor-pointer gap-2">
+                    <input type="radio" name="unitType" value="imperial" class="text-green-600 focus:ring-green-500 h-4 w-4" onchange="toggleCalorieUnit()">
+                    <span class="text-sm font-bold text-gray-700">النظام الإمبراطوري (باوند، قدم/بوصة)</span>
+                </label>
+            </div>
+
+            <form id="calorieForm" onsubmit="return false;" class="space-y-6">
+                <!-- Demographics Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-semibold text-gray-600 mb-1">الجنس</label>
-                        <select id="calGender" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none text-sm font-medium transition bg-white" onchange="calcCalories()">
+                        <label for="gender" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">الجنس</label>
+                        <select id="gender" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 bg-white">
                             <option value="male" selected>ذكر</option>
                             <option value="female">أنثى</option>
                         </select>
                     </div>
                     <div>
-                        <label for="calAge" class="block text-xs font-semibold text-gray-600 mb-1">العمر (بالسنوات)</label>
-                        <input type="number" id="calAge" value="28" min="10" max="100" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none text-sm font-medium transition" oninput="calcCalories()">
+                        <label for="age" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">العمر (بالسنوات)</label>
+                        <input type="number" id="age" value="28" min="10" max="110" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
                     </div>
                 </div>
 
-                <!-- Height & Weight -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Metric Dimensions -->
+                <div id="metricInputs" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label for="calHeight" class="block text-xs font-semibold text-gray-600 mb-1">الطول</label>
-                        <div class="relative">
-                            <input type="number" id="calHeight" value="175" min="50" max="250" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none text-sm font-medium transition" placeholder="175" oninput="calcCalories()">
-                            <span id="calHeightUnit" class="absolute left-3 top-2.5 text-gray-400 text-xs">سم</span>
+                        <label for="heightCm" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">الطول (سم)</label>
+                        <input type="number" id="heightCm" value="175" min="80" max="250" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                    <div>
+                        <label for="weightKg" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">الوزن (كجم)</label>
+                        <input type="number" id="weightKg" value="70" min="25" max="300" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                    </div>
+                </div>
+
+                <!-- Imperial Dimensions -->
+                <div id="imperialInputs" class="hidden space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="heightFeet" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">الطول (قدم)</label>
+                            <input type="number" id="heightFeet" value="5" min="2" max="8" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
+                        </div>
+                        <div>
+                            <label for="heightInches" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">الطول (بوصة)</label>
+                            <input type="number" id="heightInches" value="9" min="0" max="11" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
                         </div>
                     </div>
                     <div>
-                        <label for="calWeight" class="block text-xs font-semibold text-gray-600 mb-1">الوزن</label>
-                        <div class="relative">
-                            <input type="number" id="calWeight" value="75" min="20" max="300" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none text-sm font-medium transition" placeholder="75" oninput="calcCalories()">
-                            <span id="calWeightUnit" class="absolute left-3 top-2.5 text-gray-400 text-xs">كجم</span>
-                        </div>
+                        <label for="weightLbs" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">الوزن (باوند / رطل)</label>
+                        <input type="number" id="weightLbs" value="154" min="50" max="700" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition text-right">
                     </div>
                 </div>
 
                 <!-- Activity Level -->
                 <div>
-                    <label for="calActivity" class="block text-xs font-semibold text-gray-600 mb-1">مستوى النشاط البدني اليومي</label>
-                    <select id="calActivity" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none text-sm font-medium transition bg-white" onchange="calcCalories()">
-                        <option value="1.2">قليل الحركة (عمل مكتبي بدون تمارين رياضية)</option>
+                    <label for="activity" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">مستوى النشاط البدني</label>
+                    <select id="activity" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm font-semibold text-gray-900 bg-white">
+                        <option value="1.2">خامل (قليل أو بدون تمارين، عمل مكتبي)</option>
                         <option value="1.375" selected>نشاط خفيف (تمارين خفيفة 1-3 أيام أسبوعياً)</option>
-                        <option value="1.55">نشاط متوسط (تمارين متوسطة 3-5 أيام أسبوعياً)</option>
+                        <option value="1.55">نشاط معتدل (تمارين متوسطة 3-5 أيام أسبوعياً)</option>
                         <option value="1.725">نشاط عالي (تمارين شاقة 6-7 أيام أسبوعياً)</option>
-                        <option value="1.9">نشاط فائق (رياضي محترف / عمل بدني شاق جداً)</option>
+                        <option value="1.9">نشاط فائق / رياضي محترف (تدريبات مكثفة يومية أو عمل بدني شاق)</option>
                     </select>
                 </div>
-            </div>
 
-            <!-- Right Column: Results Card -->
-            <div class="lg:col-span-5 space-y-6">
-                <div class="bg-gradient-to-br from-green-900 to-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-green-900/10 border border-green-800/40 relative overflow-hidden">
-                    <div class="relative z-10 space-y-6">
+                <!-- Primary Results Box -->
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-6 shadow-lg" aria-live="polite" aria-atomic="true">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2">
                         <div>
-                            <span class="text-green-400 text-xs font-bold uppercase tracking-wider">السعرات اليومية لتثبيت الوزن (TDEE)</span>
-                            <div class="flex items-baseline gap-2 mt-1">
-                                <span id="resTdee" class="text-5xl font-black text-white">2,354</span>
-                                <span class="text-green-300 text-lg font-bold">سعرة / يوم</span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-green-400 block mb-1">سعرات الثبات اليومية (TDEE)</span>
+                            <div class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+                                <span id="resTdee">2,272</span> <span class="text-sm font-normal text-gray-400">سعرة حرارية / يوم</span>
                             </div>
-                            <p class="text-green-200/80 text-xs mt-1">معدل الحرق الأساسي (BMR): <span id="resBmr" class="font-bold text-white">1,712</span> سعرة</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-gray-400 block">معدل الأيض الأساسي (BMR)</span>
+                            <span id="resBmr" class="text-base font-bold text-green-400">1,652 سعرة في الراحة</span>
+                        </div>
+                    </div>
+
+                    <!-- Calorie Goals Breakdown Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <!-- Weight Loss -->
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10 space-y-1">
+                            <span class="text-xs font-bold text-blue-400 block">خسارة وزن (-0.5 كجم/أسبوع)</span>
+                            <div class="text-xl font-black text-white"><span id="resLoss">1,772</span> <span class="text-xs font-normal text-gray-400">سعرة</span></div>
+                            <span class="text-[11px] text-gray-400 block">عجز -500 سعرة يومياً</span>
                         </div>
 
-                        <div class="space-y-2.5 border-t border-green-800/60 pt-4 text-xs">
-                            <div class="flex justify-between items-center p-2 rounded-xl bg-green-800/30">
-                                <span>إنقاص الوزن المعتدل (0.5 كجم/أسبوع):</span>
-                                <span id="resWeightLoss" class="font-bold text-emerald-300 text-sm">1,854 سعرة</span>
+                        <!-- Maintenance -->
+                        <div class="p-3 bg-green-500/10 rounded-xl border border-green-500/30 space-y-1">
+                            <span class="text-xs font-bold text-green-400 block">تثبيت الوزن الحالي</span>
+                            <div class="text-xl font-black text-green-400"><span id="resMaintain">2,272</span> <span class="text-xs font-normal text-green-200">سعرة</span></div>
+                            <span class="text-[11px] text-gray-300 block">100% من الطاقة اليومية</span>
+                        </div>
+
+                        <!-- Muscle Gain -->
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10 space-y-1">
+                            <span class="text-xs font-bold text-yellow-400 block">زيادة عضلية (+0.25 كجم/أسبوع)</span>
+                            <div class="text-xl font-black text-white"><span id="resGain">2,572</span> <span class="text-xs font-normal text-gray-400">سعرة</span></div>
+                            <span class="text-[11px] text-gray-400 block">فائض +300 سعرة يومياً</span>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Macronutrient Split -->
+                    <div class="pt-3 border-t border-white/10 space-y-2">
+                        <span class="text-xs font-bold text-gray-300 block uppercase tracking-wider">توزيع الماكروز اليومي المقترح (لسعرات الثبات)</span>
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <span class="text-gray-400 block">بروتين (30%)</span>
+                                <strong id="resProtein" class="text-white text-sm">170 غرام</strong>
                             </div>
-                            <div class="flex justify-between items-center p-2 rounded-xl bg-green-800/30">
-                                <span>إنقاص وزن سريع (1 كجم/أسبوع):</span>
-                                <span id="resFastLoss" class="font-bold text-yellow-300 text-sm">1,354 سعرة</span>
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <span class="text-gray-400 block">كاربوهيدرات (40%)</span>
+                                <strong id="resCarbs" class="text-white text-sm">227 غرام</strong>
                             </div>
-                            <div class="flex justify-between items-center p-2 rounded-xl bg-green-800/30">
-                                <span>زيادة الوزن والكتلة العضلية (+0.5 كجم):</span>
-                                <span id="resGainWeight" class="font-bold text-white text-sm">2,854 سعرة</span>
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <span class="text-gray-400 block">دهون صحية (30%)</span>
+                                <strong id="resFats" class="text-white text-sm">76 غرام</strong>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Info Card -->
-                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-3">
-                    <h4 class="text-sm font-bold text-gray-900">💡 قاعدة إنقاص الوزن الذهبية</h4>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        1 كيلوجرام من دهون الجسم يعادل تقريباً <strong>7,700 سعرة حرارية</strong>. عجز يومي بمقدار 500 سعرة يؤدي لإنقاص حوالي 0.5 كجم أسبوعياً بطريقة صحية ومستدامة.
-                    </p>
-                </div>
-            </div>
-
+            </form>
         </div>
+
+        <!-- Content Section (SEO & Educational) -->
+        <div class="mt-12 space-y-8">
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">ما هو الفرق بين BMR و TDEE وكيف تتحكم بوزنك؟</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
+                    تتحكم معادلة توازن الطاقة (السعرات الداخلة مقابل السعرات المستهلكة) في زيادة أو نقصان وزن الجسم:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600 pt-2">
+                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
+                        <strong class="text-gray-900 block font-bold">1. معدل الأيض الأساسي (BMR)</strong>
+                        <p>الطاقة التي يستهلكها جسمك للحفاظ على وظائف الأعضاء الأساسية (القلب، الرئتين، الدماغ) أثناء الراحة التامة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
+                        <strong class="text-gray-900 block font-bold">2. إجمالي استهلاك الطاقة (TDEE)</strong>
+                        <p>هو BMR مضروباً في معامل نشاطك الحركي والرياضي. تناول نفس كمية TDEE يحافظ على ثبات وزنك تماماً.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/ar/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">اقرأ دليل حاسبة السعرات</a></p>
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">حاسبات ذات صلة</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="/ar/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">⚖️</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة مؤشر كتلة الجسم</h3>
+                            <p class="text-xs text-gray-500">حساب مؤشر BMI والوزن المثالي</p>
+                        </div>
+                    </a>
+                    <a href="/ar/weight-converter" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">🔄</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">محول الأوزان</h3>
+                            <p class="text-xs text-gray-500">تحويل بين كجم، باوند، وجرام</p>
+                        </div>
+                    </a>
+                    <a href="/ar/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center gap-3">
+                        <span class="text-2xl">📊</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">حاسبة النسبة المئوية</h3>
+                            <p class="text-xs text-gray-500">حساب النسب المئوية السريعة</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">الأسئلة الشائعة</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>ما هو الفرق بين BMR و TDEE؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>معدل الأيض BMR هو حرق الطاقة في حالة الاستلقاء التام، بينما TDEE يجمع BMR مع حركة ونشاط يومك وتمارينك الرياضية.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>كم سعرة أحتاج لإنقاص نصف كجم أسبوعياً؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>عجز 500 سعرة حرارية يومياً من TDEE يحقق عجزاً أسبوعياً قدره 3500 سعرة، وهو ما يعادل نصف كيلوجرام من الدهون.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>هل بياناتي مخزنة في خوادم الموقع؟</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>لا، جميع العمليات الحسابية تتم مباشرة داخل متصفحك دون حفظ أي بيانات.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">فهم تقدير السعرات</h2>
+            <p>أدخل العمر والجنس والطول والوزن ومستوى النشاط بوحدات صحيحة. تقدّر الأداة احتياج الراحة ثم تطبق معامل النشاط للوصول إلى احتياج يومي تقريبي. هذه نقطة بداية وليست قياساً مباشراً للأيض، إذ تؤثر كتلة العضلات والنوم والمرض والأدوية ودقة البيانات في الاحتياج الحقيقي.</p>
+            <h3 class="text-xl font-bold text-gray-900">المعادلة والمثال</h3>
+            <p>تستخدم المعادلات الشائعة الوزن والطول والعمر وثابتاً يختلف حسب الجنس، ثم تضرب الناتج في معامل النشاط. الشخص الذي يزن 70 كغ وطوله 175 سم وعمره 30 سنة سيحصل على تقدير مختلف عند اختيار نشاط قليل أو نشاط مرتفع. غيّر مدخلاً واحداً في كل مرة وسجل الوحدة المستخدمة.</p>
+            <h3 class="text-xl font-bold text-gray-900">الاستخدام العملي</h3>
+            <p>اعتبر النتيجة نطاقاً تجريبياً وراقب الاتجاه خلال أسبوعين إلى أربعة أسابيع، لأن الملصقات وأحجام الحصص والزيوت والمشروبات مصادر شائعة للخطأ. اجعل التغيير تدريجياً واهتم بالبروتين والألياف والماء. يحتاج الأطفال والرياضيون والحوامل ومن لديهم مرض مزمن إلى نصيحة فردية من مختص.</p>
+            <h3 class="text-xl font-bold text-gray-900">الأخطاء والحدود</h3>
+            <p>لا تدخل الرطل مكان الكيلوغرام، ولا تختر نشاطاً يمثل هدفك بدلاً من روتينك الفعلي. السعرات لا تصف جودة الغذاء ولا تكشف الحساسية أو نقص العناصر. أعد التحقق من المدخلات واستشر مختصاً عند الحاجة إلى تغيير كبير. اقرأ <a href="/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">دليل السعرات</a> لمزيد من الأمثلة.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">قراءة تقدير السعرات</h2>
+            <p>الرقم تقدير مبدئي وليس وصفة علاجية. يعتمد على العمر والجنس والطول والوزن ومستوى النشاط، بينما تتأثر الحاجة الفعلية بالنوم والتدريب والمرض والأدوية وتكوين الجسم. استخدم طريقة ثابتة لعدة أسابيع وراقب الاتجاه بدلاً من اعتبار نتيجة واحدة حقيقة دقيقة.</p>
+            <h3 class="text-xl font-bold text-gray-900">المعادلة ومثال</h3>
+            <p>من المعادلات الشائعة: للرجال BMR = 10 × الوزن بالكيلوغرام + 6.25 × الطول بالسنتيمتر − 5 × العمر + 5، وللنساء يستبدل الثابت الأخير بـ −161. لتحويل الرطل إلى كيلوغرام اضرب في 0.453592، ولتحويل البوصة إلى سم اضرب في 2.54. شخص عمره 30 ووزنه 80 كغ وطوله 180 سم يعطي تقريباً 1780 سعرة قبل عامل النشاط.</p>
+            <h2 class="text-2xl font-bold text-gray-900">أخطاء وأسئلة</h2>
+            <p>لا تخلط بين العمل المكتبي والتمرين القاسي يومياً، ولا تغيّر الطعام والنشاط والنوم معاً إذا كنت تريد فهم النتيجة. السعرات لا تعني جودة الغذاء؛ الألياف والبروتين والماء والعناصر الغذائية مهمة أيضاً. قد تختلف الحاسبات لاختلاف المعادلات وعوامل النشاط. استخدم <a href="/ar/bmi-calculator" class="text-green-600 font-semibold hover:underline">حاسبة BMI</a> كمؤشر منفصل، و<a href="/ar/weight-converter" class="text-green-600 font-semibold hover:underline">محول الوزن</a> عند اختلاف وحدة الميزان.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5"><h2 class="text-2xl font-bold text-gray-900">تحويل التقدير إلى عادة</h2><p>سجّل المشروبات والزيوت والوجبات في نهاية الأسبوع أيضاً، لأن النسيان يفسر فرقاً كبيراً بين السجل وتغير الوزن. غيّر متغيراً واحداً كل مرة وأعد الحساب بعد تغير واضح في الوزن أو النشاط، لا بعد كل يوم.</p><h3 class="text-xl font-bold text-gray-900">سلامة الاستخدام</h3><p>للأطفال والحوامل والرياضيين ومن لديهم حالة صحية احتياجات خاصة. استشر مختصاً قبل وضع هدف مقيد؛ فالألياف والبروتين والماء والفيتامينات لا تظهر في رقم السعرات وحده.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>فهم تقدير السعرات اليومية</h2>
+            <p>تستخدم الحاسبة العمر والطول والوزن والجنس ومستوى النشاط لتقدير السعرات اللازمة للمحافظة على الوزن. النتيجة ليست تشخيصا طبيا ولا رقما إلزاميا، لأنها لا تعرف النوم والكتلة العضلية والأدوية والمرض وتغير التدريب. اختر نشاطك المعتاد خلال الأسبوع، لا تمرينا واحدا قاسيا.</p>
+            <h3>المعادلة والمثال</h3>
+            <p>تبدأ معظم الحاسبات بمعدل الأيض الأساسي وفق معادلة ميفلين سانت جيور. للرجال: 10 في الوزن بالكيلوغرام زائد 6.25 في الطول بالسنتيمتر ناقص 5 في العمر زائد 5. للنساء يكون الثابت الأخير ناقص 161. ثم يضرب معدل الأيض الأساسي في معامل النشاط للحصول على الإنفاق اليومي الكلي. امرأة عمرها 30 سنة، وزنها 65 كيلوغراما وطولها 165 سنتيمترا، لها معدل أساسي يقارب 1370 سعرة؛ ومع نشاط متوسط يكون الاحتياج نحو 2120 سعرة.</p>
+            <h3>خطوات الاستخدام</h3>
+            <ol><li>زن نفسك في ظروف متشابهة، ويفضل صباحا.</li><li>قِس الطول دون حذاء وبوضعية مستقيمة.</li><li>اختر مستوى النشاط الذي يصف أسبوعك العادي.</li><li>قارن النتيجة بمتوسط الطعام والوزن لمدة أسبوعين أو ثلاثة.</li><li>عدّل الكمية تدريجيا إذا لم يوافق الاتجاه هدفك.</li></ol>
+            <h3>أخطاء وسلامة</h3>
+            <p>لا تجمع معامل نشاط مرتفعا مع إضافة كل السعرات التي تعرضها الساعة الذكية، فقد يؤدي ذلك إلى عد مزدوج. تختلف ملصقات الطعام وحجم حصص المطاعم، لذلك راقب المتوسط لا يوما واحدا. العجز الصغير أسهل للاستمرار من الحرمان الشديد. الأطفال والحوامل والمرضعات ومن يتعامل مع السكري أو اضطراب الأكل يحتاجون نصيحة مختص. هل يجب أكل الرقم كله؟ لا، اعتبره نطاقا واستخدم اتجاه الوزن. لماذا تتغير النتيجة؟ تغير الوزن أو العمر أو النشاط يغير المعادلة. للمقارنة الصحية راجع <a href="/ar/bmi-calculator">حاسبة مؤشر كتلة الجسم</a> و<a href="/ar/weight-converter">حاسبة الوزن</a>.</p>
+        </section>
+        <section class="content-section calculator-guide">
+            <h2>تحويل التقدير إلى خطة قابلة للمتابعة</h2>
+            <p>بعد الحصول على الرقم، خطط لوجبات تحتوي على بروتين ومصادر ألياف ودهون مناسبة، ثم وزع الطعام على أوقات تناسب يومك. لا تقارن وزنك في أيام مختلفة من الدورة أو بعد وجبة مالحة وكبيرة؛ الماء قد يخفي التغير الحقيقي. استخدم متوسط سبعة أيام، وسجل التدريب والنوم لأنهما يؤثران في الشهية والأداء.</p>
+            <p>قسّم هدفك إلى وجبات واقعية، وراقب البروتين والألياف والشبع، لا مجموع السعرات وحده. قد تختلف حاجة الشخص في يوم راحة عن يوم تدريب طويل. إذا ظهرت أعراض غير معتادة أو كنت تتناول علاجا يؤثر في الشهية أو الوزن، ناقش النتيجة مع اختصاصي ولا تطبق تغييرا كبيرا اعتمادا على تقدير آلي.</p>
+            <p>استخدم نفس طريقة القياس كل مرة، لأن الطعام المطهو قد يختلف وزنه عن الطعام الجاف.</p>
+            <p>لا تجعل الرقم سببا لإهمال جودة الغذاء أو السوائل. اقرأ ملصق الحصة، وانتبه إلى أن بعض التطبيقات تسجل الطعام المطهو والجاف بوحدتين مختلفتين. عند ثبات الوزن رغم الالتزام، راجع حجم الحصص والنشاط والنوم قبل تغيير الهدف بصورة كبيرة.</p>
+            <p>إذا كان هدفك زيادة الوزن، أضف كمية صغيرة وراقب الاتجاه. وإذا كان هدفك خفضه، ابدأ بتعديل قابل للاستمرار بدلا من حذف مجموعات غذائية كاملة. أوقف الخطة واطلب نصيحة متخصصة عند الدوخة أو التعب المستمر أو القلق الشديد حول الطعام. السعرات تقدير، أما الإشارة الأهم فهي صحتك واتجاهك عبر أسابيع.</p>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-16 pt-12 pb-8">
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-12 pt-12 pb-8">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div class="md:col-span-2 space-y-4">
                 <a href="/ar/" class="flex items-center gap-3">
@@ -276,26 +457,25 @@
                     </div>
                     <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
                 </a>
-                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">حاسبات مجانية فورية وعالية الدقة للتحسين المنزلي والنسب المئوية وتحويل الوحدات والحسابات الرياضية اليومية.</p>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">حاسبات مجانية فورية وعالية الدقة للتحسين المنزلي والصحة والمالية والحسابات اليومية.</p>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="/ar/calorie-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة السعرات</span></a></li>
-                    <li><a href="/ar/bmi-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة كتلة الجسم</span></a></li>
-                    <li><a href="/ar/age-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة العمر</span></a></li>
-                    <li><a href="/ar/percentage-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة النسبة المئوية</span></a></li>
-                    <li><a href="/ar/zakat-calculator.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>حاسبة الزكاة</span></a></li>
+                    <li><a href="/ar/bmi-calculator" class="hover:text-green-400 transition">حاسبة مؤشر كتلة الجسم</a></li>
+                    <li><a href="/ar/age-calculator" class="hover:text-green-400 transition">حاسبة العمر</a></li>
+                    <li><a href="/ar/loan-calculator" class="hover:text-green-400 transition">حاسبة القروض</a></li>
+                    <li><a href="/ar/calorie-calculator" class="text-green-400 font-bold">حاسبة السعرات الحرارية</a></li>
+                    <li><a href="/ar/paint-calculator" class="hover:text-green-400 transition">حاسبة الدهان</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة</h4>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">روابط سريعة</h4>
                 <ul class="space-y-2.5 text-sm text-gray-400">
-                    <li><a href="/ar/about-us.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>من نحن</span></a></li>
-                    <li><a href="/ar/blog.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المدونة</span></a></li>
-                    <li><a href="/ar/author-alex-morgan.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>المؤلف</span></a></li>
-                    <li><a href="/ar/privacy-policy.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>سياسة الخصوصية</span></a></li>
-                    <li><a href="/ar/contact.html" class="hover:text-green-400 transition flex items-center gap-1.5"><span>•</span> <span>اتصل بنا</span></a></li>
+                    <li><a href="/ar/about-us" class="hover:text-green-400 transition">من نحن</a></li>
+                    <li><a href="/ar/blog" class="hover:text-green-400 transition">المدونة</a></li>
+                    <li><a href="/ar/privacy-policy" class="hover:text-green-400 transition">سياسة الخصوصية</a></li>
+                    <li><a href="/ar/contact" class="hover:text-green-400 transition">اتصل بنا</a></li>
                 </ul>
             </div>
         </div>
@@ -304,72 +484,107 @@
         </div>
     </footer>
 
-    <!-- JavaScript Logic -->
+    <!-- Interactive JavaScript -->
     <script>
-        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
-        const calGender = document.getElementById('calGender');
-        const calAge = document.getElementById('calAge');
-        const calHeight = document.getElementById('calHeight');
-        const calWeight = document.getElementById('calWeight');
-        const calActivity = document.getElementById('calActivity');
-        const calHeightUnit = document.getElementById('calHeightUnit');
-        const calWeightUnit = document.getElementById('calWeightUnit');
+        const gender = document.getElementById('gender');
+        const age = document.getElementById('age');
+        const heightCm = document.getElementById('heightCm');
+        const weightKg = document.getElementById('weightKg');
+        const heightFeet = document.getElementById('heightFeet');
+        const heightInches = document.getElementById('heightInches');
+        const weightLbs = document.getElementById('weightLbs');
+        const activity = document.getElementById('activity');
 
         const resTdee = document.getElementById('resTdee');
         const resBmr = document.getElementById('resBmr');
-        const resWeightLoss = document.getElementById('resWeightLoss');
-        const resFastLoss = document.getElementById('resFastLoss');
-        const resGainWeight = document.getElementById('resGainWeight');
+        const resLoss = document.getElementById('resLoss');
+        const resMaintain = document.getElementById('resMaintain');
+        const resGain = document.getElementById('resGain');
+        const resProtein = document.getElementById('resProtein');
+        const resCarbs = document.getElementById('resCarbs');
+        const resFats = document.getElementById('resFats');
 
-        function switchCalUnit() {
-            const unit = document.querySelector('input[name="calUnit"]:checked').value;
-            if (unit === 'metric') {
-                calHeightUnit.textContent = 'سم';
-                calWeightUnit.textContent = 'كجم';
-                calHeight.value = '175';
-                calWeight.value = '75';
+        function toggleCalorieUnit() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const metricInputs = document.getElementById('metricInputs');
+            const imperialInputs = document.getElementById('imperialInputs');
+
+            if (unit === 'imperial') {
+                metricInputs.classList.add('hidden');
+                imperialInputs.classList.remove('hidden');
             } else {
-                calHeightUnit.textContent = 'بوصة';
-                calWeightUnit.textContent = 'رطل';
-                calHeight.value = '69';
-                calWeight.value = '165';
+                metricInputs.classList.remove('hidden');
+                imperialInputs.classList.add('hidden');
             }
-            calcCalories();
+            calculateCalories();
         }
 
-        function calcCalories() {
-            const unit = document.querySelector('input[name="calUnit"]:checked').value;
-            const gender = calGender.value;
-            const age = parseInt(calAge.value) || 28;
-            let h = parseFloat(calHeight.value) || 175;
-            let w = parseFloat(calWeight.value) || 75;
-            const activity = parseFloat(calActivity.value) || 1.375;
+        function calculateCalories() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const userGender = gender.value;
+            const userAge = parseFloat(age.value) || 28;
+            const activityMult = parseFloat(activity.value) || 1.375;
 
-            let weightKg = unit === 'metric' ? w : w * 0.45359237;
-            let heightCm = unit === 'metric' ? h : h * 2.54;
+            let wKg = 0;
+            let hCm = 0;
+
+            if (unit === 'metric') {
+                wKg = parseFloat(weightKg.value) || 0;
+                hCm = parseFloat(heightCm.value) || 0;
+            } else {
+                const ft = parseFloat(heightFeet.value) || 0;
+                const inches = parseFloat(heightInches.value) || 0;
+                const lbs = parseFloat(weightLbs.value) || 0;
+                hCm = ((ft * 12) + inches) * 2.54;
+                wKg = lbs * 0.45359237;
+            }
+
+            if (wKg <= 0 || hCm <= 0 || userAge <= 0) return;
 
             // Mifflin-St Jeor Equation
-            let bmr = (10 * weightKg) + (6.25 * heightCm) - (5 * age);
-            if (gender === 'male') {
+            let bmr = (10 * wKg) + (6.25 * hCm) - (5 * userAge);
+            if (userGender === 'male') {
                 bmr += 5;
             } else {
                 bmr -= 161;
             }
 
-            const tdee = Math.round(bmr * activity);
-            const bmrRound = Math.round(bmr);
+            const tdee = Math.round(bmr * activityMult);
+            const lossCalories = Math.max(1200, tdee - 500);
+            const gainCalories = tdee + 300;
 
-            resTdee.textContent = tdee.toLocaleString();
-            resBmr.textContent = bmrRound.toLocaleString();
-            resWeightLoss.textContent = `${Math.max(1200, tdee - 500).toLocaleString()} سعرة`;
-            resFastLoss.textContent = `${Math.max(1000, tdee - 1000).toLocaleString()} سعرة`;
-            resGainWeight.textContent = `${(tdee + 500).toLocaleString()} سعرة`;
+            resBmr.textContent = `${Math.round(bmr).toLocaleString('en-US')} سعرة في الراحة`;
+            resTdee.textContent = tdee.toLocaleString('en-US');
+            resMaintain.textContent = tdee.toLocaleString('en-US');
+            resLoss.textContent = lossCalories.toLocaleString('en-US');
+            resGain.textContent = gainCalories.toLocaleString('en-US');
+
+            // Macros for maintenance (30% Protein, 40% Carbs, 30% Fat)
+            const proteinGrams = Math.round((tdee * 0.30) / 4);
+            const carbsGrams = Math.round((tdee * 0.40) / 4);
+            const fatGrams = Math.round((tdee * 0.30) / 9);
+
+            resProtein.textContent = `${proteinGrams.toLocaleString('en-US')} غرام`;
+            resCarbs.textContent = `${carbsGrams.toLocaleString('en-US')} غرام`;
+            resFats.textContent = `${fatGrams.toLocaleString('en-US')} غرام`;
         }
 
-        calcCalories();
+        [gender, age, heightCm, weightKg, heightFeet, heightInches, weightLbs, activity].forEach(input => {
+            if (input) {
+                input.addEventListener('input', calculateCalories);
+                input.addEventListener('change', calculateCalories);
+            }
+        });
+
+        calculateCalories();
     </script>
 </body>
 </html>

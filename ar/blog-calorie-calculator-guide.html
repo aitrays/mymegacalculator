@@ -1,72 +1,101 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9361C89S6C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9361C89S6C');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#16a34a">
-    <title>دليل حساب السعرات الحرارية اليومية للتنحيف | MyMegaCalculator</title>
-    <meta name="description" content="كيف تحسب احتياجك اليومي من السعرات (TDEE) وتصنع عجز سعرات لإنقاص الوزن بطريقة صحية.">
-    <link rel="canonical" href="https://mymegacalculator.com/ar/blog-calorie-calculator-guide.html" />
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل حاسبة السعرات: تقدير الاحتياج اليومي من الطاقة | MyMegaCalculator</title>
+<meta name="description" content="افهم معدل الأيض الأساسي ومعامل النشاط وطريقة تقدير سعرات المحافظة أو التغيير مع أمثلة وحدود مهمة.">
+<link rel="canonical" href="https://mymegacalculator.com/ar/blog-calorie-calculator-guide">
+<link rel="alternate" hreflang="en" href="https://mymegacalculator.com/blog-calorie-calculator-guide">
+<link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/blog-calorie-calculator-guide">
+<link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/blog-calorie-calculator-guide">
+<meta property="og:title" content="دليل حاسبة السعرات: تقدير الاحتياج اليومي من الطاقة">
+<meta property="og:description" content="شرح BMR ومعامل النشاط والسعرات المناسبة للتخطيط الواقعي.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mymegacalculator.com/ar/blog-calorie-calculator-guide">
+<meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"دليل حاسبة السعرات: تقدير الاحتياج اليومي من الطاقة","publisher":{"@type":"Organization","name":"MyMegaCalculator"},"datePublished":"2026-08-19","dateModified":"2026-08-19"}</script>
+<link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../responsive-fixes.css">
-    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/blog-calorie-calculator-guide.html" />
-    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/blog-calorie-calculator-guide.html" />
     <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
-    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="/ar/" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                </div>
-                <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
-            </a>
-            <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
-                <a href="/ar/" class="hover:text-green-600 transition">الحاسبات</a>
-                <a href="/ar/blog.html" class="text-green-600 font-bold">المدونة</a>
-            </nav>
-        </div>
-    </header>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col">
+<header class="bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
+<a href="/ar/" class="text-2xl font-black text-gray-900">MyMega<span class="text-green-600">Calculator</span>
+</a>
+<nav>
+<a href="/ar/blog" class="text-green-600 font-bold">المدونة</a> <a href="/blog-calorie-calculator-guide" class="ml-4">EN</a> <span class="ml-3 text-green-600 font-bold">AR</span>
+</nav>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-4 py-10 w-full">
+<div class="text-center mb-8">
+<span class="text-green-600 text-xs font-bold uppercase">دليل التغذية والحساب</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">دليل حاسبة السعرات: تقدير الاحتياج اليومي من الطاقة</h1>
 
-    <main class="max-w-4xl mx-auto px-4 py-10 w-full flex-grow">
-        <article class="bg-white rounded-3xl p-6 sm:p-12 border border-gray-100 shadow-sm space-y-6">
-            <div class="space-y-3">
-                <div class="flex items-center gap-2 text-xs font-bold text-green-700 uppercase">
-                    <span class="px-2.5 py-1 bg-green-50 rounded-full">التغذية والرشاقة</span>
-                    <span>•</span>
-                    <span class="text-gray-400">دليل إرشادي شامل</span>
-                </div>
-                <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">دليل حساب السعرات الحرارية اليومية للتنحيف</h1>
-            </div>
+</div>
+<article class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl space-y-5">
+<p class="text-lg">حاسبة السعرات أداة تقديرية لمعرفة الطاقة التي قد يحتاجها الجسم خلال يوم عادي. لا تستطيع مراقبة كل حركة أو توقع الأيض بدقة كاملة، لكنها تمنحك نقطة بداية لتخطيط الطعام أو المحافظة على الوزن أو إجراء تغيير تدريجي. يوضح هذا المقال كيف يحسب النظام معدل الأيض الأساسي، وكيف يضاف النشاط، ولماذا ينبغي قراءة النتيجة كنطاق عملي لا كوصفة إلزامية.</p>
+<h2 class="text-2xl font-bold text-gray-900">ما المقصود بالسعرات والطاقة؟</h2>
+<p>السعر الغذائي هو كيلو كالوري، أي وحدة طاقة. يستهلك الجسم الطاقة للتنفس والدورة الدموية وتنظيم الحرارة والهضم والحركة. لذلك يختلف الاحتياج بين شخصين لهما الطول والوزن نفسيهما بسبب العمر والعضلات والنشاط والنوم والصحة والأدوية. الرقم الخارج من الحاسبة لا يصف جودة الطعام ولا يوفر كل العناصر الغذائية.</p>
+<h2 class="text-2xl font-bold text-gray-900">الخطوة الأولى: معدل الأيض الأساسي</h2>
+<p>تستخدم حاسبات كثيرة معادلة Mifflin–St Jeor. للرجال: <strong>BMR = 10W + 6.25H − 5A + 5</strong>، وللنساء: <strong>BMR = 10W + 6.25H − 5A − 161</strong>. يرمز W للوزن بالكيلوجرام، وH للطول بالسنتيمتر، وA للعمر بالسنوات. هذا الرقم يقدر طاقة الراحة، وليس بالضرورة عدد السعرات التي يجب تناولها.</p>
+<h3 class="text-lg font-bold text-gray-900">مثال حسابي</h3>
+<p>لامرأة عمرها 35 عاماً ووزنها 65 كيلوجراماً وطولها 165 سنتيمتراً، يكون BMR = 10×65 + 6.25×165 − 5×35 − 161. الناتج 650 + 1031.25 − 175 − 161 = 1345.25، أي نحو 1345 سعراً في ظروف الراحة. قد تختلف الكسور قليلاً بسبب التقريب، لكن الفكرة الحسابية واحدة.</p>
+<h2 class="text-2xl font-bold text-gray-900">الخطوة الثانية: معامل النشاط</h2>
+<p>للحصول على تقدير الإنفاق اليومي، اضرب BMR في معامل النشاط. القيم التقريبية هي 1.2 لقلة الحركة، و1.375 لنشاط خفيف، و1.55 لنشاط متوسط، و1.725 لنشاط مرتفع، و1.9 لنشاط استثنائي. هذه أوصاف عامة للأسبوع كله، فلا تجعل تمريناً واحداً سبباً لاختيار فئة مرتفعة دائماً.</p>
+<p>باستخدام BMR مقداره 1345 ومعامل 1.55، يكون الاحتياج التقريبي 1345 × 1.55 = 2085 سعراً. هذا تقدير للمحافظة على الوزن، وقد يختلف عن الواقع بسبب اختلاف الحركة والامتصاص ودقة تسجيل الطعام. سجّل الافتراضات بجانب الرقم حتى تعرف ما الذي تغير لاحقاً.</p>
+<h2 class="text-2xl font-bold text-gray-900">أهداف المحافظة أو النقص أو الزيادة</h2>
+<p>للمحافظة، ابدأ قريباً من التقدير وراقب متوسط الوزن لعدة أسابيع. وللنقص، يكون العجز المعتدل أسهل في الاستمرار من هدف شديد الانخفاض. وللزيادة، قد يساعد فائض صغير مع بروتين كاف وتمارين مقاومة. لا يضمن طرح رقم ثابت سرعة محددة، لأن الماء والجليكوجين والملح والنوم والهضم تحرك الميزان بعيداً عن تغير الدهون.</p>
+<p>لا تجعل الرقم اليومي اختباراً للكمال. إذا تغير الاتجاه أسرع من المطلوب، راجع الحصص والنشاط والراحة قبل إجراء تعديل كبير. التغيير الصغير القابل للملاحظة أكثر فائدة من تغيير عدة عوامل في الوقت نفسه.</p>
+<h2 class="text-2xl font-bold text-gray-900">تحسين دقة التقدير</h2>
+<p>أدخل الوزن الحالي والطول بوحدات صحيحة، واختر النشاط المعتاد لا أفضل يوم في الأسبوع. حدّث الحساب بعد تغير واضح في الوزن أو الروتين. كما أن ملصقات الطعام وأحجام الحصص تقريبية، لذلك لا معنى لرقم شديد الدقة مثل 2083 إذا كانت المدخلات نفسها غير مؤكدة. النطاق المعقول أفضل من الوهم الحسابي.</p>
+<h3 class="text-lg font-bold text-gray-900">راقب الاتجاه لا قراءة واحدة</h3>
+<p>بعد أسبوعين إلى أربعة أسابيع، قارن متوسط الاتجاه بالهدف. ثبات الوزن قد يعني أن المدخول والإنفاق متقاربان حتى لو أخطأت الحاسبة بمئات السعرات. استخدم ظروف قياس متشابهة، وخذ في الاعتبار أيام الراحة والدورة الشهرية والسفر. الهدف من المتابعة هو التعلم لا العقاب.</p>
+<h2 class="text-2xl font-bold text-gray-900">جودة الغذاء مهمة أيضاً</h2>
+<p>السعرات تصف الطاقة ولا تصف القيمة كاملة. يحتاج النمط المتوازن إلى مصادر بروتين، وخضار وفاكهة، وحبوب أو كربوهيدرات مناسبة، ودهون مفيدة، وسوائل وألياف. الشبع والميزانية والثقافة والاستمتاع عوامل تجعل الخطة قابلة للاستمرار. لا تستبدل الطعام المتنوع برقم فقط.</p>
+<h2 class="text-2xl font-bold text-gray-900">الحدود والحالات التي تحتاج عناية</h2>
+<p>الحمل والرضاعة والمراهقة والتعافي من اضطراب الأكل والسكري واضطرابات الغدة وتغير الأدوية والتدريب المكثف حالات تستحق توجيهاً فردياً. إذا ظهر تغير وزن غير مفسر أو تعب مستمر، راجع مختصاً. لا ينبغي للأطفال استخدام معادلات البالغين كخطة حمية ذاتية.</p>
+<h2 class="text-2xl font-bold text-gray-900">أسئلة متكررة</h2>
+<h3 class="text-lg font-bold text-gray-900">هل BMR هو سعرات المحافظة؟</h3>
+<p>لا. BMR طاقة الراحة، بينما تشمل المحافظة الحركة والهضم والنشاط اليومي.</p>
+<h3 class="text-lg font-bold text-gray-900">لماذا تختلف الحاسبات؟</h3>
+<p>قد تستخدم معادلات ومعاملات نشاط وتقريباً مختلفاً. قارن المدخلات قبل مقارنة النتائج.</p>
+<h3 class="text-lg font-bold text-gray-900">هل أضيف سعرات التمرين كلها؟</h3>
+<p>قد تبالغ الساعات في تقدير الحرق. تعامل مع الرقم كتقريب وراقب الاتجاه العام.</p>
+<h2 class="text-2xl font-bold text-gray-900">استخدم النتيجة كنقطة بداية</h2>
+<p>جرّب بياناتك في <a href="/ar/calorie-calculator" class="text-green-600 font-semibold">حاسبة السعرات المجانية</a>، وسجل العمر والوزن والطول والنشاط. وللعلاقة بين الوزن والطول، راجع <a href="/ar/bmi-calculator" class="text-green-600 font-semibold">دليل BMI</a>، مع تذكر أن أياً من الأداتين لا يستبدل التقييم الطبي.</p>
 
-            <div class="p-4 bg-green-50 rounded-2xl border border-green-200 flex flex-col sm:flex-row items-center justify-between gap-4 my-6">
-                <div>
-                    <span class="text-sm font-bold text-green-950 block">جرّب الأداة التفاعلية الآن:</span>
-                    <span class="text-xs text-green-800">احسب نتائجك فورياً وبدقة عالية ومجاناً 100%</span>
-                </div>
-                <a href="/ar/calorie-calculator.html" class="px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded-xl shadow-md transition whitespace-nowrap">فتح حاسبة السعرات ←</a>
-            </div>
+<p>Record the equation, units, age, weight, height, activity assumption, and goal. Revisit the estimate after several weeks and adjust gradually. Include nutritious foods, adequate fluids, recovery, and enjoyment. A practical plan should fit ordinary life and should not create extreme hunger, exhaustion, or fear around food.</p>
 
-            <div class="prose max-w-none text-gray-600 text-sm sm:text-base leading-relaxed space-y-4 pt-2">
-                <p>إنقاص الوزن أو اكتسابه يعتمد في جوهره على ميزان الطاقة: السعرات الداخلة مقارنة بالسعرات المستهلكة من خلال النشاط اليومي وعمليات الأيض.</p>
-<h2 class="text-xl font-bold text-gray-900 pt-4">عجز السعرات الصحي</h2>
-<p>لخسارة نصف كيلوجرام من الدهون أسبوعياً، ينصح بإنقاص 500 سعرة حرارية من استهلاكك اليومي (TDEE) مع الحفاظ على وجبات غنية بالبروتين.</p>
-            </div>
-        </article>
-    </main>
-
-    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 pt-8 pb-6 text-center text-xs text-gray-500">
-        <p>&copy; 2026 MyMegaCalculator.com. جميع الحقوق محفوظة.</p>
-    </footer>
+<h2 class="text-2xl font-bold text-gray-900">كيف تجعل تقدير السعرات أكثر واقعية؟</h2>
+<p>استعمل قياسات حديثة وأدخل الوحدة الصحيحة. الطول بالسنتيمتر ليس هو الطول بالبوصة، والوزن بالكيلوغرام ليس هو الوزن بالرطل. اختر مستوى النشاط الذي يصف أسبوعك المعتاد، وليس أفضل أسبوع أو هدفاً لم تبدأه بعد. الشخص الذي يعمل جالساً ويمارس الرياضة مرتين أسبوعياً قد يبالغ في تقدير احتياجه إذا اختار مستوى نشاط مرتفعاً جداً.</p>
+<p>بعد اختيار هدف، راقب الاتجاه الحقيقي لعدة أسابيع. يمكن أن يتغير الوزن بسبب الماء والملح والدورة الشهرية ومخزون الكربوهيدرات والهضم والتهاب العضلات بعد التدريب. لذلك من الأفضل استعمال متوسط عدة أيام بدلاً من تغيير الهدف بسبب قراءة واحدة. انتبه أيضاً إلى الجوع والطاقة والنوم والأداء والتعافي، فهذه مؤشرات مهمة إلى جانب الرقم.</p>
+<h3 class="text-lg font-bold text-gray-900">جودة الطعام أهم من الرقم وحده</h3>
+<p>السعرات تصف الطاقة، لكنها لا تصف القيمة الغذائية الكاملة. يمكن أن تتضمن الخطة العملية البروتين والألياف والخضروات والفواكه والدهون المفيدة والماء الكافي. من لديهم السكري أو تاريخ مع اضطرابات الأكل، وكذلك الأطفال والحوامل ومن لديهم حالة صحية، يحتاجون إلى نصيحة شخصية. لا تجعل الحاسبة وصفة طبية ولا تستخدمها لتبرير حرمان شديد أو تغيير مفاجئ.</p>
+<p>أدخل بياناتك في <a href="/ar/calorie-calculator" class="text-green-600 font-semibold">حاسبة السعرات</a>، وسجل معادلة الحساب ومستوى النشاط والهدف. أعد التقييم بهدوء عندما تتغير عاداتك، واستعمل <a href="/ar/bmi-calculator" class="text-green-600 font-semibold">حاسبة BMI</a> كمؤشر إضافي فقط، وليس بديلاً عن التقييم الصحي المتكامل.</p>
+<h2 class="text-2xl font-bold text-gray-900">الفرق بين التقدير والاحتياج الحقيقي</h2>
+<p>المعادلات تبدأ من متوسطات سكانية، بينما يختلف الاحتياج الحقيقي من شخص إلى آخر. قد تؤثر جودة النوم والتوتر والحرارة ونوع العمل وكتلة العضلات وطريقة الهضم في الطاقة التي يستهلكها الجسم. لذلك لا تعتبر الرقم الناتج حقيقة ثابتة. إذا كان نشاطك يتغير من يوم إلى آخر، فالأفضل استعمال متوسط أسبوعي وتجنب تعويض كل اختلاف صغير بالطعام أو الحرمان.</p>
+<p>قسّم الهدف إلى خطوات بسيطة: انتظام الوجبات، كمية بروتين مناسبة، أطعمة غنية بالألياف، ماء كاف، وحركة يمكن تكرارها. راقب الشعور بالطاقة والتركيز والتعافي، ولا تجعل الميزان أو التطبيق المصدر الوحيد للحكم. عند ظهور دوخة أو تعب مستمر أو قلق شديد حول الطعام، توقف عن التجارب واطلب دعماً متخصصاً.</p>
+<h3 class="text-lg font-bold text-gray-900">مراجعة البيانات كل فترة</h3>
+<p>أعد إدخال العمر والوزن والطول عندما تتغير بوضوح، وراجع مستوى النشاط إذا تغير العمل أو التدريب. احتفظ بنسخة من الافتراضات حتى تعرف لماذا تغيرت النتيجة. استعمل <a href="/ar/calorie-calculator" class="text-green-600 font-semibold">حاسبة السعرات اليومية</a> كأداة تخطيط مرنة، لا كحد صارم يجب طاعته دون تفكير.</p>
+<p>تذكر أن الطعام المنزلي قد يختلف في الحجم وطريقة الطبخ، لذلك لا تجعل الأرقام تبدو أكثر دقة مما هي عليه. اقرأ ملصقات المنتجات، وقارن الحصص الفعلية بالكمية المكتوبة، وكن حذراً من الصلصات والزيوت والمشروبات التي قد لا تظهر في تقدير سريع. الهدف هو فهم العادات وتحسينها تدريجياً، وليس مطاردة رقم يومي مثالي.</p>
+<p>الهدف الجيد قابل للتعديل، ولا يحتاج إلى تغيير كبير كلما اختلفت قراءة الميزان. راقب السلوك والطاقة والقدرة على الاستمرار، ثم عدّل الافتراضات تدريجياً. الحساب أداة للمقارنة والتنظيم، وليس اختباراً للانضباط أو قيمة الشخص.</p>
+<p>احتفظ بسجل بسيط للهدف والافتراضات وتاريخ المراجعة، وغيّر عاملاً واحداً في كل مرة حتى تعرف سبب اختلاف النتيجة. هذا الأسلوب الهادئ يساعدك على بناء خطة مفهومة وقابلة للاستمرار.</p>
+<h2 class="text-2xl font-bold text-gray-900">خطة قابلة للاستمرار</h2>
+<p>اكتب افتراضاتك وراجعها بعد أسابيع، ولا تغيّر كل العوامل في الوقت نفسه. راقب الطاقة والنوم والشبع والنشاط إلى جانب الوزن. عندما تكون الخطة مرنة ومبنية على بيانات واقعية، تصبح الحاسبة وسيلة مساعدة للتنظيم وليست مصدراً للقلق أو الأرقام الصارمة.</p>
+<p>تذكر أن حجم الحصة وطريقة الطبخ والزيوت والصلصات قد تغير التقدير. اقرأ الملصق الغذائي بعناية، وقارن الحصة المكتوبة بالكمية التي تناولتها فعلاً. لا تجعل فرقاً صغيراً في الحساب سبباً للحرمان، واطلب نصيحة شخصية عند الحمل أو السكري أو اضطرابات الأكل أو أي حالة تحتاج متابعة متخصصة.</p>
+</article>
+</main>
+<footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-16 pt-12 pb-8">
+<div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div class="md:col-span-2 space-y-4"><a href="/ar/" class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></a><p class="text-gray-400 text-sm max-w-sm leading-relaxed">حاسبات مجانية وفورية للتحسين المنزلي والنسب المئوية وتحويل الوحدات والصحة والتواريخ والتخطيط اليومي.</p></div>
+<div><h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الحاسبات</h4><ul class="space-y-2.5 text-sm text-gray-400"><li><a href="/ar/tile-calculator" class="hover:text-green-400 transition">البلاط والأرضيات</a></li><li><a href="/ar/square-footage-calculator" class="hover:text-green-400 transition">المساحة</a></li><li><a href="/ar/percentage-calculator" class="hover:text-green-400 transition">النسبة المئوية</a></li><li><a href="/ar/weight-converter" class="hover:text-green-400 transition">تحويل الوزن</a></li></ul></div>
+<div><h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">الشركة</h4><ul class="space-y-2.5 text-sm text-gray-400"><li><a href="/ar/about-us" class="hover:text-green-400 transition">من نحن</a></li><li><a href="/ar/blog" class="hover:text-green-400 transition">المدونة</a></li><li><a href="/ar/privacy-policy" class="hover:text-green-400 transition">سياسة الخصوصية</a></li><li><a href="/ar/contact" class="hover:text-green-400 transition">اتصل بنا</a></li></ul></div>
+</div><div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 text-xs text-gray-500"><p>&copy; 2026 MyMegaCalculator.com. جميع الحقوق محفوظة.</p></div>
+</footer>
 </body>
 </html>
+
+
