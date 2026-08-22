@@ -8,3 +8,24 @@ html{scroll-behavior:smooth}body{background:var(--mmc-bg)!important;color:var(--
 .mmc-footer{background:#111827;color:#d1d5db;margin-top:70px;padding:48px 0 18px}.mmc-footer-inner{max-width:1200px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:42px}.mmc-footer h3{color:#fff;font-size:1.05rem;margin:0 0 14px;font-weight:800}.mmc-footer a{display:block;color:#cbd5e1;text-decoration:none;font-size:.92rem;margin:8px 0}.mmc-footer a:hover{color:#86efac}.mmc-footer-brand p{color:#cbd5e1;max-width:420px;margin:12px 0}.mmc-footer-logo{font-size:1.55rem!important;font-weight:900!important;color:#fff!important;margin:0!important}.mmc-footer-logo span{color:#4ade80}.mmc-footer-trust{display:inline-block;margin-top:10px;padding:8px 12px;border:1px solid #374151;border-radius:10px;color:#9ca3af;font-size:.82rem}.mmc-footer-bottom{max-width:1200px;margin:30px auto 0;padding:16px 22px 0;border-top:1px solid #374151;color:#9ca3af;font-size:.78rem}
 @media(max-width:1050px){.mmc-v14-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mmc-footer-inner{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.mmc-country-strip{top:64px}.mmc-country-inner{padding:8px 12px}.mmc-country-pill{min-width:122px;font-size:13px}.mmc-v14-layout{padding:12px 16px 50px}.mmc-v14-grid{grid-template-columns:1fr}.mmc-content-rich{padding:0 16px;margin-top:28px}.mmc-content-rich h2{font-size:1.4rem}.mmc-content-rich p{font-size:.98rem}.mmc-footer{padding-top:38px}.mmc-footer-inner{grid-template-columns:1fr;gap:28px;padding:0 18px}.mmc-footer-bottom{margin-top:26px;padding-left:18px;padding-right:18px}.mmc-visual{border-radius:16px}}
+
+/* V17 fixes: Arabic text flow, compact illustrations and calculator sizing */
+body{overflow-x:hidden!important}
+main{box-sizing:border-box!important}
+main.max-w-4xl{max-width:920px!important;width:calc(100% - 32px)!important}
+main h1{font-size:clamp(1.65rem,3vw,2.25rem)!important;line-height:1.45!important;overflow-wrap:break-word!important}
+main h2{line-height:1.55!important;overflow-wrap:break-word!important}
+main p,main li,main label,main span,main div{overflow-wrap:break-word;word-break:normal}
+.mmc-content-rich,.mmc-expanded{box-sizing:border-box!important;width:calc(100% - 32px)!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important;text-align:right!important;direction:rtl!important;overflow:hidden!important}
+.mmc-content-rich p,.mmc-content-rich li,.mmc-expanded p,.mmc-expanded li{white-space:normal!important;overflow-wrap:break-word!important;line-height:2!important}
+.mmc-content-rich h2,.mmc-content-rich h3,.mmc-expanded h2,.mmc-expanded h3{text-align:right!important;overflow-wrap:break-word!important}
+.mmc-visual{width:100%!important;max-width:920px!important;margin:28px auto 38px!important;box-sizing:border-box!important}
+.mmc-visual img{width:100%!important;max-width:100%!important;height:auto!important;max-height:320px!important;object-fit:contain!important;object-position:center!important;padding:18px!important;box-sizing:border-box!important}
+.mmc-visual figcaption{line-height:1.7!important}
+/* Keep calculator cards/forms compact and readable */
+main .rounded-3xl{max-width:100%!important;box-sizing:border-box!important}
+main input,main select,main textarea{font-size:1rem!important;line-height:1.5!important}
+main button{font-size:.98rem!important;line-height:1.5!important}
+main .text-3xl{font-size:1.9rem!important;line-height:1.35!important}
+main .text-4xl{font-size:2.15rem!important;line-height:1.45!important}
+@media(max-width:760px){main.max-w-4xl{width:calc(100% - 20px)!important}.mmc-content-rich,.mmc-expanded{width:calc(100% - 20px)!important;padding-left:16px!important;padding-right:16px!important}.mmc-visual img{max-height:240px!important;padding:12px!important}main .text-4xl{font-size:1.8rem!important}main .text-3xl{font-size:1.65rem!important}}
