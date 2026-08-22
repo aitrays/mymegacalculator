@@ -18,17 +18,29 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"دليل حاسبة العمر: العمر الدقيق والفترات الزمنية","publisher":{"@type":"Organization","name":"MyMegaCalculator"},"datePublished":"2026-08-19","dateModified":"2026-08-19"}</script>
 <link href="../style.css" rel="stylesheet"/>
 <link href="../responsive-fixes.css" rel="stylesheet"/>
-<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/ar/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/ar/v16-arabic.css" rel="stylesheet"/></head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col">
-<header class="bg-white shadow-sm border-b border-gray-100">
-<div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
-<a class="text-2xl font-black text-gray-900" href="/ar/">MyMega<span class="text-green-600">Calculator</span>
-</a>
-<nav>
-<a class="text-green-600 font-bold" href="/ar/blog.html">المدونة</a> <a class="ml-4" href="/blog-age-calculator-guide">EN</a> <span class="ml-3 text-green-600 font-bold">AR</span>
+<header class="mmc-fixed-header" dir="rtl">
+<div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+<a class="flex items-center gap-3 group" href="/ar/">
+<div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span></a>
+<nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
+<a class="hover:text-green-600 transition" href="/ar/">الحاسبات</a>
+<a class="hover:text-green-600 transition" href="/ar/categories/index.html">التصنيفات</a>
+<details class="mmc-country-picker"><summary>🌐 الدول</summary><div class="mmc-country-menu"><div class="mmc-country-label">الحاسبات حسب الدولة</div><a href="/ar/countries/index.html">🌍 اختر الدولة</a><a href="/ar/countries/morocco.html">🇲🇦 المغرب</a><a href="/ar/countries/saudi-arabia.html">🇸🇦 السعودية</a><a href="/ar/countries/uae.html">🇦🇪 الإمارات</a><a href="/ar/countries/qatar.html">🇶🇦 قطر</a><a href="/ar/countries/bahrain.html">🇧🇭 البحرين</a><a href="/ar/countries/oman.html">🇴🇲 عُمان</a></div></details>
+<a class="hover:text-green-600 transition" href="/ar/blog.html">المدونة</a>
+<div class="flex items-center gap-2 text-xs"><a class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition" href="/">EN</a><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span></div>
 </nav>
-</div></header><div aria-label="حاسبات الدول العربية" class="mmc-country-strip"><div class="mmc-country-inner"><span class="mmc-country-label">🌍 جميع الدول</span><a class="mmc-country-pill" href="/ar/countries/morocco.html">🇲🇦 المغرب</a><a class="mmc-country-pill" href="/ar/countries/saudi-arabia.html">🇸🇦 السعودية</a><a class="mmc-country-pill" href="/ar/countries/uae.html">🇦🇪 الإمارات</a><a class="mmc-country-pill" href="/ar/countries/qatar.html">🇶🇦 قطر</a><a class="mmc-country-pill" href="/ar/countries/bahrain.html">🇧🇭 البحرين</a><a class="mmc-country-pill" href="/ar/countries/oman.html">🇴🇲 عُمان</a></div></div>
+<button aria-label="فتح القائمة" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" id="mobileMenuBtn"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div class="hidden md:hidden border-t border-gray-100 bg-white" id="mobileMenu"><div class="px-4 py-3 space-y-2">
+<a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/">الحاسبات</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/categories/index.html">التصنيفات</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/blog.html">المدونة</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/countries/index.html">🌍 الدول</a>
+<div class="flex items-center gap-2 px-3 py-2"><a class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 text-xs" href="/">EN</a><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span></div>
+</div></div></header>
+<div aria-label="حاسبات الدول العربية" class="mmc-country-strip"><div class="mmc-country-inner"><span class="mmc-country-label">🌍 جميع الدول</span><a class="mmc-country-pill" href="/ar/countries/morocco.html">🇲🇦 المغرب</a><a class="mmc-country-pill" href="/ar/countries/saudi-arabia.html">🇸🇦 السعودية</a><a class="mmc-country-pill" href="/ar/countries/uae.html">🇦🇪 الإمارات</a><a class="mmc-country-pill" href="/ar/countries/qatar.html">🇶🇦 قطر</a><a class="mmc-country-pill" href="/ar/countries/bahrain.html">🇧🇭 البحرين</a><a class="mmc-country-pill" href="/ar/countries/oman.html">🇴🇲 عُمان</a></div></div>
+</div>
 <main class="max-w-4xl mx-auto px-4 py-10 w-full">
 <div class="text-center mb-8">
 <span class="text-green-600 text-xs font-bold uppercase">دليل التواريخ والوقت</span>
@@ -83,6 +95,6 @@
 <p>إذا كنت تحسب موعد عيد ميلاد أو مدة مشروع، اكتب السؤال كاملاً قبل إدخال الأرقام: هل تريد السنوات الكاملة، أم الأشهر والأيام، أم مجموع الأيام؟ اختلاف المطلوب يغير طريقة قراءة النتيجة. استعمل صيغة تاريخ مفهومة عند مشاركة الحساب، ولا تنشر تاريخ الميلاد في مكان عام لأنه من المعلومات الشخصية.</p>
 </article>
 </main>
-<footer class="mmc-footer" dir="rtl"><div class="mmc-footer-inner"><div class="mmc-footer-brand"><a class="mmc-footer-logo" href="/ar/">MyMega<span>Calculator</span></a><p>حاسبات عربية مجانية وسهلة الاستخدام لفهم الأرقام واتخاذ قرارات يومية أوضح.</p><div class="mmc-footer-trust">🔒 تتم الحسابات في متصفحك ولا يتم تخزين مدخلات الحاسبة.</div></div><div><h3>الحاسبات</h3><a href="/ar/percentage-calculator.html">النسبة المئوية</a><a href="/ar/loan-calculator.html">القروض</a><a href="/ar/age-calculator.html">العمر</a><a href="/ar/bmi-calculator.html">كتلة الجسم BMI</a><a href="/ar/weight-converter.html">تحويل الوزن</a><a href="/ar/square-footage-calculator.html">المساحة</a></div><div><h3>المحتوى</h3><a href="/ar/blog.html">المدونة العربية</a><a href="/ar/about-us.html">من نحن</a><a href="/ar/author-alex-morgan.html">المؤلف</a><a href="/ar/privacy-policy.html">سياسة الخصوصية</a><a href="/ar/terms-of-service.html">شروط الخدمة</a><a href="/ar/contact.html">اتصل بنا</a></div></div><div class="mmc-footer-bottom">© 2026 MyMegaCalculator.com — جميع الحقوق محفوظة.</div></footer>
-</body>
+<footer class="mmc-footer" dir="rtl"><div class="mmc-footer-inner"><div class="mmc-footer-brand"><a class="mmc-footer-logo" href="/ar/">MyMega<span>Calculator</span></a><p>حاسبات عربية مجانية وسهلة الاستخدام لفهم الأرقام وإنجاز الحسابات اليومية بسرعة ووضوح.</p><div class="mmc-footer-trust">🔒 تتم الحسابات داخل المتصفح ولا نطلب تخزين مدخلات الحاسبات.</div></div><div><h3>الحاسبات</h3><a href="/ar/percentage-calculator.html">النسبة المئوية</a><a href="/ar/loan-calculator.html">القروض</a><a href="/ar/age-calculator.html">العمر</a><a href="/ar/bmi-calculator.html">كتلة الجسم BMI</a><a href="/ar/weight-converter.html">تحويل الوزن</a><a href="/ar/square-footage-calculator.html">المساحة</a></div><div><h3>المحتوى</h3><a href="/ar/categories/index.html">التصنيفات</a><a href="/ar/blog.html">المدونة العربية</a><a href="/ar/about-us.html">من نحن</a><a href="/ar/author-alex-morgan.html">المؤلف</a><a href="/ar/privacy-policy.html">سياسة الخصوصية</a><a href="/ar/terms-of-service.html">شروط الخدمة</a><a href="/ar/contact.html">اتصل بنا</a></div></div><div class="mmc-footer-bottom">© 2026 MyMegaCalculator.com — جميع الحقوق محفوظة.</div></footer>
+<script>const mmcBtn=document.getElementById("mobileMenuBtn"),mmcMenu=document.getElementById("mobileMenu");if(mmcBtn&&mmcMenu)mmcBtn.addEventListener("click",()=>mmcMenu.classList.toggle("hidden"));</script></body>
 </html>
