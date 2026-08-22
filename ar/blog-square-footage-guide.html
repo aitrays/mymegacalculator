@@ -24,20 +24,6 @@
 <link href="../responsive-fixes.css" rel="stylesheet"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/ar/v16-arabic.css" rel="stylesheet"/><link rel="stylesheet" href="/ar/v19-arabic.css">
-
-<style id="mmc-fixed-header-v20">
-:root{--mmc-header-height:0px;--mmc-country-height:0px}
-html{scroll-padding-top:calc(var(--mmc-header-height) + var(--mmc-country-height) + 16px)}
-body{padding-top:calc(var(--mmc-header-height) + var(--mmc-country-height)) !important;overflow-x:hidden}
-body>header, header:first-of-type{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;width:100% !important;z-index:1000 !important;margin:0 !important}
-.mmc-country-strip{position:fixed !important;top:var(--mmc-header-height) !important;left:0 !important;right:0 !important;width:100% !important;z-index:990 !important;margin:0 !important}
-.mmc-country-strip .mmc-country-inner{max-width:1200px;margin:0 auto}
-@media (max-width:767px){
-  body{padding-top:calc(var(--mmc-header-height) + var(--mmc-country-height)) !important}
-  .mmc-country-strip{overflow-x:auto}
-  .mmc-country-inner{min-width:max-content}
-}
-</style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
@@ -164,28 +150,5 @@ body>header, header:first-of-type{position:fixed !important;top:0 !important;lef
             document.getElementById('mobileMenu').classList.toggle('hidden');
         });
     </script>
-
-<script id="mmc-fixed-header-js">
-(function(){
-  function syncFixedHeader(){
-    var header=document.querySelector('body>header') || document.querySelector('header');
-    var strip=document.querySelector('.mmc-country-strip');
-    var hh=header ? Math.ceil(header.getBoundingClientRect().height) : 0;
-    var ch=strip ? Math.ceil(strip.getBoundingClientRect().height) : 0;
-    document.documentElement.style.setProperty('--mmc-header-height',hh+'px');
-    document.documentElement.style.setProperty('--mmc-country-height',ch+'px');
-  }
-  syncFixedHeader();
-  window.addEventListener('load',syncFixedHeader,{passive:true});
-  window.addEventListener('resize',syncFixedHeader,{passive:true});
-  if(window.ResizeObserver){
-    var h=document.querySelector('body>header') || document.querySelector('header');
-    var s=document.querySelector('.mmc-country-strip');
-    var ro=new ResizeObserver(syncFixedHeader);
-    if(h)ro.observe(h);
-    if(s)ro.observe(s);
-  }
-})();
-</script>
 </body>
 </html>
