@@ -88,3 +88,6 @@ main.max-w-4xl #result{border-radius:18px!important;background:#0f172a!important
 .mmc-content-rich .mmc-faq strong{display:block;color:#0f172a;margin-bottom:5px}
 .mmc-result[aria-live]{min-height:64px}
 @media(max-width:760px){.mmc-content-rich{padding:0 16px;margin-top:26px}.mmc-content-rich h2{font-size:1.35rem}}
+
+/* Morocco country page: keep categories in header only; content uses full width. */
+.mmc-v14-layout-full{grid-template-columns:minmax(0,1fr)!important}.mmc-v14-layout-full .mmc-v14-content{width:100%;min-width:0}
