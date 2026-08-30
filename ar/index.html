@@ -2,8 +2,9 @@
 
 <html dir="rtl" lang="ar">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4399808216500182"
-     crossorigin="anonymous"></script>
+  <!-- Resource hints: establish connections early for performance -->
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googletagmanager.com">
   
 <!-- Google tag (gtag.js) -->
 <script>
@@ -171,14 +172,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Preload main stylesheet to avoid render-blocking paint -->
+<link rel="preload" href="/ar/arabic-bundle.css?v=12" as="style">
 <link rel="stylesheet" href="/ar/arabic-bundle.css?v=12">
+<!-- A11y & CWV patch: contrast fixes, CLS prevention, focus styles -->
+<link rel="stylesheet" href="/ar/a11y-perf-fixes.css">
+<!-- AdSense: loaded async, placed at end of head to not delay above-fold parsing -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4399808216500182" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 <!-- Header Navigation -->
 <header class="mmc-fixed-header" dir="rtl">
 <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
 <a class="flex items-center gap-3 group" href="/ar/">
-<div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<div class="w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200 group-hover:scale-105 transition-transform" aria-hidden="true"><svg class="w-6 h-6" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
 <span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span></a>
 <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600 items-center">
 <a class="hover:text-green-600 transition" href="/ar/">الحاسبات</a>
@@ -187,7 +194,7 @@
 <a class="hover:text-green-600 transition" href="/ar/blog.html">المدونة</a>
 <div class="flex items-center gap-2 text-xs"><a class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition" href="/">EN</a><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span></div>
 </nav>
-<button aria-label="فتح القائمة" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" id="mobileMenuBtn"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button aria-label="تبديل القائمة" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" id="mobileMenuBtn"><svg class="w-6 h-6 text-gray-700" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
 </div>
 <div class="hidden md:hidden border-t border-gray-100 bg-white" id="mobileMenu"><div class="px-4 py-3 space-y-2">
 <a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/">الحاسبات</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/categories/index.html">التصنيفات</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/blog.html">المدونة</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/countries/index.html">🌍 الدول</a>
@@ -443,9 +450,18 @@
 <!-- MODERN PREMIUM FOOTER -->
 <footer class="mmc-footer" dir="rtl"><div class="mmc-footer-inner"><div class="mmc-footer-brand"><a class="mmc-footer-logo" href="/ar/">MyMega<span>Calculator</span></a><p>حاسبات عربية مجانية وسهلة الاستخدام لفهم الأرقام وإنجاز الحسابات اليومية بسرعة ووضوح.</p><div class="mmc-footer-trust">🔒 تتم الحسابات داخل المتصفح ولا نطلب تخزين مدخلات الحاسبات.</div></div><div><h3>الحاسبات</h3><a href="/ar/percentage-calculator.html">النسبة المئوية</a><a href="/ar/loan-calculator.html">القروض</a><a href="/ar/age-calculator.html">العمر</a><a href="/ar/bmi-calculator.html">كتلة الجسم BMI</a><a href="/ar/weight-converter.html">تحويل الوزن</a><a href="/ar/square-footage-calculator.html">المساحة</a></div><div><h3>المحتوى</h3><a href="/ar/categories/index.html">التصنيفات</a><a href="/ar/blog.html">المدونة العربية</a><a href="/ar/about-us.html">من نحن</a><a href="/ar/author-alex-morgan.html">المؤلف</a><a href="/ar/privacy-policy.html">سياسة الخصوصية</a><a href="/ar/cookie-policy.html">سياسة ملفات الارتباط</a><a href="/ar/terms-of-service.html">شروط الخدمة</a><a href="/ar/contact.html">اتصل بنا</a></div></div><div class="mmc-footer-bottom">© 2026 MyMegaCalculator.com — جميع الحقوق محفوظة.</div></footer>
 <script>
-        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
+        (function() {
+          var btn = document.getElementById('mobileMenuBtn');
+          var menu = document.getElementById('mobileMenu');
+          if (btn && menu) {
+            btn.addEventListener('click', function() {
+              var isOpen = !menu.classList.contains('hidden');
+              menu.classList.toggle('hidden');
+              btn.setAttribute('aria-expanded', String(!isOpen));
+              btn.setAttribute('aria-label', !isOpen ? 'إغلاق القائمة' : 'تبديل القائمة');
+            });
+          }
+        })();
     </script>
 <script id="mmc-slider-script">(()=>{const slides=[...document.querySelectorAll('.mmc-slide')],dots=[...document.querySelectorAll('.mmc-slider-dots button')];if(!slides.length)return;let i=0;const show=n=>{slides.forEach((x,j)=>x.classList.toggle('is-active',j===n));dots.forEach((x,j)=>x.classList.toggle('active',j===n));i=n};dots.forEach((d,j)=>d.addEventListener('click',()=>show(j)));setInterval(()=>show((i+1)%slides.length),6000)})();</script></body>
 </html>
