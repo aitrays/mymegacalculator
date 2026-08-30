@@ -171,15 +171,92 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<!-- Preload main stylesheet to avoid render-blocking paint -->
+<!--
+  Google Fonts loaded NON-BLOCKING via the preload + onload swap pattern.
+  Reduces critical-path weight by 1 full render-blocking network round-trip.
+  Only 4 key weights (400,700,800,900) instead of 6 — saves ~30% font payload.
+  display=swap ensures text is visible immediately using fallback fonts.
+-->
+<link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700;800;900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700;800;900&display=swap" rel="stylesheet">
+</noscript>
+
+<!--
+  CRITICAL INLINE CSS — applied before any external stylesheet loads.
+  Prevents:
+    • FOUC (flash of unstyled content) while arabic-bundle.css fetches
+    • CLS from header height changing on load
+    • Text invisibility (no font-family fallback)
+  Mirrors only the above-the-fold layout rules from arabic-bundle.css.
+-->
+<style>
+  /* Direction & base */
+  *,*::before,*::after{box-sizing:border-box}
+  html{direction:rtl;overflow-x:hidden;scroll-behavior:smooth}
+  body{
+    direction:rtl;
+    margin:0;
+    overflow-x:hidden;
+    background:#f8fafc;
+    color:#111827;
+    /* Fallback font stack renders immediately; Noto Arabic replaces it async */
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Cairo",Tahoma,Arial,sans-serif;
+    line-height:1.9;
+    /* Reserve space for fixed header (76px) + country strip (~50px) */
+    padding-top:126px;
+  }
+  /* Fixed header skeleton — prevents layout shift when real CSS arrives */
+  header.mmc-fixed-header{
+    position:fixed;top:0;left:0;right:0;width:100%;
+    height:76px;z-index:1000;
+    background:rgba(255,255,255,.98);
+    border-bottom:1px solid #e5e7eb;
+  }
+  header.mmc-fixed-header .max-w-6xl{
+    max-width:1320px;margin:0 auto;padding:0 16px;
+    height:76px;display:flex;align-items:center;justify-content:space-between;
+  }
+  /* Country strip placeholder */
+  .mmc-country-strip{
+    position:fixed;top:76px;left:0;right:0;width:100%;
+    z-index:999;background:rgba(255,255,255,.97);
+    border-bottom:1px solid #dfe9e3;height:50px;
+  }
+  /* Prevent mobile menu from flashing visible */
+  #mobileMenu{display:none}
+  /* Ensure images don't cause CLS */
+  img{height:auto;max-width:100%}
+  /* Logo icon dimensions to prevent CLS */
+  .mmc-fixed-header a>div:first-child{
+    width:40px;height:40px;min-width:40px;flex:0 0 40px;
+    border-radius:12px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(to top right,#16a34a,#34d399);
+  }
+</style>
+
+<!-- Preload main stylesheet — browser fetches it at highest priority -->
 <link rel="preload" href="/ar/arabic-bundle.css?v=12" as="style">
 <link rel="stylesheet" href="/ar/arabic-bundle.css?v=12">
-<!-- A11y & CWV patch: contrast fixes, CLS prevention, focus styles -->
-<link rel="stylesheet" href="/ar/a11y-perf-fixes.css">
-<!-- AdSense: loaded async, placed at end of head to not delay above-fold parsing -->
+
+<!--
+  Non-critical CSS loaded asynchronously via media="print" trick.
+  Browser loads it without blocking render; onload swaps media to "all".
+  Fallback <noscript> covers JS-disabled environments.
+-->
+<link rel="stylesheet"
+      href="/ar/a11y-perf-fixes.css"
+      media="print"
+      onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/ar/a11y-perf-fixes.css"></noscript>
+
+<!-- AdSense: async, at end of head so meta/CSS take priority -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4399808216500182" crossorigin="anonymous"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
 <!-- Header Navigation -->
 <header class="mmc-fixed-header" dir="rtl">
@@ -200,14 +277,14 @@
 <a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/">الحاسبات</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/categories/index.html">التصنيفات</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/blog.html">المدونة</a><a class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm" href="/ar/countries/index.html">🌍 الدول</a>
 <div class="flex items-center gap-2 px-3 py-2"><a class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 text-xs" href="/">EN</a><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">AR</span></div>
 </div></div></header>
-<div aria-label="حاسبات الدول العربية" class="mmc-country-strip"><div class="mmc-country-inner"><span class="mmc-country-label">🌍 جميع الدول</span><a class="mmc-country-pill" href="/ar/countries/morocco.html">🇲🇦 المغرب</a><a class="mmc-country-pill" href="/ar/countries/saudi-arabia.html">🇸🇦 السعودية</a><a class="mmc-country-pill" href="/ar/countries/uae.html">🇦🇪 الإمارات</a><a class="mmc-country-pill" href="/ar/countries/bahrain.html">🇧🇭 البحرين</a><a class="mmc-country-pill" href="/ar/countries/oman.html">🇴🇲 عُمان</a></div></div>
+<div aria-label="حاسبات الدول العربية" class="mmc-country-strip" role="navigation"><div class="mmc-country-inner"><span class="mmc-country-label" aria-hidden="true">🌍 جميع الدول</span><a class="mmc-country-pill" href="/ar/countries/morocco.html" aria-label="حاسبات المغرب">🇲🇦 المغرب</a><a class="mmc-country-pill" href="/ar/countries/saudi-arabia.html" aria-label="حاسبات السعودية">🇸🇦 السعودية</a><a class="mmc-country-pill" href="/ar/countries/uae.html" aria-label="حاسبات الإمارات">🇦🇪 الإمارات</a><a class="mmc-country-pill" href="/ar/countries/bahrain.html" aria-label="حاسبات البحرين">🇧🇭 البحرين</a><a class="mmc-country-pill" href="/ar/countries/oman.html" aria-label="حاسبات عُمان">🇴🇲 عُمان</a></div></div>
 </div>
 <!-- Arabic homepage slider -->
-<section class="mmc-home-slider" aria-label="أبرز أدوات MyMegaCalculator"><div class="mmc-slider-track">
-<article class="mmc-slide is-active"><div><span class="mmc-slide-badge">🧮 أدوات يومية</span><h1>حاسبات مجانية، واضحة وسريعة</h1><p>احسب النسب والقروض والعمر والصحة والمساحات والتحويلات من مكان واحد.</p><a href="/ar/percentage-calculator.html">ابدأ الحساب الآن ←</a></div><div class="mmc-slide-art">%</div></article>
-<article class="mmc-slide"><div><span class="mmc-slide-badge">🌍 حاسبات محلية</span><h1>اختر الدولة وشوف الحاسبات المناسبة</h1><p>الوصول السريع إلى الأدوات المرتبطة بالمغرب والسعودية والإمارات وقطر والبحرين وعُمان.</p><a href="/ar/countries/index.html">تصفح الدول ←</a></div><div class="mmc-slide-art">🌍</div></article>
+<section class="mmc-home-slider" aria-label="أبرز أدوات MyMegaCalculator" aria-roledescription="عرض شرائح"><div class="mmc-slider-track">
+<article class="mmc-slide is-active" aria-label="الشريحة 1: أدوات يومية" aria-hidden="false"><div><span class="mmc-slide-badge">🧮 أدوات يومية</span><h1>حاسبات مجانية، واضحة وسريعة</h1><p>احسب النسب والقروض والعمر والصحة والمساحات والتحويلات من مكان واحد.</p><a href="/ar/percentage-calculator.html" aria-label="افتح حاسبة النسبة المئوية">ابدأ الحساب الآن ←</a></div><div class="mmc-slide-art" aria-hidden="true">%</div></article>
+<article class="mmc-slide" aria-label="الشريحة 2: حاسبات محلية" aria-hidden="true"><div><span class="mmc-slide-badge">🌍 حاسبات محلية</span><h1>اختر الدولة وشوف الحاسبات المناسبة</h1><p>الوصول السريع إلى الأدوات المرتبطة بالمغرب والسعودية والإمارات وقطر والبحرين وعُمان.</p><a href="/ar/countries/index.html" aria-label="تصفح الحاسبات حسب الدولة">تصفح الدول ←</a></div><div class="mmc-slide-art" aria-hidden="true">🌍</div></article>
 <article class="mmc-slide"><div><span class="mmc-slide-badge">📚 أدلة عربية</span><h1>شرح ومحتوى يساعدك تفهم النتيجة</h1><p>كل حاسبة مصممة لتعرض طريقة الاستخدام والأمثلة والملاحظات المهمة بشكل بسيط.</p><a href="/ar/blog.html">تصفح المدونة ←</a></div><div class="mmc-slide-art">📖</div></article>
-</div><div class="mmc-slider-dots" role="tablist"><button class="active" aria-label="الشريحة 1"></button><button aria-label="الشريحة 2"></button><button aria-label="الشريحة 3"></button></div></section>
+</div><div class="mmc-slider-dots" role="tablist"><button class="active" aria-label="عرض الشريحة 1" role="tab" aria-selected="true"></button><button aria-label="عرض الشريحة 2" role="tab" aria-selected="false"></button><button aria-label="عرض الشريحة 3" role="tab" aria-selected="false"></button></div></section>
 <!-- Category navigation -->
 <section aria-labelledby="category-heading" class="max-w-6xl mx-auto px-4 pt-2 pb-8 mmc-v14-home-category" style="display:none">
 <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5">
@@ -463,5 +540,37 @@
           }
         })();
     </script>
-<script id="mmc-slider-script">(()=>{const slides=[...document.querySelectorAll('.mmc-slide')],dots=[...document.querySelectorAll('.mmc-slider-dots button')];if(!slides.length)return;let i=0;const show=n=>{slides.forEach((x,j)=>x.classList.toggle('is-active',j===n));dots.forEach((x,j)=>x.classList.toggle('active',j===n));i=n};dots.forEach((d,j)=>d.addEventListener('click',()=>show(j)));setInterval(()=>show((i+1)%slides.length),6000)})();</script></body>
+<script id="mmc-slider-script">
+(function() {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.mmc-slide'));
+  var dots   = Array.prototype.slice.call(document.querySelectorAll('.mmc-slider-dots button'));
+  if (!slides.length) return;
+  var current = 0;
+
+  function show(n) {
+    slides.forEach(function(slide, j) {
+      var active = j === n;
+      slide.classList.toggle('is-active', active);
+      /* Hide/show from AT: inactive slides must not be focusable or readable */
+      slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+    });
+    dots.forEach(function(dot, j) {
+      var active = j === n;
+      dot.classList.toggle('active', active);
+      dot.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    current = n;
+  }
+
+  dots.forEach(function(d, j) {
+    d.addEventListener('click', function() { show(j); });
+  });
+
+  /* Auto-advance every 6 seconds — pauses if user has prefers-reduced-motion */
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReducedMotion) {
+    setInterval(function() { show((current + 1) % slides.length); }, 6000);
+  }
+})();
+</script></body>
 </html>
