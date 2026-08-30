@@ -1,0 +1,12 @@
+/* V18.1 - country pages: keep Categories in header, remove side category rail */
+.mmc-country-page .category-sidebar,
+.mmc-country-page .categories-sidebar,
+.mmc-country-page .sidebar-categories,
+.mmc-country-page .mmc-category-sidebar,
+.mmc-country-page aside[class*="categor"],
+.mmc-country-page [class*="sidebar"] [class*="categor"] { display:none !important; }
+.mmc-country-page main { width:100%; max-width:1200px; margin-inline:auto; }
+.mmc-country-page .mmc-v14-layout { display:block !important; grid-template-columns:1fr !important; }
+.mmc-country-page .mmc-v14-content { width:100% !important; max-width:none !important; }
+.mmc-country-page .mmc-tool-grid { width:100%; }
+@media (max-width: 767px){ .mmc-country-page main { padding-inline:16px; } }

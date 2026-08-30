@@ -1,0 +1,62 @@
+# MyMegaCalculator
+
+## Description
+MyMegaCalculator.com is a free, privacy-first online platform offering instant, high-precision calculators and conversion tools. All calculations run entirely client-side in the user's browser using JavaScript — no personal data, inputs, or results are stored, logged, or transmitted to any server. The site serves homeowners, DIY enthusiasts, fitness practitioners, students, borrowers, and anyone needing quick, reliable math calculations without registration or ads.
+
+## Key Features
+- 100% free calculators with no sign-up required
+- Client-side JavaScript processing; calculator inputs are not stored. General site analytics may be used as described in the privacy policy.
+- Mobile-friendly, responsive design
+- Comprehensive categories: Home Improvement (Tile, Square Footage, Paint), Health & Fitness (BMI, Calorie / TDEE), Finance (Loan / Mortgage), Everyday Math & Conversions (Percentage, Age, Weight, Feet to CM)
+- Multi-language support: English and Arabic (ar/)
+- Hand-coded calculators tested against known mathematical and medical standards
+- Educational blog with practical math guides
+
+## Target Audience
+Homeowners, DIY enthusiasts, students, fitness enthusiasts, borrowers, contractors, and everyday users needing quick, dependable math solutions.
+
+## Content Policy
+All calculator tools and blog content are original, manually created by the founder, and regularly reviewed for accuracy. The site does not use AI-generated calculator logic; all formulas are verified against standard mathematical and scientific references.
+
+## Key Pages (English)
+- Homepage: https://mymegacalculator.com/
+- Paint Calculator: https://mymegacalculator.com/paint-calculator
+- BMI Calculator: https://mymegacalculator.com/bmi-calculator
+- Calorie Calculator: https://mymegacalculator.com/calorie-calculator
+- Age Calculator: https://mymegacalculator.com/age-calculator
+- Loan Calculator: https://mymegacalculator.com/loan-calculator
+- Square Footage Calculator: https://mymegacalculator.com/square-footage-calculator
+- Tile Calculator: https://mymegacalculator.com/tile-calculator
+- Percentage Calculator: https://mymegacalculator.com/percentage-calculator
+- Weight Converter: https://mymegacalculator.com/weight-converter
+- Feet and Inches Calculator: https://mymegacalculator.com/feet-and-inches-calculator
+- Blog: https://mymegacalculator.com/blog
+- About: https://mymegacalculator.com/about-us
+- Contact: https://mymegacalculator.com/contact
+- Privacy Policy: https://mymegacalculator.com/privacy-policy
+
+## Key Pages (Arabic)
+- Arabic Homepage: https://mymegacalculator.com/ar/
+- Paint Calculator (AR): https://mymegacalculator.com/ar/paint-calculator
+- BMI Calculator (AR): https://mymegacalculator.com/ar/bmi-calculator
+- Calorie Calculator (AR): https://mymegacalculator.com/ar/calorie-calculator
+- Age Calculator (AR): https://mymegacalculator.com/ar/age-calculator
+- Loan Calculator (AR): https://mymegacalculator.com/ar/loan-calculator
+- Square Footage (AR): https://mymegacalculator.com/ar/square-footage-calculator
+- Tile Calculator (AR): https://mymegacalculator.com/ar/tile-calculator
+- Percentage Calculator (AR): https://mymegacalculator.com/ar/percentage-calculator
+- Weight Converter (AR): https://mymegacalculator.com/ar/weight-converter
+- Feet and Inches Calculator (AR): https://mymegacalculator.com/ar/feet-and-inches-calculator
+
+## Author
+Alex Morgan — full-stack software engineer and founder. Background in Computer Science (Human-Computer Interaction), former Senior Frontend Engineer at an ed-tech platform, and certified in Web Accessibility (WCAG 2.1 AA).
+
+## Contact
+https://mymegacalculator.com/contact
+
+## Sitemap
+https://mymegacalculator.com/sitemap.xml
+
+Calculator Categories:
+https://mymegacalculator.com/categories/
+https://mymegacalculator.com/ar/categories/

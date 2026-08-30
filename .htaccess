@@ -1,0 +1,77 @@
+# Country language separation
+Redirect 301 /categories/morocco /ar/countries/morocco.html
+Redirect 301 /morocco-salary-calculator /ar/morocco-salary-calculator.html
+Redirect 301 /morocco-ir-calculator /ar/morocco-ir-calculator.html
+Redirect 301 /morocco-cnss-calculator /ar/morocco-cnss-calculator.html
+Redirect 301 /morocco-amo-calculator /ar/morocco-amo-calculator.html
+Redirect 301 /countries/morocco.html /ar/countries/morocco.html
+# =============================================
+# MyMegaCalculator - Apache .htaccess
+# =============================================
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove trailing slash (except root)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Redirect /index.html and language-root index files to their canonical roots.
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+ar/index\.html(?:[?\s]) [NC]
+RewriteRule ^ar/index\.html$ /ar/ [R=301,L]
+
+# Redirect explicit .html URLs to the canonical clean URL.
+# Only redirect when the browser requested the .html form directly, so
+# Apache's internal clean-URL rewrite does not loop.
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[?\s]) [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
+
+# -----------------------------------------------
+# Clean URLs - serve .html without extension
+# -----------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# -----------------------------------------------
+# Security Headers
+# -----------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# -----------------------------------------------
+# GZIP Compression
+# -----------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# -----------------------------------------------
+# Browser Caching
+# -----------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png  "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Custom 404
+ErrorDocument 404 /404.html
+

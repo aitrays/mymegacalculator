@@ -1,0 +1,25 @@
+/* MyMegaCalculator visual theme */
+:root {
+    --theme-primary: #15803d;
+    --theme-primary-dark: #166534;
+    --theme-primary-soft: #f0fdf4;
+    --theme-primary-pale: #dcfce7;
+    --theme-primary-border: #bbf7d0;
+    --theme-primary-light: #4ade80;
+}
+
+[class~="bg-green-600"] { background-color: var(--theme-primary) !important; }
+[class~="bg-green-50"] { background-color: var(--theme-primary-soft) !important; }
+[class~="bg-green-100"] { background-color: var(--theme-primary-pale) !important; }
+[class~="border-green-200"] { border-color: var(--theme-primary-border) !important; }
+[class~="text-green-600"] { color: var(--theme-primary) !important; }
+[class~="text-green-800"] { color: var(--theme-primary-dark) !important; }
+[class~="text-green-400"] { color: var(--theme-primary-light) !important; }
+[class~="shadow-green-200"] { --tw-shadow-color: var(--theme-primary-border) !important; }
+[class~="from-green-600"] { --tw-gradient-from: var(--theme-primary) !important; }
+[class~="to-emerald-400"] { --tw-gradient-to: #34d399 !important; }
+[class~="hover:bg-green-100"]:hover { background-color: var(--theme-primary-pale) !important; }
+[class~="hover:bg-green-600"]:hover { background-color: var(--theme-primary-dark) !important; }
+[class~="hover:text-green-600"]:hover { color: var(--theme-primary) !important; }
+[class~="hover:text-green-700"]:hover { color: var(--theme-primary-dark) !important; }
+[class~="hover:border-green-200"]:hover { border-color: var(--theme-primary-border) !important; }

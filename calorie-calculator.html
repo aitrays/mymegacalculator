@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4399808216500182" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16a34a">
+    <title>Calorie & TDEE Calculator | Daily Caloric Needs & Weight Loss Targets — MyMegaCalculator</title>
+    <meta name="description" content="Calculate your daily calorie needs (TDEE & BMR) based on age, gender, height, weight, and activity level. Get customized targets for weight loss or muscle gain. 100% private.">
+    <meta name="keywords" content="calorie calculator, tdee calculator, daily calorie needs, bmr calculator, weight loss calories, maintenance calories, macro calculator">
+    <meta name="author" content="Alex Morgan - MyMegaCalculator">
+    <link rel="canonical" href="https://mymegacalculator.com/calorie-calculator" />
+    <link rel="sitemap" type="application/xml" href="https://mymegacalculator.com/sitemap.xml" />
+    <link rel="apple-touch-icon" href="https://mymegacalculator.com/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mymegacalculator.com/calorie-calculator">
+    <meta property="og:title" content="Calorie & TDEE Calculator | Daily Caloric Needs & Targets">
+    <meta property="og:description" content="Calculate your daily calories, BMR, and TDEE with custom goals for weight loss, maintenance, or muscle gain.">
+    <meta property="og:image" content="https://mymegacalculator.com/images/og-home.jpg">
+    <meta property="og:site_name" content="MyMegaCalculator">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calorie & TDEE Calculator | Daily Caloric Needs">
+    <meta name="twitter:description" content="Calculate your daily calories, BMR, and TDEE with custom goals for weight loss or muscle gain.">
+    <meta name="twitter:image" content="https://mymegacalculator.com/images/og-home.jpg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mymegacalculator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calorie Calculator",
+          "item": "https://mymegacalculator.com/calorie-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calorie Calculator",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Free TDEE and daily calorie calculator based on the Mifflin-St Jeor equation to estimate energy expenditure and personalized diet targets.",
+      "url": "https://mymegacalculator.com/calorie-calculator",
+      "author": {
+        "@type": "Person",
+        "name": "Alex Morgan",
+        "url": "https://mymegacalculator.com/author-alex-morgan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMegaCalculator",
+        "url": "https://mymegacalculator.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between BMR and TDEE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Basal Metabolic Rate (BMR) is the baseline number of calories your body burns at complete rest just to keep organs functioning. Total Daily Energy Expenditure (TDEE) includes your BMR plus physical activity and exercise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many calories should I cut to lose 1 pound per week?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One pound of body fat equals approximately 3,500 calories. Cutting 500 calories per day from your maintenance TDEE produces a safe and sustainable deficit of 3,500 calories per week (1 lb of weight loss)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which formula is used for calculating BMR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use the Mifflin-St Jeor formula, widely recognized in clinical nutrition studies as the most accurate standard for predicting basal metabolic rate in healthy adults."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my diet or calorie information stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All calculation logic runs 100% client-side in your web browser. No personal or health metrics are ever collected or stored."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/english-bundle.css?v=11">
+    <link rel="alternate" hreflang="en" href="https://mymegacalculator.com/calorie-calculator" />
+    <link rel="alternate" hreflang="ar" href="https://mymegacalculator.com/ar/calorie-calculator" />
+    <link rel="alternate" hreflang="x-default" href="https://mymegacalculator.com/calorie-calculator" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the calorie calculator estimate?", "acceptedAnswer": {"@type": "Answer", "text": "It estimates daily energy needs from the body and activity inputs you provide."}}, {"@type": "Question", "name": "Why can two people get different results?", "acceptedAnswer": {"@type": "Answer", "text": "Energy needs vary with body size, age, activity, goals, and individual physiology."}}, {"@type": "Question", "name": "Is the result exact?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is an estimate intended for planning, not a laboratory measurement."}}, {"@type": "Question", "name": "How should I use the estimate?", "acceptedAnswer": {"@type": "Answer", "text": "Use it as a starting point and adjust based on goals, real-world results, and appropriate professional guidance."}}]}</script></head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="mmc-header bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50" role="banner">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-6 mmc-header-main">
+    <a href="/" class="flex items-center gap-3 group shrink-0" aria-label="MyMegaCalculator home">
+      <div class="mmc-logo-icon w-10 h-10 bg-gradient-to-tr from-green-600 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md shadow-green-200" aria-hidden="true">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+      </div><span class="text-2xl font-black tracking-tight text-gray-900">MyMega<span class="text-green-600">Calculator</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-600" aria-label="Primary navigation">
+      <a href="/" class="text-green-600 font-bold">Calculators</a><a href="/categories/" class="hover:text-green-600 transition">Categories</a><a href="/countries/" class="hover:text-green-600 transition">Countries 🌐</a><a href="/blog/" class="hover:text-green-600 transition">Blog</a>
+      <div class="flex items-center gap-2 text-xs"><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span><a href="/ar/" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a></div>
+    </nav>
+    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+  <div class="mmc-country-bar border-t border-gray-100 bg-white" aria-label="Country calculators">
+    <div class="mmc-country-slider-wrap max-w-6xl mx-auto px-4">
+      <button class="mmc-country-nav mmc-country-prev" type="button" aria-label="Previous countries">‹</button>
+      <div class="mmc-country-slider" tabindex="0">
+        <a href="/countries/" class="mmc-country-pill mmc-country-all">All Countries 🌐</a>
+        <a href="/countries/united-states/" class="mmc-country-pill">🇺🇸 United States <span>US</span></a>
+        <a href="/countries/united-kingdom/" class="mmc-country-pill">🇬🇧 United Kingdom <span>UK</span></a>
+        <a href="/countries/canada/" class="mmc-country-pill">🇨🇦 Canada <span>CA</span></a>
+        <a href="/countries/australia/" class="mmc-country-pill">🇦🇺 Australia <span>AU</span></a>
+      </div>
+      <button class="mmc-country-nav mmc-country-next" type="button" aria-label="Next countries">›</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white"><div class="px-4 py-3 space-y-2"><a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a><a href="/categories/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Categories</a><a href="/countries/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Countries 🌐</a><a href="/blog/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a><div class="flex items-center gap-2 px-3 py-2"><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span><a href="/ar/" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a></div></div></div>
+</header>
+<script>
+(function(){
+ const btn=document.getElementById('mobileMenuBtn'), menu=document.getElementById('mobileMenu');
+ if(btn&&menu){btn.addEventListener('click',()=>{const open=!menu.classList.contains('hidden');menu.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!open));});}
+ const slider=document.querySelector('.mmc-country-slider');
+ const prev=document.querySelector('.mmc-country-prev'), next=document.querySelector('.mmc-country-next');
+ if(slider&&prev&&next){const step=220; prev.addEventListener('click',()=>slider.scrollBy({left:-step,behavior:'smooth'})); next.addEventListener('click',()=>slider.scrollBy({left:step,behavior:'smooth'}));}
+})();
+</script><!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <a href="/" itemprop="item" class="hover:text-green-600 transition">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="mx-2 text-gray-300">/</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center">
+                    <span itemprop="name" class="text-green-600 font-medium">Calorie Calculator</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-10 w-full">
+        <!-- Title Header -->
+        <div class="text-center mb-8 space-y-2">
+            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Nutrition & Fitness</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Daily Calorie & TDEE Calculator</h1>
+            <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Estimate your maintenance calories (TDEE), basal metabolic rate (BMR), and custom caloric targets for fat loss or muscle gain.</p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-xl space-y-6">
+
+            <!-- Unit Selector -->
+            <div class="flex justify-center space-x-4 border-b border-gray-100 pb-4">
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="radio" name="unitType" value="metric" class="text-green-600 focus:ring-green-500 h-4 w-4" checked onchange="toggleCalorieUnit()">
+                    <span class="ml-2 text-sm font-bold text-gray-700">Metric (kg, cm)</span>
+                </label>
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="radio" name="unitType" value="imperial" class="text-green-600 focus:ring-green-500 h-4 w-4" onchange="toggleCalorieUnit()">
+                    <span class="ml-2 text-sm font-bold text-gray-700">Imperial (lbs, ft/in)</span>
+                </label>
+            </div>
+
+            <form id="calorieForm" onsubmit="return false;" class="space-y-6">
+                <!-- Demographics Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="gender" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Biological Gender</label>
+                        <select id="gender" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 bg-white">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="age" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Age (Years)</label>
+                        <input type="number" id="age" value="28" min="10" max="110" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                </div>
+
+                <!-- Metric Dimensions -->
+                <div id="metricInputs" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="heightCm" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Height (cm)</label>
+                        <input type="number" id="heightCm" value="175" min="80" max="250" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                    <div>
+                        <label for="weightKg" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Weight (kg)</label>
+                        <input type="number" id="weightKg" value="70" min="25" max="300" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                </div>
+
+                <!-- Imperial Dimensions -->
+                <div id="imperialInputs" class="hidden space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="heightFeet" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Height (Feet)</label>
+                            <input type="number" id="heightFeet" value="5" min="2" max="8" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                        </div>
+                        <div>
+                            <label for="heightInches" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Height (Inches)</label>
+                            <input type="number" id="heightInches" value="9" min="0" max="11" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="weightLbs" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Weight (lbs)</label>
+                        <input type="number" id="weightLbs" value="154" min="50" max="700" step="0.5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-base font-semibold text-gray-900 transition">
+                    </div>
+                </div>
+
+                <!-- Activity Level -->
+                <div>
+                    <label for="activity" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Activity Level</label>
+                    <select id="activity" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm font-semibold text-gray-900 bg-white">
+                        <option value="1.2">Sedentary (Little or no exercise, desk job)</option>
+                        <option value="1.375" selected>Lightly Active (Light workouts / sports 1-3 days/week)</option>
+                        <option value="1.55">Moderately Active (Moderate exercise 3-5 days/week)</option>
+                        <option value="1.725">Very Active (Hard exercise 6-7 days/week)</option>
+                        <option value="1.9">Extra Active / Athlete (Intense daily training / physical job)</option>
+                    </select>
+                </div>
+
+                <!-- Primary Results Box -->
+                <div class="bg-gradient-to-r from-gray-900 to-emerald-950 text-white rounded-2xl p-6 space-y-6 shadow-lg" aria-live="polite" aria-atomic="true">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-green-400 block mb-1">Daily Maintenance Calories (TDEE)</span>
+                            <div class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+                                <span id="resTdee">2,272</span> <span class="text-sm font-normal text-gray-400">kcal / day</span>
+                            </div>
+                        </div>
+                        <div class="text-left sm:text-right">
+                            <span class="text-xs text-gray-400 block">Basal Metabolic Rate (BMR)</span>
+                            <span id="resBmr" class="text-base font-bold text-green-400">1,652 kcal at rest</span>
+                        </div>
+                    </div>
+
+                    <!-- Calorie Goals Breakdown Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <!-- Weight Loss -->
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10 space-y-1">
+                            <span class="text-xs font-bold text-blue-400 block">Weight Loss (-0.5 kg/wk)</span>
+                            <div class="text-xl font-black text-white"><span id="resLoss">1,772</span> <span class="text-xs font-normal text-gray-400">kcal</span></div>
+                            <span class="text-[11px] text-gray-400 block">-500 kcal deficit</span>
+                        </div>
+
+                        <!-- Maintenance -->
+                        <div class="p-3 bg-green-500/10 rounded-xl border border-green-500/30 space-y-1">
+                            <span class="text-xs font-bold text-green-400 block">Maintain Weight</span>
+                            <div class="text-xl font-black text-green-400"><span id="resMaintain">2,272</span> <span class="text-xs font-normal text-green-200">kcal</span></div>
+                            <span class="text-[11px] text-gray-300 block">100% daily energy</span>
+                        </div>
+
+                        <!-- Muscle Gain -->
+                        <div class="p-3 bg-white/5 rounded-xl border border-white/10 space-y-1">
+                            <span class="text-xs font-bold text-yellow-400 block">Muscle Gain (+0.25 kg/wk)</span>
+                            <div class="text-xl font-black text-white"><span id="resGain">2,572</span> <span class="text-xs font-normal text-gray-400">kcal</span></div>
+                            <span class="text-[11px] text-gray-400 block">+300 kcal surplus</span>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Macronutrient Split -->
+                    <div class="pt-3 border-t border-white/10 space-y-2">
+                        <span class="text-xs font-bold text-gray-300 block uppercase tracking-wider">Suggested Daily Macros (Maintenance)</span>
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <span class="text-gray-400 block">Protein (30%)</span>
+                                <strong id="resProtein" class="text-white text-sm">170 g</strong>
+                            </div>
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <span class="text-gray-400 block">Carbs (40%)</span>
+                                <strong id="resCarbs" class="text-white text-sm">227 g</strong>
+                            </div>
+                            <div class="bg-white/5 p-2 rounded-lg">
+                                <span class="text-gray-400 block">Fats (30%)</span>
+                                <strong id="resFats" class="text-white text-sm">76 g</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Content Section (SEO & Educational) -->
+        <div class="mt-12 space-y-8">
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-4">
+                <h2 class="text-2xl font-bold text-gray-900">Understanding BMR, TDEE, and Calorie Math</h2>
+                <p class="text-sm sm:text-base leading-relaxed text-gray-600">
+                    Managing body weight is fundamentally governed by the energy balance equation: calories consumed versus calories expended.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600 pt-2">
+                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
+                        <strong class="text-gray-900 block font-bold">1. Basal Metabolic Rate (BMR)</strong>
+                        <p>The energy your body expends at rest to keep your heart beating, lungs breathing, and cells regenerating. Calculated via the Mifflin-St Jeor formula.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 space-y-1">
+                        <strong class="text-gray-900 block font-bold">2. Total Daily Energy (TDEE)</strong>
+                        <p>Your BMR multiplied by your physical activity multiplier. Eating at your TDEE keeps your body weight steady.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Calculators -->
+            <p class="text-center mt-4"><a href="/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">Read our complete calorie calculator guide</a></p>
+            <section class="bg-green-50/50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm">
+                <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">Related Health Tools</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="/bmi-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">⚖️</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">BMI Calculator</h3>
+                            <p class="text-xs text-gray-500">Body Mass Index & Ideal Weight</p>
+                        </div>
+                    </a>
+                    <a href="/weight-converter" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">🔄</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Weight Converter</h3>
+                            <p class="text-xs text-gray-500">Pounds, kg, and grams</p>
+                        </div>
+                    </a>
+                    <a href="/percentage-calculator" class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-green-200 transition p-4 flex items-center space-x-3">
+                        <span class="text-2xl">📊</span>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Percentage Calculator</h3>
+                            <p class="text-xs text-gray-500">Calculate percentage changes</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-6">
+                <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>What is the difference between BMR and TDEE?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Basal Metabolic Rate (BMR) is your baseline energy burn at complete rest. Total Daily Energy Expenditure (TDEE) adds all exercise, walking, and daily activity to your BMR.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>How many calories should I eat to lose 1 lb per week?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>Consuming approximately 500 calories below your TDEE each day creates a weekly deficit of 3,500 calories, which equals roughly 1 pound (0.45 kg) of fat loss.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-2xl border border-gray-100 shadow-sm group">
+                        <summary class="flex justify-between items-center p-5 cursor-pointer text-sm font-bold text-gray-900 list-none">
+                            <span>Is any personal data stored?</span>
+                            <span class="text-green-600 text-xl group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">
+                            <p>No. Calculations run strictly on your browser with complete privacy.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">How to Interpret a Calorie Estimate</h2>
+            <p>Enter age, sex, height, weight, and activity level using consistent units. The calculator estimates resting energy needs and then applies an activity factor to estimate daily maintenance calories. This is a planning starting point, not a measurement of metabolism. Body composition, sleep, illness, medication, training load, and the accuracy of the inputs can all change actual needs.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formula and example</h3>
+            <p>The common Mifflin-St Jeor equations estimate resting needs from weight, height, and age, with a sex-specific constant, then multiply by an activity factor. A 30-year-old person weighing 70 kg and measuring 175 cm will receive a different estimate at sedentary and very active settings. Change one input at a time and record the units so the comparison is meaningful.</p>
+            <h3 class="text-xl font-bold text-gray-900">Practical use</h3>
+            <p>Use the maintenance estimate as a range and watch the trend over two to four weeks rather than reacting to one day. Food labels, restaurant portions, cooking oils, drinks, and weekend meals are frequent sources of undercounting. If adjusting body weight, make gradual changes and include protein, fiber, hydration, and enjoyable foods. Athletes, teenagers, pregnant people, and anyone with a medical condition should seek individualized advice.</p>
+            <h3 class="text-xl font-bold text-gray-900">Mistakes and limitations</h3>
+            <p>Do not enter pounds where kilograms are requested, select an activity level that describes your aspiration rather than your routine, or treat the result as a diagnosis. Calories are not the only measure of nutrition quality, and the estimate cannot assess allergies or nutrient deficiencies. Recheck your inputs and consult a qualified professional when a large change is needed.</p>
+            <h3 class="text-xl font-bold text-gray-900">Related reading</h3>
+            <p>For the mathematics and activity assumptions, read the <a href="/blog-calorie-calculator-guide" class="text-green-600 font-semibold hover:underline">calorie calculator guide</a>. Pair calorie planning with the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> only as a broad screening comparison, not as a complete health assessment.</p>
+            <h3 class="text-xl font-bold text-gray-900">Making the estimate useful</h3>
+            <p>Use a consistent weighing routine and compare weekly trends, because water, sodium, digestion, and exercise can move scale weight from one day to the next. Recalculate after a meaningful change in body weight or routine, but do not chase every fluctuation. The safest interpretation is a starting range that you test against real observations and adjust gradually with qualified guidance.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Using a Calorie Estimate Responsibly</h2>
+            <p>A calorie estimate is a starting point, not a diagnosis or a prescription. The calculator uses age, sex setting, height, weight, and activity to estimate basal energy needs and daily maintenance. Your actual needs can change with training, sleep, medication, pregnancy, illness, and changes in body composition. Use a consistent method for several weeks and discuss major changes with a qualified professional.</p>
+            <h3 class="text-xl font-bold text-gray-900">Formula and worked example</h3>
+            <p>A common resting-energy equation is Mifflin–St Jeor. For men, BMR = 10 × weight in kg + 6.25 × height in cm − 5 × age + 5. For women, replace the final constant with −161. Convert pounds to kilograms by multiplying by 0.453592 and inches to centimeters by multiplying by 2.54. If a 30-year-old man weighs 80 kg and is 180 cm tall, the estimate is 800 + 1125 − 150 + 5 = 1,780 kcal per day before activity.</p>
+            <h2 class="text-2xl font-bold text-gray-900">Activity Factors and Mistakes</h2>
+            <p>Multiplying BMR by an activity factor estimates maintenance, but a desk job with occasional exercise should not be treated like daily hard training. Log meals honestly, use the same weighing routine, and avoid changing several variables at once. Calories are not interchangeable with nutrition quality: protein, fiber, hydration, and micronutrients still matter.</p>
+            <h3 class="text-xl font-bold text-gray-900">FAQs and links</h3>
+            <p><strong>Why do two calculators differ?</strong> They may use different formulas, units, or activity definitions. <strong>Should I eat exactly the displayed number?</strong> No; treat it as an estimate and observe your trend. <strong>Does age affect the result?</strong> Yes, it is part of the equation. Use the <a href="/bmi-calculator" class="text-green-600 font-semibold hover:underline">BMI calculator</a> for a separate screening measure, and the <a href="/weight-converter" class="text-green-600 font-semibold hover:underline">weight converter</a> when your scale uses another unit.</p>
+        </section>
+        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
+            <h2 class="text-2xl font-bold text-gray-900">Turning an Estimate into a Plan</h2>
+            <p>Use the displayed maintenance estimate as a comparison point. Record portions, drinks, cooking oils, and weekend meals because small omissions can explain a difference between a log and a scale trend. A gradual change is easier to interpret than a dramatic target. Recalculate after a meaningful change in body weight or routine, not after every single day.</p>
+            <h3 class="text-xl font-bold text-gray-900">Safety reminder</h3>
+            <p>Children, pregnant or breastfeeding people, athletes, and anyone managing a medical condition may need a different assessment. Seek professional advice before setting a restrictive target. The calculator estimates energy, while a balanced plan also considers protein, fiber, fluids, vitamins, and personal preferences.</p>
+        </section>
+        <section><h2 class="text-2xl font-bold text-gray-900">Tracking the Trend</h2><p>Daily calorie needs naturally vary. Compare a consistent seven-day pattern, sleep, activity, and body-weight trend rather than reacting to one reading. A food scale can improve portion estimates, but labels and restaurant servings also contain uncertainty.</p></section>
+        <section class="content-section calculator-guide">
+            <h2>How to use the calorie calculator well</h2>
+            <p>Use your age, height, weight, and activity level as an honest starting point rather than trying to choose the most flattering option. The result estimates maintenance calories, often called total daily energy expenditure (TDEE). It is not a medical diagnosis and it cannot account perfectly for sleep, medication, muscle mass, pregnancy, or changing training loads.</p>
+            <h3>The formula behind the estimate</h3>
+            <p>Many calculators first estimate basal metabolic rate (BMR) with the Mifflin-St Jeor equation. For men, BMR is 10 times weight in kilograms plus 6.25 times height in centimeters, minus 5 times age, plus 5. For women, the final constant is minus 161. TDEE is then approximately BMR multiplied by an activity factor. For example, a 30-year-old woman at 65 kg and 165 cm has a BMR near 1,370 calories; a moderately active factor of 1.55 produces roughly 2,120 maintenance calories.</p>
+            <h3>Practical steps</h3>
+            <ol>
+                <li>Measure body weight under similar conditions, preferably in the morning.</li>
+                <li>Choose the activity level that describes your normal week, not an occasional hard workout.</li>
+                <li>Compare the estimate with a seven-day average of your food intake and weight trend.</li>
+                <li>Adjust gradually after two or three weeks if your goal and trend do not match.</li>
+            </ol>
+            <h3>Common mistakes and safety notes</h3>
+            <p>Do not double-count exercise by selecting a high activity factor and then automatically eating back every watch calorie. Packaged-food labels and restaurant portions also introduce error. A small calorie deficit is usually easier to sustain than an aggressive restriction, while athletes may need more carbohydrate around training. Children, pregnant or breastfeeding people, and anyone managing diabetes or an eating disorder should use individualized advice from a qualified clinician.</p>
+            <h3>Questions people ask</h3>
+            <p><strong>Should I eat the exact number?</strong> No. Treat it as a range and use your trend over time. <strong>Why did my estimate change?</strong> A change in weight, age, activity, or unit selection changes the equation. <strong>What should I track?</strong> Calories, protein, sleep, training, and a weekly weight average give more context than a single scale reading. For related planning, see our <a href="/bmi-calculator">BMI calculator</a> and <a href="/weight-converter">weight converter</a>.</p>
+        </section>
+    <section class="max-w-4xl mx-auto px-4 pb-16 mmc-seo-faq"><article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-7"><h2 class="text-2xl sm:text-3xl font-extrabold">Frequently Asked Questions</h2><div class="mt-6 space-y-6"><div><h3 class="font-bold text-lg">What does the calorie calculator estimate?</h3><p class="text-gray-600 mt-2">It estimates daily energy needs from the body and activity inputs you provide.</p></div><div><h3 class="font-bold text-lg">Why can two people get different results?</h3><p class="text-gray-600 mt-2">Energy needs vary with body size, age, activity, goals, and individual physiology.</p></div><div><h3 class="font-bold text-lg">Is the result exact?</h3><p class="text-gray-600 mt-2">No. It is an estimate intended for planning, not a laboratory measurement.</p></div><div><h3 class="font-bold text-lg">How should I use the estimate?</h3><p class="text-gray-600 mt-2">Use it as a starting point and adjust based on goals, real-world results, and appropriate professional guidance.</p></div></div></article></section></main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 mt-0 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+            <div class="md:col-span-2 space-y-4">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-label="MyMegaCalculator logo"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <span class="text-2xl font-black text-white">MyMega<span class="text-green-500">Calculator</span></span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
+                    Free, instant, and high-precision online calculators for home improvement, health, finance, and everyday mathematical needs.
+                </p>
+                <div class="flex items-center space-x-2 text-xs text-green-400 font-semibold bg-green-950/60 border border-green-800/50 px-3 py-1.5 rounded-lg w-fit">
+                    <span aria-hidden="true">🔒</span> <span>100% Free & Private — No Data Stored</span>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Calculators</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="/tile-calculator" class="hover:text-green-400 transition">Tile Calculator</a></li>
+                    <li><a href="/square-footage-calculator" class="hover:text-green-400 transition">Square Footage</a></li>
+                    <li><a href="/paint-calculator" class="hover:text-green-400 transition">Paint Calculator</a></li>
+                    <li><a href="/bmi-calculator" class="hover:text-green-400 transition">BMI Calculator</a></li>
+                    <li><a href="/calorie-calculator" class="hover:text-green-400 transition">Calorie Calculator</a></li>
+                    <li><a href="/age-calculator" class="hover:text-green-400 transition">Age Calculator</a></li>
+                    <li><a href="/loan-calculator" class="hover:text-green-400 transition">Loan Calculator</a></li>
+                    <li><a href="/percentage-calculator" class="hover:text-green-400 transition">Percentage Calculator</a></li>
+                    <li><a href="/weight-converter" class="hover:text-green-400 transition">Weight Converter</a></li>
+                    <li><a href="/feet-and-inches-calculator" class="hover:text-green-400 transition">Feet to CM</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="/about-us" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>About Us</span></a></li>
+                    <li><a href="/blog" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Blog</span></a></li>
+                    <li><a href="/author-alex-morgan" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Author</span></a></li>
+                    <li><a href="/privacy-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Privacy Policy</span></a></li>
+                    <li><a href="/cookie-policy" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Cookie Policy</span></a></li>
+                    <li><a href="/terms-of-service" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Terms of Service</span></a></li>
+                    <li><a href="/contact" class="hover:text-green-400 transition flex items-center space-x-1.5"><span aria-hidden="true">•</span> <span>Contact Us</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-2">
+            <p>&copy; 2026 MyMegaCalculator.com. All rights reserved.</p>
+            <p>Designed for fast and accurate everyday estimations.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const gender = document.getElementById('gender');
+        const age = document.getElementById('age');
+        const heightCm = document.getElementById('heightCm');
+        const weightKg = document.getElementById('weightKg');
+        const heightFeet = document.getElementById('heightFeet');
+        const heightInches = document.getElementById('heightInches');
+        const weightLbs = document.getElementById('weightLbs');
+        const activity = document.getElementById('activity');
+
+        const resTdee = document.getElementById('resTdee');
+        const resBmr = document.getElementById('resBmr');
+        const resLoss = document.getElementById('resLoss');
+        const resMaintain = document.getElementById('resMaintain');
+        const resGain = document.getElementById('resGain');
+        const resProtein = document.getElementById('resProtein');
+        const resCarbs = document.getElementById('resCarbs');
+        const resFats = document.getElementById('resFats');
+
+        function toggleCalorieUnit() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const metricInputs = document.getElementById('metricInputs');
+            const imperialInputs = document.getElementById('imperialInputs');
+
+            if (unit === 'imperial') {
+                metricInputs.classList.add('hidden');
+                imperialInputs.classList.remove('hidden');
+            } else {
+                metricInputs.classList.remove('hidden');
+                imperialInputs.classList.add('hidden');
+            }
+            calculateCalories();
+        }
+
+        function calculateCalories() {
+            const unit = document.querySelector('input[name="unitType"]:checked').value;
+            const userGender = gender.value;
+            const userAge = parseFloat(age.value) || 28;
+            const activityMult = parseFloat(activity.value) || 1.375;
+
+            let wKg = 0;
+            let hCm = 0;
+
+            if (unit === 'metric') {
+                wKg = parseFloat(weightKg.value) || 0;
+                hCm = parseFloat(heightCm.value) || 0;
+            } else {
+                const ft = parseFloat(heightFeet.value) || 0;
+                const inches = parseFloat(heightInches.value) || 0;
+                const lbs = parseFloat(weightLbs.value) || 0;
+                hCm = ((ft * 12) + inches) * 2.54;
+                wKg = lbs * 0.45359237;
+            }
+
+            if (wKg <= 0 || hCm <= 0 || userAge <= 0) return;
+
+            // Mifflin-St Jeor Equation
+            let bmr = (10 * wKg) + (6.25 * hCm) - (5 * userAge);
+            if (userGender === 'male') {
+                bmr += 5;
+            } else {
+                bmr -= 161;
+            }
+
+            const tdee = Math.round(bmr * activityMult);
+            const lossCalories = Math.max(1200, tdee - 500);
+            const gainCalories = tdee + 300;
+
+            resBmr.textContent = `${Math.round(bmr).toLocaleString()} kcal at rest`;
+            resTdee.textContent = tdee.toLocaleString();
+            resMaintain.textContent = tdee.toLocaleString();
+            resLoss.textContent = lossCalories.toLocaleString();
+            resGain.textContent = gainCalories.toLocaleString();
+
+            // Macros for maintenance (30% Protein, 40% Carbs, 30% Fat)
+            // Protein: 4 kcal/g, Carbs: 4 kcal/g, Fat: 9 kcal/g
+            const proteinGrams = Math.round((tdee * 0.30) / 4);
+            const carbsGrams = Math.round((tdee * 0.40) / 4);
+            const fatGrams = Math.round((tdee * 0.30) / 9);
+
+            resProtein.textContent = `${proteinGrams} g`;
+            resCarbs.textContent = `${carbsGrams} g`;
+            resFats.textContent = `${fatGrams} g`;
+        }
+
+        [gender, age, heightCm, weightKg, heightFeet, heightInches, weightLbs, activity].forEach(input => {
+            if (input) {
+                input.addEventListener('input', calculateCalories);
+                input.addEventListener('change', calculateCalories);
+            }
+        });
+
+        calculateCalories();
+    </script>
+</body>
+</html>

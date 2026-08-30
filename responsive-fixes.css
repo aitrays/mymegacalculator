@@ -1,0 +1,104 @@
+/* Shared mobile layout refinements */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+img, table, pre, iframe { max-width: 100%; }
+article, section, main, .content-section { min-width: 0; overflow-wrap: anywhere; }
+article p, article li, .content-section p, .content-section li { max-width: 70ch; }
+.content-section { margin-top: 1.5rem; padding: 1.5rem; border: 1px solid #f3f4f6; border-radius: 1.25rem; background: #ffffff; box-shadow: 0 10px 24px rgba(15, 23, 42, .06); }
+.max-w-4xl > section:not([class]) { margin-top: 2.5rem; padding: 1.5rem 2rem; border: 1px solid #f3f4f6; border-radius: 1.5rem; background: #ffffff; box-shadow: 0 10px 24px rgba(15, 23, 42, .06); }
+.max-w-4xl > section:not([class]) h2 { margin-top: 0; margin-bottom: .75rem; color: #17221c; font-size: 1.5rem; line-height: 1.35; font-weight: 800; }
+.max-w-4xl > section:not([class]) h3 { margin-top: 1.25rem; margin-bottom: .5rem; color: #166534; font-size: 1.15rem; line-height: 1.45; font-weight: 800; }
+.article .content-section, article .content-section { margin-top: 1.75rem; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.content-section h2, .content-section h3 { margin-top: 0; margin-bottom: .75rem; }
+article h2:not([class]), article .content-section h2 { margin-top: 1.75rem; margin-bottom: .75rem; color: #17221c; font-size: 1.5rem; line-height: 1.35; font-weight: 800; }
+article h3:not([class]), article .content-section h3 { margin-top: 1.25rem; margin-bottom: .5rem; color: #166534; font-size: 1.15rem; line-height: 1.45; font-weight: 800; }
+article > :first-child { margin-top: 0; }
+article p + h2, article ul + h2, article table + h2 { border-top: 1px solid #e5e7eb; padding-top: 1.25rem; }
+/* Author byline — displayed normally */
+[aria-live] .grid { align-items: stretch; }
+[aria-live] .grid > div { min-width: 0; display: flex; flex-direction: column; justify-content: center; overflow-wrap: anywhere; }
+[aria-live] .grid > div > span, [aria-live] .grid > div > div { min-width: 0; overflow-wrap: anywhere; }
+.max-w-6xl.mx-auto.px-4.py-4 nav { display: flex; align-items: center; gap: .75rem; white-space: nowrap; }
+.max-w-6xl.mx-auto.px-4.py-4 nav a, .max-w-6xl.mx-auto.px-4.py-4 nav span { display: inline-flex; align-items: center; min-height: 2rem; }
+main > article + .content-section { margin-top: 0; border-top: 0; border-radius: 0 0 1.5rem 1.5rem; }
+main > article:has(+ .content-section) { margin-bottom: 0; border-radius: 1.5rem 1.5rem 0 0; box-shadow: none; }
+
+@media (max-width: 767px) {
+  header > div:first-child { min-height: 64px; padding-top: .65rem; padding-bottom: .65rem; }
+  header a span.text-2xl { font-size: 1.05rem; line-height: 1.1; }
+  header a .w-10 { width: 2.35rem; height: 2.35rem; }
+  header a .w-10 svg { width: 1.35rem; height: 1.35rem; }
+  header nav { gap: .5rem; }
+  .max-w-6xl.mx-auto.px-4.py-4 nav { gap: .45rem; font-size: .82rem; }
+  #mobileMenu { box-shadow: 0 12px 24px rgba(15, 23, 42, .08); }
+  #mobileMenu > div { padding-top: .5rem; padding-bottom: .65rem; }
+  #mobileMenu a { min-height: 2.5rem; display: flex; align-items: center; }
+  main { max-width: 100%; }
+  main > .text-center h1, main h1 { font-size: clamp(1.65rem, 8vw, 2.25rem); line-height: 1.2; overflow-wrap: anywhere; }
+  main > .text-center { margin-bottom: 1.5rem; }
+  article, main > .bg-white, main section.bg-white { padding: 1.15rem; border-radius: 1.25rem; }
+  article h2, main section h2 { font-size: 1.35rem; line-height: 1.35; }
+  article h3, main section h3 { font-size: 1.1rem; line-height: 1.4; }
+  article h2:not([class]), article .content-section h2 { margin-top: 1.5rem; font-size: 1.3rem; line-height: 1.4; }
+  article h3:not([class]), article .content-section h3 { margin-top: 1rem; font-size: 1.05rem; line-height: 1.45; }
+  article p, article li, .content-section p, .content-section li { font-size: .96rem; line-height: 1.8; }
+  .content-section { padding: 1rem; margin-top: 1.25rem; }
+  .max-w-4xl > section:not([class]) { margin-top: 1.25rem; padding: 1.15rem; border-radius: 1.25rem; }
+  .article .content-section, article .content-section { padding: 0; margin-top: 1.5rem; }
+  table { display: block; overflow-x: auto; white-space: normal; }
+  .grid { min-width: 0; }
+}
+
+/* English fixed header + country bar */
+.mmc-header { position: sticky; top: 0; z-index: 1000; }
+.mmc-header .mmc-logo-icon { width: 40px !important; height: 40px !important; flex: 0 0 40px; }
+.mmc-header .mmc-logo-icon svg { width: 24px !important; height: 24px !important; max-width: none; }
+.mmc-country-bar { width: 100%; }
+.mmc-country-bar > div { scrollbar-width: thin; }
+.mmc-country-pill { flex: 0 0 auto; min-width: 150px; height: 52px; padding: 0 22px; border: 1px solid #e5e7eb; border-radius: 18px; display: inline-flex; align-items: center; justify-content: center; gap: .35rem; background: #fff; color: #1f2937; font-weight: 700; text-decoration: none; white-space: nowrap; box-shadow: 0 2px 8px rgba(15,23,42,.03); transition: .2s ease; }
+.mmc-country-pill:hover { border-color: #bbf7d0; background: #f0fdf4; color: #166534; }
+.mmc-country-pill span { font-weight: 600; color: #6b7280; }
+.mmc-country-pill.mmc-country-all { background: #15803d; color: #fff; border-color: #15803d; }
+.mmc-country-pill.mmc-country-all:hover { background: #166534; color: #fff; }
+@media (max-width: 767px) { .mmc-header > div:first-child { min-height: 64px; } .mmc-header .text-2xl { font-size: 1.05rem; line-height: 1.1; } .mmc-country-bar > div { padding-top: .65rem; padding-bottom: .65rem; } .mmc-country-pill { min-width: 132px; height: 46px; padding: 0 15px; border-radius: 15px; font-size: .88rem; } }
+
+/* English country slider — modeled on the stable Arabic country strip */
+.mmc-header{position:sticky;top:0;z-index:1000;}
+.mmc-header-main{min-height:72px;}
+.mmc-country-bar{position:relative;background:#fff;}
+.mmc-country-slider-wrap{position:relative;display:flex;align-items:center;gap:10px;padding-top:10px;padding-bottom:10px;}
+.mmc-country-slider{display:flex;align-items:center;gap:12px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;flex:1;min-width:0;padding:2px 4px;}
+.mmc-country-slider::-webkit-scrollbar{display:none;}
+.mmc-country-pill{flex:0 0 auto;min-width:154px;height:54px;padding:0 22px;border:1px solid #e5e7eb;border-radius:18px;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:#fff;color:#1f2937;font-weight:800;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(15,23,42,.035);transition:.2s ease;}
+.mmc-country-pill:hover{border-color:#bbf7d0;background:#f0fdf4;color:#166534;transform:translateY(-1px);}
+.mmc-country-pill span{font-weight:700;color:#6b7280;}
+.mmc-country-pill.mmc-country-all{background:#15803d;color:#fff;border-color:#15803d;}
+.mmc-country-pill.mmc-country-all:hover{background:#166534;color:#fff;}
+.mmc-country-nav{width:34px;height:34px;flex:0 0 34px;border:1px solid #e5e7eb;border-radius:50%;background:#fff;color:#15803d;font-size:24px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(15,23,42,.05);}
+.mmc-country-nav:hover{background:#f0fdf4;border-color:#bbf7d0;}
+@media(max-width:767px){.mmc-header-main{min-height:64px;}.mmc-country-slider-wrap{padding-top:8px;padding-bottom:8px;gap:6px;}.mmc-country-pill{min-width:132px;height:46px;padding:0 15px;border-radius:15px;font-size:.88rem;}.mmc-country-nav{width:30px;height:30px;flex-basis:30px;font-size:21px;}.mmc-country-slider{gap:8px;}}
+
+
+/* Calculator cards are fully clickable: clicking anywhere on the card opens the calculator. */
+.mmc-tool-card[data-calculator-card], article[data-calculator-card]{cursor:pointer;}
+.mmc-tool-card[data-calculator-card]:focus-visible, article[data-calculator-card]:focus-visible{outline:3px solid #86efac;outline-offset:3px;}
+
+/* V7: hard-stop oversized header logos, including blog pages. */
+.mmc-header .mmc-logo-icon{
+  width:40px !important; height:40px !important; min-width:40px !important; min-height:40px !important;
+  max-width:40px !important; max-height:40px !important; flex:0 0 40px !important;
+  display:flex !important; align-items:center !important; justify-content:center !important;
+  overflow:hidden !important;
+}
+.mmc-header .mmc-logo-icon svg{
+  width:24px !important; height:24px !important; min-width:24px !important; min-height:24px !important;
+  max-width:24px !important; max-height:24px !important; display:block !important;
+}
+.mmc-header > div:first-child > a[aria-label="MyMegaCalculator home"]{
+  max-width:100%;
+}
+
+/* V7: country calculator cards are full-card interactive targets. */
+[data-calculator-card][data-calculator-url]{ cursor:pointer !important; }
+[data-calculator-card][data-calculator-url]:hover{ transform:translateY(-3px); box-shadow:0 14px 30px rgba(17,24,39,.08); }
+[data-calculator-card][data-calculator-url]:focus-visible{ outline:3px solid #86efac; outline-offset:3px; }
