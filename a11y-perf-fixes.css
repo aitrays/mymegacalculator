@@ -6,6 +6,32 @@
  * Loaded AFTER english-bundle.css so specificity overrides work cleanly.
  */
 
+/* ─── 0. Sticky Header ──────────────────────────────────────────────────── */
+
+/*
+ * Reinforce sticky positioning on the main header.
+ * english-bundle.css + Tailwind already set this, but we
+ * make it explicit here for reliability and to match /ar/.
+ */
+.mmc-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/*
+ * Mobile dropdown menu: sits inside the sticky header,
+ * so it scrolls with it. Ensure it's above other content.
+ */
+#mobileMenu {
+  position: relative;
+  z-index: 1000;
+  background: #ffffff;
+}
+
 /* ─── 1. Color-Contrast Fixes ────────────────────────────────────────────── */
 
 /*
