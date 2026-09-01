@@ -483,3 +483,10 @@ img {
   border-radius: 10px !important;
   background-color: #f8fafc !important;
 }
+
+/* --- 8. Logo Header Scaling ------------------------------ */
+.mmc-header img[src*="logo.svg"] {
+  height: auto !important;
+  max-width: 250px !important;
+  width: 100% !important;
+}
