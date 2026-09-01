@@ -452,3 +452,34 @@ img {
     padding: 20px;
   }
 }
+
+/* --- 6. Unified Icon Containers & Aspect Ratios ------------------------------ */
+.mmc-category-icon, .mmc-tool-icon {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #ecfdf5 !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.mmc-category-icon img, .mmc-tool-icon img {
+  padding: 8px !important;
+  object-fit: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* --- 7. Blog & Card Thumbnail Standardization ------------------------------ */
+.mmc-blog-thumbnail {
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+  background-color: #f8fafc !important;
+}
