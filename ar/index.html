@@ -217,14 +217,22 @@
     background:rgba(255,255,255,.98);
     border-bottom:1px solid #e5e7eb;
   }
+  /* Skeleton min-heights for CLS prevention */
+  .mmc-country-strip { min-height: 52px; contain: layout style; }
+  .mmc-home-slider { min-height: 340px; contain: layout style; }
+  .mmc-slider-track { min-height: 300px; }
+  @media (max-width: 760px) { .mmc-home-slider { min-height: 400px; } }
   /* Images: height:auto prevents aspect-ratio CLS while loading */
   img{height:auto;max-width:100%}
 </style>
 
 
 <!-- Preload main stylesheet — browser fetches it at highest priority -->
-<link rel="preload" href="/ar/arabic-bundle.css?v=12" as="style">
-<link rel="stylesheet" href="/ar/arabic-bundle.css?v=12">
+<link rel="stylesheet"
+      href="/ar/arabic-bundle.css?v=12"
+      media="print"
+      onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/ar/arabic-bundle.css?v=12"></noscript>
 
 <!--
   Non-critical CSS loaded asynchronously via media="print" trick.
@@ -266,8 +274,8 @@
 <!-- Arabic homepage slider -->
 <section class="mmc-home-slider" aria-label="أبرز أدوات MyMegaCalculator" aria-roledescription="عرض شرائح"><div class="mmc-slider-track">
 <article class="mmc-slide is-active" aria-label="الشريحة 1: أدوات يومية" aria-hidden="false"><div><span class="mmc-slide-badge">🧮 أدوات يومية</span><h1>حاسبات مجانية، واضحة وسريعة</h1><p>احسب النسب والقروض والعمر والصحة والمساحات والتحويلات من مكان واحد.</p><a href="/ar/percentage-calculator.html" aria-label="افتح حاسبة النسبة المئوية">ابدأ الحساب الآن ←</a></div><div class="mmc-slide-art" aria-hidden="true">%</div></article>
-<article class="mmc-slide" aria-label="الشريحة 2: حاسبات محلية" aria-hidden="true"><div><span class="mmc-slide-badge">🌍 حاسبات محلية</span><h1>اختر الدولة وشوف الحاسبات المناسبة</h1><p>الوصول السريع إلى الأدوات المرتبطة بالمغرب والسعودية والإمارات وقطر والبحرين وعُمان.</p><a href="/ar/countries/index.html" aria-label="تصفح الحاسبات حسب الدولة">تصفح الدول ←</a></div><div class="mmc-slide-art" aria-hidden="true">🌍</div></article>
-<article class="mmc-slide"><div><span class="mmc-slide-badge">📚 أدلة عربية</span><h1>شرح ومحتوى يساعدك تفهم النتيجة</h1><p>كل حاسبة مصممة لتعرض طريقة الاستخدام والأمثلة والملاحظات المهمة بشكل بسيط.</p><a href="/ar/blog.html">تصفح المدونة ←</a></div><div class="mmc-slide-art">📖</div></article>
+<article class="mmc-slide" aria-label="الشريحة 2: حاسبات محلية" aria-hidden="true"><div><span class="mmc-slide-badge">🌍 حاسبات محلية</span><h2>اختر الدولة وشوف الحاسبات المناسبة</h2><p>الوصول السريع إلى الأدوات المرتبطة بالمغرب والسعودية والإمارات وقطر والبحرين وعُمان.</p><a href="/ar/countries/index.html" aria-label="تصفح الحاسبات حسب الدولة">تصفح الدول ←</a></div><div class="mmc-slide-art" aria-hidden="true">🌍</div></article>
+<article class="mmc-slide" aria-label="الشريحة 3: أدلة عربية" aria-hidden="true"><div><span class="mmc-slide-badge">📚 أدلة عربية</span><h2>شرح ومحتوى يساعدك تفهم النتيجة</h2><p>كل حاسبة مصممة لتعرض طريقة الاستخدام والأمثلة والملاحظات المهمة بشكل بسيط.</p><a href="/ar/blog.html" aria-label="تصفح المدونة العربية">تصفح المدونة ←</a></div><div class="mmc-slide-art" aria-hidden="true">📖</div></article>
 </div><div class="mmc-slider-dots" role="tablist"><button class="active" aria-label="عرض الشريحة 1" role="tab" aria-selected="true"></button><button aria-label="عرض الشريحة 2" role="tab" aria-selected="false"></button><button aria-label="عرض الشريحة 3" role="tab" aria-selected="false"></button></div></section>
 <!-- Category navigation -->
 <section aria-labelledby="category-heading" class="max-w-6xl mx-auto px-4 pt-2 pb-8 mmc-v14-home-category" style="display:none">
@@ -277,7 +285,7 @@
 </div>
 <div><h2>المال والتمويل</h2><p>حاسبات القروض والنسب والحسابات المالية.</p></div><span class="mmc-category-arrow">←</span></a><a class="mmc-category-card" href="/ar/categories/health.html"><div class="mmc-category-icon">❤️</div><div><h2>الصحة واللياقة</h2><p>حاسبات مؤشر كتلة الجسم والسعرات وغيرها.</p></div><span class="mmc-category-arrow">←</span></a><a class="mmc-category-card" href="/ar/categories/date-age.html"><div class="mmc-category-icon">📅</div><div><h2>العمر والتاريخ</h2><p>أدوات دقيقة لحساب العمر والتواريخ.</p></div><span class="mmc-category-arrow">←</span></a><a class="mmc-category-card" href="/ar/categories/math.html"><div class="mmc-category-icon">➗</div><div><h2>الرياضيات</h2><p>حاسبات سريعة للنسب والحسابات اليومية.</p></div><span class="mmc-category-arrow">←</span></a><a class="mmc-category-card" href="/ar/categories/home-construction.html"><div class="mmc-category-icon">🏠</div><div><h2>المنزل والبناء</h2><p>حاسبات المساحة والدهان والبلاط والقياسات.</p></div><span class="mmc-category-arrow">←</span></a><a class="mmc-category-card" href="/ar/categories/conversions.html"><div class="mmc-category-icon">🔄</div><div><h2>تحويل الوحدات</h2><p>أدوات لتحويل الأوزان والقياسات.</p></div><span class="mmc-category-arrow">←</span></a></div>
 </section>
-<section class="mmc-v14-hero mmc-v14-home-showcase"><div class="mmc-v14-hero-inner"><div><h1>حاسبات مجانية لكل ما تحتاجه</h1><p>اختر نوع الحاسبة أو انتقل مباشرة إلى الأداة التي تحتاجها. الحسابات سريعة، واضحة، ومصممة للاستخدام اليومي.</p></div></div></section>
+<section class="mmc-v14-hero mmc-v14-home-showcase"><div class="mmc-v14-hero-inner"><div><h2>حاسبات مجانية لكل ما تحتاجه</h2><p>اختر نوع الحاسبة أو انتقل مباشرة إلى الأداة التي تحتاجها. الحسابات سريعة، واضحة، ومصممة للاستخدام اليومي.</p></div></div></section>
 <section class="mmc-v14-layout"><div class="mmc-v14-content"><div class="mmc-v14-grid"><a class="mmc-v14-card" href="/ar/tile-calculator.html"><span class="mmc-v14-card-icon">📐</span><h2>حاسبة البلاط</h2><p>احسب كمية البلاط المطلوبة مع هامش الهدر.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/square-footage-calculator.html"><span class="mmc-v14-card-icon">📏</span><h2>حاسبة المساحة بالقدم المربع</h2><p>احسب مساحة الأسطح بسرعة للمشاريع المنزلية.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/paint-calculator.html"><span class="mmc-v14-card-icon">🎨</span><h2>حاسبة الدهان</h2><p>قدّر كمية الطلاء اللازمة للجدران والأسقف.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/bmi-calculator.html"><span class="mmc-v14-card-icon">❤️</span><h2>حاسبة كتلة الجسم BMI</h2><p>احسب مؤشر كتلة الجسم مع تفسير مبسط.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/calorie-calculator.html"><span class="mmc-v14-card-icon">🔥</span><h2>حاسبة السعرات الحرارية</h2><p>قدّر احتياجك اليومي من السعرات.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/age-calculator.html"><span class="mmc-v14-card-icon">📅</span><h2>حاسبة العمر</h2><p>احسب العمر بدقة بالأيام والأشهر والسنوات.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/loan-calculator.html"><span class="mmc-v14-card-icon">💳</span><h2>حاسبة القروض</h2><p>احسب القسط الشهري وإجمالي الفائدة.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/percentage-calculator.html"><span class="mmc-v14-card-icon">%</span><h2>حاسبة النسبة المئوية</h2><p>احسب الزيادات والنقصان والنسب بسهولة.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/weight-converter.html"><span class="mmc-v14-card-icon">⚖️</span><h2>محول الوزن</h2><p>حوّل بين الكيلوغرام والرطل والوحدات الشائعة.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a><a class="mmc-v14-card" href="/ar/feet-and-inches-calculator.html"><span class="mmc-v14-card-icon">📏</span><h2>محول القدم والبوصة</h2><p>حوّل القياسات بين القدم والبوصة والسنتيمتر.</p><span class="mmc-v14-card-action">ابدأ الحساب ←</span></a></div></div></section>
 <div class="mmc-v14-old-home-grid" style="display:none"> <!-- الحاسبات Grid Section -->
 <main class="max-w-6xl mx-auto px-4 py-8 w-full">
