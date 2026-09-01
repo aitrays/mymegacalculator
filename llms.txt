@@ -49,7 +49,7 @@ All calculator tools and blog content are original, manually created by the foun
 - Feet and Inches Calculator (AR): https://mymegacalculator.com/ar/feet-and-inches-calculator
 
 ## Author
-Alex Morgan — full-stack software engineer and founder. Background in Computer Science (Human-Computer Interaction), former Senior Frontend Engineer at an ed-tech platform, and certified in Web Accessibility (WCAG 2.1 AA).
+MyMegaCalculator Team — dedicated to creating accurate, practical, and easy-to-use online calculators.
 
 ## Contact
 https://mymegacalculator.com/contact
