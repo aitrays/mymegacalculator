@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4399808216500182" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4399808216500182" crossorigin="anonymous">
+const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc + str + (values[i] !== undefined ? String(values[i]).replace(/[&<>'"]/g, tag => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'}[tag])) : ''), '');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -101,7 +103,7 @@
                 <a href="/ar/" class="text-green-600 font-bold">الحاسبات</a>
                 <a href="/ar/blog" class="hover:text-green-600 transition">المدونة</a>
                 <div class="flex items-center gap-2 text-xs">
-                    <a href="/inheritance-calculator" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
+                    <a href="/" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">EN</a>
                     <span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">AR</span>
                 </div>
             </nav>
@@ -287,7 +289,7 @@
         deceasedGender.addEventListener('change', () => {
             if(deceasedGender.value === 'male') {
                 spouseLabel.textContent = 'الزوجة (الزوجات)';
-                spouseCount.innerHTML = `
+                spouseCount.innerHTML = sanitizeHTML`
                     <option value="0">لا يوجد</option>
                     <option value="1" selected>1 (زوجة واحدة)</option>
                     <option value="2">2 (زوجتان)</option>
@@ -296,7 +298,7 @@
                 `;
             } else {
                 spouseLabel.textContent = 'الزوج';
-                spouseCount.innerHTML = `
+                spouseCount.innerHTML = sanitizeHTML`
                     <option value="0">لا يوجد</option>
                     <option value="1" selected>نعم (الزوج موجود)</option>
                 `;
@@ -411,7 +413,7 @@
             // Render Results
             const resultsBox = document.getElementById('resultsBox');
             const content = document.getElementById('resultsContent');
-            content.innerHTML = '';
+            content.textContent = '';
             
             shares.forEach(s => {
                 let amount = estate * s.fraction;
