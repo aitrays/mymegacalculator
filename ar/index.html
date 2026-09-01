@@ -187,56 +187,40 @@
 
 <!--
   CRITICAL INLINE CSS — applied before any external stylesheet loads.
-  Prevents:
-    • FOUC (flash of unstyled content) while arabic-bundle.css fetches
-    • CLS from header height changing on load
-    • Text invisibility (no font-family fallback)
-  Mirrors only the above-the-fold layout rules from arabic-bundle.css.
+  Minimal rules only: direction, font-family fallback, header skeleton.
+  Does NOT set display:none on any element (breaks JS toggles).
+  Does NOT override layout dimensions (lets arabic-bundle.css control layout).
 -->
 <style>
-  /* Direction & base */
+  /* Box-sizing reset — prevents width overflow on mobile */
   *,*::before,*::after{box-sizing:border-box}
-  html{direction:rtl;overflow-x:hidden;scroll-behavior:smooth}
+  /* RTL direction + overflow guard */
+  html{direction:rtl;overflow-x:hidden}
+  /* Body: font-family fallback so text renders immediately with system fonts
+     before Noto Sans Arabic loads asynchronously.
+     padding-top reserves space for fixed header (76px) + country strip (~50px). */
   body{
     direction:rtl;
     margin:0;
     overflow-x:hidden;
     background:#f8fafc;
     color:#111827;
-    /* Fallback font stack renders immediately; Noto Arabic replaces it async */
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Cairo",Tahoma,Arial,sans-serif;
     line-height:1.9;
-    /* Reserve space for fixed header (76px) + country strip (~50px) */
     padding-top:126px;
   }
-  /* Fixed header skeleton — prevents layout shift when real CSS arrives */
+  /* Fixed header skeleton — reserves the 76px strip at top before CSS loads,
+     preventing the page content from jumping down when the header becomes fixed */
   header.mmc-fixed-header{
     position:fixed;top:0;left:0;right:0;width:100%;
     height:76px;z-index:1000;
     background:rgba(255,255,255,.98);
     border-bottom:1px solid #e5e7eb;
   }
-  header.mmc-fixed-header .max-w-6xl{
-    max-width:1320px;margin:0 auto;padding:0 16px;
-    height:76px;display:flex;align-items:center;justify-content:space-between;
-  }
-  /* Country strip placeholder */
-  .mmc-country-strip{
-    position:fixed;top:76px;left:0;right:0;width:100%;
-    z-index:999;background:rgba(255,255,255,.97);
-    border-bottom:1px solid #dfe9e3;height:50px;
-  }
-  /* Prevent mobile menu from flashing visible */
-  #mobileMenu{display:none}
-  /* Ensure images don't cause CLS */
+  /* Images: height:auto prevents aspect-ratio CLS while loading */
   img{height:auto;max-width:100%}
-  /* Logo icon dimensions to prevent CLS */
-  .mmc-fixed-header a>div:first-child{
-    width:40px;height:40px;min-width:40px;flex:0 0 40px;
-    border-radius:12px;display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(to top right,#16a34a,#34d399);
-  }
 </style>
+
 
 <!-- Preload main stylesheet — browser fetches it at highest priority -->
 <link rel="preload" href="/ar/arabic-bundle.css?v=12" as="style">
