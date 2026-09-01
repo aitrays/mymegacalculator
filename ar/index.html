@@ -198,7 +198,7 @@
   html{direction:rtl;overflow-x:hidden}
   /* Body: font-family fallback so text renders immediately with system fonts
      before Noto Sans Arabic loads asynchronously.
-     padding-top reserves space for fixed header (76px) + country strip (~50px). */
+     padding-top reserves space for fixed header (76px). Country strip is in-flow. */
   body{
     direction:rtl;
     margin:0;
@@ -207,7 +207,7 @@
     color:#111827;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Cairo",Tahoma,Arial,sans-serif;
     line-height:1.9;
-    padding-top:126px;
+    padding-top:76px;
   }
   /* Fixed header skeleton — reserves the 76px strip at top before CSS loads,
      preventing the page content from jumping down when the header becomes fixed */

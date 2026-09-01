@@ -12,6 +12,39 @@
  * Direction: RTL (dir="rtl")
  */
 
+/* ─── 0. Country Pills Bar — Static (scrolls away with page) ────────────── */
+
+/*
+ * Override fixed/sticky positioning from arabic-bundle.css so the country
+ * selector bar stays in normal document flow and scrolls away naturally.
+ * Body padding-top reduced because the strip no longer occupies fixed space.
+ */
+.mmc-country-strip {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  z-index: auto !important;
+  /* Keep visual styling */
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #dfe9e3;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+}
+
+body {
+  /* Header is 76px fixed; strip is now in-flow, no extra padding needed */
+  padding-top: 76px !important;
+}
+
+@media (max-width: 760px) {
+  body {
+    /* Header is 64px on mobile; strip scrolls away */
+    padding-top: 64px !important;
+  }
+}
+
 /* ─── 1. Color-Contrast Fixes (WCAG 2.1 AA — min 4.5:1 normal text) ─────── */
 
 /*
