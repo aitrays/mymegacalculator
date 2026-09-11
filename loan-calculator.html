@@ -143,7 +143,7 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
       <img src="/images/logo.svg" alt="MyMegaCalculator Logo" width="187" height="40" class="h-10 w-auto" loading="eager" decoding="sync">
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-600" aria-label="Primary navigation">
-      <a href="/" class="text-green-600 font-bold">Calculators</a><a href="/categories/" class="hover:text-green-600 transition">Categories</a><a href="/countries/" class="hover:text-green-600 transition">Countries 🌐</a><a href="/blog/" class="hover:text-green-600 transition">Blog</a>
+      <a href="/" class="text-green-600 font-bold">Calculators</a><a href="/categories/" class="hover:text-green-600 transition">Categories</a><a href="/countries/" class="hover:text-green-600 transition">Countries 🌐</a><a href="/blog" class="hover:text-green-600 transition">Blog</a>
       <div class="flex items-center gap-2 text-xs"><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50">EN</span><a href="/ar/" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition">AR</a></div>
     </nav>
     <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
@@ -161,7 +161,7 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
       <button class="mmc-country-nav mmc-country-next" type="button" aria-label="Next countries">›</button>
     </div>
   </div>
-  <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white"><div class="px-4 py-3 space-y-2"><a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a><a href="/categories/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Categories</a><a href="/countries/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Countries 🌐</a><a href="/blog/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a><div class="flex items-center gap-2 px-3 py-2"><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span><a href="/ar/" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a></div></div></div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white"><div class="px-4 py-3 space-y-2"><a href="/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-green-600 font-semibold text-sm">Calculators</a><a href="/categories/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Categories</a><a href="/countries/" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Countries 🌐</a><a href="/blog" class="block px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-600 font-semibold text-sm">Blog</a><div class="flex items-center gap-2 px-3 py-2"><span class="text-green-600 font-bold px-2 py-1 rounded-lg bg-green-50 text-xs">EN</span><a href="/ar/" lang="ar" hreflang="ar" class="px-2 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-green-100 hover:text-green-600 transition text-xs">AR</a></div></div></div>
 </header>
 <script>
 (function(){
@@ -389,37 +389,12 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
             <p>Compare the same principal, term, payment frequency, and fees across offers. Request an amortization schedule to see how much of each payment reduces principal. A lower payment is not automatically cheaper, and a small rate difference can matter over many payments. Confirm the official APR and total cost before signing any agreement.</p>
         </section>
         <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
-            <h2 class="text-2xl font-bold text-gray-900">Understanding the Loan Estimate</h2>
-            <p>For a fixed-rate installment loan, the periodic payment formula is M = P × [r(1+r)^n] ÷ [(1+r)^n − 1]. P is the principal, r is the periodic interest rate, and n is the number of payments. Convert an annual percentage rate to a monthly rate by dividing by 12 only when the lender’s terms use monthly compounding. A quoted APR can include fees, so compare the full disclosure rather than payment alone.</p>
-            <h3 class="text-xl font-bold text-gray-900">Worked example</h3>
-            <p>For $10,000 at 6% annual interest over 36 monthly payments, use r = 0.06 ÷ 12 = 0.005 and n = 36. The payment is approximately $304.22 before taxes, insurance, or lender fees. Total scheduled payments are about $10,951.92, so estimated interest is about $951.92. A small rounding difference is normal because lenders round each payment to cents.</p>
-            <h2 class="text-2xl font-bold text-gray-900">What the Calculator Does Not Include</h2>
-            <p>Origination charges, late fees, insurance, property taxes, balloon payments, variable rates, and early repayment rules can change the real cost. Check whether extra payments reduce principal immediately and whether the lender charges a prepayment penalty. Never use an estimated payment as proof that a loan is affordable; leave room for emergencies and changing income.</p>
-            <h3 class="text-xl font-bold text-gray-900">FAQs and links</h3>
-            <p><strong>Why does a longer term cost more?</strong> It usually lowers each payment but gives interest more time to accrue. <strong>Can I compare two rates?</strong> Keep principal, term, and compounding consistent. <strong>What if I have an irregular payment?</strong> Ask the lender for an amortization schedule. For a percentage check, use the <a href="/percentage-calculator" class="text-green-600 font-semibold hover:underline">percentage calculator</a>, and read the <a href="/blog-loan-calculator-guide" class="text-green-600 font-semibold hover:underline">loan guide</a> before making a decision.</p>
-        </section>
-        <section class="mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm space-y-5">
             <h2 class="text-2xl font-bold text-gray-900">Comparing Loan Scenarios</h2>
             <p>Change one input at a time to see its effect. A higher down payment lowers principal, while a shorter term usually raises the monthly payment and lowers total interest. Compare the total of scheduled payments, fees, and required insurance. A variable-rate result is only a snapshot because the rate can change later.</p>
             <h3 class="text-xl font-bold text-gray-900">Amortization check</h3>
             <p>Early payments often contain more interest because the outstanding principal is largest. Each payment reduces interest slightly as principal falls. Request a lender amortization schedule and compare its first, middle, and final rows with your estimate. Do not assume an extra payment changes the term unless the lender applies it to principal.</p>
         </section>
         <section><h2 class="text-2xl font-bold text-gray-900">Affordability Check</h2><p>Compare the estimated payment with reliable monthly income and leave room for utilities, maintenance, insurance, savings, and emergencies. A lender’s approval is not the same as a comfortable budget. Ask whether the rate is fixed, when the first payment is due, and what happens after a missed payment.</p><h3 class="text-xl font-bold text-gray-900">Document the assumptions</h3><p>Write down principal, rate, term, payment frequency, fees, and the date of the estimate. This makes two offers comparable and explains why a later quote may differ.</p></section>
-        <section class="content-section calculator-guide">
-            <h2>Understanding your loan estimate</h2>
-            <p>A loan payment depends on principal, interest rate, number of payments, and payment timing. This calculator assumes a fixed rate with regular monthly payments unless the page says otherwise. It is an estimate for planning, not a lending offer; origination fees, insurance, taxes, late fees, and variable-rate changes may alter the real cost.</p>
-            <h3>Payment formula</h3>
-            <p>For a standard amortizing loan, the monthly payment is <strong>P times r times (1 + r) to the power n, divided by ((1 + r) to the power n minus 1)</strong>. Here P is the amount borrowed, r is the annual percentage rate divided by 12, and n is the number of monthly payments. For example, borrowing $20,000 for 5 years at 6% gives r = 0.005 and a payment of about $386.66, before any additional fees. Total interest is the payment multiplied by n, minus P.</p>
-            <h3>Steps for comparing options</h3>
-            <ol>
-                <li>Enter only the amount you actually plan to borrow, excluding a down payment.</li>
-                <li>Use the annual rate, then check whether the lender quotes APR or only nominal interest.</li>
-                <li>Compare both the monthly payment and the total interest over the full term.</li>
-                <li>Test a shorter term or an extra-payment scenario only if the budget can support it.</li>
-            </ol>
-            <h3>What can make the result misleading?</h3>
-            <p>Rounding the rate, confusing months with years, or entering a loan balance instead of the original principal can produce a wrong comparison. A lower payment may simply reflect a longer term and more total interest. Promotional rates can expire, and an early payoff may have a penalty. <strong>Does paying extra always help?</strong> It usually reduces interest on a simple amortizing loan, but verify the lender's principal-allocation rules. <strong>Why is a lender quote different?</strong> Fees, daily interest, payment dates, and insurance can explain the difference. For a related household estimate, use the <a href="/percentage-calculator">percentage calculator</a>.</p>
-        </section>
     <section class="max-w-4xl mx-auto px-4 pb-16 mmc-seo-faq"><article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-7"><h2 class="text-2xl sm:text-3xl font-extrabold">Frequently Asked Questions</h2><div class="mt-6 space-y-6"><div><h3 class="font-bold text-lg">What does the loan calculator show?</h3><p class="text-gray-600 mt-2">It estimates scheduled payments and the total repayment from the principal, rate, and term inputs.</p></div><div><h3 class="font-bold text-lg">Does it include every loan fee?</h3><p class="text-gray-600 mt-2">Only fees represented by the calculator inputs are included; lender-specific charges may be separate.</p></div><div><h3 class="font-bold text-lg">Why does the payment change when the term changes?</h3><p class="text-gray-600 mt-2">A longer term usually spreads repayment over more periods, which can lower the scheduled payment while increasing total interest.</p></div><div><h3 class="font-bold text-lg">Is this an offer from a lender?</h3><p class="text-gray-600 mt-2">No. It is an independent estimate and not a lending offer or approval.</p></div></div></article></section></main>
 
     <!-- Footer -->
@@ -520,7 +495,19 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
             const annualRate = parseFloat(interestRate.value) || 0;
             const years = parseFloat(loanTermYears.value) || 0;
 
-            if (principal <= 0 || years <= 0) return;
+            if (principal <= 0 || years <= 0) {
+                resMonthlyPayment.textContent = '—';
+                resTotalPaymentsCount.textContent = 'Enter a loan amount and a term greater than zero';
+                resPrincipal.textContent = '—';
+                resTotalInterest.textContent = '—';
+                resTotalCost.textContent = '—';
+                resPrincipalPct.textContent = '0%';
+                resInterestPct.textContent = '0%';
+                barPrincipal.style.width = '0%';
+                barInterest.style.width = '0%';
+                amortTableBody.textContent = '';
+                return;
+            }
 
             const totalMonths = Math.round(years * 12);
             resTotalPaymentsCount.textContent = `${totalMonths} monthly payments`;

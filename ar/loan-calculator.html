@@ -14,7 +14,7 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
 <meta content="حاسبة القروض والتمويل المجانية. احسب القسط الشهري، إجمالي الفوائد، وإجمالي المبلغ المستحق مع جدول استهلاك القرض السنوي. مجانية 100% وبدون تسجيل." name="description"/>
 <meta content="حاسبة القروض, حاسبة التمويل العقاري, حساب القسط الشهري, حاسبة الفائدة, جدول استهلاك القرض, حاسبة قرض السيارة, حساب الفوائد البنكية" name="keywords"/>
 <meta content="Alex Morgan - MyMegaCalculator" name="author"/>
-<link href="https://mymegacalculator.com/ar/loan-calculator.html" rel="canonical"/>
+<link href="https://mymegacalculator.com/ar/loan-calculator" rel="canonical"/>
 <link href="https://mymegacalculator.com/sitemap.xml" rel="sitemap" type="application/xml"/>
 
 <!-- Open Graph -->
@@ -122,7 +122,7 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
 
 
 <link href="https://mymegacalculator.com/loan-calculator" hreflang="en" rel="alternate"/>
-<link href="https://mymegacalculator.com/ar/loan-calculator.html" hreflang="ar" rel="alternate"/>
+<link href="https://mymegacalculator.com/ar/loan-calculator" hreflang="ar" rel="alternate"/>
 <link href="https://mymegacalculator.com/loan-calculator" hreflang="x-default" rel="alternate"/>
 
 </link>
@@ -132,10 +132,10 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
 <link rel="stylesheet" href="/ar/arabic-bundle.css?v=12">
 
 <meta name="description" content="Free online calculator: حاسبة القروض والتمويل العقاري - احسب القسط الشهري والفوائد | MyMegaCalculator">
-<link rel="canonical" href="https://mymegacalculator.com/ar/loan-calculator.html">
+
 <meta property="og:title" content="حاسبة القروض والتمويل العقاري - احسب القسط الشهري والفوائد | MyMegaCalculator">
 <meta property="og:description" content="Free online calculator on MyMegaCalculator.">
-<meta property="og:url" content="https://mymegacalculator.com/ar/loan-calculator.html">
+<meta property="og:url" content="https://mymegacalculator.com/ar/loan-calculator">
 <meta property="og:type" content="website">
 
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
@@ -438,7 +438,19 @@ const sanitizeHTML = (strings, ...values) => strings.reduce((acc, str, i) => acc
             const annualRate = parseFloat(interestRate.value) || 0;
             const years = parseFloat(loanTermYears.value) || 0;
 
-            if (principal <= 0 || years <= 0) return;
+            if (principal <= 0 || years <= 0) {
+                resMonthlyPayment.textContent = '—';
+                resTotalPaymentsCount.textContent = 'أدخل مبلغ قرض ومدة أكبر من صفر';
+                resPrincipal.textContent = '—';
+                resTotalInterest.textContent = '—';
+                resTotalCost.textContent = '—';
+                resPrincipalPct.textContent = '0%';
+                resInterestPct.textContent = '0%';
+                barPrincipal.style.width = '0%';
+                barInterest.style.width = '0%';
+                amortTableBody.textContent = '';
+                return;
+            }
 
             const totalMonths = Math.round(years * 12);
             resTotalPaymentsCount.textContent = `${totalMonths} قسط شهري`;

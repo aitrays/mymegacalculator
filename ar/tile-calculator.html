@@ -11,10 +11,10 @@
 
 
 <link href="https://mymegacalculator.com/tile-calculator" hreflang="en" rel="alternate"/>
-<link href="https://mymegacalculator.com/ar/tile-calculator.html" hreflang="ar" rel="alternate"/>
+<link href="https://mymegacalculator.com/ar/tile-calculator" hreflang="ar" rel="alternate"/>
 <link href="https://mymegacalculator.com/tile-calculator" hreflang="x-default" rel="alternate">
 
-<link href="https://mymegacalculator.com/ar/tile-calculator.html" rel="canonical"/>
+<link href="https://mymegacalculator.com/ar/tile-calculator" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="https://mymegacalculator.com/ar/tile-calculator" property="og:url"/>
 <meta content="حاسبة البلاط - احسب الكمية والتكلفة | MyMegaCalculator" property="og:title"/>
@@ -31,10 +31,10 @@
 <link rel="stylesheet" href="/ar/arabic-bundle.css?v=12">
 
 <meta name="description" content="احسب كمية الزليج والسيراميك المطلوبة لأرضيات وجدران منزلك بدقة. حساب الأمتار المربعة، نسبة الهدر (Wastage)، وعدد الكراتين والتكلفة الإجمالية فوراً.">
-<link rel="canonical" href="https://mymegacalculator.com/ar/tile-calculator.html">
+
 <meta property="og:title" content="حاسبة الزليج والسيراميك | احسب كمية وتكلفة البلاط والكراتين بدقة — MyMegaCalculator">
 <meta property="og:description" content="احسب كمية الزليج والسيراميك المطلوبة لأرضيات وجدران منزلك بدقة. حساب الأمتار المربعة، نسبة الهدر (Wastage)، وعدد الكراتين والتكلفة الإجمالية فوراً.">
-<meta property="og:url" content="https://mymegacalculator.com/ar/tile-calculator.html">
+<meta property="og:url" content="https://mymegacalculator.com/ar/tile-calculator">
 <meta property="og:type" content="website">
 
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
@@ -320,7 +320,7 @@
             let tileWithWaste = exactTiles * (1 + (waste / 100));
 
             tileResult.textContent = Math.ceil(exactTiles);
-            tileWithWasteResult.textContent = Math.ceil(tileWithWaste);
+            tileWithWasteResult.textContent = Math.ceil(Number(tileWithWaste.toFixed(10)));
         }
 
         roomLength.addEventListener('input', calculate);
