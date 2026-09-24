@@ -33,6 +33,11 @@ RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
 # -----------------------------------------------
 # Clean URLs - serve .html without extension
 # -----------------------------------------------
+# The blog landing slugs collide with real directories that hold article
+# files. Resolve the exact landing URLs before the generic directory guard.
+RewriteRule ^blog/?$ blog.html [L]
+RewriteRule ^ar/blog/?$ ar/blog.html [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
@@ -74,4 +79,3 @@ RewriteRule ^(.+)$ $1.html [L]
 
 # Custom 404
 ErrorDocument 404 /404.html
-

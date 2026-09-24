@@ -463,20 +463,42 @@
                 return;
             }
 
+            const clampedDate = (year, month, day) => {
+                const lastDay = new Date(year, month + 1, 0).getDate();
+                return new Date(year, month, Math.min(day, lastDay));
+            };
+            const calendarDayNumber = date => Date.UTC(
+                date.getFullYear(), date.getMonth(), date.getDate()
+            ) / (1000 * 60 * 60 * 24);
+
             let years = tDate.getFullYear() - bDate.getFullYear();
-            let months = tDate.getMonth() - bDate.getMonth();
-            let days = tDate.getDate() - bDate.getDate();
-
-            if (days < 0) {
-                months -= 1;
-                const prevMonthDate = new Date(tDate.getFullYear(), tDate.getMonth(), 0);
-                days += prevMonthDate.getDate();
-            }
-
-            if (months < 0) {
+            let yearAnchor = clampedDate(
+                bDate.getFullYear() + years,
+                bDate.getMonth(),
+                bDate.getDate()
+            );
+            if (yearAnchor > tDate) {
                 years -= 1;
-                months += 12;
+                yearAnchor = clampedDate(
+                    bDate.getFullYear() + years,
+                    bDate.getMonth(),
+                    bDate.getDate()
+                );
             }
+
+            let months = 0;
+            let monthAnchor = yearAnchor;
+            while (months < 11) {
+                const nextAnchor = clampedDate(
+                    yearAnchor.getFullYear(),
+                    yearAnchor.getMonth() + months + 1,
+                    bDate.getDate()
+                );
+                if (nextAnchor > tDate) break;
+                months += 1;
+                monthAnchor = nextAnchor;
+            }
+            const days = calendarDayNumber(tDate) - calendarDayNumber(monthAnchor);
 
             resYears.textContent = years;
             resMonths.textContent = months;
